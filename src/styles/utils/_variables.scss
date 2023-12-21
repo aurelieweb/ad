@@ -1,0 +1,17 @@
+//breakpoints
+$breakpoints: (
+  mobile: 768px,
+  tablet: 1024px,
+  desktop: 1200px,
+);
+
+//Colors
+$green: #add9cc;
+$blue : #bf99a3;
+$darkgreen: #1c3940;
+
+$box-shadows: 0px 0px 5px #a7d403;
+$box-shadows-hover: 0px 0px 5px rgb(226, 230, 173);
+$box-shadow-card: 0px 4px 6px rgba(0, 42, 59, 0.5);
+/*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/
+

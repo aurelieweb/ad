@@ -1,0 +1,17 @@
+@import './utils/_variables';
+@import './utils/_mixins';
+@import './utils/_typographie';
+@import './bases/body';
+@import './pages/accueil';
+@import './components/loading_spinner';
+@import './components/header';
+@import './components/footer';
+@import './components/menu';
+@import './components/banner';
+@import './components/maintenance_page';
+
+
+/*Quel emplacement*/
+.sr-only {
+    display: none;
+}

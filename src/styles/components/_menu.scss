@@ -1,0 +1,119 @@
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: $darkgreen;
+
+    &__list{
+        display: flex;
+        height: 100%;
+    }
+
+    &__item{
+        list-style: none;
+        display: flex;
+        padding: 0 8px;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+
+        &:hover {
+            border-bottom: 5px solid $green;
+        }
+        
+        &-link{
+            text-decoration: none;
+            color: $green;
+            background-color: $darkgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.header {
+    .menu{
+
+        @include tablet{
+            background: none;
+        }
+
+        .close-button {
+            top: 140px;
+            left: 20px;
+            z-index: 100;
+            background:$green;
+            color:$darkgreen
+            }
+        
+        &__burger {
+            display: none;
+
+            @include tablet{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            &::after {
+                border-radius: 5px;
+            }
+        }
+
+        &__list{
+
+            @include tablet {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                position: absolute;
+                top: 129px;
+                right: 0;
+                background-color: $darkgreen;
+                opacity: 0.9;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+                
+                &.open{
+                    max-height: 299px;
+                    width: 100%;
+                    z-index: 99;
+                }
+            }
+        }
+
+        &__item{
+
+            @include tablet {
+                height: 30px;
+            }
+
+            &:hover {
+                @include tablet {
+                    border-bottom: none;
+                }
+            }
+            
+            &-link{
+
+                @include tablet {
+                    background: none;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

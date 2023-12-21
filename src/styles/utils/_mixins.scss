@@ -1,0 +1,40 @@
+@mixin mobile {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+  
+@mixin tablet {
+  @media screen /*and (min-width: map-get($breakpoints, mobile))*/ and (max-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+  
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@mixin form {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #002A3B;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: $green;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
