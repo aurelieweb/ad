@@ -20,9 +20,9 @@ function Header() {
           <a href="mailto:contact@demetrio.fr"> <FontAwesomeIcon icon={faEnvelope} />contact@adlagencedigitale.fr</a>
         </div>
         <div className='header__contact-media'>
-          <a href='https://www.facebook.com/demetrio.cp'><span className='sr-only'>aria-label='Facebook'</span> <FontAwesomeIcon icon={faFacebookF} /></a>
-          <a href='https://www.instagram.com/demetrio_cp/'><span className='sr-only'> aria-label='Instagram'</span> <FontAwesomeIcon icon={faInstagram} /></a>
-          <a href='https://fr.linkedin.com/company/demetrio'><span className='sr-only'> aria-label='Linkedin'</span> <FontAwesomeIcon icon={faLinkedinIn} /></a>
+          <a href='https://www.facebook.com/profile.php?id=100090450013493'><span className='sr-only'>aria-label='Facebook'</span> <FontAwesomeIcon icon={faFacebookF} /></a>
+          <a href='https://www.instagram.com/ad.lagencedigitale/'><span className='sr-only'> aria-label='Instagram'</span> <FontAwesomeIcon icon={faInstagram} /></a>
+          <a href='https://www.linkedin.com/in/aur%C3%A9lie-demetrio-361089118/'><span className='sr-only'> aria-label='Linkedin'</span> <FontAwesomeIcon icon={faLinkedinIn} /></a>
         </div>
       </div>
       <nav className="nav">
