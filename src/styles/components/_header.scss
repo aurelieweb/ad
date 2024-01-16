@@ -8,7 +8,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
 
-        @include tablet {
+        @include mobile {
             width: 100%;
             background-color: $darkgreen;
             margin: 0;
@@ -31,15 +31,15 @@
                 align-items: center;
                 text-decoration: none;
                 display: flex;
-                color: $darkgreen;
+                color: $green;
                 gap: 10px;
 
                 &:hover {
-                    color: $blue;
+                    color: $pink;
                     transform: scale(1.10);
                 }
 
-                @include tablet {
+                @include mobile {
                     color: $green;
                 }
             }
@@ -58,15 +58,15 @@
             }
 
             a {
-                color: $darkgreen;
+                color: $green;
                 transition: transform 0.3s;
 
-                @include tablet {
+                @include mobile {
                     color: $green;
                 }
 
                 &:hover {
-                    color: $blue;
+                    color: $pink;
                     transform: scale(1.30);
                 }
             }

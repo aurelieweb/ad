@@ -6,12 +6,16 @@ $breakpoints: (
 );
 
 //Colors
-$green: #add9cc;
-$blue : #bf99a3;
-$darkgreen: #1c3940;
+$green: #ADD9CC;
+$darkgreen: #1E2B3B;
+//$darkgreen: #15133D;
+$darkviolet: #3E0947;
+$violet: #A54DA9;
+$pink: #E099A0;
 
-$box-shadows: 0px 0px 5px #a7d403;
-$box-shadows-hover: 0px 0px 5px rgb(226, 230, 173);
-$box-shadow-card: 0px 4px 6px rgba(0, 42, 59, 0.5);
+
+$box-shadows: 0px 0px 5px $violet;
+$box-shadows-hover: 0px 0px 5px $violet;
+$box-shadow-card: 0px 4px 6px $darkgreen;
 /*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/
 

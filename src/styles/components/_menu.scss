@@ -26,7 +26,7 @@
         
         &-link{
             text-decoration: none;
-            color: $green;
+            color: $violet;
             background-color: $darkgreen;
             display: flex;
             justify-content: center;
@@ -38,22 +38,24 @@
 .header {
     .menu{
 
-        @include tablet{
+        @include mobile{
             background: none;
         }
 
         .close-button {
-            top: 140px;
-            left: 20px;
+            top: 100px;
+            right: 5px;
             z-index: 100;
-            background:$green;
-            color:$darkgreen
+            background: #add9cc;
+            color: #1c3940;
+            width: 30px;
+            height: 20px;
             }
         
         &__burger {
             display: none;
 
-            @include tablet{
+            @include mobile{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -70,7 +72,7 @@
 
         &__list{
 
-            @include tablet {
+            @include mobile {
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -78,7 +80,7 @@
                 flex-direction: column;
                 align-items: flex-end;
                 position: absolute;
-                top: 129px;
+                top: 232px;
                 right: 0;
                 background-color: $darkgreen;
                 opacity: 0.9;
@@ -88,7 +90,8 @@
                 transition: max-height 0.3s ease-in-out;
                 
                 &.open{
-                    max-height: 299px;
+                    max-height: 260px;
+                    padding-top: 40px;
                     width: 100%;
                     z-index: 99;
                 }
@@ -97,21 +100,21 @@
 
         &__item{
 
-            @include tablet {
+            @include mobile {
                 height: 30px;
             }
 
             &:hover {
-                @include tablet {
+                @include mobile{
                     border-bottom: none;
                 }
             }
             
             &-link{
 
-                @include tablet {
+                @include mobile {
                     background: none;
-                    color: $blue;
+                    color: $green;
                 }
             }
         }

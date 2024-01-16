@@ -1,6 +1,6 @@
 @import './utils/_variables';
 @import './utils/_mixins';
-@import './utils/_typographie';
+@import './utils/typographie';
 @import './bases/body';
 @import './pages/accueil';
 @import './components/loading_spinner';
@@ -9,6 +9,8 @@
 @import './components/menu';
 @import './components/banner';
 @import './components/maintenance_page';
+@import './components/button';
+@import './components/slide';
 
 
 /*Quel emplacement*/

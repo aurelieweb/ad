@@ -2,9 +2,10 @@ button {
     width: 120px;
     height: 40px;
     font-weight: bold;
-    background-color: $darkgreen;
+    background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
     
-    color: $blue;
+    color: $violet;
+    box-shadow: $box-shadows;
     border-radius: 50px;
     border: none;
     position: relative;
@@ -12,8 +13,8 @@ button {
     transition: transform 0.3s;
 
     &:hover {
-        color: $darkgreen;
-        background-color: $green;
+        color: $violet;
+        background-color: $darkgreen;
         transform: scale(1.1);
 
         &::after {
@@ -27,7 +28,7 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        background: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));
+        background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
         opacity: 0;
         z-index: -1;
         border-radius: 50px;
@@ -46,7 +47,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $green;
+        background-color: $violet;
         color: $darkgreen;
         padding: 10px 20px;
         border: none;
