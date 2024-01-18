@@ -1,16 +1,39 @@
 import React from 'react';
 import Banner from '../../components/Banner';
+import Card from '../../components/Card';
 import ImgTeam from '../../assets/imgTeam.png';
+import ImgSiteReact from '../../assets/imgMaintenance.png'
+import ImgSiteWP from '../../assets/imgMaintenance.png'
+import ImgIdentitéVisuelle from '../../assets/imgMaintenance.png'
+import ImgProjet1 from '../../assets/imgProjet1.png';
 
 
 function Accueil() {
 
-    const pageTitle = "L'agence Digitale";
+    const pageTitle = "Bienvuenue sur L'agence Digitale";
     
+    const siteReact = "Création Site Web personnalisé";
+    const siteWordpress = "Création site Wordpress";
+    const identitéVisuelle = "Identité Visuelle";
+
+/*DATA
+-Title
+-Description
+-img
+*/ 
+    const projets = [
+        {
+            title: 'Entreprise de Plomberie Chauffagiste',
+            description: 'Refonte totale du site d\'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.',
+          imageUrl: ImgProjet1,
+        },
+      ];
+
     return (
+        
         <div className='main'>
             <Banner pageTitle={pageTitle}/>
-            <section>
+            <section >
                 <h2>Boostez votre Présence Digitale avec L’agence Digitale : Expertise Web au Service de Votre Réussite</h2>
                 <p className='section-text'>De la création de sites web personnalisés à la gestion de votre identité numérique, nous mettons notre expertise au service de votre réussite digitale.</p>
                 
@@ -28,6 +51,33 @@ function Accueil() {
                     </div>
                 </div>    
             </section>
+
+            <section  id='service'>
+                <h2>Services de Développement Web Personnalisés</h2>
+                <p className='section-text'>Optimisez votre présence en ligne avec nos solutions de développement web sur mesure. De la création de sites web attractifs à la refonte complète, nous donnons vie à votre vision digitale.</p> 
+                <div className='container__card'>
+                    <Card serviceName={siteReact} serviceSection={siteReact} imageUrl={ImgSiteReact}/>
+                    <Card serviceName={siteWordpress} serviceSection={siteWordpress} imageUrl={ImgSiteWP}/>
+                    <Card serviceName={identitéVisuelle} serviceSection={identitéVisuelle} imageUrl={ImgIdentitéVisuelle} />
+                </div>
+            
+            </section>
+
+            <section id='nosProjets'>
+        <h2>Nos Projets</h2>
+        <p className='section-text'>
+          Découvrez quelques-uns de nos projets récents, mettant en avant notre créativité et notre expertise.
+        </p>
+        <div className='container__projets'>
+          {projets.map((projet, index) => (
+            <div key={index} className='projet__card'>
+              <img src={projet.imageUrl} alt={projet.title} />
+              <h3 className='projet__card-title'>{projet.title}</h3>
+              <p className='projet__card-text'>{projet.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
 
         </div>

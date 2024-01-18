@@ -34,8 +34,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
-    box-shadow:  0px 0px 5px $darkviolet;
+    //background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
 
     &-img{
 
@@ -49,4 +48,20 @@
     &-text{
         color: $green;
     }
+}
+
+#service {
+    background: $linearGradient;
+}
+
+#nosProjets  {
+    background: $darkgreen
+}
+
+
+.projet__card-title{
+    color: $green;
+}
+.projet__card-text{
+    color: $violet;
 }

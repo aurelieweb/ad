@@ -1,88 +1,119 @@
-.header {
-    @include container;
+.header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
     margin-bottom: 0;
+}
 
-    &__contact{
-        margin: 10px 20px;
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-text{
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 24px;
+        margin-left: 20px;
 
-        @include mobile {
-            width: 100%;
-            background-color: $darkgreen;
-            margin: 0;
+        p {
+            margin: 0 ;
+            opacity: 1;
         }
 
-        &-details {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-
-            @include tablet {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 10px;
-                gap: 10px;
-            }
-
-            a {
-                justify-content: flex-end;
-                align-items: center;
-                text-decoration: none;
-                display: flex;
-                color: $green;
-                gap: 10px;
-
-                &:hover {
-                    color: $pink;
-                    transform: scale(1.10);
-                }
-
-                @include mobile {
-                    color: $green;
-                }
-            }
-        }
-
-        &-media {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-
-            @include tablet {
-                justify-content: flex-end;
-                padding: 10px;
-                align-items: flex-start;
-            }
-
-            a {
-                color: $green;
-                transition: transform 0.3s;
-
-                @include mobile {
-                    color: $green;
-                }
-
-                &:hover {
-                    color: $pink;
-                    transform: scale(1.30);
-                }
-            }
+        p:first-child {
+            font-family: 'Oleo Script', cursive;
+            color: $violet;
+            font-size: 36px;
         }
     }
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: auto;
-    background-color: $darkgreen;
+.logo {
+    margin: 10px 0 0 30px ;
+    width: 115px;
+ }
 
-    .logo {
-        margin: 10px 0 0 30px ;
-        width: 150px;
+
+ .header__contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+ }
+
+.header__contact{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+
+     @include mobile {
+        width: 100%;
+        background-color: $darkgreen;
+        margin: 0;
+    }
+
+    &-details {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        a {
+            justify-content: flex-end;
+            align-items: center;
+            text-decoration: none;
+            display: flex;
+            color: $green;
+            gap: 10px;
+
+            &:hover {
+                color: $pink;
+                transform: scale(1.10);
+            }
+
+             @include mobile {
+                 color: $green;
+            }
+        }
+    }
+
+    &-media {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        @include tablet {
+            justify-content: flex-end;
+            padding: 10px;
+            align-items: flex-start;
+        }
+
+        a {
+            color: $green;
+            transition: transform 0.3s;
+
+            @include mobile {
+                 color: $green;
+            }
+
+            &:hover {
+                color: $pink;
+                transform: scale(1.30);
+            }
+        }
     }
 }

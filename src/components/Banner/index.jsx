@@ -9,14 +9,12 @@ function Banner({ pageTitle }) {
     <div className="banner">
       <img className="banner__image" src={bannerImg} alt="Banner" />
       <div className="banner__content">
-        <p className='banner__content-title'>Aurélie Demetrio</p>
-        <h1>{pageTitle}</h1>
-
-          <Button id="bannerButton" text="Devis en ligne" />
-
+ {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
+        <h1>{pageTitle}</h1>        
         <div className='banner__content-text'>
-
+          <p>Création et développement de site web sur mesure</p>
         </div>
+        <Button id="bannerButton" text="Devis en ligne" />
       </div>
     </div>
   );

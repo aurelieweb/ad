@@ -1,15 +1,22 @@
+/*menu*/
 .menu{
     display: flex;
     justify-content: flex-end;
-    width: 70%;
+    width: 100%;
+    height: 50px;
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: $darkgreen;
+    background: $linearGradient;
+
+    @include mobile{
+        background: none;
+    }
 
     &__list{
         display: flex;
         height: 100%;
+        margin: 0;    
     }
 
     &__item{
@@ -26,8 +33,7 @@
         
         &-link{
             text-decoration: none;
-            color: $violet;
-            background-color: $darkgreen;
+            color: $green;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,12 +41,8 @@
     }
 }
 
-.header {
-    .menu{
-
-        @include mobile{
-            background: none;
-        }
+/*Menu burger*/
+.menu {
 
         .close-button {
             top: 100px;
@@ -119,4 +121,3 @@
             }
         }
     }
-}

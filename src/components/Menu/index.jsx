@@ -13,7 +13,7 @@ function Menu() {
   };
 
   return (
-    <div className="menu">
+    <nav className="menu">
       <button className="menu__burger" onClick={toggleMenu}>
         ☰
       </button>
@@ -49,7 +49,7 @@ function Menu() {
           </span>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 

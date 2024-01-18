@@ -1,6 +1,14 @@
 /* Importation de la police Roboto depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* Importation de la police Oleo Script depuis le dossier fonts */
+@font-face {
+    font-family: 'Oleo Script';
+    src: url('../../fonts/oleo_sript/OleoScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/* Si vous avez différentes variations de la police, ajoutez des blocs @font-face supplémentaires */
 
-
+/* Votre autre code pour la définition de la police reste inchangé */
