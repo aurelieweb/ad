@@ -11,15 +11,38 @@ import ImgProjet1 from '../../assets/imgProjet1.png';
 function Accueil() {
 
     const pageTitle = "Bienvuenue sur L'agence Digitale";
-    
-    const siteReact = "Création Site Web personnalisé";
-    const siteWordpress = "Création site Wordpress";
-    const identitéVisuelle = "Identité Visuelle";
 
-/*DATA
--Title
--Description
--img
+/*Data services
+    name:
+    description:
+    img:
+    prix
+*/ 
+    const services = [
+      { name: 'Site one page', 
+      description: 'test',
+      imageUrl: ImgSiteWP, 
+      price: '1200,00'
+      },
+      { name: 'Site react', 
+        description: 'test',
+        imageUrl: ImgSiteReact, 
+        price: '2000,00'
+      },
+      { name: 'Site react personnalisé', 
+        description: 'test',
+        imageUrl: ImgIdentitéVisuelle,
+        price: '800,00' 
+      },
+      // Ajoutez d'autres services avec leurs prix ici
+    ];
+
+    
+
+/*Data projets
+    -Title
+    -Description
+    -img
 */ 
     const projets = [
         {
@@ -53,16 +76,20 @@ function Accueil() {
             </section>
 
             <section  id='service'>
-                <h2>Services de Développement Web Personnalisés</h2>
-                <p className='section-text'>Optimisez votre présence en ligne avec nos solutions de développement web sur mesure. De la création de sites web attractifs à la refonte complète, nous donnons vie à votre vision digitale.</p> 
-                <div className='container__card'>
-                    <Card serviceName={siteReact} serviceSection={siteReact} imageUrl={ImgSiteReact}/>
-                    <Card serviceName={siteWordpress} serviceSection={siteWordpress} imageUrl={ImgSiteWP}/>
-                    <Card serviceName={identitéVisuelle} serviceSection={identitéVisuelle} imageUrl={ImgIdentitéVisuelle} />
+              <h2>Services de Développement Web Personnalisés</h2>
+              <p className='section-text'>Optimisez votre présence en ligne avec nos solutions de développement web sur mesure. De la création de sites web attractifs à la refonte complète, nous donnons vie à votre vision digitale.</p> 
+              <div className='container__card'>
+                  {services.map((service, index) => (
+                  <Card
+                    key={index}
+                    serviceName={service.name}
+                    imageUrl={service.imageUrl}
+                    servicePrice={service.price}
+                    description={service.description}
+                  />
+                        ))}
                 </div>
-            
             </section>
-
             <section id='nosProjets'>
         <h2>Nos Projets</h2>
         <p className='section-text'>

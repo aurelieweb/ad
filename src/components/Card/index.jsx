@@ -7,7 +7,7 @@ import '../../styles/styles.scss';
 
 /*Fonction card*/
 
-function Card({ serviceName, serviceSection, imageUrl }) {
+function Card({ serviceName, imageUrl, servicePrice, description }) {
  // const location = useLocation(); // Obtenez la route actuelle
 
  // const isNotreSavoirFairePage = location.pathname === '/notre-savoir-faire';
@@ -25,7 +25,10 @@ function Card({ serviceName, serviceSection, imageUrl }) {
         <img className="card__image" src={imageUrl} alt={altText} />
         <div className="card__content">
           <h3>{serviceName}</h3>
-          <p>+ d'info</p>
+            <div className='card__content-text'>
+              {description}
+            </div>
+            <div className='card__content-price'><p>A partir de: {servicePrice}€</p></div>
         </div>
       </div>
     //</Link>
