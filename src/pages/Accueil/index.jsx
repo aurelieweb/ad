@@ -6,6 +6,7 @@ import ImgSiteReact from '../../assets/imgMaintenance.png'
 import ImgSiteWP from '../../assets/imgMaintenance.png'
 import ImgIdentitéVisuelle from '../../assets/imgMaintenance.png'
 import ImgProjet1 from '../../assets/imgProjet1.png';
+import ContactForm from '../../components/ContactForm';
 
 
 function Accueil() {
@@ -91,21 +92,27 @@ function Accueil() {
                 </div>
             </section>
             <section id='nosProjets'>
-        <h2>Nos Projets</h2>
-        <p className='section-text'>
-          Découvrez quelques-uns de nos projets récents, mettant en avant notre créativité et notre expertise.
-        </p>
-        <div className='container__projets'>
-          {projets.map((projet, index) => (
-            <div key={index} className='projet__card'>
-              <img src={projet.imageUrl} alt={projet.title} />
-              <h3 className='projet__card-title'>{projet.title}</h3>
-              <p className='projet__card-text'>{projet.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
+              <h2>Nos Projets</h2>
+              <p className='section-text'>
+                Découvrez quelques-uns de nos projets récents, mettant en avant notre créativité et notre expertise.
+              </p>
+              <div className='container__projets'>
+                {projets.map((projet, index) => (
+                  <div key={index} className='projet__card'>
+                    <img src={projet.imageUrl} alt={projet.title} />
+                    <h3 className='projet__card-title'>{projet.title}</h3>
+                    <p className='projet__card-text'>{projet.description}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <section id='contact'>
+              <h2>Contactez-nous pour des solutions web personnalisées</h2>
+              <p className='section-text'>
+              Optimisez votre présence en ligne avec des sites web sur mesure. Que vous soyez un entrepreneur passionné ou une Entreprise établie, nous sommes prêts à transformer vos idées en réalité numérique. Contactez-nous aujourd'hui et donnez vie à vos projets digitaux!
+              </p>
+                  < ContactForm/>
+            </section>
 
         </div>
     );
