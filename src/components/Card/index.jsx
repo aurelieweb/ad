@@ -7,26 +7,30 @@ import '../../styles/styles.scss';
 
 /*Fonction card*/
 
-function Card({ serviceName, imageUrl, servicePrice, description }) {
+function Card({ serviceName, imageUrl, servicePrice, description, prestation }) {
  // const location = useLocation(); // Obtenez la route actuelle
 
  // const isNotreSavoirFairePage = location.pathname === '/notre-savoir-faire';
 
-  const altText = `Expert ${serviceName} à Thonon, allinges et chablais`;
-
-
-      
+/*const altText = `Expert ${serviceName} à Thonon, allinges et chablais`;*/
 
   /*const anchorLink = `/notre-savoir-faire#${serviceSection}`;*/
 
   return (
     //<Link to={anchorLink} className="card-link">
       <div className="card">
-        <img className="card__image" src={imageUrl} alt={altText} />
+
         <div className="card__content">
           <h3>{serviceName}</h3>
             <div className='card__content-text'>
               {description}
+            </div>
+            <div className='card__content-prestation'>
+              <ul>
+              {prestation.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
             </div>
             <div className='card__content-price'><p>A partir de: {servicePrice}€</p></div>
         </div>

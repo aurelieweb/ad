@@ -96,7 +96,7 @@ const emailTemplateContact = process.env.REACT_APP_EMAILJS_TEMPLATE_CONTACT;
     <div className="contact__form">
         {isSubmitted ? (
         <div className="confirmation-message">
-          <h3>Merci !</h3>
+          <p>Merci !</p>
           <p>Votre demande a bien été envoyée et sera traitée dans les meilleurs délais.</p>
         </div>
       ) : (

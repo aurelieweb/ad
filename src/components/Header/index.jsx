@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/styles.scss';
 import Menu from '../../components/Menu';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 
 
 //import Fontawesome 
@@ -13,15 +13,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Header() {
   return (
     <header className="header__container">
-        <div className='header__logo'>
-          <Link to="/">
-            <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
-          </Link>
-          <div className='header__logo-text'> 
-            <p>Aurélie Demetrio</p>
-            <p>L'agence Digitale</p>
-          </div>
-        </div>
+        
 
         <div className='header__contact-container'>
           <div className='header__contact'>
@@ -36,8 +28,19 @@ function Header() {
               <a href='https://www.linkedin.com/in/aur%C3%A9lie-demetrio-361089118/'><span className='sr-only'> aria-label='Linkedin'</span> <FontAwesomeIcon icon={faLinkedinIn} /></a>
             </div>
           </div>
+          
+        </div>
+        <div className='header__logo'>
+          <Link to="/">
+            <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
+          </Link>
+          {/*<div className='header__logo-text'> 
+            <p>Aurélie Demetrio</p>
+            <p>L'agence Digitale</p>
+  </div>*/}
           <Menu/>
         </div>
+        
     </header>
   );
 }

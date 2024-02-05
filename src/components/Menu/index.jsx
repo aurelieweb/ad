@@ -24,29 +24,29 @@ function Menu() {
       )}
       <ul className={`menu__list ${menuOpen ? 'open' : ''}`}>
         <li className="menu__item">
-          <span className="menu__item-link" onClick={closeMenu}>
+        <a href="#accueil" className="menu__item-link" onClick={closeMenu}>
             Accueil
-          </span>
+          </a>
         </li>
         <li className="menu__item">
-          <span className="menu__item-link" onClick={closeMenu}>
+          <a href="#service" className="menu__item-link" onClick={closeMenu}>
             Nos services
-          </span>
+          </a>
         </li>
         <li className="menu__item">
-          <span className="menu__item-link" onClick={closeMenu}>
+          <a href="#nosProjets" className="menu__item-link" onClick={closeMenu}>
             Nos réalisations
-          </span>
+          </a>
         </li>
         <li className="menu__item">
-          <span className="menu__item-link" onClick={closeMenu}>
+          <a href="#devis" className="menu__item-link" onClick={closeMenu}>
             Devis en ligne
-          </span>
+          </a>
         </li>
         <li className="menu__item">
-          <span className="menu__item-link" onClick={closeMenu}>
+          <a href="#contact" className="menu__item-link" onClick={closeMenu}>
             Contact
-          </span>
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+//import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/styles.scss';
 import bannerImg from '../../assets/imgBanner.jpg';
 import Button from '../../components/Button';
@@ -6,7 +7,7 @@ import Button from '../../components/Button';
 /*Fonction Banner*/ 
 function Banner({ pageTitle }) {
   return (
-    <div className="banner">
+    <div className="banner" id='accueil'>
       <img className="banner__image" src={bannerImg} alt="Banner" />
       <div className="banner__content">
  {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
@@ -14,7 +15,9 @@ function Banner({ pageTitle }) {
         <div className='banner__content-text'>
           <p>Création et développement de site web sur mesure</p>
         </div>
-        <Button id="bannerButton" text="Devis en ligne" />
+        {/*<Link to='/#service'>*/}
+          <Button id="bannerButton" className="button" text="En savoir plus"/>
+        {/*</Link>*/}
       </div>
     </div>
   );

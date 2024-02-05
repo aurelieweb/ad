@@ -5,13 +5,13 @@
     justify-content: center;
 }
 .contact__form {
-    background-color: $darkgreen;
+    background-color: $linearGradient;;
     border-radius: 5px;
-    width: 80%;
+    margin: 0 10%;
     box-shadow: $box-shadow-card;
     
     @include mobile{
-        width: 100%;margin-bottom: 30px;
+        width: 90%;
     }
 
     h2 {
@@ -19,6 +19,8 @@
     }
 }
 .form {
+    background: $linearGradient;
+    box-shadow: $box-shadows;
     @include form;
     width: calc(100% - (40px));
 
@@ -66,4 +68,13 @@
 
 .error-message{
     color: $violet;
+}
+
+.confirmation-message{
+    padding: 0 30px;
+    p:first-child{
+        opacity: 1;
+        font-weight: bold;
+
+    }
 }

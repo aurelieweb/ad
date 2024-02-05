@@ -3,14 +3,14 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 300px;
-
     gap: 20px;
     padding: 50px;
     border-radius: 20px;
+
     @include mobile {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 }
 /*.card-link {
@@ -25,12 +25,15 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: $darkgreen;
-    color: $pink;
+    background: $linearGradient;
+    box-shadow: $box-shadows;
     border-radius: 10px;
     transition: transform 0.3s;
-    box-shadow: $box-shadow-card;
     width: 30%;
+
+    @include mobile{
+        width: 100%;
+    }
     &:hover{
         transform: scale(1.05);
         p{color: $violet;
@@ -39,7 +42,6 @@
 
     &__image {
         width: 100%;
-        height: 150px;
         border-radius: 10px 10px 0 0;
         object-fit: cover;
 
@@ -52,6 +54,25 @@
     &__content {
         text-align: center;
         padding: 10px;
+        color: $green;
+
+        &-prestation{
+            opacity: 0.45;
+            text-align: left;
+            ul{
+
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                margin: 10px 0;
+            }
+        }
+
+        &-price{
+            font-weight: bold ;
+            color: $green;
+        }
 
         p {
             color: $green;

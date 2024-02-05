@@ -9,7 +9,7 @@ function Maintenance() {
     <div className='maintenance__div'>
       <img className="maintenance__div-img" src={imgMaintenance} alt="Page en cours de maintenance" />
       <div className='maintenance__div-text'>
-        <p className='maintenance__div-title'>Site en cours de construction</p>
+        <p className='maintenance__div-title'>Site en cours de maintenance</p>
         <p className='maintenance__div-subtitle'>Revenez plus tard...</p>
       </div>
     </div>
