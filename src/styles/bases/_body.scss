@@ -51,6 +51,7 @@ h3 {
 .section-text {
     margin: 50px 10px 50px 10px;
     color: $green;
+    font-size: 21px;
     opacity: 0.65;
 
     @include mobile {

@@ -4,11 +4,11 @@ import imgFusee from '../../assets/imgFusee.jpeg'
 const cardsData = [
   {
     title: "Notre approche",
-    content: "Nous croyons en une approche de développement web personnalisée et responsable. Notre objectif est de créer des sites légers et performants tout en répondant aux besoins spécifiques de nos clients."
+    content: "Nous sommes convaincusqu'une approche de développement web personnalisée et responsable est la clé pour créer des sites qui se demarque. Notre objectif est de créer des sites légers et performants et répondants aux besoins spécifiques de nos clients."
   },
   {
     title: "Ecoute et compréhension",
-    content: "Nous débutons chaque projet par un rendez-vous d'une heure dédié à comprendre vos besoins. Nous croyons en une communication ouverte pour créer une relation solide avec nos clients."
+    content: "Chaque projet commence par un rendez-vous d'une heure dédié à comprendre vos besoins. Nous croyons en une communication ouverte et claire pour créer une relation solide avec nos clients."
   },
   {
     title: "Cahier des charges collaboratif",
@@ -16,7 +16,7 @@ const cardsData = [
   },
   {
     title: "Design personnalisé",
-    content: "otre approche de design commence par la proposition d'une charte graphique. Nous travaillons en étroite collaboration avec vous pour garantir que chaque détail reflète votre identité tout en respectant les meilleures pratiques de design."
+    content: "Notre approche de design commence par la proposition d'une charte graphique. Nous travaillons en étroite collaboration avec vous pour garantir que chaque détail reflète votre identité tout en respectant les meilleures pratiques de design."
   },
   {
     title: "Maquette numérique",
@@ -36,7 +36,7 @@ const cardsData = [
   },
   {
     title: "Déploiement responsable",
-    content: "Nous nous engageons à maintenir un éco index optimal. Notre approche attentive aux performances garantit que votre site est rapide et respectueux de l'environnement."
+    content: "Nous nous engageons à maintenir un éco-index optimal. Notre approche attentive aux performances garantit que votre site est rapide et respectueux de l'environnement, assurant une présence en ligne responsable."
   },
   {
     title: "Satisfaction Client",
@@ -54,10 +54,21 @@ function Process() {
     <section id='process'>
       <h2>Découvrez notre méthode et technologies</h2>
       <p className='section-text'>
-        Optimisez votre présence en ligne avec des sites web sur mesure. Que vous soyez un entrepreneur passionné ou une Entreprise établie, nous sommes prêts à transformer vos idées en réalité numérique. Contactez-nous aujourd'hui et donnez vie à vos projets digitaux!
-      </p>
+      Explorez notre approche méthodique du développement web personnalisé. De la conception initiale à la mise en ligne, notre processus est axé sur l'écoute, la collaboration et l'innovation. Nous croyons en la création de solutions digitales uniques qui reflètent l'identité de votre entreprise. Découvrez comment nous transformons vos idées en réalité numérique, en plaçant chaque étape sous le signe de l'excellence.
+</p>
 
       <div className='process__container'>
+      <div className="process__header">
+          <img className="process__header-img" src={imgFusee} alt=" fusée ordinateur" />
+          
+          <div className="process__header-div">
+            <p className="process__header-title">"Chaque projet a une histoire. Laisez-nous raconter la vôtre!"</p>
+            <div className="process__header-text">
+              <p>Chaque collaboration est bien plus que la simple création de sites web. Nous nous engageons à donner vie à l'histoire unique de chaque projet, en mettant en lumière ce qui rend votre vision exceptionnelle.</p>
+              <p>Nous sommes là pour vous guider à chaque étape du processus. De la conception initiale à la réalisation finale, nous nous efforçons de façonner des solutions digitales qui vous reflète votre identité et répondent à vos attentes.</p>
+            </div>
+          </div>
+        </div>
       
         {cardsData.map((card, index) => (
           <div key={index} className='process__card'>
@@ -77,7 +88,7 @@ function Process() {
               </div>
           </div>
         ))}
-        <img className="process__container-img" src={imgFusee} alt=" fusée ordinateur" />
+        
       </div>
     </section>
   );

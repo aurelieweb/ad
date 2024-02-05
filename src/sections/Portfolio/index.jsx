@@ -16,37 +16,37 @@ const reserviaImages = importAll(require.context("../../assets/imgProjet/reservi
 // Définition des projets
 const projects = [
   {
-    title: "Entreprise de Plomberie Chauffagiste",
+    title: "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.",
+      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité. Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention et de devis en ligne.  Suite aux demandes clients, notre client artisan reçoit une fiche d'intervention ou de demande de devis personnalisé par mail. La mise en place de ce process simplifie la gestion commerciale de notre client, en simplifiant et formatant les demandes clients",
     coverImage: demetrioImages[0],
     images: demetrioImages,
   },
   {
-    title: "Projet 2",
+    title: "Création d'une boutique en ligne",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.",
+      "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés.",
       coverImage: kanapImages[0],
       images: kanapImages,
   },
   {
-    title: "Projet 3",
+    title: "Création d'une plateforme de location de vacances",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.",
+      "Développement d'une plateforme de location de vacances offrant une expérience conviviale et intuitive.",
     coverImage: kasaImages[0],
     images: kasaImages,
   },
   {
-    title: "Projet 4",
+    title: "Création d'un site de réservation de menu en ligne",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.",
+    "Conception d'un site de réservation de menus en ligne, offrant aux utilisateurs la possibilité de prévoir et réserver leurs repas avec facilité.",
     coverImage: ohmyfoodImages[0],
     images: ohmyfoodImages,
   },
   {
-    title: "Projet 5",
+    title: "Création d'un site de réservation de location de vacances et d'activités",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité, et simplification du processus de contact pour ses clients.",
+      "Création d'un site de réservation complet permettant aux utilisateurs de réserver des locations de vacances et des activités en toute simplicité.",
     coverImage: reserviaImages[0],
     images: reserviaImages,
   },
@@ -77,8 +77,8 @@ function Portfolio() {
     <section id="nosProjets">
       <h2>Portfolio</h2>
       <p className="section-text">
-        Découvrez quelques-uns de nos projets récents, mettant en avant notre
-        créativité et notre expertise.
+      Découvrez notre portfolio captivant, où chaque projet raconte une histoire unique de créativité et d'innovation. Des sites web élégants aux applications intuitives, plongez dans notre galerie numérique pour voir comment nous transformons les idées en expériences mémorables. Chaque création est le fruit d'une collaboration passionnée, illustrant notre engagement envers l'excellence et la satisfaction de nos clients.
+
       </p>
       <div className="container__projets">
     

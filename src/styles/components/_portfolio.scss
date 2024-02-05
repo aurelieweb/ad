@@ -70,7 +70,7 @@
   }
   
   .project__details-content {
-    background: #fff;
+    background: $darkviolet;
     padding: 20px;
     border-radius: 8px;
     position: relative;
@@ -90,7 +90,12 @@
   }
     h3 {
       font-size: 20px;
+      color: $green;
     } 
+
+/*    p{
+      color: $darkgreen;
+    }*/
   }
   
   .slick-slider{
@@ -107,6 +112,8 @@
     }
   }
 }
+
+
 
 
 

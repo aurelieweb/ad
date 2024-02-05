@@ -13,7 +13,7 @@ function Banner({ pageTitle }) {
  {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
         <h1>{pageTitle}</h1>        
         <div className='banner__content-text'>
-          <p>Création et développement de site web sur mesure</p>
+          <p>Création et développement de site web sur mesure <br />pour artisan et pme à Thonon</p>
         </div>
         {/*<Link to='/#service'>*/}
           <Button id="bannerButton" className="button" text="En savoir plus"/>

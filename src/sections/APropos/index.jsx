@@ -13,7 +13,7 @@ function APropos (){
                             <img src={ImgTeam} alt="Aurélie DEMETRIO - Création de site web à Thonon" />
                         </div>
                         <div className='apropos__container-text'>
-                            <p>Je suis Aurélie DEMETRIO, créatrice de L’agence digitale, une passionnée d’informatique.</p>
+                            <p>Je suis Aurélie DEMETRIO, créatrice de <strong>L’agence digitale</strong>, une passionnée d’informatique.</p>
                             <p>Mon parcours atypique de gestionnaire autodidacte dans le domaine du bâtiment a nourri ma curiosité pour le monde numérique, me permettant d'affiner mes compétences numériques tout au long de ma carrière.</p>
                             <p>En 2017, je crée mon premier site web, amorçant ainsi ma reconversion professionnelle en 2020. </p>
                             <p>Officiellement diplômée depuis 2023, j’ai consolidé mes connaissances et compétences dans le développement web, le design et les services numériques.</p>
