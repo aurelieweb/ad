@@ -18,13 +18,14 @@
     background: $linearGradient;
     box-shadow: $box-shadows-hover;
     width: 45%;
-    height: 300px;
+    height: auto;
     border-radius: 10px;
     margin-right: 10px;
     transition: transform 0.3s ease;
 
     @include mobile {
       width: 100%;
+      margin-right: 0;
 
     }
   
@@ -46,7 +47,7 @@
       color: $green;
       
       border-radius: 5px;
-      height: 40px;
+      height: 50px;
       font-size: 16px;
       font-weight: 400;
     }
@@ -67,35 +68,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+/*    @include mobile{
+      padding: 20px;
+      width: calc(100% - 40px);
+    }*/
   }
   
   .project__details-content {
     background: $darkviolet;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     position: relative;
     max-width: 800px;
     width: fit-content;
+    height: 600px;
   
+    .project__details-img{
+      height: 500px;
+      max-width: 100%;
+      margin-bottom: 20px;
 
-  .project__details-img{
-    height: 500px;
-    max-width: 100%;
-    margin-bottom: 20px;
-
-    @include mobile{
-      height: 300px;
-      width: auto;
+      @include mobile{
+        height: 300px;
+        width: auto;
+      }
     }
-  }
+
     h3 {
-      font-size: 20px;
+      font-size: 18px;
       color: $green;
     } 
 
-/*    p{
-      color: $darkgreen;
-    }*/
+    p{
+      color: #ADD9CC;
+    opacity: 0.45;
+    font-size: 14px;
+    text-align: left;
+    }
   }
   
   .slick-slider{
@@ -104,10 +114,11 @@
     }
   }
 
-.slick-slide{
+.slick-slider{
   div{
     div{
       display: flex;
+      justify-content: center;
       align-items: center;
     }
   }

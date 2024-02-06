@@ -16,12 +16,14 @@
 
     &__content{
         position: relative;
-        left: 50px;
+        margin-left: 50px;
         bottom: 370px;
         width: 80%;
         
         @include mobile {
             bottom: 270px;
+            margin-left: 20px;
+            width: calc(100% - 20px);
         }
 
         &-title{
@@ -48,6 +50,12 @@
             flex-direction: column;
             align-items: flex-start;
             margin-bottom: 50px;
+            width: 50%;
+
+            @include mobile{
+                font-size: 16px;
+                width: 100%;
+            }
 
             p{
                 opacity: 1;

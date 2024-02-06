@@ -1,5 +1,5 @@
 import React from 'react';
-//import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/styles.scss';
 import bannerImg from '../../assets/imgBanner.jpg';
 import Button from '../../components/Button';
@@ -13,11 +13,11 @@ function Banner({ pageTitle }) {
  {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
         <h1>{pageTitle}</h1>        
         <div className='banner__content-text'>
-          <p>Création et développement de site web sur mesure <br />pour artisan et pme à Thonon</p>
+          <p>Création et développement de site web sur mesure pour artisan et pme à Thonon</p>
         </div>
-        {/*<Link to='/#service'>*/}
+        <Link to='/#contact'>
           <Button id="bannerButton" className="button" text="En savoir plus"/>
-        {/*</Link>*/}
+        </Link>
       </div>
     </div>
   );

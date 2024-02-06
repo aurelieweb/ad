@@ -4,7 +4,7 @@ import imgFusee from '../../assets/imgFusee.jpeg'
 const cardsData = [
   {
     title: "Notre approche",
-    content: "Nous sommes convaincusqu'une approche de développement web personnalisée et responsable est la clé pour créer des sites qui se demarque. Notre objectif est de créer des sites légers et performants et répondants aux besoins spécifiques de nos clients."
+    content: "Nous sommes convaincus qu'une approche de développement web personnalisée et responsable est la clé pour créer des sites qui se demarque. Notre objectif est de créer des sites légers et performants et répondants aux besoins spécifiques de nos clients."
   },
   {
     title: "Ecoute et compréhension",
@@ -54,7 +54,7 @@ function Process() {
     <section id='process'>
       <h2>Découvrez notre méthode et technologies</h2>
       <p className='section-text'>
-      Explorez notre approche méthodique du développement web personnalisé. De la conception initiale à la mise en ligne, notre processus est axé sur l'écoute, la collaboration et l'innovation. Nous croyons en la création de solutions digitales uniques qui reflètent l'identité de votre entreprise. Découvrez comment nous transformons vos idées en réalité numérique, en plaçant chaque étape sous le signe de l'excellence.
+      Explorez notre approche méthodique du développement web personnalisé. De la conception initiale à la mise en ligne, notre processus est axé sur l'écoute, la collaboration et l'innovation. Nous croyons en la création de solutions digitales uniques qui reflètent l'identité de votre entreprise. Découvrez comment nous transformons vos idées en réalité numérique.
 </p>
 
       <div className='process__container'>
@@ -62,7 +62,7 @@ function Process() {
           <img className="process__header-img" src={imgFusee} alt=" fusée ordinateur" />
           
           <div className="process__header-div">
-            <p className="process__header-title">"Chaque projet a une histoire. Laisez-nous raconter la vôtre!"</p>
+            <p className="process__header-title">"Chaque projet a une histoire. Laissez-nous raconter la vôtre!"</p>
             <div className="process__header-text">
               <p>Chaque collaboration est bien plus que la simple création de sites web. Nous nous engageons à donner vie à l'histoire unique de chaque projet, en mettant en lumière ce qui rend votre vision exceptionnelle.</p>
               <p>Nous sommes là pour vous guider à chaque étape du processus. De la conception initiale à la réalisation finale, nous nous efforçons de façonner des solutions digitales qui vous reflète votre identité et répondent à vos attentes.</p>

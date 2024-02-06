@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité. Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention et de devis en ligne.  Suite aux demandes clients, notre client artisan reçoit une fiche d'intervention ou de demande de devis personnalisé par mail. La mise en place de ce process simplifie la gestion commerciale de notre client, en simplifiant et formatant les demandes clients",
+      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité. Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention et de devis en ligne.  Suite aux demandes clients, notre client artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. La mise en place de ce process simplifie la gestion commerciale de notre client, en simplifiant et formatant les demandes clients",
     coverImage: demetrioImages[0],
     images: demetrioImages,
   },
@@ -77,8 +77,7 @@ function Portfolio() {
     <section id="nosProjets">
       <h2>Portfolio</h2>
       <p className="section-text">
-      Découvrez notre portfolio captivant, où chaque projet raconte une histoire unique de créativité et d'innovation. Des sites web élégants aux applications intuitives, plongez dans notre galerie numérique pour voir comment nous transformons les idées en expériences mémorables. Chaque création est le fruit d'une collaboration passionnée, illustrant notre engagement envers l'excellence et la satisfaction de nos clients.
-
+        Explorer notre portfolio pour découvrir comment nous donnons vie à vos idées, créant ainsi des expériences uniques. Chaque réalisation est le fruit d'une collaboration intéractive et de notre engagement envers la satisfaction de nos clients.
       </p>
       <div className="container__projets">
     
