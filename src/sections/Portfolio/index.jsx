@@ -18,14 +18,14 @@ const projects = [
   {
     title: "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
     description:
-      "Refonte totale du site d'un artisan plombier chauffagiste. Mise en avant de son éthique professionnelle, de ses services de qualité. Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention et de devis en ligne.  Suite aux demandes clients, notre client artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. La mise en place de ce process simplifie la gestion commerciale de notre client, en simplifiant et formatant les demandes clients",
+      "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
     coverImage: demetrioImages[0],
     images: demetrioImages,
   },
   {
     title: "Création d'une boutique en ligne",
     description:
-      "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés.",
+      "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés. Mise en place d'un panier et d'un système de commande",
       coverImage: kanapImages[0],
       images: kanapImages,
   },
