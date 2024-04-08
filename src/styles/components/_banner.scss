@@ -1,5 +1,5 @@
 .banner {
-    height: 400px;
+    height: 90vh;
     width: 100%;
     background-color: $darkgreen;
 
@@ -90,4 +90,10 @@
         }
 
     }
+}
+
+/*Style Banner Présentation*/
+.banner__img-presentation{
+    width: 200px;
+
 }

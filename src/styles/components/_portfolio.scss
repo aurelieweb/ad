@@ -16,8 +16,8 @@
   .projet__card {
     cursor: pointer;
     background: $linearGradient;
-    box-shadow: $box-shadows-hover;
-    width: 45%;
+    box-shadow: $box-shadows;
+    width: 30%;
     height: auto;
     border-radius: 10px;
     margin-right: 10px;
@@ -35,7 +35,7 @@
   
     img {
       width: 100%;
-      height: 260px;
+      height: 200px;
       border-radius: 10px 10px 0 0;
     }
   
@@ -82,7 +82,7 @@
     position: relative;
     max-width: 800px;
     width: fit-content;
-    height: 500px;
+    max-height: 800px;
   
     .project__details-img{
       height: 500px;

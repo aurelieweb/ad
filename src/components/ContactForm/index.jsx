@@ -69,7 +69,7 @@ const ContactForm = () => {
 const sendEmail = () => {
     // Envoyer les réponses par email
     const emailParams = {
-      to_email: 'contact@demetrio.fr',
+      to_email: 'contact@adlagencedigitale.fr',
       ...formData,
       objet: formData.objet || 'N/A',
       message: formData.message || 'N/A',
@@ -100,7 +100,7 @@ const emailTemplateContact = process.env.REACT_APP_EMAILJS_TEMPLATE_CONTACT;
           <p>Votre demande a bien été envoyée et sera traitée dans les meilleurs délais.</p>
         </div>
       ) : (
-        <div>
+        <div className='container__form'>
             <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group">
                     <label htmlFor="nom">Nom :</label>

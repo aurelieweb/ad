@@ -1,0 +1,84 @@
+[
+  {
+    "name": "One page",
+    "description": "Je vous propose de créer une présence en ligne saisissante avec mon service de création de site web One page. Idéal pour les artisans et PME, ce site compact offre une expérience utilisateur fluide. Avec une charte graphique personnalisée, une sélection de couleurs captivante et un design adapté à tous les appareils, votre site sera prêt à être lancé en seulement 4 semaines.",
+    "prestation": [
+      { "nom": "Nombre de page : 1", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Formulaire de contact", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Maquette", "inclus": false },
+      { "nom": "Délai : 2 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/imgMaintenance.png",
+    "price": "1299,00 €"
+  },
+  {
+    "name": "Basique",
+    "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec mon service de création de site web Vitrine. Conçu pour les artisans, PME et acteurs du secteur du bâtiment et de l'immobilier, ce site de 2 à 10 pages offre une présentation complète de votre activité. Misez sur la qualité et la fiabilité avec un délai de réalisation de 6 semaines.",
+    "prestation": [
+      { "nom": "Nombre de page : 2 à 5", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Formulaire de contact", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Maquette", "inclus": false },
+      { "nom": "Délai : 4 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/imgMaintenance.png",
+    "price": "2000,00 €"
+  },
+  {
+    "name": "Sur mesure",
+    "description": "Exprimez votre singularité avec un site web personnalisé conçu spécialement pour votre entreprise. Que vous soyez artisan, PME ou acteur du secteur du bâtiment ou de l'immobilier, bénéficiez d'une charte graphique sur mesure, d'une adaptabilité sur tous les supports, et d'une optimisation SEO avancée pour maximiser votre visibilité en ligne.",
+    "prestation": [
+      { "nom": "Nombre de page : illimité", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design personnalisé adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Fonctionnalité avancée (module devis, prise de rendez-vous, etc.)", "inclus": true },
+      { "nom": "Formulaire de contact", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO avancés", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Maquette", "inclus": true },
+      { "nom": "Délai : 6 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/imgMaintenance.png",
+    "price": "2000,00 €"
+  },
+  {
+    "name": "Charte graphique",
+    "description": "Renforcez l'identité visuelle de votre entreprise avec mon service de création de charte graphique. Adaptée à votre logo existant, je travaille sur une palette de couleurs harmonieuse et des typographies percutantes. En seulement 2 à 3 semaines, vous obtiendrez une charte graphique professionnelle.",
+    "prestation": [
+        { "nom": "Conception de charte graphique à partir de votre logo existant", "inclus": true },
+        { "nom": "Sélection d'une palette de couleur", "inclus": true },
+        { "nom": "Typographies", "inclus": true },
+        { "nom": "Délai : 1 à 2 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/imgMaintenance.png",
+    "price": "500,00 €"
+  },
+  {
+    "name": "Réseaux sociaux",
+    "description": "Dynamisez votre présence sur les réseaux sociaux avec mes pages professionnelles sur Facebook, Instagram et LinkedIn. Mon service comprend la création de profils complets et attrayants, intégrant des liens vers votre site web et d'autres informations pertinentes. En seulement 2 à 3 semaines, vous disposerez de pages professionnelles qui captivent votre audience et renforcent votre crédibilité en ligne.",
+    "prestation": [
+      { "nom": "Création de pages professionnelles sur les principales plateformes de réseaux sociaux (Facebook, Instagram, LinkedIn)", "inclus": true },
+      { "nom": "Optimisation des profils avec des informations complètes, des photos de profil et des bannières attrayantes.", "inclus": true },
+      { "nom": "Intégration des liens vers le site web du client et d'autres informations pertinentes", "inclus": true },
+      { "nom": "Délai : 1 à 2 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/imgMaintenance.png",
+    "price": "200,00€ / plateforme"
+  }
+]

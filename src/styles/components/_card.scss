@@ -3,6 +3,8 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+
+    flex-wrap: nowrap;
     gap: 20px;
     padding: 50px;
     border-radius: 20px;
@@ -25,7 +27,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: $linearGradient;
+    background: $darkgreen;
     box-shadow: $box-shadows;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -36,11 +38,14 @@
     }
     &:hover{
         transform: scale(1.05);
-        p{color: $violet;
-        opacity: 0.7;}
     }
+    
+    /*img{
+        display: none;
+        width: 0;
+    }*/
 
-    &__image {
+    /*&__image {
         width: 100%;
         border-radius: 10px 10px 0 0;
         object-fit: cover;
@@ -49,37 +54,62 @@
             height: 150px;
             width: 300px;
         }
-    }
+    }*/
 
     &__content {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
         text-align: center;
         padding: 10px;
         color: $green;
 
         &-prestation{
-            opacity: 0.45;
             text-align: left;
             ul{
 
                 padding: 0;
             }
             li{
+                display: flex;
+                align-items: flex-start;
                 list-style: none;
                 margin: 10px 0;
+                div{
+                    width: 20px;
+                    .icon-check{
+                        opacity: 1;
+                    }
+                    .icon-times{
+                        color: $violet;
+                        opacity: 1;
+                    }
+            }   
+                p{
+                    width: 80%;
+                    opacity: 0.45;
+                     margin: 0;
+                     text-align: left;
+                };
             }
         }
 
         &-price{
-            font-weight: bold ;
-            color: $green;
-        }
+            p {
+                color: $green;
+                font-weight: bold;
+                opacity: 1;
 
-        p {
-            color: $green;
-            opacity: 1;
-            @include mobile {
-                margin: 0;
+                @include mobile {
+                    margin: 0;
+                }
             }
-        }
+        }   
     }
+    
+}
+
+.card__content-img{
+    width: 100%;
 }

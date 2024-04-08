@@ -12,7 +12,7 @@ const demetrioImages = importAll(require.context("../../assets/imgProjet/demetri
 const kasaImages = importAll(require.context("../../assets/imgProjet/kasa", false, /\.(jpg)$/));
 const ohmyfoodImages = importAll(require.context("../../assets/imgProjet/ohmyfood", false, /\.(jpg)$/));
 const reserviaImages = importAll(require.context("../../assets/imgProjet/reservia", false, /\.(jpg)$/));
-
+const immoImages = importAll(require.context("../../assets/imgProjet/immo", false, /\.(png)$/));
 // Définition des projets
 const projects = [
   {
@@ -21,6 +21,13 @@ const projects = [
       "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
     coverImage: demetrioImages[0],
     images: demetrioImages,
+  },
+  {
+    title: "Création d'un site de promotion immobilière",
+    description:
+      "Création d'un site pour la mise en avant d'un programme neuf",
+    coverImage: immoImages[0],
+    images: immoImages,
   },
   {
     title: "Création d'une boutique en ligne",
@@ -50,6 +57,7 @@ const projects = [
     coverImage: reserviaImages[0],
     images: reserviaImages,
   },
+
   // Ajoutez d'autres projets au besoin
 ];
 

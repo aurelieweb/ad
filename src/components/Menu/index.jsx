@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom pour les liens internes
 
-// Fonction menu
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,29 +24,34 @@ function Menu() {
       )}
       <ul className={`menu__list ${menuOpen ? 'open' : ''}`}>
         <li className="menu__item">
-        <a href="#accueil" className="menu__item-link" onClick={closeMenu}>
+          <Link to="/" className="menu__item-link" onClick={closeMenu}>
             Accueil
-          </a>
+          </Link>
         </li>
         <li className="menu__item">
-          <a href="#service" className="menu__item-link" onClick={closeMenu}>
-            Nos services
-          </a>
+          <Link to="/Prestations" className="menu__item-link" onClick={closeMenu}>
+            Prestations
+          </Link>
         </li>
         <li className="menu__item">
-          <a href="#nosProjets" className="menu__item-link" onClick={closeMenu}>
-            Nos réalisations
-          </a>
+          <Link to="/Processus" className="menu__item-link" onClick={closeMenu}>
+            Processus
+          </Link>
         </li>
         <li className="menu__item">
-          <a href="#devis" className="menu__item-link" onClick={closeMenu}>
-            Devis en ligne
-          </a>
+          <Link to="/Realisations" className="menu__item-link" onClick={closeMenu}>
+            Réalisations
+          </Link>
         </li>
         <li className="menu__item">
-          <a href="#contact" className="menu__item-link" onClick={closeMenu}>
+          <Link to="/A-propos" className="menu__item-link" onClick={closeMenu}>
+            A propos
+          </Link>
+        </li>
+        <li className="menu__item">
+          <Link to="/Contact" className="menu__item-link" onClick={closeMenu}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

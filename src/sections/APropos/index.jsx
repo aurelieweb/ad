@@ -1,5 +1,5 @@
 import React from "react";
-import ImgTeam from '../../assets/imgTeam.png';
+//import ImgTeam from '../../assets/imgTeam.png';
 
 function APropos (){
 
@@ -9,9 +9,9 @@ function APropos (){
                     <p className='section-text'>De la création de sites web personnalisés à la gestion de votre identité numérique, nous mettons notre expertise au service de votre réussite digitale.</p>
                     
                     <div className='apropos__container'>
-                        <div className='apropos__container-img'>
+                        {/*<div className='apropos__container-img'>
                             <img src={ImgTeam} alt="Aurélie DEMETRIO - Création de site web à Thonon" />
-                        </div>
+                        </div>*/}
                         <div className='apropos__container-text'>
                             <p>Je suis Aurélie DEMETRIO, créatrice de <strong>L’agence digitale</strong>, une passionnée d’informatique.</p>
                             <p>Mon parcours atypique de gestionnaire autodidacte dans le domaine du bâtiment a nourri ma curiosité pour le monde numérique, me permettant d'affiner mes compétences numériques tout au long de ma carrière.</p>
