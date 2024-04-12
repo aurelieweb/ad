@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/styles.scss';
 import Menu from '../../components/Menu';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo1.png';
 
 
 //import Fontawesome 

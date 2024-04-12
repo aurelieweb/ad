@@ -1,10 +1,10 @@
 .banner {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: $darkgreen;
 
     @include mobile {
-        height: 300px;
+        height: 500px;
     }
 
     &__image{
@@ -15,9 +15,9 @@
     }
 
     &__content{
-        position: relative;
+        position: absolute;
         margin-left: 50px;
-        bottom: 370px;
+        bottom: 150px;
         width: 80%;
         
         @include mobile {

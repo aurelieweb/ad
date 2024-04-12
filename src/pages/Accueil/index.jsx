@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import CardService from '../../components/CardService';
+import Button from '../../components/Button';
 import logoReact from '../../assets/logoReact.jpeg';
 import logoWP from '../../assets/logoWP.jpeg';
 import logoJS from '../../assets/logoJS.jpeg';
@@ -8,7 +10,7 @@ import logoHTML from '../../assets/logoHTML.jpeg';
 import logoCSS from '../../assets/logoCSS.jpeg';
 import logoNode from '../../assets/logoNodeJS.jpeg';
 import logoOxygen from '../../assets/logoOxygen.png';
-import imgPortrait from '../../assets/imgPortrait.png';
+import imgPortrait from '../../assets/imgPortrait (2).png';
 
 
 import Contact from '../../sections/Contact';
@@ -18,7 +20,7 @@ const servicesData = require('../../data/serviceData.json');
 function Accueil() {
 
     const pageTitle = "Création de sites web pour artisans, PME Bâtiment et Immobilier";
-    const bannerText = "Bienvenue chez AD - L'agence Digitale ! Spécialisée dans la création de sites web sur mesure pour les artisans, PME et entreprises du secteur du bâtiment et de l'immobilier. Ma mission: vous accompagner dans la transformation digitale de votre activité pour vous aider à atteindre vos objectifs en ligne.";
+    const bannerText = "Bienvenue chez AD - L'agence Digitale ! Notre mission est de vous accompagner dans la transformation digitale pour atteindre vos objectifs en ligne.";
     const bannerImg = require('../../assets/imgBanner.jpg');
     const bannerImgClass = "banner__image"
 
@@ -30,12 +32,13 @@ function Accueil() {
             <p className='section-text'>Optimisez votre présence en ligne avec nos solutions de développement de web sur mesure. De la création de sites web attractifs à la refonte complète, nous donnons vie à votre vision digitale.</p>
             <div className='container__card'>
             {servicesData.map((service, index) => (
+                <Link className='card-link' key={index} to="/prestations"> 
                 <CardService 
-                    key={index}
                     serviceName={service.name}
                     imageUrl={service.imageUrl}
                     description={service.description}
-                 />
+                />
+            </Link>
                 ))}
             </div>
         </section>
@@ -52,11 +55,13 @@ function Accueil() {
                     <img src={logoOxygen}  alt="logo Oxygen builder - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
                 </div>
         </section>
-        <section>
-            <h2>A propos</h2>
+        <section className='home'>
+        <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale"/>
+            
             <div className='home__apropos'>
-                <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale"/>
-                <p className='section-text'>Je suis Aurélie DEMETRIO, la fondatrice de L’agence digitale. Passionnée d’informatique, j'ai forgé mon chemin dans le monde numérique au fil d'une carrière riche en expériences. Forte de mes 20 ans d'expérience en gestion dans le domaine du bâtiment et de l'immobilier, je mets à votre service mon expertise pour créer des solutions web adaptées à vos besoins.</p>
+                <h2>A propos</h2>
+                <p className='section-text'>Je suis Aurélie DEMETRIO, la fondatrice de L’agence digitale. Passionnée d’informatique, j'ai forgé mon chemin dans le monde numérique au fil d'une carrière riche en expériences. Forte de mes 20 ans d'expérience en gestion dans le domaine du bâtiment et de l'immobilier, je mets à votre service mon expertise pour créer des solutions web tout-en-un adaptées à vos besoins.</p>
+                <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus"/></Link>
             </div>
         </section>
 

@@ -12,7 +12,7 @@ function Apropos() {
     return (
       <div className='main'>
         <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
-        <section className='quisuisje'>
+        <section className='quisuisje' id='apropos__anchor'>
                     <h2>Qui-sui-je?</h2>
                     
                     <div className='apropos__container'>

@@ -4,6 +4,7 @@ import Services from '../../sections/Services';
 
 
 
+
 function Prestations() {
 
     const pageTitle = "Nos services web pour Artisan et PME";
@@ -14,7 +15,8 @@ function Prestations() {
     return (
       <div className='main'>
         <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
-            <Services />
+        <Services />
+        
         </div>
     )
 }

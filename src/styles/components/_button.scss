@@ -1,19 +1,19 @@
 button {
-    width: 120px;
+    width: 160px;
     height: 40px;
     font-weight: bold;
-    background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
+    background: $linearGradient3;
     
-    color: $violet;
-    box-shadow: $box-shadows;
-    border-radius: 50px;
+    color: $pink;
+    box-shadow: $box-shadows-hover;
+    border-radius: 10px;
     border: none;
     position: relative;
     z-index: 1;
     transition: transform 0.3s;
 
     &:hover {
-        color: $violet;
+        color: $pink;
         background-color: $darkgreen;
         transform: scale(1.1);
 
@@ -31,7 +31,7 @@ button {
         background: $linearGradient;
         opacity: 0;
         z-index: -1;
-        border-radius: 50px;
+        border-radius: 10px;
         transition : opacity 250ms;
         box-shadow: $box-shadows-hover;
     } 
@@ -49,9 +49,7 @@ button {
         align-items: center;
         padding: 10px 20px;
         border: none;
-        border-radius: 10px;
-        width: 100px;
-        height: 30px;
+
         cursor: pointer;
         font-size: 16px;
 

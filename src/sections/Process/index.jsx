@@ -1,95 +1,111 @@
-import React from "react";
-import imgFusee from '../../assets/imgFusee.jpeg'
+import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp, faCalendarCheck, faFileInvoice, faHandshake, faPersonDigging, faLaptopCode, faSwatchbook, faPaintRoller, faShuttleSpace, } from '@fortawesome/free-solid-svg-icons';
+import ImgProcess from '../../assets/imgProcess.png'
 
-const cardsData = [
-  {
-    title: "Notre approche",
-    content: "Nous sommes convaincus qu'une approche de développement web personnalisée et responsable est la clé pour créer des sites qui se demarque. Notre objectif est de créer des sites légers et performants et répondants aux besoins spécifiques de nos clients."
-  },
-  {
-    title: "Ecoute et compréhension",
-    content: "Chaque projet commence par un rendez-vous d'une heure dédié à comprendre vos besoins. Nous croyons en une communication ouverte et claire pour créer une relation solide avec nos clients."
-  },
-  {
-    title: "Cahier des charges collaboratif",
-    content: "Nous fournissons un cahier des charges détaillé pour affiner vos attentes. Cette étape cruciale garantit que chaque élément de votre projet est pris en compte, tout en minimisant les imprévus."
-  },
-  {
-    title: "Design personnalisé",
-    content: "Notre approche de design commence par la proposition d'une charte graphique. Nous travaillons en étroite collaboration avec vous pour garantir que chaque détail reflète votre identité tout en respectant les meilleures pratiques de design."
-  },
-  {
-    title: "Maquette numérique",
-    content: "Avant le développement complet, nous créons une maquette pour visualiser l'apparence et l'expérience utilisateur de votre site. Cela permet des ajustements avant d'entamer la phase d'intégration."
-  },
-  {
-    title: "Technologies utilisées",
-    content: "Nous utilisons des technologies modernes pour assurer la fiabilité et les performances de nos sites :",
-    listItems: [
-      "HTML, CSS, Javascript avec React: Pour des interfaces réactives et conviviales",
-      "MongoDB: Base de données NoSQL pour la gestion efficace des données"
-    ]
-  },
-  {
-    title: "Développement et ajustements",
-    content: "Après l'intégration, nous présentons une première version pour recueillir vos commentaires. Notre processus itératif nous permet d'ajuster rapidement le site en fonction de vos retours."
-  },
-  {
-    title: "Déploiement responsable",
-    content: "Nous nous engageons à maintenir un éco-index optimal. Notre approche attentive aux performances garantit que votre site est rapide et respectueux de l'environnement, assurant une présence en ligne responsable."
-  },
-  {
-    title: "Satisfaction Client",
-    content: "La satisfaction de nos clients est notre priorité. Nous travaillons en étroite collaboration avec vous à chaque étape pour nous assurer que le résultat final répond à vos attentes."
-  },
+const Process = () => {
+  const [openIndices, setOpenIndices] = useState([]);
 
-  
-  // Ajoutez d'autres cartes au besoin
-];
+  const processSteps = [
+    {
+      title: "Rendez-vous initial (1h)",
+      content: [
+        "Discussion approfondie de votre projet par visio ou téléphone.",
+        "Compréhension de vos besoins et objectifs spécifiques.",
+      ],
+      icon: faCalendarCheck
+    },
+    {
+      title: "Devis gratuit",
+      content: [
+        "Élaboration d'un devis en fonction de vos exigences."
+      ],
+      icon: faFileInvoice
+    },
+    {
+      title: "Acompte (30%)",
+      content: [
+        "Paiement d'un acompte de 30% pour démarrer le projet."
+        
+      ],
+      icon: faHandshake
+    },
+    {
+      title: "Cahier des charges collaboratif",
+      content: [
+        "Élaboration d'un cahier des charges détaillé en collaboration avec vous.",
+        "Clarification de chaque aspect du projet pour éviter les imprévus."
+      ], 
+      icon: faPersonDigging
+    },
+    {
+      title: "Design personnalisé",
+      content: [
+        "Proposition d'une charte graphique en accord avec votre identité visuelle."
+      ],
+      icon: faSwatchbook
+    },
+    {
+      title: "Maquette numérique (si incluse dans votre forfait)",
+      content: [
+        "Création d'une maquette pour visualiser l'apparence et l'expérience utilisateur de votre site.",
+        "Validation de la maquette avant de passer à la phase de développement."
+      ],
+      icon: faPaintRoller
+    },
+    {
+      title: "Développement et ajustements",
+      content: [
+        "Intégration du site web avec les technologies modernes pour une performance optimale.",
+        "Présentation d'une première version pour recueillir vos retours et effectuer des ajustements si nécessaire."
+      ],
+      icon: faLaptopCode
+    },
+    {
+      title: "Déploiement",
+      content: [
+        "Après validation, je t'envoie la facture.",
+        "Mise en ligne du site à réception du paiement."
+      ],
+      icon: faShuttleSpace
+    }
+  ];
 
-function Process() {
-
+  const handleCardClick = (index) => {
+    const currentIndex = openIndices.indexOf(index);
+    if (currentIndex === -1) {
+      // If the index is not in the openIndices array, add it
+      setOpenIndices([...openIndices, index]);
+    } else {
+      // If the index is already in the openIndices array, remove it
+      setOpenIndices(openIndices.filter((i) => i !== index));
+    }
+  };
 
   return (
     <section id='process'>
-      <h2>Découvrez notre méthode et technologies</h2>
-      <p className='section-text'>
-      Explorez notre approche méthodique du développement web personnalisé. De la conception initiale à la mise en ligne, notre processus est axé sur l'écoute, la collaboration et l'innovation. Nous croyons en la création de solutions digitales uniques qui reflètent l'identité de votre entreprise. Découvrez comment nous transformons vos idées en réalité numérique.
-</p>
-
       <div className='process__container'>
-      <div className="process__header">
-          <img className="process__header-img" src={imgFusee} alt=" fusée ordinateur" />
-          
-          <div className="process__header-div">
-            <p className="process__header-title">"Chaque projet a une histoire. Laissez-nous raconter la vôtre!"</p>
-            <div className="process__header-text">
-              <p>Chaque collaboration est bien plus que la simple création de sites web. Nous nous engageons à donner vie à l'histoire unique de chaque projet, en mettant en lumière ce qui rend votre vision exceptionnelle.</p>
-              <p>Nous sommes là pour vous guider à chaque étape du processus. De la conception initiale à la réalisation finale, nous nous efforçons de façonner des solutions digitales qui vous reflète votre identité et répondent à vos attentes.</p>
-            </div>
-          </div>
-        </div>
-      
-        {cardsData.map((card, index) => (
-          <div key={index} className='process__card'>
+        {processSteps.map((card, index) => (
+          <div key={index} className='process__card' onClick={() => handleCardClick(index)}>
             <div className="process__card-title">
-              <h3>{card.title}</h3>
+              <div className="card__title-div">
+                <FontAwesomeIcon className="process__card-icon" icon={card.icon} />
+                <h3>{card.title}</h3>
+              </div>
+              <FontAwesomeIcon icon={openIndices.includes(index) ? faChevronUp : faChevronDown} />
             </div>
 
+            {openIndices.includes(index) && (
               <div className="process__card-text">
-                <p>{card.content}</p>
-                {card.listItems && (
-                  <ul className="process__card-list">
-                    {card.listItems.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                )}
+                {card.content.map((desc, i) => (
+                  <p key={i}>{desc}</p>
+                ))}
               </div>
+            )}
           </div>
         ))}
-        
       </div>
+      <span><img src={ImgProcess} alt="Aurélie DEMETRIO - L'Agence Digitale"/></span>
     </section>
   );
 }
