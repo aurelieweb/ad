@@ -101,6 +101,7 @@ const emailTemplateContact = process.env.REACT_APP_EMAILJS_TEMPLATE_CONTACT;
         </div>
       ) : (
         <div className='container__form'>
+          <h2>Nous contacter</h2>
             <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group">
                     <label htmlFor="nom">Nom :</label>

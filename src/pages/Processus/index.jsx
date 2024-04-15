@@ -4,8 +4,8 @@ import Process from '../../sections/Process';
 
 function Processus() {
 
-    const pageTitle = "Processus de développement";
-    const bannerText = "Création et développement de site web sur mesure pour artisan et pme à Thonon";
+    const pageTitle = "Comment se déroule un projet avec L'agence Digitale?";
+    const bannerText = "Découvrez ma méthode pour créer votre site web en toute sérénité";
     const bannerImg = require('../../assets/imgBanner.jpg');
     const bannerImgClass = "banner__image"
 

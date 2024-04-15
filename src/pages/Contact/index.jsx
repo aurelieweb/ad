@@ -8,8 +8,8 @@ import { faPhone, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-
 
 function Contact() {
 
-    const pageTitle = "Contactez L'agence Digitale";
-    const bannerText = "Création et développement de site web sur mesure pour artisan et pme à Thonon";
+    const pageTitle = "Nous contacter";
+    const bannerText = "Prêt à concrétiser votre projet digital ? Contactez-nous dès maintenant pour des conseils experts et une offre clé en main";
     const bannerImg = require('../../assets/imgBanner.jpg');
     const bannerImgClass = "banner__image"
 
@@ -17,7 +17,7 @@ function Contact() {
       <div className='main'>
        <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
             <section id='contact'>
-                <h2>Contactez-nous pour des solutions web personnalisées</h2>
+                <h2>Besoin d'un site web pour votre entreprise du bâtiment ou de l'immobilier ? <br/> Contactez-nous dès aujourd'hui pour commencer</h2>
                 <p className='section-text'>
                 Optimisez votre présence en ligne avec des sites web sur mesure. Que vous soyez un entrepreneur passionné ou une entreprise établie, nous sommes prêts à transformer vos idées en réalité numérique. Contactez-nous aujourd'hui et donnez vie à vos projets digitaux!
                 </p>

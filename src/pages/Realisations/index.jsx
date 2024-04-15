@@ -4,8 +4,10 @@ import Banner from '../../components/Banner';
 import Portfolio from '../../sections/Portfolio';
 
 function Realisations() {
-  const pageTitle = "Nos réalisations";
-  const bannerText = "Création et développement de site web sur mesure pour artisan et pme à Thonon";
+  const pageTitle = "Découvrez nos réalisations";
+  const bannerText = "Explorez notre portfolio pour trouver l'inspiration dont vous avez besoin pour votre projet. Chaque réalisation est le fruit d'un travail passionné et créatif, conçu pour mettre en valeur le potentiel unique de chaque client";
+
+
   const bannerImg = require('../../assets/imgBanner.jpg');
   const bannerImgClass = "banner__image"
 

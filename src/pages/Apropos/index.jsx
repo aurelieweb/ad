@@ -4,47 +4,27 @@ import Banner from '../../components/Banner';
 
 function Apropos() {
 
-    const pageTitle = "A propos de L'agence Digitale";
-    const bannerText = "Création et développement de site web sur mesure pour artisan et pme à Thonon";
+    const pageTitle = "A propos : Mon expertise dans le secteur du Bâtiment et de l'immobilier";
+    const bannerText = "Découvrez notre histoire, notre engagement dans le secteur du bâtiment et de l'immobilier. Avec une expertise métier solide, nous simplifions la création de sites web pour artisans et PME, en vous offrant des solutions clé en main, rédigées sur mesure pour refléter vos valeurs et votre vision.";
     const bannerImg = require('../../assets/imgPortrait.png');
     const bannerImgClass = "banner__img-presentation"
 
     return (
       <div className='main'>
-        <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
+        <Banner className='apropos__banner'pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
         <section className='quisuisje' id='apropos__anchor'>
-                    <h2>Qui-sui-je?</h2>
-                    
-                    <div className='apropos__container'>
+            <h2>Qui suis-je?</h2>
+    
+            <div className='apropos__container'>
 
-                        <div className='apropos__container-text'>
-                            <p>Je suis Aurélie DEMETRIO, créatrice de <strong>L’agence digitale</strong>, une passionnée d’informatique.</p>
-                            <p>Mon parcours atypique de gestionnaire autodidacte dans le domaine du bâtiment a nourri ma curiosité pour le monde numérique, me permettant d'affiner mes compétences numériques tout au long de ma carrière.</p>
-                        </div>
-                    </div>    
-                </section>
-
-                <section className='parcours'>
-                    <h2>Mon parcours</h2>
-                    
-                    <div className='apropos__container'>
-                        <div className='apropos__container-text'>
-                            <p>En 2017, je crée mon premier site web, amorçant ainsi ma reconversion professionnelle en 2020. </p>
-                            <p>Officiellement diplômée depuis 2023, j’ai consolidé mes connaissances et compétences dans le développement web, le design et les services numériques.</p>
-                        </div>
-                    </div>    
-                </section>
-
-                <section className='mesatouts'>
-                    <h2>Mes points forts</h2>
-                    
-                    <div className='apropos__container'>
-                        <div className='apropos__container-text'>
-                            <p>Mes 20 ans d'expérience dans le secteur du bâtiment et de l'immobilier constituent l'un de mes principaux atouts. Cette expertise métier me permet de comprendre parfaitement les besoins et les attentes de mes clients, et de leur offrir des solutions numériques adaptées et efficaces.</p>
-                            <p>Je m'engage à accompagner les petites entreprises, artisans et indépendants dans la construction et la gestion de leur présence en ligne.</p>
-                        </div>
-                    </div>    
-                </section>
+                <div className='apropos__container-text'>
+                    <p>Je suis Aurélie DEMETRIO, la fondatrice de <strong>L’Agence Digitale</strong>. Avec une passion pour l'informatique et une expérience professionnelle de 20 ans dans le domaine du bâtiment et de l'immobilier, j'ai décidé de combiner mes compétences métier avec mon expertise numérique.</p>
+                    <p>Avec plus de deux décennies d'expérience dans le domaine du bâtiment et de l'immobilier, mon parcours professionnel a été marqué par une transition vers le monde numérique. En tant que gestionnaire autodidacte, j'ai développé mes compétences numériques tout au long de ma carrière, nourrissant ma curiosité pour les possibilités offertes par la technologie.</p>
+                    <p>En 2017, j'ai franchi un nouveau cap en créant mon premier site web, amorçant ainsi ma reconversion professionnelle. Cette étape a été suivie d'une décision audacieuse en 2021 : celle de reprendre mes études pour obtenir un diplôme dans le domaine du développement web et du design.</p>
+                    <p>Après avoir obtenu mon diplôme en 2023, renforcé par des compétences en développement web et design, j'ai consolidé mon expertise dans le domaine numérique. Mon parcours atypique et mon expérience variée me confèrent une compréhension approfondie des besoins de mes clients.</p>
+                </div>
+            </div>    
+        </section>
 
                 <section className='mesvaleurs'>
                     <h2>Mes valeurs</h2>
@@ -52,7 +32,8 @@ function Apropos() {
                     <div className='apropos__container'>
                         <div className='apropos__container-text'>
                            <p>Au cœur de mon approche se trouvent l'intégrité, l'engagement et la qualité. Je crois fermement en la transparence et l'honnêteté dans toutes mes interactions professionnelles.</p>
-                           <p>Sensible à la cause environnementale, je m'efforce de réduire l'empreinte écologique de mes activités en proposant des solutions numériques légères et respectueuses de l'éco-index.</p>
+                            <p>L'écoute attentive de nos clients est au cœur de notre approche collaborative. Nous nous engageons à accompagner nos clients à chaque étape de la réalisation de leur projet, en validant régulièrement avec eux pour nous assurer que notre travail répond parfaitement à leurs attentes.</p>
+                           <p>Nous croyons fermement en la qualité de notre travail et en l'importance de fournir des solutions numériques performantes et écologiques. Nous nous efforçons de réduire notre empreinte environnementale en proposant des sites web respectueux de l'éco-index. En utilisant des technologies modernes et légères, nous sommes en mesure de fournir des sites web à la fois performants et respectueux de l'environnement.</p>
                         </div>
                     </div>    
                 </section>
@@ -60,7 +41,7 @@ function Apropos() {
                 <section className='monoffre'>
                     <h2>Offre spéciale pour les artisans et PME du bâtiment et de l'immobilier</h2>
                     
-                    <div className='apropos__container'>
+                    <div className='apropos__container offre-artisan'>
                         <div className='apropos__container-text'>
                             <p>En tant qu'artisan, je comprends l'importance de disposer d'une solution numérique clé en main pour promouvoir votre activité. Avec mon offre spéciale artisan, vous bénéficierez d'une solution tout-en-un comprenant la rédaction de contenu, grâce à mon expertise métier et ma connaissance approfondie du secteur. Nos offres sont conçues sur mesure pour s'adapter à votre budget et votre emploi du temps chargé. Mon objectif est de vous faire gagner du temps et de vous offrir une présence en ligne professionnelle qui vous distingue de la concurrence.</p>
                         </div>

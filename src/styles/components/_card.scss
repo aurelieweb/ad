@@ -2,7 +2,7 @@
 .container__card{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: $linearGradient3;
     flex-wrap: nowrap;
     gap: 20px;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
 
-    background: $darkviolet;
+    background: $darkgreen;
     box-shadow: $box-shadows;
     border-radius: 10px;
     transition: transform 0.3s;

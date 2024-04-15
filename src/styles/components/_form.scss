@@ -2,10 +2,14 @@
 .container__form{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 .contact__form {
     background-color: $darkgreen;
-
+    margin-bottom: 50px;
+    border-radius: 10px;
     
     @include mobile{
         width: 90%;
