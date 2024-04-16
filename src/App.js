@@ -7,6 +7,8 @@ import Prestations from './pages/Prestations';
 import Processus from './pages/Processus'; 
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
+import Calendly from './pages/CalendlyPage';
+import RGPD from './pages/rgpd';
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
           <Route path="/A-propos" element={<Apropos />} />
           {/* Nouvelle route pour la page "A propos" */}
           <Route path="/Contact" element={<Contact />} />
+          {/* Nouvelle route pour la page "Calendly" */}
+          <Route path="/Calendly" element={<Calendly />} />
+          {/* Nouvelle route pour la page "RGPD" */}
+          <Route path="/Rgpd" element={<RGPD />} />
         </Routes>
       </Layout>
     </Router>

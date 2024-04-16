@@ -2,11 +2,11 @@
 .container__card{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background: $linearGradient3;
-    flex-wrap: nowrap;
+    justify-content: safe;
+
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
     width: 80%;
 
@@ -28,9 +28,6 @@
 .card {
     display: flex;
     flex-direction: column;
-
-    background: $darkgreen;
-    box-shadow: $box-shadows;
     border-radius: 10px;
     transition: transform 0.3s;
     width: 30%;
@@ -61,12 +58,23 @@
 
     &__content {
         display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
         text-align: center;
         padding: 10px;
-        color: $green;
+        color: $darkgreen;
+
+        &-text{
+            opacity: 0.65;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h3{
+            margin: 10px;
+        }
 
         &-prestation{
             text-align: left;
@@ -114,14 +122,20 @@
 }
 
 .card__content-img{
-    width: 100%;
+    max-width: 200px;
 }
 
 .card-link{
-    width: 100%;
+    width: 30%;
     text-decoration: none;
     .card{
         width: 100%;
         height: 100%;
+    }
+}
+
+.services-autre{
+    .card{
+        width: auto;
     }
 }

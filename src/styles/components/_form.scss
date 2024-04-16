@@ -10,7 +10,8 @@
     background-color: $darkgreen;
     margin-bottom: 50px;
     border-radius: 10px;
-    
+    width: 80%;
+
     @include mobile{
         width: 90%;
     }

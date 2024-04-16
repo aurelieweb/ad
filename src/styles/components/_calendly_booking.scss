@@ -1,0 +1,37 @@
+.booking-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 250px;
+    background: $linearGradient3;
+    border-radius: 10px;
+    position: relative;
+    color: $pink;
+    margin: 50px;
+
+    span{
+        position: absolute;
+        top: -39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: $pink;
+        color: $violet;
+        font-size: 36px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $darkviolet;
+        font-size: 24px;
+    }
+}
+
+a{
+    text-decoration: none;
+}

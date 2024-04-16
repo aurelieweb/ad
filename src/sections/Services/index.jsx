@@ -14,7 +14,7 @@ function Services() {
       <div className="container__services"> 
         <h2>Nos services web sur mesure</h2>
         <div className="container__section">
-          <p className='container__section-text'>Un site web professionnel est un atout précieux pour votre entreprise. Il vous permet de présenter vos produits et services de manière claire et attrayante, d'atteindre de nouveaux clients potentiels, et de renforcer votre crédibilité dans un monde de plus en plus numérique.</p>
+          <p className='container__section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services </strong>de manière claire et attrayante, d'atteindre de <strong>nouveaux clients</strong> potentiels, et de <strong>renforcer votre crédibilité</strong> dans un monde de plus en plus numérique.</p>
           <p className='container__section-text'>Explorez dès maintenant mes différentes offres de création de site web conçues pour répondre à vos besoins spécifiques. Que vous souhaitiez renforcer votre présence en ligne et mettre en valeur votre entreprise de manière efficace et moderne, je suis là pour vous accompagner dans la réalisation de vos objectifs numériques.</p>
           <p className='container__section-text'> Notre approche unique vous offre une expérience personnalisée et simplifiée pour concrétiser votre présence en ligne.</p>
           <h3>Offre clé en main : </h3>
@@ -39,9 +39,13 @@ function Services() {
             />
           ))}
         </div>
+        
+<div class="calendly-inline-widget" data-url="https://calendly.com/aureliedemetrio?hide_landing_page_details=1&hide_gdpr_banner=1&text_color=ffd4ca&primary_color=f25f5c" ></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
       </div>
 
-      <div className="container__services">
+      <div className="container__services services-autre">
         <h2>Autres prestations</h2>
         <div className="container__section">
           <p className='container__section-text'>Découvrez également nos autres prestations spécialisées pour renforcer votre présence en ligne et dynamiser votre entreprise sur les réseaux sociaux. Obtenez une charte graphique professionnelle, adaptée à votre logo existant, comprenant une palette de couleurs harmonieuse et des typographies percutantes.</p>

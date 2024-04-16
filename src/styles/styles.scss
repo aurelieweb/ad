@@ -6,6 +6,7 @@
 @import './pages/apropos';
 @import './pages/prestations';
 @import './pages/contact';
+@import './pages/calendly';
 @import './components/loading_spinner';
 @import './components/header';
 @import './components/footer';
@@ -18,7 +19,8 @@
 @import './components/slide';
 @import './components/process.scss';
 @import './components/portfolio.scss';
-
+@import './components/gallery.scss';
+@import './components/calendly_booking';
 
 /*Quel emplacement*/
 .sr-only {

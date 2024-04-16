@@ -9,12 +9,13 @@ function Realisations() {
 
 
   const bannerImg = require('../../assets/imgBanner.jpg');
-  const bannerImgClass = "banner__image"
-
+  const bannerImgClass = "banner__image";
+  const bannerButtonText = "En savoir plus"
+  const buttonLink = "/contact";
 
   return (
     <div className='main'>
-      <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass}/>
+     <Banner pageTitle={pageTitle} bannerImg={bannerImg} bannerText={bannerText} bannerImgClass={bannerImgClass} buttonLink={buttonLink} bannerButtonText={bannerButtonText}/>
       <Portfolio />
     </div>
   );

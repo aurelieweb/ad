@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp, faCalendarCheck, faFileInvoice, faHandshake, faPersonDigging, faLaptopCode, faSwatchbook, faPaintRoller, faShuttleSpace, } from '@fortawesome/free-solid-svg-icons';
-import ImgProcess from '../../assets/imgProcess.png'
+//import ImgProcess from '../../assets/imgProcess.png'
 
 const Process = () => {
   const [openIndices, setOpenIndices] = useState([]);
@@ -105,7 +105,7 @@ const Process = () => {
           </div>
         ))}
       </div>
-      <span><img src={ImgProcess} alt="Aurélie DEMETRIO - L'Agence Digitale"/></span>
+      {/*<span><img src={ImgProcess} alt="Aurélie DEMETRIO - L'Agence Digitale"/></span>*/}
     </section>
   );
 }

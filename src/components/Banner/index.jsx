@@ -4,8 +4,10 @@ import '../../styles/styles.scss';
 //import bannerImg from '../../assets/imgBanner.jpg';
 import Button from '../../components/Button';
 
+
 /*Fonction Banner*/ 
-function Banner({ pageTitle, bannerText, bannerImg, bannerImgClass }) {
+function Banner({ pageTitle, bannerText, bannerImg, bannerImgClass, buttonLink, bannerButtonText
+ }) {
   return (
     <div className="banner" id='accueil'>
       <img className={bannerImgClass} src={bannerImg} alt="Banner" />
@@ -15,8 +17,8 @@ function Banner({ pageTitle, bannerText, bannerImg, bannerImgClass }) {
         <div className='banner__content-text'>
           <p>{bannerText}</p>
         </div>
-        <Link to='/#contact'>
-          <Button id="bannerButton" className="button" text="En savoir plus"/>
+        <Link to={buttonLink}>
+          <Button id="bannerButton" className="button" text={bannerButtonText}/>
         </Link>
       </div>
     </div>

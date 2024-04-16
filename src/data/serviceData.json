@@ -3,6 +3,7 @@
     "name": "One page",
     "type": "Site web",
     "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
+    "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : 1", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
@@ -23,6 +24,7 @@
     "name": "Basique",
     "type": "Site web",
     "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
+    "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
@@ -43,6 +45,7 @@
     "name": "Sur mesure",
     "type": "Site web",
     "description": "Exprimez votre singularité avec un site web personnalisé conçu spécialement pour votre entreprise. Bénéficiez d'une charte graphique sur mesure, d'une adaptabilité sur tous les supports, et d'une optimisation SEO avancée.",
+    "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : illimité", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
@@ -64,6 +67,7 @@
     "name": "Charte graphique",
     "type": "Autres prestations",
     "description": "Renforcez l'identité visuelle de votre entreprise avec une charte graphique professionnelle, adaptée à votre logo existant. Obtenez une palette de couleurs harmonieuse et des typographies percutantes en seulement 2 à 3 semaines.",
+    "buttonText": "Test",
     "prestation": [
         { "nom": "Conception de charte graphique à partir de votre logo existant", "inclus": true },
         { "nom": "Sélection d'une palette de couleur", "inclus": true },
@@ -77,6 +81,7 @@
     "name": "Réseaux sociaux",
     "type": "Autres prestations",
     "description": "Dynamisez votre présence sur les réseaux sociaux avec des pages professionnelles sur Facebook, Instagram et LinkedIn. Obtenez des profils complets et attrayants en seulement 2 à 3 semaines.",
+    "buttonText": "Test",
     "prestation": [
       { "nom": "Création de pages professionnelles sur les principales plateformes de réseaux sociaux (Facebook, Instagram, LinkedIn)", "inclus": true },
       { "nom": "Optimisation des profils avec des informations complètes, des photos de profil et des bannières attrayantes.", "inclus": true },

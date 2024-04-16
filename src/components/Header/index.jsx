@@ -19,8 +19,8 @@ function Header() {
           <div className='header__contact'>
             <div className='header__contact-details'>
               {/*Vérifier la méthode*/}
-              <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /> 06 36 86 92 70</a>
-              <a href="mailto:contact@adlagencedigitale.fr"> <FontAwesomeIcon icon={faEnvelope} />contact@adlagencedigitale.fr</a>
+              <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /></a>
+              <a href="mailto:contact@adlagencedigitale.fr"> <FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
             <div className='header__contact-media'>
               <a href='https://www.facebook.com/profile.php?id=100090450013493'><span className='sr-only'>aria-label='Facebook'</span> <FontAwesomeIcon icon={faFacebookF} /></a>

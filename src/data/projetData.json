@@ -1,0 +1,79 @@
+[
+    {
+      "title": "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
+      "description": "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
+      "coverImage": "./img/imgProjet/demetrio/demetrio_img1.jpg",
+      "images": [
+        "./img/imgProjet/demetrio/demetrio_img2.jpg",
+        "./img/imgProjet/demetrio/demetrio_img3.jpg",
+        "./img/imgProjet/demetrio/demetrio_img4.jpg",
+        "./img/imgProjet/demetrio/demetrio_img5.jpg",
+        "./img/imgProjet/demetrio/demetrio_img6.jpg"
+      ],
+      "url": "https://demetrio.fr/",
+      "featured": true
+    },
+    {
+      "title": "Création d'un site de promotion immobilière",
+      "description": "Création d'un site pour la mise en avant d'un programme neuf",
+      "coverImage": "./img/imgProjet/immo/immo_img1.png",
+      "images": [
+        "./img/imgProjet/immo/immo_img2.png",
+        "./img/imgProjet/immo/immo_img3.png",
+        "./img/imgProjet/immo/immo_img4.png",
+        "./img/imgProjet/immo/immo_img5.png",
+        "./img/imgProjet/immo/immo_img6.png"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Création d'une boutique en ligne",
+      "description": "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés. Mise en place d'un panier et d'un système de commande",
+      "coverImage": "./img/imgProjet/kanap/kanap_img1.jpg",
+      "images": [
+        "./img/imgProjet/kanap/kanap_img2.jpg",
+        "./img/imgProjet/kanap/kanap_img3.jpg",
+        "./img/imgProjet/kanap/kanap_img4.jpg",
+        "./img/imgProjet/kanap/kanap_img5.jpg",
+        "./img/imgProjet/kanap/kanap_img6.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Création d'une plateforme de location de vacances",
+      "description": "Développement d'une plateforme de location de vacances offrant une expérience conviviale et intuitive.",
+      "coverImage": "./img/imgProjet/kasa/kaza_img1.jpg",
+      "images": [
+        "./img/imgProjet/kasa/kaza_img2.jpg",
+        "./img/imgProjet/kasa/kaza_img3.jpg",
+        "./img/imgProjet/kasa/kaza_img4.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Création d'un site de réservation de menu en ligne",
+      "description": "Conception d'un site de réservation de menus en ligne, offrant aux utilisateurs la possibilité de prévoir et réserver leurs repas avec facilité.",
+      "coverImage": "./img/imgProjet/ohmyfood/ohmyfood_img1.jpg",
+      "images": [
+        "./img/imgProjet/ohmyfood/ohmyfood_img2.jpg",
+        "./img/imgProjet/ohmyfood/ohmyfood_img3.jpg",
+        "./img/imgProjet/ohmyfood/ohmyfood_img4.jpg",
+        "./img/imgProjet/ohmyfood/ohmyfood_img5.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Création d'un site de réservation de location de vacances et d'activités",
+      "description": "Création d'un site de réservation complet permettant aux utilisateurs de réserver des locations de vacances et des activités en toute simplicité.",
+      "coverImage": "./img/imgProjet/reservia/reservia_img1.jpg",
+      "images": [
+        "./img/imgProjet/reservia/reservia_img2.jpg",
+        "./img/imgProjet/reservia/reservia_img3.jpg",
+        "./img/imgProjet/reservia/reservia_img4.jpg",
+        "./img/imgProjet/reservia/reservia_img5.jpg",
+        "./img/imgProjet/reservia/reservia_img6.jpg"
+      ],
+      "featured": false
+    }
+  ]
+  
