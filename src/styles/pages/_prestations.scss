@@ -3,10 +3,117 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    .container__card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: $darkgreen;
+        width: 100%;
+        margin: 50px;
+
+        @include tablet{
+            margin: 30px;
+        }
+
+        @include mobile{
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+        .service-div{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+            .service-detail{
+
+                ul{
+                    margin-top: 50px;
+                    padding: 20px;
+
+                    @include mobile{
+                        padding: 0 0 10px 10px;
+                    }
+                }
+
+                li{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    //background: $violet;
+                    color: white;
+                    border-radius: 20px;
+                    padding-right: 10px;
+
+                    @include mobile{
+                        padding-right: 0;
+                    }
+
+                }
+            }
+
+            .container__card-div{
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+
+                @include tablet {
+                    justify-content: center;
+                }
+
+                @include mobile{
+
+                    flex-direction: column;
+                }
+            }
+        }
+        
+        .card{
+            background: $darkgreen;
+            color: $green;
+            width: 300px;
+            height: 100%;
+            border: 2px solid white;
+
+            @include tablet{
+                width: 45%;
+            }
+
+            @include mobile{
+                width: 100%;
+            }
+
+            &:hover{
+                transform: none;
+            }
+
+            &__content{
+                width: auto;
+
+                &-text{
+                    text-align: center;
+                    color: $green;
+                    opacity: 1;
+                    }
+
+                &-prestation{
+                    color: $green;
+                }
+            }
+        }
+    }
 }  
 
 
     .container__section{
+        display: flex;
+        flex-direction: column;
     h3{
         color: $violet;
     }
@@ -16,16 +123,82 @@
         font-size: 18px;
         opacity: 1;
 
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+
+    ul{
+        padding: 20px 50px;
+
+        @include mobile{
+            padding: 0 20px;
+        }
     }
 
     li{
+        display: flex;
+        align-items: center;
         list-style-type: none;
         font-size: 18px;
         margin-bottom: 20px;
+
+        @include mobile{
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
     }
 
     &-icon{
         color : $violet;
+        margin-right: 20px;
+
+        @include mobile{
+            margin-right: 10px;
+        }
     }
 
 }
+
+.service__img{
+    width: 40%;
+}
+
+
+.icon-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: $pink;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: $violet;
+
+    @include mobile{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+
+.icon-div{
+    width: 80%;
+}
+
+.customer-type{
+    font-size: 36px;
+    color: $violet;
+}
+
+/*.services-autre{
+    .container__card{
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}*/

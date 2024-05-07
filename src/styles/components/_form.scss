@@ -12,6 +12,10 @@
     border-radius: 10px;
     width: 80%;
 
+    @include tablet{
+        width: 100%;
+    }
+
     @include mobile{
         width: 90%;
     }
@@ -22,7 +26,6 @@
 }
 .form {
 
-    box-shadow: $box-shadows;
     @include form;
     width: 80%;
     margin: 40px;

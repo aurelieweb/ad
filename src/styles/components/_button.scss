@@ -1,11 +1,12 @@
 button {
     width: 160px;
     height: 40px;
+    font-family: 'Roboto';
     font-weight: bold;
     background: $linearGradient3;
     
-    color: $pink;
-    box-shadow: $box-shadows-hover;
+    color: $darkgreen;
+    box-shadow: $box-shadow-card;
     border-radius: 10px;
     border: none;
     position: relative;
@@ -13,8 +14,8 @@ button {
     transition: transform 0.3s;
 
     &:hover {
-        color: $pink;
-        background-color: $darkgreen;
+        color: $violet;
+        //background-color: $darkgreen;
         transform: scale(1.1);
 
         &::after {
@@ -28,7 +29,7 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        background: $linearGradient;
+        background:$pink;
         opacity: 0;
         z-index: -1;
         border-radius: 10px;
@@ -63,7 +64,7 @@ button {
         position: absolute;
         width: 40px;
         top: 10px;
-    right: 30px;
+        right: 30px;
         color: #fff;
         padding: 8px 12px;
         border: none;

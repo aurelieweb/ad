@@ -1,6 +1,6 @@
 .gallery-section {
-    padding: 50px 0;
     text-align: center;
+    width: 90%;
   }
   
   .gallery-container {
@@ -8,6 +8,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+
+    @include tablet{
+
+      flex-direction: column-reverse;
+      margin-top: 30px;
+    }
   }
   
   .project-image {
@@ -22,6 +28,9 @@
 
   
   .project-image figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -32,6 +41,15 @@
     padding: 5px 10px;
 
     font-size: 14px;
+
+    @include mobile{
+      bottom: 5px;
+      width: calc(100% - 20px);
+      height: 40px;
+
+      
+
+    }
   }
   
   

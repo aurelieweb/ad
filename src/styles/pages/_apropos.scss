@@ -1,0 +1,17 @@
+.quisuisje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.timeline-cycle{
+    width: 80%;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp, faCalendarCheck, faFileInvoice, faHandshake, faPersonDigging, faLaptopCode, faSwatchbook, faPaintRoller, faShuttleSpace, } from '@fortawesome/free-solid-svg-icons';
-//import ImgProcess from '../../assets/imgProcess.png'
+import { faChevronDown, faChevronUp, faCalendarCheck, faFileInvoice, faHandshake, faPersonDigging, faLaptopCode, faSwatchbook, faBrush, faRocket, } from '@fortawesome/free-solid-svg-icons';
+
 
 const Process = () => {
   const [openIndices, setOpenIndices] = useState([]);
@@ -51,7 +51,7 @@ const Process = () => {
         "Création d'une maquette pour visualiser l'apparence et l'expérience utilisateur de votre site.",
         "Validation de la maquette avant de passer à la phase de développement."
       ],
-      icon: faPaintRoller
+      icon: faBrush
     },
     {
       title: "Développement et ajustements",
@@ -67,7 +67,7 @@ const Process = () => {
         "Après validation, je t'envoie la facture.",
         "Mise en ligne du site à réception du paiement."
       ],
-      icon: faShuttleSpace
+      icon: faRocket
     }
   ];
 
@@ -105,7 +105,6 @@ const Process = () => {
           </div>
         ))}
       </div>
-      {/*<span><img src={ImgProcess} alt="Aurélie DEMETRIO - L'Agence Digitale"/></span>*/}
     </section>
   );
 }

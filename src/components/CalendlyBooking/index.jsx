@@ -5,7 +5,7 @@ import { faCalendarCheck, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const CalendlyBooking = () => {
   return (
-    <Link to="/Calendly" target="_blank" rel="noopener noreferrer">
+    <Link to="/Calendly" target="_blank" rel="noopener noreferrer" className='booking-link'>
     <div className="booking-card">
       <span className="booking-icon">
       <FontAwesomeIcon icon={faCalendarCheck} />

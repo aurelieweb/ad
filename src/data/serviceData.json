@@ -1,7 +1,30 @@
 [
   {
+    "name": "Portfolio",
+    "type": "Site web",
+    "customerType":"Architecte",
+    "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
+    "buttonText": "Test",
+    "prestation": [
+      { "nom": "Nombre de page : 2 à 5", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Formulaire de contact", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Maquette", "inclus": false },
+      { "nom": "Délai : 2 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/service6.png",
+    "price": "2500,00 €"
+  },
+  {
     "name": "One page",
     "type": "Site web",
+    "customerType":"Bâtiment",
     "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
     "buttonText": "Test",
     "prestation": [
@@ -21,8 +44,9 @@
     "price": "1299,00 €"
   },
   {
-    "name": "Basique",
+    "name": "Site vitrine",
     "type": "Site web",
+    "customerType":"Bâtiment",
     "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
     "buttonText": "Test",
     "prestation": [
@@ -39,33 +63,56 @@
       { "nom": "Délai : 4 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service5.png",
-    "price": "2000,00 €"
+    "price": "3000,00 €"
   },
   {
-    "name": "Sur mesure",
+    "name": "One page",
     "type": "Site web",
-    "description": "Exprimez votre singularité avec un site web personnalisé conçu spécialement pour votre entreprise. Bénéficiez d'une charte graphique sur mesure, d'une adaptabilité sur tous les supports, et d'une optimisation SEO avancée.",
+    "customerType":"Immobilier",
+    "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
     "buttonText": "Test",
     "prestation": [
-      { "nom": "Nombre de page : illimité", "inclus": true },
+      { "nom": "Nombre de page : 1", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
-      { "nom": "Design personnalisé adapté à l'identité visuelle", "inclus": true },
-      { "nom": "Fonctionnalité avancée (module devis, prise de rendez-vous, etc.)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
       { "nom": "Formulaire de contact", "inclus": true },
       { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
       { "nom": "Site responsive (adapté tous supports)", "inclus": true },
       { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
-      { "nom": "Mise en place paramètres SEO avancés", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
       { "nom": "Page mentions légales RGPD", "inclus": true },
-      { "nom": "Maquette", "inclus": true },
-      { "nom": "Délai : 6 semaines", "inclus": true }
+      { "nom": "Maquette", "inclus": false },
+      { "nom": "Délai : 2 semaines", "inclus": true }
     ],
-    "imageUrl": "./img/service1.png",
-    "price": "2000,00 €"
+    "imageUrl": "./img/service6.png",
+    "price": "1299,00 €"
+  },
+  {
+    "name": "Site vitrine",
+    "type": "Site web",
+    "customerType":"Immobilier",
+    "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
+    "buttonText": "Test",
+    "prestation": [
+      { "nom": "Nombre de page : 2 à 5", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Formulaire de contact", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Maquette", "inclus": false },
+      { "nom": "Délai : 4 semaines", "inclus": true }
+    ],
+    "imageUrl": "./img/service5.png",
+    "price": "3000,00 €"
   },
   {
     "name": "Charte graphique",
     "type": "Autres prestations",
+    "customerType":"Autres prestations",
     "description": "Renforcez l'identité visuelle de votre entreprise avec une charte graphique professionnelle, adaptée à votre logo existant. Obtenez une palette de couleurs harmonieuse et des typographies percutantes en seulement 2 à 3 semaines.",
     "buttonText": "Test",
     "prestation": [
@@ -80,6 +127,7 @@
   {
     "name": "Réseaux sociaux",
     "type": "Autres prestations",
+    "customerType":"Autres prestations",
     "description": "Dynamisez votre présence sur les réseaux sociaux avec des pages professionnelles sur Facebook, Instagram et LinkedIn. Obtenez des profils complets et attrayants en seulement 2 à 3 semaines.",
     "buttonText": "Test",
     "prestation": [
@@ -89,6 +137,6 @@
       { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service7.png",
-    "price": "200,00€ / plateforme"
+    "price": "200,00€ "
   }
 ]

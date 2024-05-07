@@ -5,14 +5,19 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    z-index: 2;
+    z-index: 99;
+    background-color: $darkgreen;
+    box-shadow: $box-shadows;
+
+    @include tablet{
+        background: $darkgreen;
+    }
 }
 
 .header__logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $darkgreen;
 
     a{
         align-content: center;
@@ -23,12 +28,17 @@
 
 .logo {
     margin-left: 50px ;
-    height: 50px;
+    height: 100px;
+
+    @include tablet{
+        margin-left: 10px;
+        height: 80px;
+    }
 
     @include mobile {
-        margin: 0 0 0 20px   
+        height: 60px;
     }
- }
+}
 
 
  .header__contact-container{
@@ -40,7 +50,7 @@
 
 .header__contact{
     background: white;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
@@ -50,6 +60,7 @@
         width: calc(100% - 20px);
         margin: 0;
         padding: 10px;
+        background-color: $darkgreen;
     }
 
     &-details {

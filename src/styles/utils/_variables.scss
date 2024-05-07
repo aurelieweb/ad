@@ -7,20 +7,27 @@ $breakpoints: (
 
 //Colors
 $green: #ADD9CC;
-$darkgreen: #1E233B;
-$darkviolet: #3E0947;
+//$darkgreen: #1E233B;
+$darkgreen: #2c423f;
+//$darkgreen: #3a4f41;
+//$darkgreen: #0A354F;
+//$darkviolet: #3E0947;
+$darkviolet: #521945;
+//darkblue: #27187e;
 $violet: #f25f5c;
+//$violet: #f61067;
 //$violet: #f61067;
 $pink: #FFD4CA;
 $darkgreen-opacity: rgba(30, 43, 59, 0.3);
 
 
-$box-shadows: 3px 3px 5px $darkgreen;
+$box-shadows: 3px 3px 5px rgb(226, 221, 221);
+$box-shadows-btn: 0px 0px 5px $darkviolet;
 $box-shadows-hover: 0px 0px 5px $pink;
 $box-shadow-card: 0px 1px 2px $darkgreen;
 /*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/
 
-$linearGradient: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
-$linearGradient2: linear-gradient(to bottom right, $darkviolet, transparent);
-$linearGradient3: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($violet, 5));
-$linearGradient4: linear-gradient(to bottom right, lighten($pink, 5), lighten($violet, 2));
+$linearGradient: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));
+$linearGradient2: linear-gradient(to bottom right, $green, transparent);
+$linearGradient3: linear-gradient(to bottom right, lighten($violet, 5), lighten($pink, 5));
+$linearGradient4: linear-gradient(to bottom right, lighten($pink, 5), lighten($violet, 10));

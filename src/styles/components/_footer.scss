@@ -50,6 +50,7 @@
             &-link{
                 opacity: 0.45;
                 margin: 2.5px;
+                color: $green           
             }
 
             &:hover {
@@ -82,8 +83,26 @@
 
 .footer-mention{
     display: flex;
+    align-items: center;
     gap: 20px;
     text-decoration: none;
+
+    @include mobile{
+        flex-direction: column;
+    }
+    
+    p{
+
+        @include mobile{
+        text-align: center;
+        }
+    }   
+
+    :nth-last-child(2){
+        @include mobile {
+            display: none;
+        }
+    }
 
     a{
         color: white;
