@@ -13,9 +13,9 @@ import logoCSS from '../../assets/logoCSS.jpeg';
 import logoNode from '../../assets/logoNodeJS.jpeg';
 import logoOxygen from '../../assets/logoOxygen.png';
 import imgPortrait from '../../assets/imgPortrait.png';
-import imgArchitect from '../../assets/imgArchitecte.jpeg';
-import imgBatiment from '../../assets/imgBatiment.jpeg';
-import imgImmobilier from '../../assets/imgImmo.jpeg';
+import imgArchitect from '../../assets/imgArchitecte.jpg';
+import imgBatiment from '../../assets/imgBatiment.jpg';
+import imgImmobilier from '../../assets/imgImmo.jpg';
 
 //const servicesData = require('../../data/serviceData.json');
 const projetData = require('../../data/projetData.json');

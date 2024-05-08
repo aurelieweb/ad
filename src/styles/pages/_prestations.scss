@@ -188,6 +188,11 @@
 
 .icon-div{
     width: 80%;
+    font-size: 18px;
+
+    @include tablet {
+        font-size: 16px;
+    }
 }
 
 .customer-type{

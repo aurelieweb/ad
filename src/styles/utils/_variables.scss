@@ -7,22 +7,25 @@ $breakpoints: (
 
 //Colors
 $green: #ADD9CC;
+//$green: #bfedef;
 //$darkgreen: #1E233B;
-$darkgreen: #2c423f;
+//$darkgreen: #2c423f;
 //$darkgreen: #3a4f41;
-//$darkgreen: #0A354F;
+$darkgreen: #0A354F;
+//$darkgreen: #0B3948;
 //$darkviolet: #3E0947;
 $darkviolet: #521945;
 //darkblue: #27187e;
 $violet: #f25f5c;
-//$violet: #f61067;
+//violet: #0B3948;
 //$violet: #f61067;
 $pink: #FFD4CA;
 $darkgreen-opacity: rgba(30, 43, 59, 0.3);
 
 
 $box-shadows: 3px 3px 5px rgb(226, 221, 221);
-$box-shadows-btn: 0px 0px 5px $darkviolet;
+$box-shadows-btn: 0px 0px 5px $pink;
+$box-shadows: 0px 0px 5px $green;
 $box-shadows-hover: 0px 0px 5px $pink;
 $box-shadow-card: 0px 1px 2px $darkgreen;
 /*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/

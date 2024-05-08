@@ -6,7 +6,7 @@ function Processus() {
 
     const pageTitle = "Comment se déroule un projet avec L'agence Digitale?";
     const bannerText = "Découvrez ma méthode pour créer votre site web en toute sérénité";
-    const bannerImg = require('../../assets/imgBanner.jpeg');
+    const bannerImg = require('../../assets/imgBanner.jpg');
     const bannerClass = "banner banner-prestation"
     const bannerImgClass = "banner__image";
     const bannerButtonText = "En savoir plus"
