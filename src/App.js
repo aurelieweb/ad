@@ -8,6 +8,7 @@ import Processus from './pages/Processus';
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
 import Calendly from './pages/CalendlyPage';
+import Leadmagnet from './pages/Leadmagnet';
 import RGPD from './pages/rgpd';
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           {/* Nouvelle route pour la page "Calendly" */}
           <Route path="/Calendly" element={<Calendly />} />
+          {/* Nouvelle route pour la page "Leadmagnet" */}
+          <Route path="/LeadMagnet" element={<Leadmagnet />} />
           {/* Nouvelle route pour la page "RGPD" */}
           <Route path="/Rgpd" element={<RGPD />} />
         </Routes>

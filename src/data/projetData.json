@@ -27,6 +27,18 @@
       "featured": true
     },
     {
+      "title": "Création d'une maquette de site pour un Architecte",
+      "description": "Création d'une galerie de projet sur mesure pour un Architecte",
+      "coverImage": "./img/imgProjet/archi1/archi1_img2.png",
+      "images": [
+        "./img/imgProjet/archi1/archi1_img1.png",
+        "./img/imgProjet/archi1/archi1_img2.png",
+        "./img/imgProjet/archi1/archi1_img3.png",
+        "./img/imgProjet/archi1/archi1_img4.png"
+      ],
+      "featured": true
+    },
+    {
       "title": "Création d'une boutique en ligne",
       "description": "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés. Mise en place d'un panier et d'un système de commande",
       "coverImage": "./img/imgProjet/kanap/kanap_img1.jpg",
