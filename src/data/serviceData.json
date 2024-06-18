@@ -51,7 +51,8 @@
     "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : 2 à 5", "inclus": true },
-      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu média (à fournir)", "inclus": true },
+      { "nom": "Rédaction web de votre contenu", "inclus": true },
       { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
       { "nom": "Formulaire de contact", "inclus": true },
       { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
@@ -104,7 +105,7 @@
       { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
       { "nom": "Page mentions légales RGPD", "inclus": true },
       { "nom": "Maquette", "inclus": false },
-      { "nom": "Délai : 4 semaines", "inclus": true }
+      { "nom": "Délai : 6 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service5.png",
     "price": "3000,00 €"
@@ -137,6 +138,6 @@
       { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service7.png",
-    "price": "200,00€ "
+    "price": "200,00€"
   }
 ]

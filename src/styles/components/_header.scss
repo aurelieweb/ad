@@ -6,11 +6,11 @@
     justify-content: space-between;
     position: fixed;
     z-index: 99;
-    background-color: $darkgreen;
-    box-shadow: $box-shadows;
+    background-color: white;
+
 
     @include tablet{
-        background: $darkgreen;
+        background: white;
     }
 }
 
@@ -28,7 +28,7 @@
 
 .logo {
     margin-left: 50px ;
-    height: 100px;
+    height: 70px;
 
     @include tablet{
         margin-left: 10px;
@@ -84,7 +84,7 @@
             }
 
              @include mobile {
-                 color: $green;
+                 color: $darkgreen;
             }
         }
     }

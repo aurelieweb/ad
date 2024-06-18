@@ -48,11 +48,11 @@ const servicesType= [
 
 function Accueil() {
 
-    const pageTitle = "Création de sites web pour artisans, PME Construction et Immobilier";
-    const bannerText = "Bienvenue chez AD - L'agence Digitale ! Notre mission est de vous accompagner dans la transformation digitale pour atteindre vos objectifs en ligne.";
-    const bannerClass = "banner banner-presentation"
-    const bannerImg = require('../../assets/imgPortrait.png');
-    const bannerImgClass = "banner__img-presentation";
+    const pageTitle = "Création de sites web pour Architectes, Entreprise Bâtiment et Immobilier";
+    const bannerText = "Boostez votre présence en ligne avec Aurélie DEMETRIO - L'agence Digitale ! Notre mission: Vous accompagner dans votre transformation digitale pour atteindre vos objectifs.";
+    const bannerClass = "banner banner-prestation"
+    const bannerImg = require('../../assets/imgBanner2.jpeg');
+    const bannerImgClass = "banner__image";
     const bannerButtonText = "En savoir plus";
     const buttonLink = "/contact";
 

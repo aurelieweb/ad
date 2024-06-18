@@ -13,7 +13,7 @@ function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass,
   
       <img className={bannerImgClass} src={bannerImg} alt="Banner" />
       <div className='banner__div'>
-      <div className="banner__content banner__content-presentation">
+      <div className="banner__content banner__content-prestation">
  {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
         <h1>{pageTitle}</h1>        
         <div className='banner__content-text'>

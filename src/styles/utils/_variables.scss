@@ -7,14 +7,19 @@ $breakpoints: (
 
 //Colors
 $green: #ADD9CC;
-//$green: #bfedef;
+//$green: #521945;
 //$darkgreen: #1E233B;
-//$darkgreen: #2c423f;
+$darkgreen: #2c423f;
+//$darkgreen: #0F4C5C;
+//$darkgreen: #231942;
+//$darkgreen: #1c393f;
 //$darkgreen: #3a4f41;
-$darkgreen: #0A354F;
+//$darkgreen: #0A354F;
 //$darkgreen: #0B3948;
+//$darkgreen: #4e6e58;
 //$darkviolet: #3E0947;
 $darkviolet: #521945;
+//$darkviolet: #82265a;j
 //darkblue: #27187e;
 $violet: #f25f5c;
 //violet: #0B3948;
@@ -32,5 +37,5 @@ $box-shadow-card: 0px 1px 2px $darkgreen;
 
 $linearGradient: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));
 $linearGradient2: linear-gradient(to bottom right, $green, transparent);
-$linearGradient3: linear-gradient(to bottom right, lighten($violet, 5), lighten($pink, 5));
+$linearGradient3: linear-gradient(to bottom right, lighten($violet, 5), lighten($darkviolet, 5));
 $linearGradient4: linear-gradient(to bottom right, lighten($pink, 5), lighten($violet, 10));
