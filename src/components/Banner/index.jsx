@@ -7,6 +7,7 @@ import Button from '../../components/Button';
 function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass, buttons }) {
   return (
     <div className={bannerClass}>
+      <span className='background'>
       <img className={bannerImgClass} src={bannerImg} alt="Banner" />
       <div className='banner__div'>
         <div className="banner__content banner__content-prestation">
@@ -23,6 +24,7 @@ function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass,
           </div>
         </div>
       </div>
+      </span>
     </div>
   );
 }

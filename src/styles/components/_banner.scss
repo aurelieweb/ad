@@ -13,8 +13,7 @@
 
     &__content{
         padding: 50px;
-        width: 100%;
-        background: rgba(44, 66, 63, 0.7);
+        //background: rgba(44, 66, 63, 0.7);
 
 
         @include tablet{
@@ -117,10 +116,13 @@
         height: auto;
     }
 
+    .banner__content{
+        background: rgba(44, 66, 63, 0.7);
+    }
+
     .banner__div{
         display: flex;
         height: 80vh;
-        width: 100%;
         position: absolute;
         z-index: 6;
     }
@@ -134,6 +136,14 @@
             width: 100%;
         }
 
+    }
+    .banner__content-prestation{
+        h1{
+            width: 60%;
+        }
+        .banner__content-text{
+            width: 60%;
+        }
     }
 
 }
@@ -161,6 +171,9 @@
         display: flex;
         background-color: $darkgreen;
         width: 100%;
+        height: 400px;
+        position: relative;
+        top: 100px;
         //max-height: 370px;
         margin-left: 50px;
 
@@ -186,7 +199,7 @@
         }
 
         &-text{
-            //width: 80%;
+            //width: 60%;
             
             @include mobile {
                 width: 100%;
@@ -238,6 +251,15 @@
 .banner__buttons {
     display: flex;
     gap: 20px;
+
+}
+
+.background{
+    display: flex;
+    flex-direction: row-reverse;
+    //background: rgba(44, 66, 63, 0.7);
+    width: 100%;
+    position: relative;
 
 }
 
