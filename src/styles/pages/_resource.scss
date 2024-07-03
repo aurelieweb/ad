@@ -1,0 +1,22 @@
+
+.resource-section{
+    display: flex;
+    justify-content: space-between;
+    background: $darkgreen;
+    padding: 20px;
+
+}
+
+.resource-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 350px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-bottom: 20px;
+
+}

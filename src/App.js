@@ -4,11 +4,10 @@ import Layout from './components/Layout';
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos'; 
 import Prestations from './pages/Prestations'; 
-import Processus from './pages/Processus'; 
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
 import Calendly from './pages/CalendlyPage';
-import Leadmagnet from './pages/Leadmagnet';
+import Resource from './pages/Resource';
 import RGPD from './pages/rgpd';
 
 function App() {
@@ -21,8 +20,6 @@ function App() {
           {/* Nouvelle route pour la page "A propos" */}
           <Route path="/Prestations" element={<Prestations />} />
           {/* Nouvelle route pour la page "A propos" */}
-          <Route path="/Processus" element={<Processus />} />
-          {/* Nouvelle route pour la page "A propos" */}
           <Route path="/Realisations" element={<Realisations />} />
           {/* Nouvelle route pour la page "A propos" */}
           <Route path="/A-propos" element={<Apropos />} />
@@ -31,7 +28,7 @@ function App() {
           {/* Nouvelle route pour la page "Calendly" */}
           <Route path="/Calendly" element={<Calendly />} />
           {/* Nouvelle route pour la page "Leadmagnet" */}
-          <Route path="/LeadMagnet" element={<Leadmagnet />} />
+          <Route path="/Ressources" element={<Resource />} />
           {/* Nouvelle route pour la page "RGPD" */}
           <Route path="/Rgpd" element={<RGPD />} />
         </Routes>

@@ -4,7 +4,9 @@ import ContactForm from '../../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
-
+const buttons = [
+  { text: 'Prendre rendez-vous', link: '/Calendly' }
+];
 
 function Contact() {
 
@@ -13,8 +15,6 @@ function Contact() {
     const bannerClass = "banner banner-presentation"
     const bannerImg = require('../../assets/imgPortrait.png');
     const bannerImgClass = "banner__img-presentation";
-    const bannerButtonText = "Prendre rendez-vous"
-    const buttonLink = "/Calendly";
 
     return (
       <div className='main'>
@@ -24,8 +24,7 @@ function Contact() {
             bannerImg={bannerImg} 
             bannerText={bannerText} 
             bannerImgClass={bannerImgClass} 
-            buttonLink={buttonLink} 
-            bannerButtonText={bannerButtonText}/>
+            buttons={buttons}/>
             <section id='contact'>
                 <h2>Besoin d'un site web pour votre entreprise du secteur de la Construction ou de l'Immobilier ?</h2>
                 <p className='section-text'>

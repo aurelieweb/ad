@@ -37,5 +37,5 @@ $box-shadow-card: 0px 1px 2px $darkgreen;
 
 $linearGradient: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));
 $linearGradient2: linear-gradient(to bottom right, $green, transparent);
-$linearGradient3: linear-gradient(to bottom right, lighten($violet, 5), lighten($darkviolet, 5));
+$linearGradient3: linear-gradient(to bottom right, darken($violet, 5), darken($pink, 5));
 $linearGradient4: linear-gradient(to bottom right, lighten($pink, 5), lighten($violet, 10));

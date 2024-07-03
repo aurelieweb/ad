@@ -5,6 +5,7 @@ import Banner from '../../components/Banner';
 import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
+
 import logoReact from '../../assets/logoReact.jpeg';
 import logoWP from '../../assets/logoWP.jpeg';
 import logoJS from '../../assets/logoJS.jpeg';
@@ -46,6 +47,11 @@ const servicesType= [
       }
   ];
 
+  const buttons = [
+    { text: 'Consultation gratuite', link: '/Calendly' },
+    { text: 'Quiz : Référencement local', link: '/Ressources' }
+  ];
+
 function Accueil() {
 
     const pageTitle = "Création de sites web pour Architectes, Entreprise Bâtiment et Immobilier";
@@ -53,8 +59,7 @@ function Accueil() {
     const bannerClass = "banner banner-prestation"
     const bannerImg = require('../../assets/imgBanner2.jpeg');
     const bannerImgClass = "banner__image";
-    const bannerButtonText = "En savoir plus";
-    const buttonLink = "/contact";
+
 
     return (
       <div className='main'>
@@ -64,8 +69,7 @@ function Accueil() {
             bannerImg={bannerImg} 
             bannerText={bannerText} 
             bannerImgClass={bannerImgClass} 
-            buttonLink={buttonLink} 
-            bannerButtonText={bannerButtonText}/>
+            buttons={buttons}/>
         <section className='home__services'>
             <h2>Mes services et prestations </h2>
             <p className='section-text'>Optimisez votre présence en ligne avec nos solutions de développement de web sur mesure. De la création de sites web attractifs à la refonte complète, nous donnons vie à votre vision digitale.</p>
@@ -122,6 +126,7 @@ function Accueil() {
                             <p><strong>Mon objectif</strong> est de <strong>vous faire gagner du temps</strong> et de vous offrir une présence en ligne professionnelle qui vous distingue de la concurrence.</p>
                         </div>
                         <CalendlyBooking />
+
                     </div>    
                     
                 </section>

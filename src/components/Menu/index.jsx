@@ -34,11 +34,6 @@ function Menu() {
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/Processus" className="menu__item-link" onClick={closeMenu}>
-            Processus
-          </Link>
-        </li>
-        <li className="menu__item">
           <Link to="/Realisations" className="menu__item-link" onClick={closeMenu}>
             Réalisations
           </Link>

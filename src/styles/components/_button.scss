@@ -3,18 +3,18 @@ button {
     height: 40px;
     font-family: 'Roboto';
     font-weight: bold;
-    background: $linearGradient3;
+    background: $pink;
     
-    color: $pink;
+    color: $violet;
     box-shadow: $box-shadows-btn;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     position: relative;
     z-index: 1;
     transition: transform 0.3s;
 
     &:hover {
-        color: $violet;
+        color: $pink;
         //background-color: $darkgreen;
         transform: scale(1.1);
 
@@ -29,13 +29,13 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        background:$pink;
+        background:$violet;
         opacity: 0;
         z-index: -1;
-        border-radius: 10px;
+        border-radius: 25px;
         transition : opacity 250ms;
         box-shadow: $box-shadows-hover;
-    } 
+    }   
 }
   
   /* Style pour le bouton "Valider" */
@@ -43,6 +43,8 @@ button {
   .buttons {
     display: flex;
     gap: 10px;
+
+    
 }
     .form__button{
         display: flex;
@@ -56,7 +58,7 @@ button {
 
         &::after {
             content: "";
-            border-radius: 10px;
+            border-radius: 25px;
         }
     }
 

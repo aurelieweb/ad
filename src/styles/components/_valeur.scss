@@ -58,21 +58,17 @@
    }
   }
   
-  .valeur-1 {
+  .valeur-1 , .valeur-3{
     background-color: $darkgreen;
-    color: $green;
+    color: $pink;
 
   }
   
   .valeur-2 {
-    background-color: $darkgreen; 
-    color: $green;/* Couleur violette */
+    background-color: $pink; 
+    color: $violet;/* Couleur violette */
 
   }
   
-  .valeur-3 {
-    background-color: $darkgreen;
-    color: $green;
-
-  }
+ 
   

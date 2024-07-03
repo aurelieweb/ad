@@ -4,7 +4,9 @@ import Services from '../../sections/Services';
 
 
 
-
+const buttons = [
+    { text: 'Consultation gratuite', link: '/Calendly' }
+  ];
 
 function Prestations() {
 
@@ -13,8 +15,6 @@ function Prestations() {
     const bannerClass = "banner banner-prestation"
     const bannerImg = require('../../assets/imgBanner2.jpg');
     const bannerImgClass = "banner__image";
-    const bannerButtonText = "En savoir plus"
-    const buttonLink = "/contact";
 
     return (
       <div className='main'>
@@ -24,8 +24,7 @@ function Prestations() {
             bannerImg={bannerImg} 
             bannerText={bannerText} 
             bannerImgClass={bannerImgClass} 
-            buttonLink={buttonLink} 
-            bannerButtonText={bannerButtonText}/>
+            buttons={buttons}/>
         <Services/>
         
         </div>
