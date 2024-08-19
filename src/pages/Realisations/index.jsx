@@ -17,7 +17,7 @@ function Realisations() {
   const bannerImgClass = "banner__image";
 
   return (
-    <div className='main'>
+    <div className='main main-realisation'>
             <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}

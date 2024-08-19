@@ -5,7 +5,7 @@
     align-items: center;
     height: 250px;
     //width: 350px;
-    background: $darkgreen;
+    background: $violet;
     border-radius: 10px;
     position: relative;
     color: $green;
@@ -28,14 +28,14 @@
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        background: $pink;
-        color: $violet;
+        background: $darkviolet;
+        color: $pink;
         font-size: 36px;
     }
 
     a{
         text-decoration: none;
-        color: $violet;
+        color: $darkviolet;
         font-size: 24px;
     }
 

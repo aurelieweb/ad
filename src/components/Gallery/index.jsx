@@ -21,3 +21,5 @@ const Gallery = ({ projects }) => {
 }
 
 export default Gallery;
+
+

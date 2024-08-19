@@ -6,13 +6,7 @@ import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
 
-import logoReact from '../../assets/logoReact.jpeg';
-import logoWP from '../../assets/logoWP.jpeg';
-import logoJS from '../../assets/logoJS.jpeg';
-import logoHTML from '../../assets/logoHTML.jpeg';
-import logoCSS from '../../assets/logoCSS.jpeg';
-import logoNode from '../../assets/logoNodeJS.jpeg';
-import logoOxygen from '../../assets/logoOxygen.png';
+
 import imgPortrait from '../../assets/imgPortrait.png';
 import imgArchitect from '../../assets/imgArchitecte.jpg';
 import imgBatiment from '../../assets/imgBatiment.jpg';
@@ -55,10 +49,10 @@ const servicesType= [
 function Accueil() {
 
     const pageTitle = "Création de sites web pour Architectes, Entreprise Bâtiment et Immobilier";
-    const bannerText = "Boostez votre présence en ligne avec Aurélie DEMETRIO - L'agence Digitale ! Notre mission: Vous accompagner dans votre transformation digitale pour atteindre vos objectifs.";
-    const bannerClass = "banner banner-prestation"
-    const bannerImg = require('../../assets/imgBanner2.jpeg');
-    const bannerImgClass = "banner__image";
+    const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'Agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
+    const bannerImg = require('../../assets/imgPortrait.png');
+    const bannerClass = "banner banner-presentation"
+    const bannerImgClass = "banner__img-presentation";
 
 
     return (
@@ -98,23 +92,15 @@ function Accueil() {
             
             <div className='home__apropos'>
                 <h2>A propos</h2>
-                <p className='section-text'>Je suis Aurélie DEMETRIO, la fondatrice de L’agence digitale. Passionnée d’informatique, j'ai forgé mon chemin dans le monde numérique au fil d'une carrière riche en expériences. Forte de mes 20 ans d'expérience en gestion dans le domaine du bâtiment et de l'immobilier, je mets à votre service mon expertise pour créer des solutions web tout-en-un adaptées à vos besoins.</p>
+                <p className='section-text'>Je suis développeuse web spécialisée dans le secteur du bâtiment et de l’immobilier, avec 20 ans d'expérience sur le terrain. Mon objectif : créer des sites sur mesure qui mettent en valeur votre expertise, simplifient vos processus, et boostent votre activité.</p> 
+
+                <p className='section-text'>Chaque projet est unique, tout comme votre entreprise. J’écoute vos besoins pour concevoir des formulaires, pages de vente, et portfolios personnalisés, qui vous aideront à attirer vos clients idéaux et à faire évoluer votre business.</p> 
+
+                <p className='section-text'>Offrez à votre savoir faire la visbilité qu'il mérite! </p>
                 <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus"/></Link>
             </div>
         </section>
-        <section>
-            <h2>Mon expertise à votre service</h2>
-            <p className='section-text'>Découvrez notre expertise dans la <strong>création de sites web</strong> sur mesure pour les artisans, PME et acteurs du secteur de la <strong>Construction</strong> et de l'<strong>Immobilier</strong>. Spécialisée dans le référencement naturel (SEO), Nous concevons des sites <strong>éco-conçus</strong>, optimisés pour les moteurs de recherche et respectueux de l'environnement. Confiez-nousvotre projet pour une présence en ligne qui se démarque.</p>
-            <div className='container__label'>
-                    <img src={logoHTML} alt="logo HTML - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoCSS} alt="logo CSS - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoJS}  alt="logo Javascript - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoReact}  alt="logo React - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoNode}  alt="logo NodeJS - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoWP}  alt="logo Wordpress - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                    <img src={logoOxygen}  alt="logo Oxygen builder - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
-                </div>
-        </section>
+        
         <section className='offre'>
                     <h2>Offre spéciale pour les artisans et PME du Bâtiment</h2>
                     

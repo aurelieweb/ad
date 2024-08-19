@@ -21,6 +21,7 @@
 
 .card__content-img{
     width: 100%;
+    height: 200px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -35,13 +36,14 @@
     .card{
         width: 100%;
         height: 100%;
-        background: $darkgreen;
+        background: $darkviolet;
         box-shadow: $box-shadow-card;
 
         &__content{
             padding: 0;
-            color: $green;
+            color: white;
             &-text{
+                display: none;
                 margin-bottom: 10px;
                 width: 100%;
                 div{
@@ -52,7 +54,11 @@
                 p{
                     margin: 0 0 10PX 0;
                 }
-        }
+            }
+            h3{
+                height: 40px;
+                color:$pink;
+            }
         }
     }
 }
@@ -81,7 +87,7 @@
         height: 100%;
         text-align: center;
         padding: 10px;
-        color: $darkgreen;
+        color: black;
 
         @include mobile{
             width: 100%;
@@ -95,6 +101,7 @@
 
         h3{
             margin: 10px;
+            color:$pink;
         }
 
         &-prestation{
@@ -121,7 +128,7 @@
             }   
                 p{
                     width: 80%;
-                    opacity: 0.45;
+                    opacity: 0.75;
                      margin: 0;
                      text-align: left;
                 };
@@ -130,7 +137,7 @@
 
         &-price{
             p {
-                color: $green;
+                color: black;
                 font-weight: bold;
                 opacity: 1;
 

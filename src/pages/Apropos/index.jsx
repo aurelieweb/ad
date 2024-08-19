@@ -1,8 +1,15 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Valeur from '../../components/Valeur';
-import imgTimeline from '../../assets/TimelineCycle.svg';
+import imgTimeline from '../../assets/TimelineCycle.png';
 import Process from '../../sections/Process';
+import logoReact from '../../assets/logoReact.jpeg';
+import logoWP from '../../assets/logoWP.jpeg';
+import logoJS from '../../assets/logoJS.jpeg';
+import logoHTML from '../../assets/logoHTML.jpeg';
+import logoCSS from '../../assets/logoCSS.jpeg';
+import logoNode from '../../assets/logoNodeJS.jpeg';
+import logoOxygen from '../../assets/logoOxygen.png';
 
 const buttons = [
     { text: 'Consultation gratuite', link: '/Calendly' }
@@ -11,7 +18,7 @@ const buttons = [
 
 function Apropos() {
 
-    const pageTitle = "A propos : Mon expertise dans le secteur de la Construction et de l'Immobilier";
+    const pageTitle = "Mon expertise dans le secteur de la Construction et de l'Immobilier";
     const bannerText = "Découvrez notre histoire, notre engagement dans le secteur du bâtiment et de l'immobilier. Avec une expertise métier solide, nous simplifions la création de sites web pour artisans et PME, en vous offrant des solutions clé en main, rédigées sur mesure pour refléter vos valeurs et votre vision.";
     const bannerImg = require('../../assets/imgPortrait.png');
     const bannerClass = "banner banner-presentation"
@@ -57,7 +64,19 @@ function Apropos() {
           </div>
           <Process />
         </section>
-
+        <section>
+            <h2>Mon expertise à votre service</h2>
+            <p className='section-text'>Découvrez notre expertise dans la <strong>création de sites web</strong> sur mesure pour les artisans, PME et acteurs du secteur de la <strong>Construction</strong> et de l'<strong>Immobilier</strong>. Spécialisée dans le référencement naturel (SEO), Nous concevons des sites <strong>éco-conçus</strong>, optimisés pour les moteurs de recherche et respectueux de l'environnement. Confiez-nousvotre projet pour une présence en ligne qui se démarque.</p>
+            <div className='container__label'>
+                    <img src={logoHTML} alt="logo HTML - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoCSS} alt="logo CSS - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoJS}  alt="logo Javascript - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoReact}  alt="logo React - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoNode}  alt="logo NodeJS - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoWP}  alt="logo Wordpress - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoOxygen}  alt="logo Oxygen builder - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                </div>
+        </section>
 
             </div>
         </div>
