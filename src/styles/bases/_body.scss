@@ -116,3 +116,19 @@ p {
     align-items: center;
 }
 
+.text-color{
+    color: $violet;
+    text-decoration: none;
+  
+    
+}
+    
+
+
+.text-hover {
+    &:hover {
+        color: $darkviolet;
+      } 
+}   
+  
+

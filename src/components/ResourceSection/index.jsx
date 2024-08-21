@@ -37,6 +37,7 @@ const ResourceSection = ({ resources }) => {
         <div className="resource-section">
             {resources.map((resource, index) => (
                 <div key={index} className="resource-item">
+                    <img src={resource.resourceImg} alt={resource.resourceImgClass} className="resource-image" />
                     <h3>{resource.title}</h3>
                     <p>{resource.description}</p>
                     {resource.isQuiz ? (

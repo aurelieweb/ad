@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 
-
 function CalendlyPage() {
   useEffect(() => {
+    // Chargement du script Zcal
     const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.src = "https://static.zcal.co/embed/v1/embed.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -14,15 +14,13 @@ function CalendlyPage() {
   }, []);
 
   return (
-    <div className="calendly-page">
+    <div className="zcal-page">
       <h1>Planifiez votre rendez-vous</h1>
-      <div className="calendly-inline-widget" 
-           data-url="https://calendly.com/aureliedemetrio?hide_landing_page_details=1&hide_gdpr_banner=1&text_color=1E233B&primary_color=ffd4ca"
-           style={{ minWidth: "320px", height: "700px" }}>
+      <div className="zcal-inline-widget">
+        <a href="https://zcal.co/i/2wtNiNvz">Discutons de votre projet (30min) - Schedule a meeting</a>
       </div>
     </div>
   );
 }
 
 export default CalendlyPage;
-

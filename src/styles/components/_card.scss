@@ -19,13 +19,14 @@
     }
 }
 
-.card__content-img{
+/*.card__content-img{
     width: 100%;
     height: 200px;
     border-radius: 10px 10px 0 0;
-}
+}*/
 
 .card-link{
+    margin: 50px 0;
     width: 30%;
     text-decoration: none;
 
@@ -36,27 +37,48 @@
     .card{
         width: 100%;
         height: 100%;
-        background: $darkviolet;
+        background: $darkgreen;
         box-shadow: $box-shadow-card;
 
         &__content{
             padding: 0;
             color: white;
+
+            &-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 50px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: $violet;
+                color: $pink;
+
+                .service-icon{
+                    font-size: 60px;
+                    
+                }
+            }
+
             &-text{
                 display: none;
                 margin-bottom: 10px;
                 width: 100%;
+
                 div{
                     padding:0 20px;
                 }
 
 
-                p{
+                li{
                     margin: 0 0 10PX 0;
+                    list-style: none;
                 }
             }
             h3{
-                height: 40px;
+                height: 50px;
                 color:$pink;
             }
         }
@@ -87,21 +109,23 @@
         height: 100%;
         text-align: center;
         padding: 10px;
-        color: black;
+        color: $green;
 
         @include mobile{
             width: 100%;
         }
 
         &-text{
+            width: 100%;
             opacity: 0.65;
             margin-bottom: 20px;
             text-align: left;
+            padding-left: 20px;
         }
 
         h3{
             margin: 10px;
-            color:$pink;
+            color: $green;
         }
 
         &-prestation{
@@ -122,13 +146,13 @@
                         opacity: 1;
                     }
                     .icon-times{
-                        color: $violet;
+                        color: $darkviolet;
                         opacity: 1;
                     }
             }   
                 p{
                     width: 80%;
-                    opacity: 0.75;
+                    opacity: 0.9;
                      margin: 0;
                      text-align: left;
                 };
@@ -137,7 +161,7 @@
 
         &-price{
             p {
-                color: black;
+                color: $green;
                 font-weight: bold;
                 opacity: 1;
 

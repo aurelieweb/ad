@@ -7,7 +7,7 @@
     align-items: center;
     padding: 20px;
     background: $darkgreen;
-    color: white;
+    color: $green;
     width: calc(100% - 40px);
 
     @include mobile{
@@ -50,7 +50,7 @@
             &-link{
                 opacity: 0.9;
                 margin: 2.5px;
-                color: $green;           
+                color: $pink;           
             }
 
             &:hover {
@@ -73,7 +73,7 @@
     align-items: center;
     width: 35px;
     height: 35px;
-    background-color: $green;
+    background-color: $pink;
     border-radius: 50%;
     &:hover {
         background-color: $violet;

@@ -6,23 +6,29 @@ import '../../styles/styles.scss';
 const resources = [
     {
         title: "Votre Stratégie de Référencement Local est-elle Optimale ?",
-        description: "Participez à notre quiz gratuit pour évaluer votre stratégie de référencement local et recevez un guide personnalisé avec des conseils pratiques adaptés à vos résultats.",
+        description: "Participez à notre quiz gratuit pour évaluer votre stratégie de référencement local. Recevez un guide personnalisé avec des conseils sur les bonnes pratiques pour améliorer vos résultats dans les moteurs de recherche.",
         link: 'mB16ee', // Utilisez seulement l'ID du formulaire ici
         ctaText: "Répondre au Quiz",
+        resourceImg:"./img/imgResource/AurelieDemetrio_Strategie_Referencement_Local.jpeg",
+        resourceImgClass:"test",
         isQuiz: true
     },
     {
-        title: "Guide SEO pour les Professionnels du Bâtiment",
-        description: "Téléchargez notre guide complet pour améliorer votre SEO et attirer plus de clients en ligne. Des conseils pratiques et des stratégies éprouvées pour les architectes, ingénieurs et artisans.",
+        title: "Comment améliorer son référencement pour les Professionnels du Bâtiment et les Architectes",
+        description: "Téléchargez notre guide gratuit pour améliorer votre SEO et attirer plus de clients en ligne. Des conseils pratiques et des stratégies éprouvées pour les architectes et professionnels du bâtiment.",
         link: '31EWJ4',
         ctaText: "Télécharger notre guide",
+        resourceImg:"./img/imgResource/AurelieDemetrio_guide_seo.jpeg",
+        resourceImgClass:"test",
         isQuiz: true
     },
     {
-        title: "Tuto: Rédiger des légendes insta avec ChatGPT",
-        description: "Consulter notre mini tuto vidéo. Apprenner à rédiger et bosster ses légendes insta grâce à ChatGpt",
+        title: "Tuto: Comment rédiger des légendes insta avec ChatGPT",
+        description: "Consulter notre mini tuto vidéo. Comment rédiger et booster ses légendes instagram avec ChatGpt",
         link: "https://youtube.com/shorts/O6kI11PhM2s?feature=share",
         ctaText: "Accéder au tuto",
+        resourceImg:"./img/imgResource/AurelieDemetrio_rediger_ses_legendes_instagram_avec_chatgpt.jpeg",
+        resourceImgClass:"test",
     },
 
 ];
@@ -32,10 +38,10 @@ const buttons = [
   ];
 
 function Resource() {
-    const pageTitle = "Notre expertise web à votre service";
-    const bannerText = "Que vous soyez architecte, ingénieur, professionnel du bâtiment, promoteur immobilier ou propriétaire de Airbnb, découvrez nos ressources gratuites pour optimiser votre présence en ligne et attirer plus de clients";
+    const pageTitle = "Mon expertise web à votre service";
+    const bannerText = "Architecte, professionnel du bâtiment et de l'immobilier, découvrez comment optimiser votre présence en ligne et attirer plus de clients";
     const bannerClass = "banner banner-prestation";
-    const bannerImg = require('../../assets/imgBanner2.jpg');
+    const bannerImg = require('../../assets/imgBanner4.jpeg');
     const bannerImgClass = "banner__image";
 
 

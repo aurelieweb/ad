@@ -1,7 +1,7 @@
 import React from "react";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from "../../components/Card";
-//import Button from '../../components/Button'
+import Button from '../../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus,faPlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,6 +20,7 @@ function Services() {
       detail: [
         "site web de 2 à 5 pages",
         "Design esthétique et professionnel",
+        "Mise en valeur de votre univers",
         "Gallerie (portfolio) pour présenter vos projets",
       ]
     },
@@ -38,10 +39,11 @@ function Services() {
       ]
     },
     {
-      name: "Autres prestations",
+      name: "Nos accompagnements",
       detail: [
-        "Charte graphique adaptée à votre logo existant",
-        "Création de pages professionnelles",
+        "Audit express de votre site",
+        'Coaching en one to one pour optimiser ton site',
+        "Un avis professionnel sur ton site"
       ]
     }
   ]
@@ -70,7 +72,7 @@ function Services() {
     <section id='service'>
       <div className="container__services"> 
         <h2>Nos services web sur mesure</h2>
-        <p className='container__section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services </strong>de manière claire et attrayante, d'atteindre de <strong>nouveaux clients</strong> potentiels, et de <strong>renforcer votre crédibilité</strong> dans un monde de plus en plus numérique.</p>
+        <p className='container__section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services </strong>de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
         <div className="container__section">
           <div>
             <h3>Pourquoi un site web? </h3>
@@ -137,9 +139,9 @@ function Services() {
       </div>
 
       <div className="container__services services-autre">
-        <h2>Autres prestations</h2>
+        <h2>Comment optimiser ton site web : Nos autres prestations</h2>
         <div className="container__section">
-          <p className='container__section-text'>Découvrez également nos autres prestations spécialisées pour renforcer votre présence en ligne et dynamiser votre entreprise sur les réseaux sociaux.</p></div>
+          <p className='container__section-text'>Vous avez besoin d'aide pour mettre en valeur votre savoir-faire? <strong>Je vous accompagne</strong> pour renforcer votre présence en ligne. Je mets mon expertise à votre service <strong>pour optimiser votre site</strong> et <strong>booster votre activité</strong>. Vous vous occupez de la gestion de votre site internet? Vous avez besoin d'un avis professionnel ou d'un acompagnement? Parlons-en.</p></div>
         {Object.keys(otherServicesByCustomerType).map((customerType, index) => (
   <div key={index} className='container__card'>
     <div className="service-div">
@@ -171,10 +173,13 @@ function Services() {
       />
     ))}
     </div>
+
     </div>
+
   </div>
 ))}
-
+    <div className="service-btn"><Link to="/Ressources"><Button className="button" text="Testez mon site web" /></Link>
+    </div>
       </div>
     </section>
   );

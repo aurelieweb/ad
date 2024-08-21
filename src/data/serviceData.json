@@ -111,33 +111,36 @@
     "price": "3000,00 €"
   },
   {
-    "name": "Charte graphique",
+    "name": "Audit \"Boost ton site\"",
     "type": "Autres prestations",
-    "customerType":"Autres prestations",
-    "description": "Renforcez l'identité visuelle de votre entreprise avec une charte graphique professionnelle, adaptée à votre logo existant. Obtenez une palette de couleurs harmonieuse et des typographies percutantes en seulement 2 à 3 semaines.",
+    "customerType":"Nos accompagnements",
+    "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez savoir ce qui fonctionne et ce qui doit être amélioré pour maximiser son impact ?Je vous propose un audit complet de votre site, avec un compte rendu détaillé des points à améliorer pour qu’il reflète vraiment votre expertise et attire plus de clients.",
     "buttonText": "Test",
     "prestation": [
-        { "nom": "Conception de charte graphique à partir de votre logo existant", "inclus": true },
-        { "nom": "Sélection d'une palette de couleur", "inclus": true },
-        { "nom": "Typographies", "inclus": true },
+        { "nom": "Analyse performance technique", "inclus": true },
+        { "nom": "Audit de l'architecture du site et de la navigation ", "inclus": true },
+        { "nom": "Analyse de contenu et de design", "inclus": true },
+        { "nom": "Audit des fonctionnalités", "inclus": true },
+        { "nom": "Rapport détaillé et recommandations", "inclus": true },
         { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service8.png",
-    "price": "500,00 €"
+    "price": "200,00 €"
   },
   {
-    "name": "Réseaux sociaux",
+    "name": "Coaching \"Pimpe ton site\"",
     "type": "Autres prestations",
-    "customerType":"Autres prestations",
-    "description": "Dynamisez votre présence sur les réseaux sociaux avec des pages professionnelles sur Facebook, Instagram et LinkedIn. Obtenez des profils complets et attrayants en seulement 2 à 3 semaines.",
+    "customerType":"Nos accompagnements",
+    "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
     "buttonText": "Test",
     "prestation": [
-      { "nom": "Création de pages professionnelles sur les principales plateformes de réseaux sociaux (Facebook, Instagram, LinkedIn)", "inclus": true },
-      { "nom": "Optimisation des profils avec des informations complètes, des photos de profil et des bannières attrayantes.", "inclus": true },
-      { "nom": "Intégration des liens vers le site web du client et d'autres informations pertinentes", "inclus": true },
+      { "nom": "Session d'évalution de tes besoins", "inclus": true },
+      { "nom": "Analyse de ton site ensemble et priorisation des problèmes", "inclus": true },
+      { "nom": "Coaching pratique sur l'optimisation de ton site en fonction des problèmes identifiés ", "inclus": true },
+      { "nom": "Livrables : Compte-rendu de notre session et Plan d'action", "inclus": true },
       { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service7.png",
-    "price": "200,00€"
+    "price": "299,00€"
   }
 ]

@@ -102,6 +102,7 @@
 
 
 .banner-prestation{
+
     display: flex;
     width: 100%;
     margin-top: 100px;
@@ -116,33 +117,55 @@
         height: auto;
     }
 
+    .background{
+        flex-direction: row;
+        height: 50vh;
+
+        @include tablet{
+            height: 400px;
+        }
+        @include mobile{
+            margin-top: 120px;
+            flex-direction: column;
+        }
+    }
+
     .banner__content{
-        background: rgba(44, 66, 63, 0.7);
+        //background: rgba(44, 66, 63, 0.7);
+        background: $darkgreen;
+        //opacity: 0.2;
     }
 
     .banner__div{
         display: flex;
-        height: 80vh;
-        position: absolute;
+        width: 40%;
+        height: 100%;
+        //position: absolute;
         z-index: 6;
+
+        @include mobile{
+            width: 100%;
+        }
     }
 
     .banner__image{
-        width: 100%;
-        height: 80vh;
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
 
 
         @include mobile{
             width: 100%;
+            height: 400px;
         }
 
     }
     .banner__content-prestation{
         h1{
-            width: 60%;
+            width: 90%;
         }
         .banner__content-text{
-            width: 60%;
+            width: 90%;
         }
     }
 
@@ -181,6 +204,14 @@
         @include mobile{
             padding: 0;
             margin-left: 0;
+            top: 20px;
+            height: 200px;
+            left: 12px;
+        }
+
+        @include tablet{
+            top: 50px;
+            max-height: 300px;
         }
         
     }
@@ -196,7 +227,7 @@
 
         @include mobile{
             padding: 20px;
-            margin-top: 100px;
+            margin-top: 200px;
         }
 
         &-text{
@@ -207,6 +238,10 @@
             }
 
             p{
+                @include mobile{
+                    color: $violet;   
+                }
+
                 @include tablet {
                     font-size: 16px;
                 }
@@ -222,7 +257,7 @@
             }
 
             @include mobile{
-
+                color: $violet;
                 width: 100%;
             }
         }
@@ -238,12 +273,12 @@
 
     @include mobile{
         max-width: 200px;
-        top: 100px;
+        top: 200px;
         right: 0;
     }
 
     @include tablet{
-        max-width: 180px;
+        max-width: 200px;
     }
 }
 
@@ -261,6 +296,12 @@
     //background: rgba(44, 66, 63, 0.7);
     width: 100%;
     position: relative;
+
+    @include mobile {
+        flex-direction: column;
+        bottom: 100px;
+
+    }
 
 }
 

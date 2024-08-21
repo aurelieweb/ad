@@ -23,6 +23,7 @@
 
         .service-div{
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             padding: 20px;
 
@@ -60,8 +61,10 @@
 
             .container__card-div{
                 display: flex;
+                justify-content: center;
                 align-items: flex-start;
                 gap: 20px;
+                width: 100%;
 
                 @include tablet {
                     justify-content: center;
@@ -75,15 +78,11 @@
         }
         
         .card{
-            background: $violet;
+            background: $darkgreen;
             //color: $darkgreen;
-            width: 300px;
+            width: 45%;
             height: 100%;
             border: 2px solid white;
-
-            @include tablet{
-                width: 45%;
-            }
 
             @include mobile{
                 width: 100%;
@@ -202,8 +201,13 @@
 
 /*.services-autre{
     .container__card{
-        padding: 10px;
-        flex-direction: row;
-        justify-content: space-around;
+        h3{
+            display: none;
+        }
     }
+}*/
+
+/*.service-btn{
+    display: flex;
+    gap: 20px;
 }*/
