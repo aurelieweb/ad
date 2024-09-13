@@ -177,11 +177,10 @@
     padding: 50px;
     align-items: flex-end;
     display: flex;
-    width: 80%;
     //justify-content: center;
 
     @include tablet{
-        
+        width: 80%;
         padding: 30px 0 30px 0;
     }
 

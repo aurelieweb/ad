@@ -175,8 +175,6 @@ function Services() {
 
   </div>
 ))}
-    <div className="service-btn"><Link to="/Ressources"><Button className="button" text="Testez mon site web" /></Link>
-    </div>
       </div>
     </section>
   );

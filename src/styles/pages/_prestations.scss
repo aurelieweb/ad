@@ -154,7 +154,7 @@
     }
 
     &-icon{
-        color : $violet;
+        color : $darkviolet;
         margin-right: 20px;
 
         @include mobile{
@@ -179,7 +179,7 @@
     width: 40px;
     height: 40px;
     font-size: 18px;
-    color: $violet;
+    color: $darkviolet;
 
     @include mobile{
         width: 30px;

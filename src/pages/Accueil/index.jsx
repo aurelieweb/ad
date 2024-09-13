@@ -59,9 +59,14 @@ function Accueil() {
         bannerText={bannerText}
         bannerImgClass={bannerImgClass}
         buttons={buttons} />
+
+
       
       <section className='home__services'>
         <h2>Des sites web sur mesure pour Architecte et Pros du Bâtiment:<br/> Valorisez votre expertise en ligne </h2>
+        <p>Avec plus de <strong>20 ans d’expérience</strong> dans la gestion d’entreprise <strong>dans le bâtiment</strong>, je comprends les défis uniques auxquels vous faites face.</p>
+        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, intégrer des modules de demande d’intervention pour gagner du temps, ou concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne. </p>
+        <p>Ensemble, développons votre présence numérique avec des <strong>solutions sur mesure qui reflètent votre métier et boostent votre activité.</strong></p>
         <div className='container__card'>
           {servicesType.map((service, index) => (
             <Link className='card-link' key={index} to="/prestations">
@@ -79,9 +84,6 @@ function Accueil() {
             </Link>
           ))}
         </div>
-        <p>Avec plus de <strong>20 ans d’expérience</strong> dans la gestion d’entreprise <strong>dans le bâtiment</strong>, je comprends les défis uniques auxquels vous faites face.</p>
-        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, intégrer des modules de demande d’intervention pour gagner du temps, ou concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne. </p>
-        <p>Ensemble, développons votre présence numérique avec des <strong>solutions sur mesure qui reflètent votre métier et boostent votre activité.</strong></p>
         
       </section>
 

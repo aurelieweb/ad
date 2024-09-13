@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: $darkgreen;
-    color: $green;
+    background: $black;
+    color: white;
     width: calc(100% - 40px);
 
     @include mobile{
@@ -22,7 +22,7 @@
         gap: 20px;
 
         a{ 
-            color: $darkgreen;
+            color: $black;
             font-size: 24px;
             transition: transform 0.3s;       
         } 
@@ -50,7 +50,7 @@
             &-link{
                 opacity: 0.9;
                 margin: 2.5px;
-                color: $pink;           
+                color: $white;           
             }
 
             &:hover {
@@ -73,7 +73,7 @@
     align-items: center;
     width: 35px;
     height: 35px;
-    background-color: $pink;
+    background-color: $white;
     border-radius: 50%;
     &:hover {
         background-color: $violet;
