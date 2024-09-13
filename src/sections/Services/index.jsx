@@ -32,13 +32,6 @@ function Services() {
       ]
     },
     {
-      name: "Immobilier",
-      detail: [
-        "Deux options version : one-page ou site vitrine",
-        "Mise en valeur de votre bien",
-      ]
-    },
-    {
       name: "Nos accompagnements",
       detail: [
         "Audit express de votre site",
@@ -128,7 +121,9 @@ function Services() {
           imageUrl={service.imageUrl}
           servicePrice={service.price}
           description={service.description}
+          buttonText={service.buttonText}
           prestation={service.prestation}
+          link={service.link}
         />
       ))}
       </div>
@@ -169,7 +164,9 @@ function Services() {
         imageUrl={service.imageUrl}
         servicePrice={service.price}
         description={service.description}
+        buttonText={service.buttonText}
         prestation={service.prestation}
+        link={service.link}
       />
     ))}
     </div>

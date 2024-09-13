@@ -7,7 +7,7 @@ import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
 import FreebiePopup from '../../components/FreebiePopup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenRuler, faCompassDrafting, faHouseChimneyWindow, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPenRuler, faCompassDrafting, faHandshake, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 import imgPortrait from '../../assets/imgPortrait.png';
 
@@ -30,11 +30,11 @@ const servicesType = [
     icon: faPenRuler,
   },
   {
-    name: "Immobilier",
+    name: "Accompagnement",
     content: [
-      "Création de site one page ou site vitrine Immobilier ou location de courte durée",
+      "Accompagnement dans la création ou l'optimisation de ton site",
     ],
-    icon: faHouseChimneyWindow,
+    icon: faHandshake,
   }
 ];
 

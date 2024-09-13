@@ -4,7 +4,6 @@
     "type": "Site web",
     "customerType":"Architecte",
     "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
-    "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
@@ -19,6 +18,8 @@
       { "nom": "Délai : 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service6.png",
+    "buttonText": "On discute de ton projet?",
+    "link":"aureliedemetrio.fr",
     "price": "2500,00 €"
   },
   {
@@ -26,7 +27,7 @@
     "type": "Site web",
     "customerType":"Bâtiment",
     "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
-    "buttonText": "Test",
+
     "prestation": [
       { "nom": "Nombre de page : 1", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
@@ -41,6 +42,8 @@
       { "nom": "Délai : 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service6.png",
+    "buttonText": "On discute de ton projet?",
+    "link":"/Calendly",
     "price": "1299,00 €"
   },
   {
@@ -48,7 +51,6 @@
     "type": "Site web",
     "customerType":"Bâtiment",
     "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
-    "buttonText": "Test",
     "prestation": [
       { "nom": "Nombre de page : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu média (à fournir)", "inclus": true },
@@ -64,50 +66,8 @@
       { "nom": "Délai : 4 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service5.png",
-    "price": "3000,00 €"
-  },
-  {
-    "name": "One page",
-    "type": "Site web",
-    "customerType":"Immobilier",
-    "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
-    "buttonText": "Test",
-    "prestation": [
-      { "nom": "Nombre de page : 1", "inclus": true },
-      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
-      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
-      { "nom": "Formulaire de contact", "inclus": true },
-      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
-      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
-      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
-      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
-      { "nom": "Page mentions légales RGPD", "inclus": true },
-      { "nom": "Maquette", "inclus": false },
-      { "nom": "Délai : 2 semaines", "inclus": true }
-    ],
-    "imageUrl": "./img/service6.png",
-    "price": "1299,00 €"
-  },
-  {
-    "name": "Site vitrine",
-    "type": "Site web",
-    "customerType":"Immobilier",
-    "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
-    "buttonText": "Test",
-    "prestation": [
-      { "nom": "Nombre de page : 2 à 5", "inclus": true },
-      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
-      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
-      { "nom": "Formulaire de contact", "inclus": true },
-      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
-      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
-      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
-      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
-      { "nom": "Page mentions légales RGPD", "inclus": true },
-      { "nom": "Maquette", "inclus": false },
-      { "nom": "Délai : 6 semaines", "inclus": true }
-    ],
-    "imageUrl": "./img/service5.png",
+    "buttonText": "On discute de ton projet?",
+    "link":"/Calendly",
     "price": "3000,00 €"
   },
   {
@@ -115,7 +75,6 @@
     "type": "Autres prestations",
     "customerType":"Nos accompagnements",
     "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez savoir ce qui fonctionne et ce qui doit être amélioré pour maximiser son impact ?Je vous propose un audit complet de votre site, avec un compte rendu détaillé des points à améliorer pour qu’il reflète vraiment votre expertise et attire plus de clients.",
-    "buttonText": "Test",
     "prestation": [
         { "nom": "Analyse performance technique", "inclus": true },
         { "nom": "Audit de l'architecture du site et de la navigation ", "inclus": true },
@@ -125,6 +84,8 @@
         { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service8.png",
+    "buttonText": "Je booste mon site",
+    "link":"aureliedemetrio.fr",
     "price": "200,00 €"
   },
   {
@@ -132,7 +93,6 @@
     "type": "Autres prestations",
     "customerType":"Nos accompagnements",
     "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
-    "buttonText": "Test",
     "prestation": [
       { "nom": "Session d'évalution de tes besoins", "inclus": true },
       { "nom": "Analyse de ton site ensemble et priorisation des problèmes", "inclus": true },
@@ -141,6 +101,8 @@
       { "nom": "Délai : 1 à 2 semaines", "inclus": true }
     ],
     "imageUrl": "./img/service7.png",
+    "buttonText": "Je pimpe mon site",
+    "link":"/Coaching",
     "price": "299,00€"
   }
 ]
