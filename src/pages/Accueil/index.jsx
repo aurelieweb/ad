@@ -38,7 +38,7 @@ const buttons = [
 
 function Accueil() {
   const pageTitle = "Création de sites web : Architectes, Entreprise Bâtiment et Immobilier";
-  const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'Agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
+  const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
   const bannerImg = require('../../assets/imgPortrait.png');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
@@ -58,7 +58,7 @@ function Accueil() {
       <section className='home__services'>
         <h2>Des sites web sur mesure pour Architecte et Pros du Bâtiment:<br /> Valorisez votre expertise en ligne </h2>
         <p>Avec plus de <strong>20 ans d’expérience</strong> dans la gestion d’entreprise <strong>dans le bâtiment</strong>, je comprends les défis uniques auxquels vous faites face.</p>
-        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, iautomatiser vos process pour faire gagner du temps, concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne.</p>
+        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, automatiser vos process pour faire gagner du temps, concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne.</p>
         <p>Ensemble, développons votre présence numérique avec des <strong>solutions sur mesure qui reflètent votre métier et boostent votre activité.</strong></p>
         
         <div className='container__card'>

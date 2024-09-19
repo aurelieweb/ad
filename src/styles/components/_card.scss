@@ -30,6 +30,7 @@
     text-decoration: none;
 
     @include mobile{
+        margin: 20px 0;
 
         width: 100%;
     }
@@ -70,6 +71,12 @@
 
                 div{
                     padding:0 20px;
+                }
+
+                ul{
+                    @include mobile{
+                        padding-left: 20px;
+                    }
                 }
 
 
@@ -167,7 +174,7 @@
                 opacity: 1;
 
                 @include mobile {
-                    margin: 0;
+                    margin: 20px;
                 }
             }
         }   

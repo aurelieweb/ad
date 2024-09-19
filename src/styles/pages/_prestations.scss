@@ -1,3 +1,10 @@
+#service{
+
+    @include mobile{
+        margin-top: 50px;
+    }
+}
+
 .container__services{
     display: flex;
     justify-content: center;
