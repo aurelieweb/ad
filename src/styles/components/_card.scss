@@ -3,11 +3,10 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
     flex-wrap: wrap;
     gap: 20px;
     //padding: 20px;
-    border-radius: 20px;
+    //border-radius: 20px;
     width: 90%;
     margin-top: 50px;
 
@@ -27,7 +26,7 @@
 
 .card-link{
     margin: 50px 0;
-    width: 30%;
+    width: 45%;
     text-decoration: none;
 
     @include mobile{
@@ -35,6 +34,8 @@
         width: 100%;
     }
     .card{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         background: $darkgreen;
@@ -63,7 +64,7 @@
             }
 
             &-text{
-                display: none;
+
                 margin-bottom: 10px;
                 width: 100%;
 
@@ -79,7 +80,7 @@
             }
             h3{
                 height: 50px;
-                color:$pink;
+                color:$white;
             }
         }
     }
@@ -88,8 +89,8 @@
 /*Card*/
 .card {
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
+    flex-direction: row;
+    //border-radius: 10px;
     transition: transform 0.3s;
     width: 30%;
     opacity: 1;
@@ -180,4 +181,8 @@
     .card{
         width: auto;
     }
+}
+
+.service-image{
+    width: 100%;
 }

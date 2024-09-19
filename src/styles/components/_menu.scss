@@ -36,12 +36,12 @@
         height: 40px;
 
         &:hover {
-            border-bottom: 5px solid $green;
+            border-bottom: 5px solid $pink;
         }
         
         &-link{
             text-decoration: none;
-            color: $darkgreen;
+            color: $white;
             font-weight: bold;
             display: flex;
             justify-content: center;

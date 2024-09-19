@@ -16,19 +16,19 @@ function Services() {
 
   const customerTypeDetail = [
     {
-      name: "Architecte",
+      name: "Création de",
       detail: [
-        "site web de 2 à 5 pages",
-        "Design esthétique et professionnel",
-        "Mise en valeur de votre univers",
-        "Gallerie (portfolio) pour présenter vos projets",
+        
       ]
     },
     {
-      name: "Bâtiment",
+      name: "Bâtiment & Architecte",
       detail: [
         "Deux options version:  one-page ou site vitrine",
-        "Rédaction de contenu inclus dans l'offre",
+        "Design esthétique et professionnel",
+        "Mise en valeur de votre univers",
+        "Gallerie (portfolio) pour présenter vos projets",
+        "Offre spéciale Artisan: Rédaction de contenu inclus dans l'offre",
       ]
     },
     {

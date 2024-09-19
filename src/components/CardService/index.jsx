@@ -2,14 +2,15 @@ import React from 'react';
 import '../../styles/styles.scss';
 
 
-function CardService({ serviceName, icon, description }) {
+function CardService({ serviceName, img, description }) {
   return (
     <div className="card">
+      {img}  {/* L'icône est déjà JSX, pas besoin d'utiliser <i> */}
       <div className="card__content">
         {/* Affichage de l'icône passé en tant que prop */}
-        <span className='card__content-icon'>
-          {icon}  {/* L'icône est déjà JSX, pas besoin d'utiliser <i> */}
-        </span>
+
+        
+        
         <h3>{serviceName}</h3>
         <div className='card__content-text'>
         

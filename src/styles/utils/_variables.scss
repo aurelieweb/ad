@@ -8,7 +8,7 @@ $breakpoints: (
 //Colors
 $black: #000000;
 
-$darkgreen: black;
+$darkgreen: #2c423f;
 $green: #efe3dd;
 $white: white;
 $darkviolet: #f25f5c;
@@ -27,5 +27,5 @@ $box-shadow-card: 0px 1px 2px $darkgreen;
 
 $linearGradient: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));
 $linearGradient2: linear-gradient(to bottom right, $green, transparent);
-$linearGradient3: linear-gradient(to bottom right, darken($darkviolet, 5), lighten($violet, 5));
+$linearGradient3: linear-gradient(to bottom right, darken($pink, 5), lighten($violet, 5));
 $linearGradient4: linear-gradient(to bottom right, lighten($pink, 5), lighten($violet, 10));

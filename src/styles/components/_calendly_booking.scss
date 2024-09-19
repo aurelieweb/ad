@@ -5,10 +5,10 @@
     align-items: center;
     height: 250px;
     max-width: 350px;
-    background: $darkviolet;
+    background: $darkgreen;
     border-radius: 10px;
     position: relative;
-    color: $green;
+    color: $white;
 
     @include tablet {
         width: 300px;
@@ -29,13 +29,13 @@
         width: 80px;
         height: 80px;
         background: $black;
-        color: $pink;
+        color: $white;
         font-size: 36px;
     }
 
     a{
         text-decoration: none;
-        color: $darkviolet;
+        color: $black;
         font-size: 24px;
     }
 

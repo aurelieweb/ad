@@ -43,7 +43,7 @@
         }
 
         &-text{
-            color: $pink;
+            color: $white;
             font-size: 21px;
             display: flex;
             flex-direction: column;
@@ -70,7 +70,7 @@
             font-family: 'Roboto';
             text-align: left;
             font-size: 36px;
-            color:$pink;
+            color:$white;
             width: auto;
 
             @include tablet{
@@ -119,7 +119,7 @@
 
     .background{
         flex-direction: row;
-        height: 90vh;
+        //height: 90vh;
 
         @include tablet{
             height: 400px;

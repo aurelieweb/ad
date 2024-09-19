@@ -7,7 +7,7 @@
     align-items: center;
     padding: 20px;
     background: $black;
-    color: white;
+    color: $white;
     width: calc(100% - 40px);
 
     @include mobile{
@@ -50,7 +50,8 @@
             &-link{
                 opacity: 0.9;
                 margin: 2.5px;
-                color: $white;           
+                color: $white;       
+                opacity: 0.9;    
             }
 
             &:hover {
@@ -71,8 +72,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     background-color: $white;
     border-radius: 50%;
     &:hover {
@@ -86,6 +87,7 @@
     align-items: center;
     gap: 20px;
     text-decoration: none;
+    margin-top: 30px;
 
     @include mobile{
         flex-direction: column;

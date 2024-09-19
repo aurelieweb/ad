@@ -6,36 +6,30 @@ import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
 import FreebiePopup from '../../components/FreebiePopup';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenRuler, faCompassDrafting, faHandshake, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 import imgPortrait from '../../assets/imgPortrait.png';
 
 const projetData = require('../../data/projetData.json');
 const servicesType = [
   {
-    name: "Architecte",
+    name: "Création de site",
     content: [
       "Création de portfolio",
-      "Mise en valeur de vos projets",
+      "Création de site One page ou Vitrine",
+      "Mise en place de page de vente",
+      "Mise en valeur de vos projets et savoir-faire",
     ],
-    icon: faCompassDrafting,
+    img: require('../../assets/img_creation_site_web.jpeg'), // Image à la place de l'icône
   },
   {
-    name: "Bâtiment",
+    name: "Accompagnement & Coaching",
     content: [
-      "Création de site one page ou site vitrine",
-      "Offre clé en main",
-    ],
-    icon: faPenRuler,
-  },
-  {
-    name: "Accompagnement",
-    content: [
+      "Audit de site",
+      "Guide de création de site",
       "Accompagnement dans la création ou l'optimisation de ton site",
     ],
-    icon: faHandshake,
-  }
+    img: require('../../assets/img_coaching_creation_site_web.jpeg'), // Image à la place de l'icône
+  },
 ];
 
 const buttons = [
@@ -46,37 +40,37 @@ function Accueil() {
   const pageTitle = "Création de sites web : Architectes, Entreprise Bâtiment et Immobilier";
   const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'Agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
   const bannerImg = require('../../assets/imgPortrait.png');
-  const bannerClass = "banner banner-presentation"
+  const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
   return (
     <div className='main'>
-      <FreebiePopup/>
+      <FreebiePopup />
       <Banner
         pageTitle={pageTitle}
         bannerClass={bannerClass}
         bannerImg={bannerImg}
         bannerText={bannerText}
         bannerImgClass={bannerImgClass}
-        buttons={buttons} />
+        buttons={buttons}
+      />
 
-
-      
       <section className='home__services'>
-        <h2>Des sites web sur mesure pour Architecte et Pros du Bâtiment:<br/> Valorisez votre expertise en ligne </h2>
+        <h2>Des sites web sur mesure pour Architecte et Pros du Bâtiment:<br /> Valorisez votre expertise en ligne </h2>
         <p>Avec plus de <strong>20 ans d’expérience</strong> dans la gestion d’entreprise <strong>dans le bâtiment</strong>, je comprends les défis uniques auxquels vous faites face.</p>
-        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, intégrer des modules de demande d’intervention pour gagner du temps, ou concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne. </p>
+        <p>Je crée des <strong>sites web</strong> personnalisés, <strong>pensés pour les architectes et les professionnels du bâtiment</strong>, afin de <strong>mettre en valeur votre savoir-faire</strong> et de simplifier votre quotidien. Que ce soit pour créer un site web professionnel d’architecte, iautomatiser vos process pour faire gagner du temps, concevoir des pages de vente efficaces, je suis là pour transformer votre expertise en succès en ligne.</p>
         <p>Ensemble, développons votre présence numérique avec des <strong>solutions sur mesure qui reflètent votre métier et boostent votre activité.</strong></p>
+        
         <div className='container__card'>
           {servicesType.map((service, index) => (
             <Link className='card-link' key={index} to="/prestations">
               <CardService
                 serviceName={service.name}
-                icon={<FontAwesomeIcon icon={service.icon} className='service-icon' />}
+                img={<img src={service.img} alt={service.name} className='service-image' />} // Image à la place de l'icône
                 description={
                   <ul>
                     {service.content.map((item, idx) => (
-                      <li className="service-icon-list" key={idx}><FontAwesomeIcon className='container__section-icon' icon={faPlay} /> {item}</li>
+                      <li className="service-icon-list" key={idx}>{item}</li>
                     ))}
                   </ul>
                 }
@@ -84,21 +78,17 @@ function Accueil() {
             </Link>
           ))}
         </div>
-        
       </section>
 
       <Gallery projects={projetData} />
 
       <section className='home'>
         <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale" />
-        
         <div className='home__apropos'>
           <h2>A propos</h2>
           <p>Je suis développeuse web spécialisée dans le secteur du bâtiment et de l’immobilier, avec 20 ans d'expérience sur le terrain.</p>
           <p>Mon objectif : créer des sites sur mesure qui <span className='text-color'><strong>mettent en valeur votre expertise, simplifient vos processus, et boostent votre activité.</strong></span></p>
-
           <p>Chaque projet est unique, tout comme votre entreprise. J’écoute vos besoins pour concevoir des formulaires, pages de vente, et portfolios personnalisés, qui vous aideront à <span className='text-color'><strong>attirer vos clients idéaux</strong></span> et à faire évoluer votre business.</p>
-
           <p>Offrez à votre savoir faire la visbilité qu'il mérite! </p>
           <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus" /></Link>
         </div>
