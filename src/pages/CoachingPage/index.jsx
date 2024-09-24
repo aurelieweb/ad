@@ -1,6 +1,19 @@
 import React, { useEffect } from "react";
+import Button from '../../components/Button';
+import Banner from '../../components/Banner';
+
+const buttons = [
+  { text: 'Consultation gratuite', link: '/Calendly' }
+];
 
 function CoachingPage() {
+  const pageTitle = "Pimpe ton site : Le coaching qui va transfomer ton site";
+  const bannerText = "A modifier";
+  const bannerImg = require('../../assets/imgPortrait.png');
+  const bannerClass = "banner banner-presentation";
+  const bannerImgClass = "banner__img-presentation";
+
+
   useEffect(() => {
     // Chargement du script Zcal
     const script = document.createElement("script");
@@ -14,13 +27,25 @@ function CoachingPage() {
   }, []);
 
   return (
+    <div className='main'>
+    <Banner
+      pageTitle={pageTitle}
+      bannerClass={bannerClass}
+      bannerImg={bannerImg}
+      bannerText={bannerText}
+      bannerImgClass={bannerImgClass}
+      buttons={buttons}
+    />
     <div className="zcal-page">
       <h1>Planifiez votre rendez-vous</h1>
       <div className="zcal-inline-widget">
         <a href="https://zcal.co/i/C-ofsADs">Pimpe ton site - Schedule a meeting</a>
       </div>
     </div>
+    </div>
   );
+
 }
+
 
 export default CoachingPage;

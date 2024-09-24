@@ -1,0 +1,40 @@
+.toggle-button {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .advice-container {
+    display: flex;
+    
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .testimonial-stars {
+    margin-top: 10px;
+  }
+  
+  .star-filled {
+    color: gold;
+  }
+  
+  .star-empty {
+    color: lightgray;
+  }
+  
