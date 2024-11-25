@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Card from "../../components/Card";
-import Button from '../../components/Button'
+//import Button from '../../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus,faPlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,7 +16,7 @@ function Services() {
 
   const customerTypeDetail = [
     {
-      name: "Création de",
+      name: "Création de site",
       detail: [
         
       ]

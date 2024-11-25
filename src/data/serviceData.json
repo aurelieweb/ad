@@ -80,5 +80,22 @@
     "buttonText": "Je pimpe mon site",
     "link":"/Coaching",
     "price": "299,00€"
+  },
+  {
+    "name": "Coaching \"Kiffe ton Site\"",
+    "type": "Autres prestations",
+    "customerType":"Nos accompagnements",
+    "description": "Vous êtes enterprenneur, architecte ou coach, et vous soushaitez créer vous-même votre site internet ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
+    "prestation": [
+      { "nom": "Ebook", "inclus": true },
+      { "nom": "Workbook", "inclus": true },
+      { "nom": "Tuo vidéo - A venir", "inclus": true },
+      { "nom": "Accompagnement", "inclus": true },
+      { "nom": "Délai : Commencer maintenant", "inclus": true }
+    ],
+    "imageUrl": "./img/service7.png",
+    "buttonText": "Je kiffe mon site",
+    "link":"/Kiffetonsite",
+    "price": "A partir de 149,00€"
   }
 ]

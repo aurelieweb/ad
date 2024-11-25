@@ -1,0 +1,11 @@
+.container__card-div {
+    display: flex;
+    height: 400px;
+
+    .card{
+    background: #2c423f;
+    width: 45%;
+    height: 100%;
+    border: 2px solid white;
+    }
+}
