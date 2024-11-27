@@ -1,11 +1,28 @@
-.container__card-div {
-    display: flex;
-    height: 400px;
 
-    .card{
-    background: #2c423f;
-    width: 45%;
-    height: 100%;
-    border: 2px solid white;
+
+.pagevente__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0;
+    .container__card-div {
+        display: flex;
+        height: 400px;
+        align-items: center;
+        justify-content: space-around;
+        .card{
+        background: #2c423f;
+        width: 30%;
+        height: 100%;
+        border: 2px solid white;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        } 
     }
 }

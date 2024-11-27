@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 import Testimonies from '../../components/Testimonies';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import Faq from "../../components/Faq";
 
 const buttons = [
   { text: 'Consultation gratuite', link: '/Calendly' }
@@ -43,6 +44,7 @@ function kiffetonsite() {
         servicePrice: "99,00€",
         prestation: [
             { "nom": "eBook interactif", "inclus": true },
+            { "nom": "Prompt Rédaction de contenu", "inclus": true },
             { "nom": "Workbooks détaillés", "inclus": true }
         ],
         buttonText: "Commander",
@@ -144,8 +146,9 @@ function kiffetonsite() {
       </div>
     </div>
       <div className="pagevente__section">
-      <h2 className="section-title">Pourquoi choisir "Kiffe ton site" ?</h2>
+      <h2 className="section-title">Ils donnent leur avis</h2>
       <Testimonies />
+      <Faq />
       </div>
     </div>
   );

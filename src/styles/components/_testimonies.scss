@@ -6,7 +6,7 @@
   
   .advice-container {
     display: flex;
-    
+    margin-bottom: 50px;
     gap: 20px;
   }
   
@@ -19,10 +19,11 @@
   
   .testimonial-text {
     font-style: italic;
+    margin: 0;
   }
   
   .testimonial-author {
-    margin-top: 10px;
+    margin: 10px 0;
     font-weight: bold;
   }
   

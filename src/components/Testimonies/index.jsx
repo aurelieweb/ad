@@ -14,13 +14,13 @@ const adviceData = [
       name: 'Elodie',
       advice: 'Aurélie a littéralement transformé mon site ! En une session, elle m\'a montré ce qui clochait et comment y remédier. J\'ai gagné en visibilité et reçois enfin des demandes de contact depuis mon site. Merci encore pour ta disponibilité!',
       note: 5,
-      date: '8 Septembre 2024'
+      date: '8 Novembre 2024'
     },
     { 
       name: 'Isabelle',
       advice: 'Je ne savais pas par où commencer pour améliorer mon site. Aurélie m\'a donné les clés pour structurer mon contenu et optimiser mes pages. Aurélie à la capacité à rendre les choses compliquées tellement simples. Mon site est plus pro maintenant. Merci',
       note: 5,
-      date: '20 Septembre 2024'
+      date: '20 Octobre 2024'
     },
     { 
       name: 'Marc',

@@ -42,9 +42,7 @@ function PimpeTonSite() {
               <p>"Pimpe ton site" est conçu pour les entrepreneurs qui ont créer leur propre site web.  Vous vous demandez peut-être : "Pourquoi mon site n'attire pas de visiteurs ?" ou "Comment améliorer mon site internet sans être expert ?" . J'ai la solution. Avec l'audit, on débusque les problèmes. Avec le plan d'action tu sais exactement suoi faire. Quant au coaching, on avance sur et explose tes bloquage   </p>
             </div>
             </div>
-            <div className='testimonies'>
-                < Testimonies/>
-            </div>
+            
             <div className='comprend'><h3>Ce que comprend "Pimpe ton site"</h3>
             <ul>
               <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} /> Un ebook pratique qui vous guide pour améliorer la performance de votre site par vous-même.</li>
@@ -72,6 +70,9 @@ function PimpeTonSite() {
           <p>299,00€</p>
           <p>Modalités de paiement : Explique que le paiement se fait via Stripe et que la réservation s’effectue via Zcal.</p>
         </div>
+        <div className='testimonies'>
+                < Testimonies/>
+            </div>
         < Faq/>
         < Button text="Passez à l'action" link="/Coaching" />
       </div>
