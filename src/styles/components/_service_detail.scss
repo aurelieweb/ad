@@ -1,0 +1,30 @@
+.service-detail {
+    display: flex;
+    //align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .service-detail__image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .service-detail__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-detail__content {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .image-left {
+    flex-direction: row; /* Image à gauche */
+  }
+  
+  .image-right {
+    flex-direction: row; /* Image à droite */
+  }
+  

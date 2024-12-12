@@ -6,10 +6,10 @@ button {
     background: $black;
     color: $white;
     border-radius: 10px;
-    border: 2px solid white;
     position: relative;
     z-index: 1;
     transition: transform 0.3s;
+    border: none;
 
     &:hover {
         color: $white;
@@ -18,7 +18,7 @@ button {
 
         &::after {
             //opacity: 0.75;
-            background-color: $violet;
+            background-color: $darkviolet;
         }
     }
     &::after {
@@ -28,12 +28,12 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        background:$black;
+
 //        opacity: 0.75;
         z-index: -1;
         border-radius: 10px;
         transition : opacity 250ms;
-        box-shadow: $box-shadows-hover;
+        //box-shadow: $box-shadows-hover;
     }   
 }
   

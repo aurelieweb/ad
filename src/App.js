@@ -8,7 +8,7 @@ import Realisations from './pages/Realisations';
 import Contact from './pages/Contact';
 import Calendly from './pages/CalendlyPage';
 import Coaching from './pages/CoachingPage';
-import PimpeTonSite from './pages/PimpeTonSite';
+import PimpeTonSite from './pages/PimpetonSite';
 import KiffeTonSite from './pages/Kiffetonsite';
 import Resource from './pages/Resource';
 import RGPD from './pages/rgpd';
@@ -34,7 +34,7 @@ function App() {
           <Route path="/Coaching" element={<Coaching />} />
           {/* Nouvelle route pour la page "Kiffe ton site" */}
           <Route path="/Kiffetonsite" element={<KiffeTonSite />} />
-          {/* Nouvelle route pour la page "Leadmagnet" */}
+          {/* Nouvelle route pour la page "Pimpe ton site" */}
           <Route path="/Pimpetonsite" element={<PimpeTonSite />} />
           {/* Nouvelle route pour la page "Leadmagnet" */}
           <Route path="/Ressources" element={<Resource />} />

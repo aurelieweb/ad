@@ -1,3 +1,53 @@
+.pagevente__section-card{
+    background: $darkgreen;
+
+    h2{
+        color: $white;
+        margin-top: 50px;
+    }
+
+    .container__card-div {
+        display: flex;
+        height: 400px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 50px;
+        
+        .card{
+        background: $white;
+        width: 30%;
+        height: 100%;
+        border-radius: 10px;
+        justify-content: center;
+        h3{
+            color: black;
+        }
+
+            &__content{
+                width: 100%;
+
+                &-text{
+                    text-align: center;
+
+                }
+
+                &-prestation{
+                    margin-top: 50px;
+                    height: 150px;
+                }
+
+                &-price{
+                    p{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
+}
 
 
 .pagevente__section{
@@ -5,24 +55,13 @@
     flex-direction: column;
     width: 100%;
     margin: 50px 0;
-    .container__card-div {
-        display: flex;
-        height: 400px;
-        align-items: center;
-        justify-content: space-around;
-        .card{
-        background: #2c423f;
-        width: 30%;
-        height: 100%;
-        border: 2px solid white;
-        }
-    }
     ul{
         list-style: none;
         li{
             display: flex;
             align-items: center;
             margin: 20px 0;
+            color: $black;
         } 
     }
 }

@@ -1,11 +1,34 @@
 [
   {
-    "name": "One page",
+    "name": "Landing page",
     "type": "Site web",
-    "customerType":"Bâtiment & Architecte",
+    "customerType":"Création de site internet Bâtiment & Architecte",
     "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
     "prestation": [
-      { "nom": "Nombre de page : 1", "inclus": true },
+      { "nom": "Nombre de pages : 1", "inclus": true },
+      { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
+      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "1 section de contact avec formulaire", "inclus": true },
+      { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
+      { "nom": "Site responsive (adapté tous supports)", "inclus": true },
+      { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
+      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Page mentions légales RGPD", "inclus": true },
+      { "nom": "Menu de navigation", "inclus": false },
+      { "nom": "Maquette", "inclus": false }
+    ],
+    "imageUrl": "./img/service6.png",
+    "buttonText": "En savoir plus",
+    "link":"/Calendly",
+    "price": "699,00 €"
+  },
+  {
+    "name": "Site vitrine",
+    "type": "Site web",
+    "customerType":"Création de site internet Bâtiment & Architecte",
+    "description": "Créez une présence en ligne saisissante avec un site web One page, idéal pour les artisans et PME. Obtenez un site compact et attractif, prêt en seulement 4 semaines.",
+    "prestation": [
+      { "nom": "Nombre de pages : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu (à fournir)", "inclus": true },
       { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
       { "nom": "Formulaire de contact", "inclus": true },
@@ -14,8 +37,9 @@
       { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
       { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
       { "nom": "Page mentions légales RGPD", "inclus": true },
-      { "nom": "Maquette", "inclus": false },
-      { "nom": "Délai : 4 semaines", "inclus": true }
+      { "nom": "Menu de navigation", "inclus": true},
+      { "nom": "Maquette", "inclus": false }
+      
     ],
     "imageUrl": "./img/service6.png",
     "buttonText": "En savoir plus",
@@ -23,12 +47,12 @@
     "price": "1299,00 €"
   },
   {
-    "name": "Site vitrine",
+    "name": "Site Premium",
     "type": "Site web",
-    "customerType":"Bâtiment & Architecte",
+    "customerType":"Création de site internet Bâtiment & Architecte",
     "description": "Donnez à votre entreprise une vitrine en ligne professionnelle avec un site web Vitrine. Misez sur la qualité et la fiabilité, avec une présentation complète de votre activité en 6 semaines.",
     "prestation": [
-      { "nom": "Nombre de page : 2 à 5", "inclus": true },
+      { "nom": "Nombre de pages : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu média (à fournir)", "inclus": true },
       { "nom": "Rédaction web de votre contenu", "inclus": true },
       { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
@@ -36,10 +60,12 @@
       { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
       { "nom": "Site responsive (adapté tous supports)", "inclus": true },
       { "nom": "Lien de partage vers les réseaux sociaux", "inclus": true },
-      { "nom": "Mise en place paramètres SEO basiques", "inclus": true },
+      { "nom": "Optimisations des paramètres SEO", "inclus": true },
       { "nom": "Page mentions légales RGPD", "inclus": true },
-      { "nom": "Maquette", "inclus": false },
-      { "nom": "Délai : 6 semaines", "inclus": true }
+      { "nom": "Menu de navigation", "inclus": true},
+      { "nom": "Fonctionnalités avancés (ex: Module de prise de rendez-vous, carte, ...)", "inclus": true },
+      { "nom": "Maquette", "inclus": true }
+
     ],
     "imageUrl": "./img/service5.png",
     "buttonText": "En savoir plus",
@@ -47,9 +73,26 @@
     "price": "2399,00 €"
   },
   {
+    "name": "Coaching \"Kiffe ton Site\"",
+    "type": "Autres prestations",
+    "customerType":"Nos accompagnements pour la création de site internet",
+    "description": "Vous êtes enterprenneur, architecte ou coach, et vous soushaitez créer vous-même votre site internet ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
+    "prestation": [
+      { "nom": "Ebook", "inclus": true },
+      { "nom": "Workbook", "inclus": true },
+      { "nom": "Tuo vidéo - A venir", "inclus": true },
+      { "nom": "Accompagnement", "inclus": true },
+      { "nom": "Délai : Commencer maintenant", "inclus": true }
+    ],
+    "imageUrl": "./img/service7.png",
+    "buttonText": "Je kiffe mon site",
+    "link":"/Kiffetonsite",
+    "price": " 149,00€"
+  },
+  {
     "name": "Audit \"Boost ton site\"",
     "type": "Autres prestations",
-    "customerType":"Nos accompagnements",
+    "customerType":"Nos accompagnements pour la création de site internet",
     "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez savoir ce qui fonctionne et ce qui doit être amélioré pour maximiser son impact ?Je vous propose un audit complet de votre site, avec un compte rendu détaillé des points à améliorer pour qu’il reflète vraiment votre expertise et attire plus de clients.",
     "prestation": [
         { "nom": "Analyse performance technique", "inclus": true },
@@ -67,7 +110,7 @@
   {
     "name": "Coaching \"Pimpe ton site\"",
     "type": "Autres prestations",
-    "customerType":"Nos accompagnements",
+    "customerType":"Nos accompagnements pour la création de site internet",
     "description": "Vous êtes architecte ou entrepreneur dans le bâtiment et l'immobilier, et vous gérez vous-même votre site web ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
     "prestation": [
       { "nom": "Session d'évalution de tes besoins", "inclus": true },
@@ -78,24 +121,7 @@
     ],
     "imageUrl": "./img/service7.png",
     "buttonText": "Je pimpe mon site",
-    "link":"/Coaching",
+    "link":"/Pimpetonsite",
     "price": "299,00€"
-  },
-  {
-    "name": "Coaching \"Kiffe ton Site\"",
-    "type": "Autres prestations",
-    "customerType":"Nos accompagnements",
-    "description": "Vous êtes enterprenneur, architecte ou coach, et vous soushaitez créer vous-même votre site internet ? Vous voulez l'améliorer pour qu'il reflète vraiment votre expertise et attire plus de clients ?",
-    "prestation": [
-      { "nom": "Ebook", "inclus": true },
-      { "nom": "Workbook", "inclus": true },
-      { "nom": "Tuo vidéo - A venir", "inclus": true },
-      { "nom": "Accompagnement", "inclus": true },
-      { "nom": "Délai : Commencer maintenant", "inclus": true }
-    ],
-    "imageUrl": "./img/service7.png",
-    "buttonText": "Je kiffe mon site",
-    "link":"/Kiffetonsite",
-    "price": "A partir de 149,00€"
   }
 ]

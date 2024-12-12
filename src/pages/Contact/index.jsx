@@ -13,7 +13,7 @@ function Contact() {
     const pageTitle = "Nous contacter";
     const bannerText = "Prêt à concrétiser votre projet digital ? Contactez-nous dès maintenant pour des conseils experts et une offre clé en main";
     const bannerClass = "banner banner-presentation"
-    const bannerImg = require('../../assets/imgPortrait.png');
+    const bannerImg = require('../../assets/imgBanner2.jpeg');
     const bannerImgClass = "banner__img-presentation";
 
     return (

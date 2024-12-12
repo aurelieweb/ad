@@ -41,6 +41,7 @@
         height: 100%;
         background: $darkgreen;
         box-shadow: $box-shadow-card;
+        border-radius: 10px;
 
         &__content{
             padding: 0;
@@ -192,4 +193,5 @@
 
 .service-image{
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }

@@ -11,6 +11,12 @@
     flex-direction: column;
     align-items: center;
 
+    &-div{
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .container__card{
         display: flex;
         flex-direction: column;
@@ -31,10 +37,13 @@
         }
 
         .service-div{
+            background-color: black;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
-            width: 100%;
+            width: calc(100% - 100px);
+            padding: 50px;
+            //background: $darkgreen;
             //padding: 20px;
 
             @include tablet {
@@ -43,6 +52,12 @@
 
             .service-detail{
 
+                h3{
+                    color: white
+                };
+                
+                flex-direction: column;
+                align-items: left;
                 ul{
                     margin-top: 50px;
                     padding: 20px;
@@ -58,7 +73,7 @@
                     align-items: center;
                     margin-bottom: 20px;
                     //background: $violet;
-                    color: black;
+                    color: white;
                     border-radius: 20px;
                     padding-right: 10px;
 
@@ -89,11 +104,11 @@
         }
         
         .card{
-            background: $darkgreen;
+            background: $white;
             //color: $darkgreen;
             width: 45%;
             height: 100%;
-            border: 2px solid white;
+            border-radius: 10px;
 
             @include mobile{
                 width: 100%;
@@ -105,6 +120,10 @@
 
             &__content{
                 width: auto;
+                color: $black;
+                h3{
+                    color: black;
+                }
 
                 &-text{
                     text-align: center;
@@ -112,8 +131,10 @@
                     opacity: 1;
                     }
 
-                &-prestation{
-                    //color: $darkgreen;
+                &-price{
+                    p{
+                    color: $black;
+                    }
                 }
             }
         }
@@ -123,7 +144,12 @@
 
     .container__section{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+
+        img{
+            width: 45%;
+        }
+
     h3{
         color: $darkviolet;
     }
@@ -171,9 +197,9 @@
 
 }
 
-.service__img{
+/*.service__img{
     width: 40%;
-}
+}*/
 
 
 .icon-circle{
@@ -182,7 +208,7 @@
     align-items: center;
     margin-right: 20px;
     border-radius: 50%;
-    background-color: $pink;
+    background-color: $black;
     width: 40px;
     height: 40px;
     font-size: 18px;

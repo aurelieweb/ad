@@ -12,9 +12,9 @@ function Realisations() {
   const bannerText = "Explorez notre portfolio pour trouver l'inspiration dont vous avez besoin pour votre projet. Chaque réalisation est le fruit d'un travail passionné et créatif, conçu pour mettre en valeur le potentiel unique de chaque client";
 
 
-  const bannerImg = require('../../assets/imgBanner4.jpeg');
-  const bannerClass = "banner banner-prestation"
-  const bannerImgClass = "banner__image";
+  const bannerImg = require('../../assets/imgBanner2.jpeg');
+  const bannerClass = "banner banner-presentation"
+  const bannerImgClass = "banner__img-presentation";
 
   return (
     <div className='main main-realisation'>

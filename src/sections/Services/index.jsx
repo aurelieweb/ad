@@ -4,6 +4,7 @@ import Card from "../../components/Card";
 //import Button from '../../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus,faPlay } from '@fortawesome/free-solid-svg-icons';
+import imgNosServices from '../../assets/imgBanner2.jpeg';
 
 
 const servicesData = require('../../data/serviceData.json');
@@ -22,7 +23,7 @@ function Services() {
       ]
     },
     {
-      name: "Bâtiment & Architecte",
+      name: "Création de site internet Bâtiment & Architecte",
       detail: [
         "Deux options version:  one-page ou site vitrine",
         "Design esthétique et professionnel",
@@ -32,7 +33,7 @@ function Services() {
       ]
     },
     {
-      name: "Nos accompagnements",
+      name: "Nos accompagnements pour la création de site internet",
       detail: [
         "Audit express de votre site",
         'Coaching en one to one pour optimiser ton site',
@@ -67,6 +68,8 @@ function Services() {
         <h2>Nos services web sur mesure</h2>
         <p className='container__section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services </strong>de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
         <div className="container__section">
+        <img src={imgNosServices} alt="Aurélie DEMETRIO - L'Agence Digitale" />
+        <div className="container__services-div">
           <div>
             <h3>Pourquoi un site web? </h3>
               <ul>
@@ -76,12 +79,12 @@ function Services() {
               </ul>
           </div>
 
-          <div>
+          {/*<div>
             <h3>Offre clé en main : </h3>
             <p className='container__section-text'>Notre offre clé en main vous garantit une création de site web sur mesure, prenant en compte vos idées et vos valeurs pour rédiger un contenu authentique qui reflète l'essence de votre entreprise. Grâce à notre équipe expérimentée, vous bénéficiez d'un accompagnement complet tout au long du processus, de la conception graphique à la rédaction de contenu, en passant par le développement sur mesure.</p>
-          </div>
+          </div>*/}
           <div>
-            </div>          
+       
             <h3>Avantages :</h3>
             <ul>
               <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Personnalisation : Chaque site est conçu selon vos besoins spécifiques et votre identité visuelle.</li>
@@ -89,6 +92,8 @@ function Services() {
               <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Accompagnement personnalisé : Notre équipe est à votre écoute pour répondre à vos questions et ajuster le projet selon vos retours.</li>
               <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} />  Rédaction de contenu : Nous valorisons votre expertise en rédigeant un contenu percutant qui met en avant vos services et valeurs.</li>
             </ul>
+            </div>
+            </div>
           </div>
         {/* Render container-cards for web services */}
         {Object.keys(webServicesByCustomerType).map((customerType, index) => (
