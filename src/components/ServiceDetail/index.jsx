@@ -7,15 +7,21 @@ function ServiceDetail({ sections }) {
       {sections.map((section, index) => {
         const positionClass = index % 2 === 0 ? "image-left" : "image-right";
         console.log(`Section ${index + 1}: Applying class ${positionClass}`);
-        
+
         return (
           <div key={index} className={`service-detail ${positionClass}`}>
+            {/* Afficher l'image ou l'iframe à gauche */}
             {index % 2 === 0 && (
               <div className="service-detail__image">
-                <img src={section.image} alt={section.title} />
+                {typeof section.image === "string" ? (
+                  <img src={section.image} alt={section.title} />
+                ) : (
+                  section.image
+                )}
               </div>
             )}
 
+            {/* Contenu textuel */}
             <div className="service-detail__content">
               <h3 className="customer-type">{section.title}</h3>
               {section.subtitle && (
@@ -33,9 +39,14 @@ function ServiceDetail({ sections }) {
               </ul>
             </div>
 
+            {/* Afficher l'image ou l'iframe à droite */}
             {index % 2 !== 0 && (
               <div className="service-detail__image">
-                <img src={section.image} alt={section.title} />
+                {typeof section.image === "string" ? (
+                  <img src={section.image} alt={section.title} />
+                ) : (
+                  section.image
+                )}
               </div>
             )}
           </div>

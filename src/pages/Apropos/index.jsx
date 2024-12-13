@@ -20,7 +20,7 @@ function Apropos() {
 
     const pageTitle = "Mon expertise dans le secteur de la Construction et de l'Immobilier";
     const bannerText = "Découvrez notre histoire, notre engagement dans le secteur du bâtiment et de l'immobilier. Avec une expertise métier solide, nous simplifions la création de sites web pour artisans et PME, en vous offrant des solutions clé en main, rédigées sur mesure pour refléter vos valeurs et votre vision.";
-    const bannerImg = require('../../assets/imgBanner2.jpeg');
+    const bannerImg = require('../../assets/ImgBanner_agence_digitale.jpg');
     const bannerClass = "banner banner-presentation"
     const bannerImgClass = "banner__img-presentation";
 

@@ -39,7 +39,7 @@ const buttons = [
 function Accueil() {
   const pageTitle = "Création de sites web : Architectes, Entreprise Bâtiment et Immobilier";
   const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
-  const bannerImg = require('../../assets/imgBanner2.jpeg');
+  const bannerImg = require('../../assets/img_coaching_creation_site_web.jpeg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

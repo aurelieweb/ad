@@ -1,3 +1,4 @@
+/* Card Styling */
 /*Card__service*/
 .container__card{
     display:flex;
@@ -6,7 +7,7 @@
     flex-wrap: wrap;
     gap: 20px;
     //padding: 20px;
-    //border-radius: 20px;
+    border-radius: 10px;
     width: 90%;
     margin-top: 50px;
 
@@ -41,7 +42,6 @@
         height: 100%;
         background: $darkgreen;
         box-shadow: $box-shadow-card;
-        border-radius: 10px;
 
         &__content{
             padding: 0;
@@ -93,20 +93,20 @@
         }
     }
 }
-
-/*Card*/
 .card {
+    position: relative; /* Pour que la bannière soit positionnée par rapport à la card */
     display: flex;
     flex-direction: row;
-    //border-radius: 10px;
     transition: transform 0.3s;
     width: 30%;
     opacity: 1;
+    border-radius: 10px;
 
-    @include mobile{
+    @include mobile {
         width: 100%;
     }
-    &:hover{
+
+    &:hover {
         transform: scale(1.05);
     }
 
@@ -120,11 +120,11 @@
         padding: 10px;
         color: $green;
 
-        @include mobile{
+        @include mobile {
             width: 100%;
         }
 
-        &-text{
+        &-text {
             width: 100%;
             opacity: 0.65;
             margin-bottom: 20px;
@@ -132,43 +132,42 @@
             padding-left: 20px;
         }
 
-        h3{
+        h3 {
             margin: 10px;
             color: $green;
         }
 
-        &-prestation{
+        &-prestation {
             text-align: left;
-            ul{
-
+            ul {
                 padding: 0;
             }
-            li{
+            li {
                 display: flex;
                 align-items: flex-start;
                 list-style: none;
                 margin: 10px 0;
-                div{
+                div {
                     width: 20px;
                     margin-right: 20px;
-                    .icon-check{
+                    .icon-check {
                         opacity: 1;
                     }
-                    .icon-times{
+                    .icon-times {
                         color: $darkviolet;
                         opacity: 1;
                     }
-            }   
-                p{
+                }
+                p {
                     width: 80%;
                     opacity: 0.9;
-                     margin: 0;
-                     text-align: left;
-                };
+                    margin: 0;
+                    text-align: left;
+                }
             }
         }
 
-        &-price{
+        &-price {
             p {
                 color: $green;
                 font-weight: bold;
@@ -178,12 +177,9 @@
                     margin: 20px;
                 }
             }
-        }   
+        }
     }
-    
 }
-
-
 
 .services-autre{
     .card{
@@ -195,3 +191,61 @@
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
+/* Card Promotion Banner */
+.card-promotion-banner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: -50px; /* Distance depuis le haut de la card */
+    left: 0px; /* Distance depuis la gauche de la card */
+    background-color: $darkviolet; /* Couleur de fond pour la promotion */
+    color: white; /* Couleur du texte */
+    padding: 5px 10px; /* Espacement interne */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Style du texte */
+    transform: rotate(-10deg) translateX(-20px); /* Inclinaison et position initiale */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    z-index: 10; /* S'assurer que la bannière est au-dessus */
+    animation: slide-pulse 4s infinite; /* Animation personnalisée */
+    height: 80px;
+    width: 140px;
+}
+
+/* Animation slide-pulse */
+@keyframes slide-pulse {
+    0% {
+        opacity: 0;
+        transform: rotate(-10deg)  scale(0.8); /* Départ hors du cadre */
+    }
+    5% {
+        opacity: 1;
+        transform: rotate(-10deg) translateX(0) scale(1); /* Glisse en place */
+    }
+    25% {
+        transform: rotate(-10deg) translateX(0) scale(1.1); /* Légère pulsation */
+    }
+    45% {
+        opacity: 1;
+        transform: rotate(-10deg) translateX(0) scale(1); /* Retour à la taille normale */
+    }
+
+    55% {
+        opacity: 1;
+        transform: rotate(-10deg) translateX(0) scale(1); /* Glisse en place */
+    }
+    75% {
+        transform: rotate(-10deg) translateX(0) scale(1.1); /* Légère pulsation */
+    }
+    90% {
+        opacity: 1;
+        transform: rotate(-10deg) translateX(0) scale(1); /* Retour à la taille normale */
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.8); /* Disparaît en glissant */
+    }
+}
+

@@ -7,7 +7,6 @@ import ServiceDetail from "../../components/ServiceDetail";
 import { faPlay, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import imgKiffeTonSite2 from "../../assets/imgKiffeTonSite_LAtelier2.png";
 import imgKiffeTonSite from "../../assets/imgKiffeTonSite_LAterlier.png";
-import imgKiffeTonSite3 from "../../assets/imgKiffeTonSite_LAtelier2.png";
 
 
 const buttons = [
@@ -32,13 +31,21 @@ const sections = [
     items: [
       "eBook interactif : Un guide clair et détaillé.",
       "Workbooks : Des outils pratiques pour appliquer immédiatement ce que vous apprenez.",
+      "Tuto vidéos",
       "Prompts personnalisés : Pour gagner du temps et rester efficace."
     ],
     icon: faPlay,
-    image: imgKiffeTonSite2,  // Même image pour le test
+    image: (<iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/aG0FCXNSWDU?si=DHwrPCTZa7S0nyPk" 
+      title="YouTube video player" 
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>),  // Même image pour le test
   },
   {
-    title: "Pourquoi ça marche ?",
+    title: "Regardez la vidéo de présentation :",
     subtitle: null,
     items: [
       "Méthodes éprouvées par une développeuse experte.",
@@ -46,16 +53,27 @@ const sections = [
       "Des résultats rapides, sans compromis sur la qualité."
     ],
     icon: faPlay,
-    image: imgKiffeTonSite,  // Même image pour le test
+    image: (
+      <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/tIdgqKbAJvU?si=9Y7mqHrFZipmPs-p" title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+      </iframe>
+    ), 
   },
 ];
+
 
 
 
 const packs = [
   {
     serviceName: "Pack Standard",
-    servicePrice: "99,00€",
+    servicePrice: "149,00€",
     prestation: [
       { "nom": "eBook interactif", "inclus": true },
       { "nom": "Prompt Rédaction de contenu", "inclus": true },
@@ -63,10 +81,12 @@ const packs = [
     ],
     buttonText: "Commander",
     link: "https://buy.stripe.com/00gg1Kf8kefJceYbIJ",
+    isPromotion: true,
+    promotionMessage: "Offre spéciale : 99,00€ jusqu'au 23/12"
   },
   {
     serviceName: "Pack Coaching Collectif",
-    servicePrice: "349,00€",
+    servicePrice: "249,00€",
     prestation: [
       { "nom": "Inclus : Pack Standard", "inclus": true },
       { "nom": "2 ateliers thématiques en petit groupe", "inclus": true }
@@ -76,7 +96,7 @@ const packs = [
   },
   {
     serviceName: "Pack VIP",
-    servicePrice: "599,00€",
+    servicePrice: "349,00€",
     prestation: [
       { "nom": "Inclus : Pack Standard", "inclus": true },
       { "nom": "4 ateliers thématiques", "inclus": true },
@@ -197,10 +217,10 @@ const faqDataKiffeTonSite = [
 
 
 function kiffetonsite() {
-  const pageTitle = "Comment créer un site web facilement";
-  const bannerText = "A modifier";
+  const pageTitle = "Créez un site web professionnel en 12 étapes simples avec 'Kiffe ton site";
+  const bannerText = "Apprenez à créer un site web professionnel et performant, même sans compétences techniques. Découvrez nos guides pas à pas, nos outils interactifs, et nos conseils d’experts pour réussir votre présence en ligne.";
 
-  const bannerImg = require('../../assets/imgBanner2.jpeg')
+  const bannerImg = require('../../assets/ImgBannerKiffetonsite.jpeg')
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
@@ -216,8 +236,9 @@ function kiffetonsite() {
         buttons={buttons}
       />
       <div className="pagevente__container">
-        <h2>Créer un site internet en 12 étapes avec "Kiffe ton site" </h2>
-        <p className='section-text'>Vous rêvez d’un site web qui reflète votre vision et attire vos clients ? Avec 'Kiffe ton site', nous vous donnons les outils et les ressources nécessaires pour créer un site qui impressionne et performe. Ce n’est pas qu’un simple guide, c’est une transformation digitale sur mesure !</p>
+        <h2>Découvrez les étapes essentielles pour créer un site internet qui attire et convertit avec 'Kiffe ton site" </h2>
+        <p className='section-text'><p className='section-text'>Vous avez une vision unique pour votre site internet ? Avec 'Kiffe ton site', transformez cette vision en réalité grâce à des outils interactifs, des ressources expertes et une méthode simple, étape par étape. Créez un site internet professionnel et captivant qui attire vos clients, renforce votre crédibilité, et vous démarque en ligne. Donnez vie à vos idées dès aujourd’hui et prenez le contrôle de votre présence digitale !</p>
+        </p>
       </div>
 
       {/* Sections dynamiques avec ServiceDetail */}
@@ -226,17 +247,19 @@ function kiffetonsite() {
       <div className="pagevente__section pagevente__section-card">
         <h2 className="section-title">Choisissez le pack qui vous correspond</h2>
         <div className="container__card-div">
-          {packs.map((pack, index) => (
-            <Card
-              key={index}
-              serviceName={pack.serviceName}
-              servicePrice={pack.servicePrice}
-              prestation={pack.prestation}
-              buttonText={pack.buttonText}
-              link={pack.link}
-            />
-          ))}
-        </div>
+  {packs.map((pack, index) => (
+    <Card
+      key={index}
+      serviceName={pack.serviceName}
+      servicePrice={pack.servicePrice}
+      prestation={pack.prestation}
+      buttonText={pack.buttonText}
+      link={pack.link}
+      isPromotion={pack.isPromotion}
+      promotionMessage={pack.promotionMessage}
+    />
+  ))}
+</div>
       </div>
 
       <div className="pagevente__section">

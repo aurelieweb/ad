@@ -87,7 +87,9 @@
     "imageUrl": "./img/service7.png",
     "buttonText": "Je kiffe mon site",
     "link":"/Kiffetonsite",
-    "price": " 149,00€"
+    "price": "149,00€",
+    "isPromotion": true,
+    "promotionMessage": "Offre spéciale : 99,00€ jusqu'au 23/12"
   },
   {
     "name": "Audit \"Boost ton site\"",
@@ -122,6 +124,8 @@
     "imageUrl": "./img/service7.png",
     "buttonText": "Je pimpe mon site",
     "link":"/Pimpetonsite",
-    "price": "299,00€"
+    "price": "299,00€",
+    "isPromotion": true,
+    "promotionMessage": "Offre spéciale : 249,00€ jusqu'au 23/12"
   }
 ]

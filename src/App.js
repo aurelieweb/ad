@@ -35,7 +35,7 @@ function App() {
           {/* Nouvelle route pour la page "Kiffe ton site" */}
           <Route path="/Kiffetonsite" element={<KiffeTonSite />} />
           {/* Nouvelle route pour la page "Pimpe ton site" */}
-          <Route path="/Pimpetonsite" element={<PimpeTonSite />} />
+          <Route path="/Pimpetonsite" element={<Calendly />} />
           {/* Nouvelle route pour la page "Leadmagnet" */}
           <Route path="/Ressources" element={<Resource />} />
           {/* Nouvelle route pour la page "RGPD" */}
