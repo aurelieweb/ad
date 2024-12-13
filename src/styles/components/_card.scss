@@ -212,6 +212,12 @@
     animation: slide-pulse 4s infinite; /* Animation personnalisée */
     height: 80px;
     width: 140px;
+
+    @include mobile{
+        height: 60px;
+        width: 120px;
+        top: -15px;
+}
 }
 
 /* Animation slide-pulse */
