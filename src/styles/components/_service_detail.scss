@@ -21,10 +21,20 @@
   }
   
   .image-left {
-    flex-direction: column; /* Image à gauche */
-  }
-  
+
+    flex-direction: row;
+
+      @include mobile{
+        flex-direction: column; /* Image à gauche */
+      }
+    }
+    
   .image-right {
-    flex-direction: column; /* Image à droite */
+
+    flex-direction: row;
+
+      @include mobile{
+      flex-direction: column; /* Image à droite */
+      }
   }
   

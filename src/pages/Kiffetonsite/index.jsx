@@ -35,14 +35,14 @@ const sections = [
       "Prompts personnalisés : Pour gagner du temps et rester efficace."
     ],
     icon: faPlay,
-    image: (<iframe 
-      width="560" 
-      height="315" 
+    image: (
+    <iframe
+    className="responsive-iframe" 
       src="https://www.youtube.com/embed/aG0FCXNSWDU?si=DHwrPCTZa7S0nyPk" 
-      title="YouTube video player" 
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>),  // Même image pour le test
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>),  // Même image pour le test
   },
   {
     title: "Regardez la vidéo de présentation :",
@@ -54,15 +54,13 @@ const sections = [
     ],
     icon: faPlay,
     image: (
-      <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/tIdgqKbAJvU?si=9Y7mqHrFZipmPs-p" title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen>
-      </iframe>
+      <iframe
+      className="responsive-iframe" 
+      src="https://www.youtube.com/embed/tIdgqKbAJvU?si=9Y7mqHrFZipmPs-p"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
     ), 
   },
 ];
@@ -80,9 +78,9 @@ const packs = [
       { "nom": "Workbooks détaillés", "inclus": true }
     ],
     buttonText: "Commander",
-    link: "https://buy.stripe.com/00gg1Kf8kefJceYbIJ",
+    link: "https://buy.stripe.com/test_4gweXBewS5L085qfYY",
     isPromotion: true,
-    promotionMessage: "Offre spéciale : 99,00€ jusqu'au 23/12"
+    promotionMessage: "Offre spéciale : 99,00€ jusqu'au 31/12"
   },
   {
     serviceName: "Pack Coaching Collectif",
@@ -92,7 +90,7 @@ const packs = [
       { "nom": "2 ateliers thématiques en petit groupe", "inclus": true }
     ],
     buttonText: "Nos prochaines dates",
-    link: "https://buy.stripe.com/5kAdTC9O0c7B6UE4gi",
+    link: "https://buy.stripe.com/test_28o2aPdsOddsclG145",
   },
   {
     serviceName: "Pack VIP",
@@ -103,7 +101,7 @@ const packs = [
       { "nom": "1 session individuelle avec une experte", "inclus": true }
     ],
     buttonText: "Nos prochaines dates",
-    link: "https://buy.stripe.com/4gweXG9O0b3x6UEeUX",
+    link: "https://buy.stripe.com/test_4gwcPt3SeddsfxSbIK",
   }
 ];
 
