@@ -3,8 +3,21 @@
 
 }*/
 
-/*.pimpetonsite__container{
-    display: flex;
-    margin: 50px;
 
-}*/
+.prix{
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    width : 40%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkviolet;
+    margin-bottom: 30px;
+}
+
+.prix-bold{
+    font-weight: bold;
+    font-size: 28px;
+}
+

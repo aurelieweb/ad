@@ -25,10 +25,10 @@
     flex-direction: row;
 
       @include mobile{
-        flex-direction: column; /* Image à gauche */
+        flex-direction: column-reverse; /* Image à gauche */
       }
     }
-    
+
   .image-right {
 
     flex-direction: row;

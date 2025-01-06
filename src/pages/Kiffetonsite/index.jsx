@@ -32,7 +32,8 @@ const sections = [
       "eBook interactif : Un guide clair et détaillé.",
       "Workbooks : Des outils pratiques pour appliquer immédiatement ce que vous apprenez.",
       "Tuto vidéos",
-      "Prompts personnalisés : Pour gagner du temps et rester efficace."
+      "Prompts personnalisés : Pour gagner du temps et rester efficace.",
+      "Des ateliers collectifs ou individuel selon ton pack "
     ],
     icon: faPlay,
     image: (
@@ -78,8 +79,8 @@ const packs = [
       { "nom": "Workbooks détaillés", "inclus": true }
     ],
     buttonText: "Commander",
-    link: "https://buy.stripe.com/test_4gweXBewS5L085qfYY",
-    isPromotion: true,
+    link: "https://buy.stripe.com/00gg1Kf8kefJceYbIJ",
+    isPromotion: false,
     promotionMessage: "Offre spéciale : 99,00€ jusqu'au 31/12"
   },
   {
@@ -89,8 +90,8 @@ const packs = [
       { "nom": "Inclus : Pack Standard", "inclus": true },
       { "nom": "2 ateliers thématiques en petit groupe", "inclus": true }
     ],
-    buttonText: "Nos prochaines dates",
-    link: "https://buy.stripe.com/test_28o2aPdsOddsclG145",
+    buttonText: "Commander",
+    link: "https://buy.stripe.com/5kAdTC9O0c7B6UE4gi",
   },
   {
     serviceName: "Pack VIP",
@@ -100,8 +101,8 @@ const packs = [
       { "nom": "4 ateliers thématiques", "inclus": true },
       { "nom": "1 session individuelle avec une experte", "inclus": true }
     ],
-    buttonText: "Nos prochaines dates",
-    link: "https://buy.stripe.com/test_4gwcPt3SeddsfxSbIK",
+    buttonText: "Commander",
+    link: "https://buy.stripe.com/4gweXG9O0b3x6UEeUX",
   }
 ];
 
@@ -130,7 +131,7 @@ const faqDataKiffeTonSite = [
   {
     title: "Quels sont les outils inclus dans l’offre ?",
     content: [
-      "Vous recevrez un eBook interactif détaillé, des workbooks pratiques pour appliquer les concepts directement, et des prompts personnalisés pour simplifier les tâches techniques. Si vous optez pour les packs avancés, vous bénéficiez également d’ateliers en groupe ou individuels."
+      "Vous recevrez un eBook interactif détaillé, des workbooks pratiques pour appliquer les concepts directement, des tutos vidéos et des prompts personnalisés pour simplifier les tâches techniques. Si vous optez pour les packs avancés, vous bénéficiez également d’ateliers en groupe ou individuels."
     ],
     icon: faCircleQuestion,
   },
@@ -178,8 +179,10 @@ const faqDataKiffeTonSite = [
       "Le Pack VIP inclut :",
       "- L’eBook interactif.",
       "- Les workbooks pratiques.",
-      "- 4 ateliers thématiques en petit groupe pour approfondir vos connaissances.",
-      "- 1 session individuelle avec une experte pour un accompagnement personnalisé."
+      "- Les tutos vidéos",
+      "- Les prompts pour simplifier la rédaction de ton contenu",
+      "- 4 ateliers thématiques d'une heure en petit groupe pour approfondir vos connaissances.",
+      "- 1 session individuelle d'une heure avec une experte pour un accompagnement personnalisé."
     ],
     icon: faCircleQuestion,
   },

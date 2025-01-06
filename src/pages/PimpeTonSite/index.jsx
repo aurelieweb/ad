@@ -4,6 +4,7 @@ import ServiceDetail from "../../components/ServiceDetail";
 import Testimonies from "../../components/Testimonies";
 import Faq from "../../components/Faq";
 import Button from "../../components/Button";
+import Card from "../../components/Card"
 import { faPlay, faPlus, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import imgPimpeTonSite from "../../assets/imgPimpetonSite_lecoaching.png";
 
@@ -13,46 +14,78 @@ const buttons = [
 
 const sections = [
   {
-    title: "Pourquoi ?",
+    title: "Les problèmes fréquents des sites web (et comment les résoudre)",
     subtitle: null,
     items: [
-      `"Pourquoi mon site n'attire pas de visiteurs ?"`,
-
-      `"Comment améliorer mon site internet sans être expert ?"`,
-
-      "Avec l'audit, on débusque les problèmes.",
-      "Avec le plan d'action, tu sais exactement quoi faire.",
+      "Pourquoi mon site n'attire pas de visiteurs ?",
+      "Comment améliorer mon site internet sans être expert ?",
+      "Avec un audit ciblé, identifiez et corrigez les problèmes techniques majeurs",
+      "Avec le plan d'action, vous savez exactement quoi faire.",
       "Le coaching débloque les obstacles et booste la performance.",
     ],
     icon: faPlay,
     image: imgPimpeTonSite,
   },
   {
-    title: "Ce que comprend 'Pimpe ton site'",
+    title: "Coaching 'Pimpe ton site' : contenu et étapes clés",
     subtitle: null,
     items: [
-      "Un ebook pratique pour améliorer la performance de votre site.",
-      "Un mini audit pour identifier les problèmes (ex. : site lent, visibilité Google).",
-      "Un coaching 1:1 de deux heures pour corriger et optimiser votre site.",
-      "Un rapport PDF avec un plan d’action concret.",
+     "Une session d'introduction pour comprendre vos objectifs et adapter l'accompagnement (15min)",
+      "Un mini audit pour identifier les problèmes du site(ex. : site lent, visibilité Google, identité visuelle).",
+      "Un coaching individuel (1h30)",
+      "Un plan d'action PDF détaillé avec des étapes claires pour atteindre vos objectifs",
+      "Une session finale (30 min)"
     ],
     icon: faPlay,
-    image: imgPimpeTonSite,
+    image: (
+      <iframe
+      className="responsive-iframe" 
+      src="https://www.youtube.com/embed/9RDeIwfJvhE"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>)
   },
   {
-    title: "Bénéfices",
+    title: "Ce que vous gagnez avec Pimpe ton site : performance et confiance.",
     subtitle: null,
     items: [
       "Plus de visites grâce à un meilleur référencement.",
-      "Un site professionnel et performant.",
-      "Correction des erreurs techniques.",
-      "Amélioration de l'expérience utilisateur.",
-      "Un site qui reflète votre expertise.",
+      "Un site web rapide, ergonomique et professionnel.",
+      "Diagnostic et correction des erreurs qui ralentissent votre site",
+      "Amélioration de l'expérience utilisateur et du design.",
+      "Un site qui reflète votre expertise et votre identité.",
     ],
     icon: faPlus,
-    image: imgPimpeTonSite,
+    image: (
+      <iframe
+      className="responsive-iframe" 
+      src="https://www.youtube.com/embed/YpyXQ_7Gk4w"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>)
   },
 ];
+
+const packs = [
+  {
+    serviceName: "Pack Standard",
+    servicePrice: "249,00€",
+    prestation: [
+      { "nom": "Analyse performance technique", "inclus": true },
+      { "nom": "Audit de l'architecture du site et de la navigation ", "inclus": true },
+      { "nom": "Analyse de contenu et de design", "inclus": true },
+      { "nom": "Audit des fonctionnalités", "inclus": true },
+      { "nom": "Rapport détaillé et recommandations", "inclus": true },
+      { "nom": "Délai : 1 à 2 semaines", "inclus": true }
+    ],
+    buttonText: "Commander",
+    link: "https://buy.stripe.com/bIY8ziaS43B52EobIM",
+    isPromotion: false,
+    promotionMessage: "Offre spéciale : 249,00€ jusqu'au 31/12"
+  },
+]
 
 const faqDataPimpeTonSite = [
   {
@@ -80,7 +113,7 @@ const faqDataPimpeTonSite = [
   {
     title: "Je ne suis pas un expert en informatique, ce coaching est-il fait pour moi ?",
     content: [
-      "Absolument ! Le coaching est spécialement conçu pour les entrepreneurs qui gèrent eux-mêmes leur site, même sans compétences techniques avancées. Vous repartirez avec des solutions simples à mettre en place, expliquées de manière claire et accessible."
+      "Le coaching est conçu pour être accessible même aux débutants : chaque étape est expliquée simplement et adaptée à votre niveau."
     ], 
     icon: faCircleQuestion
   },
@@ -108,20 +141,20 @@ const faqDataPimpeTonSite = [
   {
     title: "Est-ce que le coaching \"Pimpe ton site\" garantit plus de visiteurs ?",
     content: [
-      "ABien que je ne puisse pas garantir un nombre précis de visiteurs, le coaching améliore considérablement les aspects techniques et structurels de votre site, augmentant ainsi vos chances d’apparaître mieux positionné dans les moteurs de recherche et d'attirer plus de trafic."
+      "Bien que je ne puisse pas garantir un nombre précis de visiteurs, le coaching améliore considérablement les aspects techniques et structurels de votre site, augmentant ainsi vos chances d’apparaître mieux positionné dans les moteurs de recherche et d'attirer plus de trafic."
     ],
     icon: faCircleQuestion
   },
   {
       title: "Je manque de temps, est-ce que ce coaching demande beaucoup d’investissement après la session ?",
       content: [
-        " coaching est conçu pour vous apporter des solutions rapides et actionnables. Le plan d’action que vous recevrez est structuré de manière à vous faire gagner du temps en optimisant efficacement votre site sans avoir à y passer des heures."],
+        " coaching est conçu pour vous apporter des solutions rapides et actionnables. Le plan d’action que vous recevrez est structuré de manière à vous faire gagner du temps en optimisant efficacement votre site sans avoir à y passer des heures. Le Plan d'action est divisé en etapes pour vous permettre de solutionner les problemes un à un"],
       icon: faCircleQuestion
   },
   {
-      title: "Est-ce que le coaching \"Pimpe ton site\" garantit plus de visiteurs ?",
+      title: "Comment s'effecutue la réservation pour le coaching \"Pimpte ton Site\"",
       content: [
-        "Le paiement pour le coaching \"Pimpe ton site\" se fait en une seule fois via Stripe lors de la réservation. Si vous avez des questions sur le paiement, n’hésitez pas à me contacter directement.",
+        "Je réserve une session sur mon calendrier prévu à cette effet. J'effectue le paiement sur le module stripe. Le paiement pour le coaching \"Pimpe ton site\" se fait en une seule fois via Stripe lors de la réservation. Si vous avez des questions sur le paiement, n’hésitez pas à me contacter directement.",
       ],
       icon: faCircleQuestion
   }
@@ -129,9 +162,9 @@ const faqDataPimpeTonSite = [
 ];
 
 function PimpeTonSite() {
-  const pageTitle = "Pimpe ton site : Le coaching qui va transformer ton site";
-  const bannerText = "A modifier";
-  const bannerImg = require('../../assets/imgBanner2.jpeg')
+  const pageTitle = "Pimpe ton site : Coaching web pour optimiser votre site et attirer plus de visiteurs";
+  const bannerText = "Améliorez votre site web en 2 heures et boostez votre visibilité en ligne !";
+  const bannerImg = require('../../assets/ImgBannerKiffetonsite.jpeg')
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
@@ -156,17 +189,34 @@ function PimpeTonSite() {
         {/* Sections dynamiques */}
         <ServiceDetail sections={sections} />
 
-        <div className="prix">
-          <p>299,00€</p>
-          <p>Modalités de paiement : Explique que le paiement se fait via Stripe et que la réservation s’effectue via Zcal.</p>
-        </div>
+<div className="pagevente__section pagevente__section-card">
+  <h2 className="section-title">Choisissez le pack qui vous correspond</h2>
+  <div className="container__card-div">
+{packs.map((pack, index) => (
+<Card
+key={index}
+serviceName={pack.serviceName}
+servicePrice={pack.servicePrice}
+prestation={pack.prestation}
+buttonText={pack.buttonText}
+link={pack.link}
+isPromotion={pack.isPromotion}
+promotionMessage={pack.promotionMessage}
+/>
+))}
+</div>
+</div>
 
-        <div className="testimonies">
-          <Testimonies />
-        </div>
+<div className="pagevente__section">
+        <h2 className="section-title">Ils donnent leur avis</h2>
+        <Testimonies />
+      </div>
 
-        <Faq FaqData={faqDataPimpeTonSite} />
-        <Button text="Passez à l'action" link="/Coaching" />
+        <div className="pagevente__section">
+        <h2 className="section-title">Foire aux Questions</h2>
+        <Faq FaqData={faqDataPimpeTonSite}/>
+      </div>
+
       </div>
     </div>
   );

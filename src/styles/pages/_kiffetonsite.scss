@@ -1,5 +1,5 @@
 .pagevente__section-card{
-    background: $darkgreen;
+    background: $black;
 
     h2{
         color: $white;
@@ -8,7 +8,7 @@
 
     .container__card-div {
         display: flex;
-        height: 400px;
+        //height: 400px;
         align-items: center;
         justify-content: space-around;
         margin: 50px;
@@ -46,7 +46,8 @@
 
                 &-prestation{
                     margin-top: 50px;
-                    height: 150px;
+                    //height: 150px;
+                    //La hauteur gere les card dans kiffe ton site pour plus d'uniformité//
                 }
 
                 &-price{

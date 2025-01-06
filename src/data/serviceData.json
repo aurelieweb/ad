@@ -55,7 +55,7 @@
       { "nom": "Nombre de pages : 2 à 5", "inclus": true },
       { "nom": "Personnalisation avec votre contenu média (à fournir)", "inclus": true },
       { "nom": "Rédaction web de votre contenu", "inclus": true },
-      { "nom": "Design basique adapté à l'identité visuelle", "inclus": true },
+      { "nom": "Design sur mesure", "inclus": true },
       { "nom": "Formulaire de contact", "inclus": true },
       { "nom": "Domaine + hébergement + e-mail pendant 12 mois", "inclus": true },
       { "nom": "Site responsive (adapté tous supports)", "inclus": true },
@@ -88,7 +88,7 @@
     "buttonText": "Je kiffe mon site",
     "link":"/Kiffetonsite",
     "price": "149,00€",
-    "isPromotion": true,
+    "isPromotion": false,
     "promotionMessage": "Offre spéciale : 99,00€ jusqu'au 31/12"
   },
   {
@@ -124,8 +124,8 @@
     "imageUrl": "./img/service7.png",
     "buttonText": "Je pimpe mon site",
     "link":"/Pimpetonsite",
-    "price": "299,00€",
-    "isPromotion": true,
+    "price": "249,00€",
+    "isPromotion": false,
     "promotionMessage": "Offre spéciale : 249,00€ jusqu'au 31/12"
   }
 ]
