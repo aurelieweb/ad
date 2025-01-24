@@ -24,6 +24,7 @@
         "./img/imgProjet/immo/immo_img5.png",
         "./img/imgProjet/immo/immo_img6.png"
       ],
+      "url": "https://web-immobilier.aureliedemetrio.fr/",
       "featured": true
     },
     {
@@ -70,6 +71,7 @@
         "./img/imgProjet/kasa/kaza_img3.jpg",
         "./img/imgProjet/kasa/kaza_img4.jpg"
       ],
+      "url": "https://site-location-gite.aureliedemetrio.fr/",
       "featured": false
     },
     {
@@ -82,19 +84,21 @@
         "./img/imgProjet/ohmyfood/ohmyfood_img4.jpg",
         "./img/imgProjet/ohmyfood/ohmyfood_img5.jpg"
       ],
+
       "featured": false
     },
     {
       "title": "Création d'un site de réservation de location de vacances et d'activités",
       "description": "Création d'un site de réservation complet permettant aux utilisateurs de réserver des locations de vacances et des activités en toute simplicité.",
-      "coverImage": "./img/imgProjet/reservia/reservia_img1.jpg",
+      "coverImage": "./img/imgProjet/reservia/reservia_img2.jpg",
       "images": [
-        "./img/imgProjet/reservia/reservia_img2.jpg",
+        "./img/imgProjet/reservia/reservia_img1.jpg",
         "./img/imgProjet/reservia/reservia_img3.jpg",
         "./img/imgProjet/reservia/reservia_img4.jpg",
         "./img/imgProjet/reservia/reservia_img5.jpg",
         "./img/imgProjet/reservia/reservia_img6.jpg"
       ],
+
       "featured": false
     }
   ]

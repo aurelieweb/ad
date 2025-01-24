@@ -29,10 +29,23 @@ function Portfolio() {
      
       <div className="container__projets">
         {projectData.map((project, index) => (
-          <div key={index} className="projet__card" onClick={() => handleClick(project)}>
-            <img src={project.coverImage} alt={project.title} /> {/* Utilisation des chemins d'images depuis les données du projet */}
-            <h3 className="projet__card-title">{project.title}</h3>
-          </div>
+          <a
+          key={index}
+          href={project.url || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`projet__card ${project.url ? "with-url" : ""}`}
+          onClick={(e) => {
+            if (!project.url) {
+              e.preventDefault();
+              handleClick(project);
+            }
+          }}
+        >
+          <img src={project.coverImage} alt={project.title} />
+          <h3 className="projet__card-title">{project.title}</h3>
+          {project.url && <button className="view-online-btn">Voir en ligne</button>}
+        </a>
         ))}
       </div>
 

@@ -72,37 +72,37 @@ const sections = [
 const packs = [
   {
     serviceName: "Pack Standard",
-    servicePrice: "149,00€",
+    servicePrice: "79,00€",
     prestation: [
       { "nom": "eBook interactif", "inclus": true },
       { "nom": "Prompt Rédaction de contenu", "inclus": true },
       { "nom": "Workbooks détaillés", "inclus": true }
     ],
     buttonText: "Commander",
-    link: "https://buy.stripe.com/00gg1Kf8kefJceYbIJ",
+    link: "https://buy.stripe.com/6oEcPy9O07Rla6Q3ch",
     isPromotion: false,
     promotionMessage: "Offre spéciale : 99,00€ jusqu'au 31/12"
   },
   {
     serviceName: "Pack Coaching Collectif",
-    servicePrice: "249,00€",
+    servicePrice: "149,00€",
     prestation: [
       { "nom": "Inclus : Pack Standard", "inclus": true },
       { "nom": "2 ateliers thématiques en petit groupe", "inclus": true }
     ],
     buttonText: "Commander",
-    link: "https://buy.stripe.com/5kAdTC9O0c7B6UE4gi",
+    link: "https://buy.stripe.com/dR66rabW8c7B0wg008",
   },
   {
     serviceName: "Pack VIP",
-    servicePrice: "349,00€",
+    servicePrice: "249,00€",
     prestation: [
       { "nom": "Inclus : Pack Standard", "inclus": true },
       { "nom": "4 ateliers thématiques", "inclus": true },
       { "nom": "1 session individuelle avec une experte", "inclus": true }
     ],
     buttonText: "Commander",
-    link: "https://buy.stripe.com/4gweXG9O0b3x6UEeUX",
+    link: "https://buy.stripe.com/3cs4j25xKb3xfraeV1",
   }
 ];
 
