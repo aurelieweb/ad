@@ -151,8 +151,12 @@
 
     .container__section{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+        }
 
         img{
             width: 45%;

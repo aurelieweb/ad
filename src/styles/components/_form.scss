@@ -78,6 +78,9 @@
 
 .confirmation-message{
     padding: 0 30px;
+    p{
+        color: $white;
+    }
     p:first-child{
         opacity: 1;
         font-weight: bold;

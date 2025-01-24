@@ -69,7 +69,7 @@ const ContactForm = () => {
 const sendEmail = () => {
     // Envoyer les réponses par email
     const emailParams = {
-      to_email: 'contact@adlagencedigitale.fr',
+      to_email: 'contact@aureliedemetrio.fr',
       ...formData,
       objet: formData.objet || 'N/A',
       message: formData.message || 'N/A',
