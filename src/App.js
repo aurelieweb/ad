@@ -6,6 +6,8 @@ import Apropos from './pages/Apropos';
 import Prestations from './pages/Prestations'; 
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import Article from "./pages/Article";
 import Calendly from './pages/CalendlyPage';
 import Coaching from './pages/CoachingPage';
 import PimpeTonSite from './pages/PimpetonSite';
@@ -20,26 +22,19 @@ function App() {
         <Routes>
           {/* Route de la page d'accueil */}
           <Route path="/" element={<Accueil />} />
-          {/* Nouvelle route pour la page "A propos" */}
-          <Route path="/Prestations" element={<Prestations />} />
-          {/* Nouvelle route pour la page "A propos" */}
-          <Route path="/Realisations" element={<Realisations />} />
-          {/* Nouvelle route pour la page "A propos" */}
-          <Route path="/A-propos" element={<Apropos />} />
-          {/* Nouvelle route pour la page "A propos" */}
-          <Route path="/Contact" element={<Contact />} />
-          {/* Nouvelle route pour la page "Calendly" */}
-          <Route path="/Calendly" element={<Calendly />} />
-          {/* Nouvelle route pour la page "Calendly" */}
-          <Route path="/Coaching" element={<Coaching />} />
-          {/* Nouvelle route pour la page "Kiffe ton site" */}
-          <Route path="/Kiffetonsite" element={<KiffeTonSite />} />
-          {/* Nouvelle route pour la page "Pimpe ton site" */}
-          <Route path="/Pimpetonsite" element={<PimpeTonSite />} />
-          {/* Nouvelle route pour la page "Leadmagnet" */}
-          <Route path="/Ressources" element={<Resource />} />
-          {/* Nouvelle route pour la page "RGPD" */}
-          <Route path="/Rgpd" element={<RGPD />} />
+          <Route path="/prestations" element={<Prestations />} />
+          <Route path="/realisations" element={<Realisations />} />
+          <Route path="/a-propos" element={<Apropos />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/article/:id" element={<Article />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/calendly" element={<Calendly />} />
+          <Route path="/coaching" element={<Coaching />} />
+          <Route path="/kiffetonsite" element={<KiffeTonSite />} />
+          <Route path="/pimpetonsite" element={<PimpeTonSite />} />
+          <Route path="/ressources" element={<Resource />} />
+          <Route path="/rgpd" element={<RGPD />} />
+
         </Routes>
       </Layout>
     </Router>
