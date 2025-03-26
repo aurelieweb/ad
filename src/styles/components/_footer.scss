@@ -57,7 +57,7 @@
             &:hover {
                 border-bottom: none;
                 a {
-                color: $violet;
+                color: $darkviolet;
                 opacity: 1;
                 }
             }
@@ -77,7 +77,7 @@
     background-color: $white;
     border-radius: 50%;
     &:hover {
-        background-color: $violet;
+        background-color: $darkviolet;
         transform: scale(1.30);
     }
 }

@@ -8,7 +8,7 @@
     background: $darkgreen;
     border-radius: 10px;
     position: relative;
-    color: $white;
+    color: $green;
 
     @include tablet {
         width: 300px;
@@ -29,13 +29,13 @@
         width: 80px;
         height: 80px;
         background: $black;
-        color: $white;
+        color: $darkviolet;
         font-size: 36px;
     }
 
     a{
         text-decoration: none;
-        color: $black;
+        color: $darkviolet;
         font-size: 24px;
     }
 

@@ -78,7 +78,7 @@
             font-family: 'Roboto';
             text-align: left;
             font-size: 36px;
-            color:$white;
+            color:$darkviolet;
             width: auto;
 
             @include tablet{
@@ -282,8 +282,8 @@
     display: flex;
     gap: 20px;
     button{
-        background-color:$white;
-        color: $black;
+        //background-color:$green;
+        //color: $black;
     }
 }
 

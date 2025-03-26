@@ -1,52 +1,91 @@
 .container-blog{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
     margin: 40px 0;
 }
 
-.blog_card{
+.blog__card{
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 350px;
-    border: 1px solid black;
+    //height: 350px;
+
+    @include tablet{
+        flex-direction: column;
+        height: 100%;
+    }
 
     &-img{
-        width: 40%;
-
-    }
-    &-content{
-        background-color: $white;
-        border-radius: 10px;
         width: 100%;
-        padding: 20px;
-        .blog_card-title{
+
+        @include tablet{
+            width: 100%;
+        }
+    }
+    
+    &-content{
+        //background-color: $green;
+        width: 100%;
+        //padding: 20px;
+        .blog__card-title{
             font-size: 24px;
             text-align: left;
-            font-weight: normal;
-            margin: 0;
+            font-weight: bold;
+            margin: 20px;
             width: 80%;
+            color: $black;
         }
-        .blog_card-text{
-           margin: 30px 0; 
+        .blog__card-text{
+           color: $white;
+            margin: 20px;
+
            p{
             margin: 0;
+            color: $black;
            }
         }
     }
 }
 
-.blog_card-categories{
+.blog__card-categories{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 20px 0;
-    background-color: $darkgreen;
+    margin: 0 20px;
+    background-color: $pink;
     width: 200px;
-    height: 40px;
     padding: 10px;
-    color: $white;
+    color: $darkgreen;
+    font-weight: bold;
+    font-size: 12px;
+
+    @include tablet{
+
+    }
+}
+
+.blog_filters{
+    height: 40px;
+    background: $green;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    }
+
+
+.pagination{
+    span{
+        margin: 20px;
+    }
+}
+
+.blog__card-link{
+    button{
+        margin: 20px;
+    }
 }

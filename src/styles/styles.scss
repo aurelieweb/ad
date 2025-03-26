@@ -13,6 +13,7 @@
 @import './pages/resource';
 @import './pages/kiffetonsite';
 @import './pages/blog';
+@import './pages/article';
 @import './components/loading_spinner';
 @import './components/header';
 @import './components/footer';
@@ -31,6 +32,8 @@
 @import './components/valeur';
 @import './components/testimonies';
 @import './components/service_detail';
+@import './components/newsletter_form';
+@import './components/hero_blog';
 
 /*Quel emplacement*/
 .sr-only {

@@ -40,7 +40,11 @@
         }
 
         &:hover {
-            border-bottom: 5px solid $white;
+            border-bottom: 5px solid $darkviolet;
+            .menu__item-link{
+                color: $darkviolet;
+            }
+            
         }
         
         &-link{
