@@ -1,14 +1,17 @@
+.single-article{
+  margin: 20px;
+}
+
 .featured-image {
   float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin: 0 20px 10px 20px;
   max-width: 40%;
   height: auto;
   border-radius: 8px;
 }
 
 .wp-block-heading{
-  color: $darkviolet;
+  color: $black;
   justify-content: flex-start;
 }
 
@@ -21,6 +24,79 @@
 max-width: 500px;
 }
 
+//Style galerie
+.wp-block-img{
+  width: 40%;
+}
 
+//Style Bloc outils
+.div__resource-box{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.resource-box {
+  background-color: $black;
+  //border-left: 4px solid $darkgreen;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  width: 40%;
+}
+.resource-box h3 {
+  margin: 30px 0
+  ;
+  color: $pink;
+}
+.resource-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.resource-box li {
+  margin-bottom: 16px;
+  color: white;
+}
+.resource-box a {
+  color: $darkviolet;
+  text-decoration: none;
+}
+.resource-box a:hover {
+  color: $darkviolet;
+}
 
-  
+//style bloc quiz-cta
+.block-cta{
+  background: $black;
+  padding: 2rem;
+  border-left: 4px solid $darkviolet;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+
+  &-title{
+    color: $darkviolet;
+  }
+
+  p, &-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: $white;
+    margin-bottom: 50px;
+  }
+
+  &-button {
+    background: $darkviolet;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  &-button:hover {
+    background: $green;
+    color: $darkgreen;
+  }
+
+}

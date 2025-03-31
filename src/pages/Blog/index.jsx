@@ -113,6 +113,7 @@ function Blog() {
         {/* Pagination */}
         <div className="pagination">
           <button
+          className='pagination-button'
             disabled={currentPage === 1}
             onClick={() => setCurrentPage(prev => prev - 1)}
           >
@@ -122,6 +123,7 @@ function Blog() {
           <span>Page {currentPage} sur {totalPages}</span>
 
           <button
+            className='pagination-button'
             disabled={currentPage === totalPages}
             onClick={() => setCurrentPage(prev => prev + 1)}
           >
