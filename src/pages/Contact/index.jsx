@@ -3,6 +3,7 @@ import Banner from '../../components/Banner';
 import ContactForm from '../../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import Maintenance from '../../components/MaintenancePage'
 
 const buttons = [
   { text: 'Prendre rendez-vous', link: '/Calendly' }
@@ -18,6 +19,7 @@ function Contact() {
 
     return (
       <div className='main'>
+        <Maintenance />
        <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}

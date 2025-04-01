@@ -9,8 +9,16 @@ function Maintenance() {
     <div className='maintenance__div'>
       <img className="maintenance__div-img" src={imgMaintenance} alt="Page en cours de maintenance" />
       <div className='maintenance__div-text'>
-        <p className='maintenance__div-title'>Site en cours de maintenance</p>
-        <p className='maintenance__div-subtitle'>Revenez plus tard...</p>
+        <p className='maintenance__div-title'>Votre site fait peau neuve… Attachez vos ceintures, décollage imminent!
+
+        </p>
+        <p className='maintenance__div-paragraph'>
+        Il est en pleine métamorphose : relooking express, nouvelles fonctionnalités qui claquent et un blog tout neuf pour booster votre site (et votre business 💼)
+        </p>
+        <p className='maintenance__div-paragraph'>
+        Quelques petits bugs peuvent se glisser pendant la manœuvre (promis, on les surveille de près).
+Merci pour votre visite et votre confiance — on revient en version 2.0 plus vite que notre thé ne refroidit 🍵
+        </p>
       </div>
     </div>
   );

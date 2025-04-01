@@ -46,8 +46,8 @@
 .home{
     display: flex;
     flex-direction: row;
-    background: $darkgreen;
-    padding: 0 50px;
+    background: $linearGradient5;
+    //padding: 0 50px;
     //height: 300px;
     margin: 180px 0 50px 0;
 
@@ -63,8 +63,8 @@
     }
     img{
         height: 500px;
-        position: relative;
-        bottom: 100px;
+        //position: relative;
+        //bottom: 100px;
 
         @include tablet{
             max-height: 380px;

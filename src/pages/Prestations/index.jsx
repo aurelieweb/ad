@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Services from '../../sections/Services';
+import Maintenance from '../../components/MaintenancePage'
 
 
 
@@ -18,6 +19,7 @@ function Prestations() {
 
     return (
       <div className='main'>
+        <Maintenance />
        <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}

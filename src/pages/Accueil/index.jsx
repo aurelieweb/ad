@@ -6,6 +6,7 @@ import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
 import FreebiePopup from '../../components/FreebiePopup';
+import Maintenance from '../../components/MaintenancePage'
 
 import imgPortrait from '../../assets/imgPortrait.png';
 
@@ -45,6 +46,7 @@ function Accueil() {
 
   return (
     <div className='main'>
+      <Maintenance />
       <FreebiePopup />
       <Banner
         pageTitle={pageTitle}
