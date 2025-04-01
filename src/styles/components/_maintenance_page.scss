@@ -5,12 +5,23 @@
      align-items: flex-end;
      height: 250px;
      padding-bottom: 30px;
-     background: $black;
+     background: $white;
      //margin: 50px 0;
      margin: 70px 0 0 0;
 
+     @include tablet{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin-top: 80px;
+     }
+
     &-img{
         width: 30%;
+
+        @include tablet {
+            width: 50%;
+        }
         //width: 70%;
     }
 
@@ -27,6 +38,7 @@
 
         @include tablet{
             font-size: 24px;
+            margin-top: 0;
         }
 
         @include mobile{
@@ -35,25 +47,36 @@
     
     .maintenance__div-title{
         opacity: 0; 
-        color: $green;
+        color: $darkviolet;
         font-weight: bold;
         font-size: 36px;
+        margin: 10px;
         animation: fadeIn 4s ease-in-out infinite; ; // Animation de fondu en 2 secondes, répétée à l'infini
+        @include tablet {
+            font-size: 20px;
+        }
     }
 
-    .maintenance__div-subtitle{
-        font-size: 18px;
-        opacity: 0; // Commencez avec une opacité de 0
-        animation-delay: 0.4s;
 
+    .maintenance__div-paragraph{
+        font-size: 18px;
+        //opacity: 0; // Commencez avec une opacité de 0
+        animation-delay: 0.4s;
+        color: $black;
+        font-style: italic;
+        margin: 10px;
+        
         @include tablet{
             font-size: 14px;
         }
+
+
     }
         
     p {
         margin: 0;
         opacity: 1;
+
         //opacity: 0; // Commencez avec une opacité de 0
         //animation: fadeIn 3s ease-in-out infinite; // Animation de fondu en 2 secondes, répétée à l'infini
     }

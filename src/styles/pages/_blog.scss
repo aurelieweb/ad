@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     gap: 40px;
     margin: 40px 0;
+
+    @include mobile{
+        margin: 50px 0;
+    }
 }
 
 .blog__card{
@@ -73,21 +77,34 @@
 
     @include tablet{
         margin: 20px 0;
-    }
+   }
 }
 
 .blog_filters{
-    height: 40px;
+    height: 50px;
     background: $green;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    //padding: 20px;
     width: 80%;
+
+    input, select{
+        margin: 10px;
+        width: 300px;
+    }
 
     @include tablet{
         position: relative;
-        top: 20px;
+        //top: 20px;
+        top: 40px;
+        width: 100%;
+        margin: 20px 0;
+        input, select{
+            margin: 10px;
+            width: 140px;
+        }
     }
+
     }
 
 
@@ -106,6 +123,10 @@
 .blog__card-link{
     button{
         margin: 20px;
+
+        @include mobile{
+            margin: 0;
+        }
     }
 }
 
