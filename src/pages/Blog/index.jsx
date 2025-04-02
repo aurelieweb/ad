@@ -93,7 +93,8 @@ function Blog() {
         {filteredPosts.map(post => {
           const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
           const postCategories = post._embedded?.['wp:term']?.[0]?.map(cat => cat.name).join(', ');
-          const postLink = `/article/${post.id}`;
+          const postLink = `/article/${post.slug}`;
+
 
           return (
             <div className='blog__card' key={post.id}>

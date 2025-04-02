@@ -5,7 +5,7 @@ import HeroBlog from '../../components/HeroBlog';
 import NewsletterForm from '../../components/NewsletterForm';
 
 function Article() {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [article, setArticle] = useState(null);
 
   const bannerClass = "banner banner-blog";
@@ -13,16 +13,21 @@ function Article() {
   const heroBlogImgClass = "banner__img-blog";
 
   useEffect(() => {
-    const url = `https://aureliedemetrio.fr/blog/wp-json/wp/v2/posts/${id}?_embed`;
-
+    const url = `https://aureliedemetrio.fr/blog/wp-json/wp/v2/posts?slug=${slug}&_embed`;
+  
     axios.get(url)
       .then(response => {
-        setArticle(response.data);
+        if (response.data.length > 0) {
+          setArticle(response.data[0]);
+        } else {
+          console.error("Aucun article trouvé avec ce slug.");
+        }
       })
       .catch(error => {
         console.error("Erreur lors de la récupération de l’article :", error);
       });
-  }, [id]);
+  }, [slug]);
+  
 
   if (!article) return <p>Chargement...</p>;
 
