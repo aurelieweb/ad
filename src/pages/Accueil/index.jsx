@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Gallery from '../../components/Gallery';
 import Banner from '../../components/Banner';
@@ -6,7 +8,8 @@ import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 import CalendlyBooking from '../../components/CalendlyBooking';
 import FreebiePopup from '../../components/FreebiePopup';
-import Maintenance from '../../components/MaintenancePage'
+import Maintenance from '../../components/MaintenancePage';
+import Toolbox from '../../components/ToolBox';
 
 import imgPortrait from '../../assets/imgPortrait.png';
 
@@ -43,6 +46,19 @@ function Accueil() {
   const bannerImg = require('../../assets/img_coaching_creation_site_web.jpeg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
+
+  //Gestion articles 
+  const [posts, setPosts] = useState([]);
+
+useEffect(() => {
+  axios.get("https://aureliedemetrio.fr/blog/wp-json/wp/v2/posts?_embed&per_page=3")
+    .then(response => {
+      setPosts(response.data);
+    })
+    .catch(error => {
+      console.error("Erreur lors de la récupération des articles :", error);
+    });
+}, []);
 
   return (
     <div className='main'>
@@ -96,7 +112,28 @@ function Accueil() {
         </div>
       </section>
 
-      <section className='offre'>
+      <section className="home-blog">
+        <h2 className="home-blog__title">Derniers articles</h2>
+        <div className="home-blog__cards">
+          {posts.slice(0, 3).map(post => {
+            const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+            const postLink = `/article/${post.id}`;
+
+            return (
+              <div className="home-blog__card" key={post.id}>
+                {featuredImage && <img src={featuredImage} alt={post.title.rendered} />}
+                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+                <a href={postLink} className="btn btn-secondary">Lire l’article</a>
+              </div>
+            );
+          })}
+        </div>
+        <a href="/blog" className="btn btn-secondary">Voir tous les articles</a>
+      </section>
+
+
+      {/*<section className='offre'>
         <h2>Offre spéciale pour les artisans et PME du Bâtiment</h2>
         <div className='offre__artisan'>
           <div className='offre__artisan-text'>
@@ -107,7 +144,34 @@ function Accueil() {
           </div>
           <CalendlyBooking />
         </div>
-      </section>
+      </section>*/}
+
+      <section className='offre'>
+  <h2>Boîte à outils digitale pour entrepreneurs et PME</h2>
+  <div className='offre__artisan'>
+    <div className='offre__artisan-text'>
+      <p>
+        Vous êtes entrepreneur, indépendant ou dirigeant d’une PME ? Votre site web peut être bien plus qu’une simple vitrine.
+        Il peut devenir un véritable <strong>outil de productivité</strong> pour <strong>attirer des clients</strong>, <strong>automatiser des tâches</strong> et <strong>gagner un temps précieux</strong>.
+      </p>
+      <p>
+        C’est pourquoi j’ai conçu une <strong>boîte à outils digitale</strong> regroupant des <strong>guides, prompts IA, tutos et ressources concrètes</strong>,
+        spécialement pensés pour les professionnels qui veulent optimiser leur présence en ligne sans perdre de temps.
+      </p>
+      <p>
+        Cette sélection est idéale si vous souhaitez <strong>améliorer votre référencement</strong>, <strong>rédiger plus efficacement</strong>, ou encore
+        <strong>mettre en place des automatisations simples</strong> dans votre quotidien d’entrepreneur.
+      </p>
+      <p>
+        Accédez gratuitement à la boîte à outils et commencez dès aujourd’hui à faire de votre site un véritable levier de croissance.
+      </p>
+    </div>
+
+    {/* Boîte à outils intégrée ici */}
+    <Toolbox />
+  </div>
+</section>
+
     </div>
   );
 }

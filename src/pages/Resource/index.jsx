@@ -23,6 +23,15 @@ const resources = [
         isQuiz: true
     },
     {
+        title: "Prompts IA pour rédiger les pages de votre site web pro",
+        description: "Téléchargez gratuitement mes meilleurs prompts ChatGPT pour rédiger votre page d’accueil, vos services, votre page à propos, et plus encore.",
+        link: '3XQdMV', // ou lien Notion / Tally / PDF hébergé
+        ctaText: "Télécharger les prompts",
+        resourceImg: "./img/imgResource/AurelieDemetrio_prompts_redaction_ia.jpeg",
+        resourceImgClass: "test",
+        isQuiz: true
+    },
+    {
         title: "Tuto: Comment rédiger des légendes insta avec ChatGPT",
         description: "Consulter notre mini tuto vidéo. Comment rédiger et booster ses légendes instagram avec ChatGpt",
         link: "https://youtube.com/shorts/O6kI11PhM2s?feature=share",
@@ -38,10 +47,10 @@ const buttons = [
   ];
 
 function Resource() {
-    const pageTitle = "Mon expertise web à votre service";
-    const bannerText = "Architecte, professionnel du bâtiment et de l'immobilier, découvrez comment optimiser votre présence en ligne et attirer plus de clients";
-    const bannerClass = "banner banner-prestation";
-    const bannerImg = require('../../assets/imgBanner4.jpeg');
+    const pageTitle = "Créez un site web efficace : visibilité, automatisation et gain de temps";
+    const bannerText = "Vous êtes pro, indépendant ou dirigez une PME ? Transformez votre site en un outil puissant pour attirer des clients, gérer vos demandes et gagner en productivité.";
+    const bannerClass = "banner banner-presentation";
+    const bannerImg = require('../../assets/imgBannerResource.jpeg');
     const bannerImgClass = "banner__image";
 
 

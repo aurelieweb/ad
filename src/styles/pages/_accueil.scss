@@ -200,3 +200,87 @@
         }
     }
 }
+
+//Style section Blog
+.home-blog {
+    padding: 60px 0;
+    background-color: $green;
+    text-align: center;
+  
+    &__title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: $darkgreen;
+      font-weight: bold;
+    }
+  
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+  
+    &__card {
+      background-color: $white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+
+      @include mobile {
+        width: 100%;
+      }
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+  
+      h3 {
+        font-size: 20px;
+        color: $darkviolet;
+        padding: 16px;
+        margin: 0;
+      }
+  
+      p {
+        font-size: 14px;
+        color: $black;
+        line-height: 1.5; 
+        margin: 0 10px 20px 10px;
+      }
+  
+      .btn {
+        align-self: center;
+        //margin: 0 16px 16px;
+        margin-bottom: 30px;
+      }
+    }
+  
+    .btn-secondary {
+      //margin-top: 40px;
+      background-color: $darkviolet;
+      color: $white;
+      font-weight:  bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($darkgreen, 10);
+      }
+    }
+  }
+  

@@ -21,8 +21,11 @@ const FreebiePopup = () => {
   return (
     <div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        <h2>Comment rédiger son contenu avec chatGPT</h2>
-        <p>Téléchargez des ressources gratuites pour booster ton site web.</p>
+        <h2>Boostez votre activité avec mes ressources gratuites</h2>
+        <p>Accédez à des outils concrets pour : Améliorer votre visibilité, Gagner du temps, Travailler plus efficacement</p>
+        <p>
+          👉 Pensé pour les entrepreneurs, indépendants et PME.
+        </p>
         <Link to="/Ressources"><Button className="button" text="En savoir plus" /></Link>
       </Modal>
     </div>
