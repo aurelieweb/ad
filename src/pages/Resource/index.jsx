@@ -38,7 +38,18 @@ const resources = [
         ctaText: "Accéder au tuto",
         resourceImg:"./img/imgResource/AurelieDemetrio_rediger_ses_legendes_instagram_avec_chatgpt.jpeg",
         resourceImgClass:"test",
+        
     },
+    {
+        title: "Checklist : Créer ton tunnel de vente",
+        description: "Télécharge ta checklist gratuite et suis les 5 étapes clés pour transformer tes visiteurs en clients.",
+        link: 'mYqQQN', // ou lien Notion / Tally / PDF hébergéhttps://tally.so/r/mYqQQN
+        ctaText: "Télécharger la checklist",
+        resourceImg: "./img/imgResource/tunnel_de_vente_checklist_aureliedemetrio.jpg",
+        resourceImgClass: "test",
+        isQuiz: true
+    }
+    
 
 ];
 

@@ -26,7 +26,7 @@ const FreebiePopup = () => {
         <p>
           👉 Pensé pour les entrepreneurs, indépendants et PME.
         </p>
-        <Link to="/Ressources"><Button className="button" text="En savoir plus" /></Link>
+        <Link to="/ressources"><Button className="button" text="En savoir plus" /></Link>
       </Modal>
     </div>
   );

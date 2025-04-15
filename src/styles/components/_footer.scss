@@ -22,10 +22,14 @@
         gap: 20px;
 
         a{ 
-            color: $black;
+            color: $white;
             font-size: 24px;
-            transition: transform 0.3s;       
+            transition: transform 0.3s;
+            &:hover{
+                color: $darkgreen;
+            }       
         } 
+        
     }
     .menu{
         justify-content: space-between;
@@ -74,10 +78,10 @@
     align-items: center;
     width: 45px;
     height: 45px;
-    background-color: $white;
+    background-color: $darkviolet;
     border-radius: 50%;
     &:hover {
-        background-color: $darkviolet;
+        background-color: $green;
         transform: scale(1.30);
     }
 }

@@ -22,7 +22,8 @@ $box-shadows: 3px 3px 5px rgb(226, 221, 221);
 $box-shadows-btn: 0px 0px 5px $pink;
 $box-shadows: 0px 0px 5px $darkgreen;
 $box-shadows-hover: 0px 0px 5px $pink;
-$box-shadow-card: 0px 1px 2px $darkgreen;
+//$box-shadow-card: 0px 1px 2px $darkgreen;
+$box-shadow-card: 0 8px 30px rgba(0, 0, 0, 0.25);
 /*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/
 
 $linearGradient: linear-gradient(to bottom right, lighten($green, 5), lighten($darkgreen, 5));

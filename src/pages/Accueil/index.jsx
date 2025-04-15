@@ -113,24 +113,34 @@ useEffect(() => {
       </section>
 
       <section className="home-blog">
-        <h2 className="home-blog__title">Derniers articles</h2>
-        <div className="home-blog__cards">
-          {posts.slice(0, 3).map(post => {
-            const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-            const postLink = `/article/${post.id}`;
+        <h2 className="home-blog__title">
+        Stratégie web, création de site & outils digitaux :<br/> les essentiels pour les indépendants et PME
+        </h2>
 
-            return (
-              <div className="home-blog__card" key={post.id}>
-                {featuredImage && <img src={featuredImage} alt={post.title.rendered} />}
-                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <a href={postLink} className="btn btn-secondary">Lire l’article</a>
-              </div>
-            );
-          })}
-        </div>
-        <a href="/blog" className="btn btn-secondary">Voir tous les articles</a>
-      </section>
+  <div className="home-blog__cards">
+    {posts.slice(0, 3).map(post => {
+      const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+      const postLink = `/article/${post.slug}`;
+
+      return (
+        <article className="home-blog__card" key={post.slug}>
+          {featuredImage && (
+            <a href={postLink}>
+              <img src={featuredImage} alt={post.title.rendered} />
+            </a>
+          )}
+          <h3>
+            <a href={postLink} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+          </h3>
+          <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+          <a href={postLink} className="btn btn-secondary">Lire l’article</a>
+        </article>
+      );
+    })}
+  </div>
+  <a href="/blog" className="btn btn-secondary">Voir tous les articles</a>
+</section>
+
 
 
       {/*<section className='offre'>

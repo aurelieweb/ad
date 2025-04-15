@@ -8,7 +8,7 @@
     margin: 40px 0;
 
     @include mobile{
-        margin: 50px 0;
+        margin: 120px 0 0 0;
     }
 }
 
@@ -109,6 +109,9 @@
 
 
 .pagination{
+    @include mobile{
+        margin: 20px 0;
+    }
     span{
         margin: 20px;
     }

@@ -1,39 +1,55 @@
 .newsletter-form {
     background: $green;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 2rem auto;
     text-align: center;
     width: 100%;
   
     h2 {
-      margin-bottom: 1.5rem;
+      margin: 2rem;
+
+      @include mobile{
+        margin: 0;
+      }
     }
   
     form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      margin: 50px;
+
+      @include mobile{
+        margin: 0;
+      }
   
       .form-group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         width: 100%;
+        justify-content: space-between;
+
+        @include mobile{
+          flex-direction: column;
+        }
   
-        @media(min-width: 600px) {
+        /*@media(min-width: 600px) {
           flex-direction: row;
           justify-content: space-between;
-        }
+        }*/
       }
   
       input {
-        padding: 10px;
+        //padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 16px;
+        height: 40px;
+
+        @include mobile{
+          width: 90%;
+
+        }
       }
   
       .button {
@@ -59,6 +75,11 @@
   }
 
 .form-group-name{
-  width: 45%;
+  width: 47%;
+  height: 40px;
+
+  @include mobile{
+    width: 100%;
+  }
 }
   

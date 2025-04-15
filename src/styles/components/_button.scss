@@ -16,13 +16,13 @@ button {
     border: none;
 
     &:hover {
-        color: $white;
+        color: $darkgreen;
         //background-color: $black;
         transform: scale(1.1);
 
         &::after {
             //opacity: 0.75;
-            background-color: $darkviolet;
+            background-color: $green;
         }
     }
     &::after {

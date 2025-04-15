@@ -7,6 +7,7 @@ import imgMaintenance from '../../assets/imgMaintenance.png';
 
 function Maintenance() {
   return (
+    <div className='maintenance'>
     <div className='maintenance__div'>
       <img className="maintenance__div-img" src={imgMaintenance} alt="Page en cours de maintenance" />
       <div className='maintenance__div-text'>
@@ -24,6 +25,7 @@ Merci pour votre visite et votre confiance — je reviens en version 2.0 plus vi
         Aurélie
         </p>
       </div>
+    </div>
     </div>
   );
 }

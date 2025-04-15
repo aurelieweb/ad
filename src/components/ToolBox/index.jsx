@@ -1,16 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faToolbox } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Button'; // Corrigé ici
 
 const ToolBox = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/Resource');
-  };
-
   return (
     <div className="booking-card">
       <span className="booking-icon">
@@ -24,7 +18,9 @@ const ToolBox = () => {
         </p>
       </div>
 
-      <Button text="Accéder aux ressources" onClick={handleClick} />
+      <Link to="/ressources">
+        <Button text="Accéder aux ressources" />
+      </Link>
     </div>
   );
 };

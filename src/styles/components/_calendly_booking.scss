@@ -3,12 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    //height: 250px;
     max-width: 350px;
     background: $black;
     border-radius: 10px;
     position: relative;
     color: $green;
+    box-shadow: $box-shadow-card;
 
     @include tablet {
         width: 300px;
@@ -28,8 +29,8 @@
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        background: $darkviolet;
-        color: $black;
+        background: $green;
+        color: $darkviolet;
         font-size: 36px;
     }
 
@@ -37,6 +38,7 @@
         text-decoration: none;
         color: $darkviolet;
         font-size: 24px;
+        margin-bottom: 50px;
     }
 
    /* p{
@@ -54,4 +56,14 @@
     margin-left: 0;
     margin-top: 60px;
 }
+}
+
+.booking-text{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: $darkviolet;
+    p{
+        color: $white;
+    }
 }

@@ -206,19 +206,14 @@
     padding: 60px 0;
     background-color: $green;
     text-align: center;
-  
-    &__title {
-      font-size: 32px;
-      margin-bottom: 40px;
-      color: $darkgreen;
-      font-weight: bold;
-    }
+    margin: 0;
   
     &__cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 20px;
+      gap: 30px;
     }
   
     &__card {
@@ -251,6 +246,11 @@
         color: $darkviolet;
         padding: 16px;
         margin: 0;
+
+        a{
+            text-decoration: none;
+            color: $darkviolet;
+        }
       }
   
       p {
