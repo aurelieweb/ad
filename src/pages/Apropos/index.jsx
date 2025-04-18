@@ -10,7 +10,6 @@ import logoHTML from '../../assets/logoHTML.jpeg';
 import logoCSS from '../../assets/logoCSS.jpeg';
 import logoNode from '../../assets/logoNodeJS.jpeg';
 import logoOxygen from '../../assets/logoOxygen.png';
-import Maintenance from '../../components/MaintenancePage'
 
 const buttons = [
     { text: 'Consultation gratuite', link: '/Calendly' }
@@ -27,7 +26,6 @@ function Apropos() {
 
     return (
       <div className='main'>
-        <Maintenance />
        <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}

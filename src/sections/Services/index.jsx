@@ -1,7 +1,5 @@
 import React from "react";
-//import { Link } from 'react-router-dom';
 import Card from "../../components/Card";
-//import Button from '../../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons';
 import imgNosServices from '../../assets/img_coaching.jpg';
@@ -10,13 +8,10 @@ const servicesData = require('../../data/serviceData.json');
 
 function Services() {
   const webServices = servicesData.filter(service => service.type === "Site web");
-  const otherServices = servicesData.filter(service => service.type !== "Site web");
+  const automationServices = servicesData.filter(service => service.type === "Automatisation");
+  const otherServices = servicesData.filter(service => service.type === "Autres prestations");
 
   const customerTypeDetail = [
-    {
-      name: "Création de site",
-      detail: []
-    },
     {
       name: "Création de site internet Bâtiment & Architecte",
       detail: [
@@ -25,6 +20,14 @@ function Services() {
         "Mise en valeur de votre univers",
         "Gallerie (portfolio) pour présenter vos projets",
         "Offre spéciale Artisan: Rédaction de contenu inclus dans l'offre",
+      ]
+    },
+    {
+      name: "Automatiser son business",
+      detail: [
+        "Automatiser les tâches chronophages",
+        "Connecter vos outils (site, CRM, agenda...)",
+        "Centraliser les demandes clients dans vos outils métier"
       ]
     },
     {
@@ -37,26 +40,23 @@ function Services() {
     }
   ];
 
-  // Group web services by customerType
-  const webServicesByCustomerType = webServices.reduce((acc, service) => {
-    if (!acc[service.customerType]) {
-      acc[service.customerType] = [];
-    }
-    acc[service.customerType].push(service);
-    return acc;
-  }, {});
+  const groupServicesByCustomerType = (services) => {
+    return services.reduce((acc, service) => {
+      if (!acc[service.customerType]) {
+        acc[service.customerType] = [];
+      }
+      acc[service.customerType].push(service);
+      return acc;
+    }, {});
+  };
 
-  const otherServicesByCustomerType = otherServices.reduce((acc, service) => {
-    if (!acc[service.customerType]) {
-      acc[service.customerType] = [];
-    }
-    acc[service.customerType].push(service);
-    return acc;
-  }, {});
+  const webServicesByCustomerType = groupServicesByCustomerType(webServices);
+  const automationServicesByCustomerType = groupServicesByCustomerType(automationServices);
+  const otherServicesByCustomerType = groupServicesByCustomerType(otherServices);
 
   return (
     <section id='service'>
-      <div className="container__services"> 
+      <div className="container__services">
         <h2>Nos services web sur mesure</h2>
         <p className='section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services</strong> de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
         <div className="container__section">
@@ -88,17 +88,14 @@ function Services() {
               <div className="service-detail">
                 <h3 className="customer-type">{customerType}</h3>
                 <ul>
-                  {customerTypeDetail.map((detail, detailIndex) => {
-                    if (detail.name === customerType) {
-                      return detail.detail.map((item, itemIndex) => (
-                        <li key={itemIndex}>
-                          <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
-                          <div className="icon-div">{item}</div>
-                        </li>
-                      ));
-                    }
-                    return null;
-                  })}
+                  {customerTypeDetail.map((detail, detailIndex) => (
+                    detail.name === customerType && detail.detail.map((item, itemIndex) => (
+                      <li key={itemIndex}>
+                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
+                        <div className="icon-div">{item}</div>
+                      </li>
+                    ))
+                  ))}
                 </ul>
               </div>
               <div className="container__card-div">
@@ -122,34 +119,122 @@ function Services() {
         ))}
       </div>
 
-      <div className="container__services services-autre">
-        <h2>Comment optimiser ton site web : Nos autres prestations</h2>
-        <div className="container__section">
-          <p className='container__section-text'>Vous avez besoin d'aide pour mettre en valeur votre savoir-faire? <strong>Je vous accompagne</strong> pour renforcer votre présence en ligne. Je mets mon expertise à votre service <strong>pour optimiser votre site</strong> et <strong>booster votre activité</strong>. Vous vous occupez de la gestion de votre site internet? Vous avez besoin d'un avis professionnel ou d'un accompagnement? Parlons-en.</p>
+      <div className="container__services">
+      <h2>Automatisation</h2>
+    <p className='section-text'>
+      Automatiser ton business, c’est arrêter de perdre du temps sur des tâches répétitives. C’est aussi <strong>fluidifier ton organisation</strong>, éviter les oublis, et te concentrer sur ce que tu fais de mieux : ton métier.
+      Ensemble, on connecte tes outils pour que ton site, ton agenda, tes demandes clients et ton suivi soient synchronisés.
+    </p>
+    <div className="container__section">
+      <img src={imgNosServices} alt="Automatisations pros par Aurélie DEMETRIO" />
+      <div className="container__services-div">
+        <div>
+          <h3>Pourquoi automatiser ?</h3>
+          <ul>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Gagner du temps au quotidien</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Limiter les erreurs humaines</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Améliorer ton suivi client</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Recevoir les infos là où tu travailles déjà (Notion, Airtable, CRM...)</li>
+          </ul>
         </div>
+        <div>
+          <h3>Avantages :</h3>
+          <ul>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Process simplifiés : Plus de copier-coller ou d’oublis, tout est relié.</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Connexions intelligentes : Tes outils parlent entre eux grâce aux automatisations personnalisées.</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Autonomie : Une fois configuré, ton système tourne tout seul.</li>
+            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Flexibilité : Ajout ou évolution des automatisations selon tes besoins.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        
+        {Object.keys(automationServicesByCustomerType).map((customerType, index) => (
+          <div key={index} className='container__card'>
+            <div className="service-div">
+              <div className="service-detail">
+                <h3 className="customer-type">{customerType}</h3>
+                <ul>
+                  {customerTypeDetail.map((detail, detailIndex) => (
+                    detail.name === customerType && detail.detail.map((item, itemIndex) => (
+                      <li key={itemIndex}>
+                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
+                        <div className="icon-div">{item}</div>
+                      </li>
+                    ))
+                  ))}
+                </ul>
+              </div>
+              <div className="container__card-div">
+                {automationServicesByCustomerType[customerType].map((service, serviceIndex) => (
+                  <Card
+                    key={serviceIndex}
+                    serviceName={service.name}
+                    imageUrl={service.imageUrl}
+                    servicePrice={service.price}
+                    description={service.description}
+                    buttonText={service.buttonText}
+                    prestation={service.prestation}
+                    link={service.link}
+                    isPromotion={service.isPromotion}
+                    promotionMessage={service.promotionMessage}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="container__services">
+        <h2>Optimise ton site web : Audit & Accompagnement</h2>
+        <p className='section-text'>
+          Tu as déjà un site web mais tu sens qu’il pourrait être plus efficace ? Tu veux <strong>le rendre plus pro, plus clair, plus performant</strong> ?  
+          Ces prestations sont pensées pour t’aider à prendre du recul, identifier ce qui bloque, et surtout <strong>mettre en place des améliorations concrètes</strong>, rapidement.
+        </p>
+        <div className="container__section">
+          <img src={imgNosServices} alt="Audit et coaching par Aurélie DEMETRIO" />
+          <div className="container__services-div">
+            <div>
+              <h3>Pourquoi te faire accompagner ?</h3>
+              <ul>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Avoir un regard pro sur ton site existant</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Identifier les points faibles (design, structure, SEO…)</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Trouver des solutions concrètes, applicables tout de suite</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Avantages :</h3>
+              <ul>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Coaching personnalisé : tu poses tes questions, je t’accompagne avec des réponses concrètes.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Vision claire : un plan d’action priorisé pour ne pas t’éparpiller.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Gain de temps : tu sais quoi faire, dans quel ordre et avec quels outils.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Ressources prêtes à l’emploi : guides, prompts et outils pour avancer même après l'accompagnement.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
         {Object.keys(otherServicesByCustomerType).map((customerType, index) => (
           <div key={index} className='container__card'>
             <div className="service-div">
               <div className="service-detail">
                 <h3 className="customer-type">{customerType}</h3>
                 <ul>
-                  {customerTypeDetail.map((detail, detailIndex) => {
-                    if (detail.name === customerType) {
-                      return detail.detail.map((item, itemIndex) => (
-                        <li key={itemIndex}>
-                          <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
-                          <div className="icon-div">{item}</div>
-                        </li>
-                      ));
-                    }
-                    return null;
-                  })}
+                  {customerTypeDetail.map((detail, detailIndex) => (
+                    detail.name === customerType && detail.detail.map((item, itemIndex) => (
+                      <li key={itemIndex}>
+                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
+                        <div className="icon-div">{item}</div>
+                      </li>
+                    ))
+                  ))}
                 </ul>
               </div>
               <div className="container__card-div">
-                {otherServicesByCustomerType[customerType].map((service, index) => (
+                {otherServicesByCustomerType[customerType].map((service, serviceIndex) => (
                   <Card
-                    key={index}
+                    key={serviceIndex}
                     serviceName={service.name}
                     imageUrl={service.imageUrl}
                     servicePrice={service.price}

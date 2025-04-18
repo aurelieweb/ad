@@ -6,7 +6,7 @@ import Gallery from '../../components/Gallery';
 import Banner from '../../components/Banner';
 import CardService from '../../components/CardService';
 import Button from '../../components/Button';
-import CalendlyBooking from '../../components/CalendlyBooking';
+//import CalendlyBooking from '../../components/CalendlyBooking';
 import FreebiePopup from '../../components/FreebiePopup';
 import Maintenance from '../../components/MaintenancePage';
 import Toolbox from '../../components/ToolBox';

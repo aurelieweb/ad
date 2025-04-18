@@ -2,7 +2,6 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Portfolio from '../../sections/Portfolio';
-import Maintenance from '../../components/MaintenancePage'
 
 const buttons = [
   { text: 'Prendre rendez-vous', link: '/Calendly' }
@@ -19,7 +18,6 @@ function Realisations() {
 
   return (
     <div className='main main-realisation'>
-            <Maintenance />
             <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}

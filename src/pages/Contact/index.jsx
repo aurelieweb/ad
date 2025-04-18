@@ -3,7 +3,7 @@ import Banner from '../../components/Banner';
 import ContactForm from '../../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
-import Maintenance from '../../components/MaintenancePage'
+//import Maintenance from '../../components/MaintenancePage'
 
 const buttons = [
   { text: 'Prendre rendez-vous', link: '/Calendly' }
@@ -19,7 +19,6 @@ function Contact() {
 
     return (
       <div className='main'>
-        <Maintenance />
        <Banner 
             pageTitle={pageTitle} 
             bannerClass={bannerClass}
@@ -42,12 +41,12 @@ function Contact() {
           <div className="contact__card">
             <h3 className='contact__card-title'>Téléphone</h3>
             <span><FontAwesomeIcon icon={faPhone} className='contact__icon'/></span>
-            <a href="tel:+33457437544">06 36 86 92 70</a>
+            <a href="tel:+33636869270">06 36 86 92 70</a>
           </div>
           <div className="contact__card">
             <h3 className='contact__card-title'>E-mail</h3>
             <span><FontAwesomeIcon icon={faEnvelope} className='contact__icon'/></span>
-            <a href="mailto:contact@demetrio.fr">contact@adlagencedigitale.fr</a>
+            <a href="mailto:contact@aureliededemetrio.fr">contact@aureliedemetrio.fr</a>
           </div>
         </div>
       </section>
