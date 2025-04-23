@@ -221,7 +221,7 @@
     .banner__content{
 
         z-index: 0;
-        max-height: 400px;
+        height: 350px;
 
         @include tablet {
             padding: 30px;

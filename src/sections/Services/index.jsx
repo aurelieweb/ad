@@ -13,7 +13,7 @@ function Services() {
 
   const customerTypeDetail = [
     {
-      name: "Création de site internet Bâtiment & Architecte",
+      name: "Création de site internet artisans, entrepreneurs, PME",
       detail: [
         "Deux options version: one-page ou site vitrine",
         "Design esthétique et professionnel",

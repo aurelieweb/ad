@@ -1,11 +1,8 @@
-button {
-    //width: 160px;
+.button {
     width: 180px;
-    //height: 40px;
     height: 50px;
     font-family: 'Roboto';
     font-weight: bold;
-    //font-size: 20px;
     font-size: 18px;
     background: $darkviolet;
     color: $white;
@@ -14,70 +11,44 @@ button {
     z-index: 1;
     transition: transform 0.3s;
     border: none;
-
-    &:hover {
-        color: $darkgreen;
-        //background-color: $black;
-        transform: scale(1.1);
-
-        &::after {
-            //opacity: 0.75;
-            background-color: $green;
-        }
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-
-//        opacity: 0.75;
-        z-index: -1;
-        border-radius: 10px;
-        transition : opacity 250ms;
-        //box-shadow: $box-shadows-hover;
-    }   
-}
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   
-  /* Style pour le bouton "Valider" */
-
-  .buttons {
-    display: flex;
-    gap: 10px;
-
-    
-}
-    .form__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 20px;
-        //border: none;
-
-        cursor: pointer;
-        font-size: 16px;
-
-        &::after {
-            content: "";
-            border-radius: 10px;
-        }
+    // Hover par défaut
+    &:hover {
+      color: $darkgreen;
+      transform: scale(1.1);
+  
+      &::after {
+        background-color: $green;
+      }
     }
-
-    .close-btn {
-        position: absolute;
-        width: 40px;
-        top: 10px;
-        right: 10px;
-        color: #fff;
-        padding: 8px 12px;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-
-        &::after{
-            border-radius: 4px;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      z-index: -1;
+      border-radius: 10px;
+      transition: opacity 250ms;
+    }
+  
+    // ✅ Variante secondaire
+    &.btn-secondary {
+      background-color: $darkviolet;
+      color: $white;
+      text-decoration: none;
+  
+      &:hover {
+        background-color: $darkgreen;
+        color: $white;
+  
+        &::after {
+          background-color: transparent;
         }
       }
-
+    }
+  }
+  

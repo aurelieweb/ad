@@ -1,11 +1,17 @@
 import React from 'react';
 import '../../styles/styles.scss';
 
-/*Fonction Button*/
+/* Fonction Button */
 
-function Button({ text }) {
+function Button({ text, className = '', onClick, type = 'button' }) {
   return (
-    <button>{text}</button>
+    <button
+      className={`button ${className}`}
+      type={type}
+      onClick={onClick}
+    >
+      {text}
+    </button>
   );
 }
 

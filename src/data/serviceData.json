@@ -51,7 +51,7 @@
   {
     "name": "Ta vitrine utile",
     "type": "Site web",
-    "customerType": "Création de site internet Bâtiment & Architecte",
+    "customerType": "Création de site internet artisans, entrepreneurs, PME",
     "description": "Un site structuré, connecté, qui automatise les demandes, envoie les infos au bon endroit et te fait gagner du temps dès le jour 1.",
     "prestation": [
       { "nom": "Site web complet (jusqu’à 5 pages)", "inclus": true },

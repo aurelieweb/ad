@@ -1,0 +1,88 @@
+.icon-card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    margin: 30px 0 50px 0;
+  
+    @include tablet {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      width: 90%;
+    }
+  }
+  
+  .icon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    color: $darkviolet;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 180px;
+    font-size: 30px;
+    box-shadow: $box-shadow-card;
+    transition: transform 0.3s;
+    position: relative;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    @include mobile {
+      width: 80%;
+    }
+  
+    &__title {
+      color: $darkviolet;
+      font-size: 24px;
+      margin:
+0;
+  text-align: center;
+    }
+  
+    &__text {
+      text-align: center;
+      color: $black;
+      font-size: 18px;
+      margin: 20px 0;
+  
+      @include tablet {
+        font-weight: normal;
+        font-size: 16px;
+      }
+  
+      @include mobile {
+        margin: 0;
+        margin-left: 20px;
+        text-align: left;
+      }
+    }
+  
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: $black;
+      border-radius: 50%;
+      position: relative;
+      top: -50px;
+  
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+  
