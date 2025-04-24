@@ -13,6 +13,7 @@ import Coaching from './pages/CoachingPage';
 import PimpeTonSite from './pages/PimpetonSite';
 import KiffeTonSite from './pages/Kiffetonsite';
 import Resource from './pages/Resource';
+import Flyer from './pages/Flyer';
 import RGPD from './pages/rgpd';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/kiffetonsite" element={<KiffeTonSite />} />
           <Route path="/pimpetonsite" element={<PimpeTonSite />} />
           <Route path="/ressources" element={<Resource />} />
+          <Route path="/flyer" element={<Flyer />} />
           <Route path="/rgpd" element={<RGPD />} />
 
         </Routes>
