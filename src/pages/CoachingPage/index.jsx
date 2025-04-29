@@ -9,7 +9,7 @@ const buttons = [
 function CoachingPage() {
   const pageTitle = "Pimpe ton site : Le coaching qui va transfomer ton site";
   const bannerText = "A modifier";
-  const bannerImg = require('../../assets/imgPortrait.png');
+  const bannerImg = require('../../assets/img_coaching_creation_site_web.jpg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

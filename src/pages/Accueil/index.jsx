@@ -12,7 +12,7 @@ import Toolbox from '../../components/ToolBox';
 import IconCard from '../../components/IconCard'
 import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-solid-svg-icons";
 import imgBenefit from "../../assets/imgArchitecte.jpg";
-import imgPortrait from '../../assets/imgPortrait.png';
+import imgPortrait from '../../assets/imgPortrait.jpg';
 import ServiceDetail from "../../components/ServiceDetail";
 
 

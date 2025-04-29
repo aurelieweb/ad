@@ -18,7 +18,7 @@
       "description": "Création d'un site pour la mise en avant d'un programme neuf",
       "coverImage": "./img/imgProjet/immo/immo_img1.png",
       "images": [
-        "./img/imgProjet/immo/immo_img2.png",
+        "./img/imgProjet/immo/immo_img2.jpg",
         "./img/imgProjet/immo/immo_img3.png",
         "./img/imgProjet/immo/immo_img4.png",
         "./img/imgProjet/immo/immo_img5.png",
@@ -30,10 +30,10 @@
     {
       "title": "Création d'une maquette de site pour un Architecte",
       "description": "Création d'une galerie de projet sur mesure pour un Architecte",
-      "coverImage": "./img/imgProjet/archi1/archi1_img2.png",
+      "coverImage": "./img/imgProjet/archi1/archi1_img2.jpg",
       "images": [
         "./img/imgProjet/archi1/archi1_img1.png",
-        "./img/imgProjet/archi1/archi1_img2.png",
+        "./img/imgProjet/archi1/archi1_img2.jpg",
         "./img/imgProjet/archi1/archi1_img3.png",
         "./img/imgProjet/archi1/archi1_img4.png"
       ],
