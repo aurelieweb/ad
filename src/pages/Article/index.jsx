@@ -14,7 +14,7 @@ function Article() {
   const [submitted, setSubmitted] = useState(false);
 
   const bannerClass = "banner banner-blog";
-  const heroBlogImg = require('../../assets/imgBlogBanner.png');
+  const heroBlogImg = require('../../assets/imgBlogBanner.jpg');
   const heroBlogImgClass = "banner__img-blog";
 
   // Charger l’article actuel

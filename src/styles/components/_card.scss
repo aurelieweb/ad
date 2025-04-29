@@ -45,6 +45,7 @@
         &__content{
             padding: 0;
             color: white;
+            height: 100px; //ajout apres resize img verifier pas de bug de mise en page
 
             &-icon{
                 display: flex;
@@ -189,6 +190,7 @@
 .service-image{
     width: 100%;
     border-radius: 10px 10px 0 0;
+    height: 100%; //ajout avec image resize verfier pas de bug sur auter card
 }
 
 /* Card Promotion Banner */

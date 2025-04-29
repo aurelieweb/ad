@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 function Flyer() {
   const pageTitle = "Un site web utile, qui travaille pour vous.";
   const bannerText = "Sites web connectés & automatisations pour vous faire gagner du temps, simplifier votre gestion et réduire les tâches répétitives.";
-  const bannerImg = require("../../assets/img_coaching_creation_site_web.jpeg");
+  const bannerImg = require("../../assets/img_coaching_creation_site_web.jpg");
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
@@ -59,7 +59,7 @@ function Flyer() {
       </section>
 
       <section className="flyer__cta">
-        <h2>📞 Et maintenant ?</h2>
+        <h2>Et maintenant ?</h2>
         <p>Je vous propose un échange gratuit pour discuter de votre site ou de vos besoins en automatisation.</p>
         <Button className="btn-secondary" text="Réserver un appel" link="/Calendly" />
       </section>

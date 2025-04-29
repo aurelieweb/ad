@@ -14,7 +14,8 @@
 
     &-div{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
 
     }
 
@@ -153,14 +154,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        align-items: flex-start;
 
         @include mobile{
             flex-direction: column;
         }
 
         img{
-            width: 45%;
-
+            width: 40%;
             @include mobile{
                 width: 90%;
                 margin-bottom: 30px;

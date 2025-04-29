@@ -2,7 +2,9 @@ import React from "react";
 import Card from "../../components/Card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons';
-import imgNosServices from '../../assets/img_coaching.jpg';
+import imgNosServices1 from '../../assets/img_coaching.jpg';
+import imgNosServices2 from '../../assets/img_automatisation_pme.jpg';
+import imgNosServices3 from '../../assets/img_coaching_creation_site_web.jpg';
 
 const servicesData = require('../../data/serviceData.json');
 
@@ -60,8 +62,8 @@ function Services() {
         <h2>Nos services web sur mesure</h2>
         <p className='section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services</strong> de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
         <div className="container__section">
-          <img src={imgNosServices} alt="Aurélie DEMETRIO - L'Agence Digitale" />
           <div className="container__services-div">
+          <img src={imgNosServices1} alt="Aurélie DEMETRIO - L'Agence Digitale" />
             <div>
               <h3>Pourquoi un site web?</h3>
               <ul>
@@ -126,8 +128,8 @@ function Services() {
       Ensemble, on connecte tes outils pour que ton site, ton agenda, tes demandes clients et ton suivi soient synchronisés.
     </p>
     <div className="container__section">
-      <img src={imgNosServices} alt="Automatisations pros par Aurélie DEMETRIO" />
       <div className="container__services-div">
+      <img src={imgNosServices2} alt="Automatisations pros par Aurélie DEMETRIO" />
         <div>
           <h3>Pourquoi automatiser ?</h3>
           <ul>
@@ -193,8 +195,9 @@ function Services() {
           Ces prestations sont pensées pour t’aider à prendre du recul, identifier ce qui bloque, et surtout <strong>mettre en place des améliorations concrètes</strong>, rapidement.
         </p>
         <div className="container__section">
-          <img src={imgNosServices} alt="Audit et coaching par Aurélie DEMETRIO" />
+          
           <div className="container__services-div">
+          <img src={imgNosServices3} alt="Audit et coaching par Aurélie DEMETRIO" />
             <div>
               <h3>Pourquoi te faire accompagner ?</h3>
               <ul>

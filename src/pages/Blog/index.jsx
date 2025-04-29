@@ -12,7 +12,7 @@ const buttons = [
 function Blog() {
   const pageTitle = "Optimiser son site et automatiser son business - Le blog";
   const bannerText = "Mettez en avant votre savoir-faire avec Aurélie DEMETRIO de L'agence Digitale. Offrez à votre expertise la visibilité qu'elle mérite.";
-  const bannerImg = require('../../assets/AdobeStock_945502607_Preview.jpeg');
+  const bannerImg = require('../../assets/imgBanner_blog_aurelie_demetrio_developpeuse_automatisation.jpg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

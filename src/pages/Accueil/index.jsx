@@ -28,7 +28,7 @@ const servicesType = [
       "Mise en place de page de vente",
       "Mise en valeur de vos projets et savoir-faire",
     ],
-    img: require('../../assets/img_creation_site_web.jpeg'),
+    img: require('../../assets/img_creation_site_web.jpg'),
   },
   {
     name: "Automatisation",
@@ -37,7 +37,7 @@ const servicesType = [
       "Automatisations Make / Tally / Airtable",
       "Centralisation des demandes",
     ],
-    img: require('../../assets/img_coaching_creation_site_web.jpeg'),
+    img: require('../../assets/img_automatisation_pme.jpg'),
   },
   {
     name: "Accompagnement & Coaching",
@@ -46,7 +46,7 @@ const servicesType = [
       "Guide de création de site",
       "Accompagnement dans la création ou l'optimisation de ton site",
     ],
-    img: require('../../assets/img_coaching_creation_site_web.jpeg'),
+    img: require('../../assets/img_coaching_creation_site_web.jpg'),
   },
 ];
 
@@ -95,7 +95,7 @@ const buttons = [
 function Accueil() {
   const pageTitle = "Création de sites web et outils connectés pour entrepreneurs et PME";
   const bannerText = "Un site web utile et connecté à vos outils, qui valorise votre savoir-faire et vous fait gagner un temps précieux.";
-  const bannerImg = require('../../assets/img_coaching_creation_site_web.jpeg');
+  const bannerImg = require('../../assets/img_coaching_creation_site_web.jpg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
