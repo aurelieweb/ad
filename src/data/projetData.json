@@ -18,10 +18,10 @@
       "description": "Création d'un site pour la mise en avant d'un programme neuf",
       "coverImage": "./img/imgProjet/immo/immo_img1.png",
       "images": [
-        "./img/imgProjet/immo/immo_img2.jpg",
-        "./img/imgProjet/immo/immo_img3.png",
+        "./img/imgProjet/immo/immo_img2.png",
+        "./img/imgProjet/immo/immo_img3.webp",
         "./img/imgProjet/immo/immo_img4.png",
-        "./img/imgProjet/immo/immo_img5.png",
+        "./img/imgProjet/immo/immo_img5.webp",
         "./img/imgProjet/immo/immo_img6.png"
       ],
       "url": "https://web-immobilier.aureliedemetrio.fr/",
@@ -32,9 +32,9 @@
       "description": "Création d'une galerie de projet sur mesure pour un Architecte",
       "coverImage": "./img/imgProjet/archi1/archi1_img2.jpg",
       "images": [
-        "./img/imgProjet/archi1/archi1_img1.png",
+        "./img/imgProjet/archi1/archi1_img1.webp",
         "./img/imgProjet/archi1/archi1_img2.jpg",
-        "./img/imgProjet/archi1/archi1_img3.png",
+        "./img/imgProjet/archi1/archi1_img3.webp",
         "./img/imgProjet/archi1/archi1_img4.png"
       ],
       "featured": true
@@ -45,7 +45,7 @@
       "coverImage": "./img/imgProjet/archi2/archi2_img1.jpg",
       "images": [
         "./img/imgProjet/archi2/archi2_img1.jpg",
-        "./img/imgProjet/archi2/archi2_img2.jpg"
+        "./img/imgProjet/archi2/archi2_img2.webp"
       ],
       "featured": true
     },

@@ -12,7 +12,7 @@ function Slide() {
 
   return (
     <div className="slide">
-      <img className="slide__image" src={ImgSlide} alt="Création site web Thonon les Bains" />
+      <img className="slide__image" src={ImgSlide} alt="Création site web Thonon les Bains" loading='lazy' />
 
       <div className="slide__content">
         <div className='slide__content-tab'>

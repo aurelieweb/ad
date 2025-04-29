@@ -148,10 +148,11 @@ function Accueil() {
           {servicesType.map((service, index) => (
             <Link className='card-link' key={index} to="/prestations">
               <CardService
-                serviceName={service.name}
-                img={<img src={service.img} alt={service.name} className='service-image' />}
-                description={<ul>{service.content.map((item, idx) => <li key={idx}>{item}</li>)}</ul>}
-              />
+              serviceName={service.name}
+              imageUrl={service.img}
+              alt={service.name}
+              description={<ul>{service.content.map((item, idx) => <li key={idx}>{item}</li>)}</ul>}
+            />
             </Link>
           ))}
         </div>
@@ -183,7 +184,7 @@ function Accueil() {
             const postLink = `/article/${post.slug}`;
             return (
               <article className="home-blog__card" key={post.slug}>
-                {featuredImage && <a href={postLink}><img src={featuredImage} alt={post.title.rendered} /></a>}
+                {featuredImage && <a href={postLink}><img src={featuredImage} alt={post.title.rendered} loading="lazy" /></a>}
                 <h3><a href={postLink} dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
                 <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                 <a href={postLink} className="button btn-secondary">Lire l’article</a>

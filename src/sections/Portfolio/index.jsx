@@ -42,7 +42,7 @@ function Portfolio() {
             }
           }}
         >
-          <img src={project.coverImage} alt={project.title} />
+          <img src={project.coverImage} alt={project.title} loading="lazy"/>
           <h3 className="projet__card-title">{project.title}</h3>
           {project.url && <button className="view-online-btn">Voir en ligne</button>}
         </a>
@@ -60,7 +60,7 @@ function Portfolio() {
             <Slider {...settings}>
               {selectedProject.images.map((image, index) => (
                 <div key={index}>
-                  <img className="project__details-img" src={image} alt={`Project ${index}`} /> {/* Utilisation des chemins d'images depuis les données du projet */}
+                  <img className="project__details-img" src={image} alt={`Project ${index}`} loading="lazy" /> {/* Utilisation des chemins d'images depuis les données du projet */}
                 </div>
               ))}
             </Slider>

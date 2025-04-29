@@ -53,7 +53,7 @@ const Gallery = ({ projects }) => {
         {featuredProjects.map((project, index) => (
           <SwiperSlide key={index} className="project-slide">
             <div className="project-image">
-              <img src={project.coverImage} alt={project.title} />
+              <img src={project.coverImage} alt={project.title} loading="lazy"/>
               <figcaption>{project.title}</figcaption>
             </div>
           </SwiperSlide>
