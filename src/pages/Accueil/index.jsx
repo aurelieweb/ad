@@ -184,7 +184,7 @@ function Accueil() {
             const postLink = `/article/${post.slug}`;
             return (
               <article className="home-blog__card" key={post.slug}>
-                {featuredImage && <a href={postLink}><img src={featuredImage} alt={post.title.rendered} loading="lazy" /></a>}
+                {featuredImage && <a href={postLink}><img src={featuredImage} alt={post.title.rendered} loading="lazy"nonce='' /></a>}
                 <h3><a href={postLink} dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
                 <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                 <a href={postLink} className="button btn-secondary">Lire l’article</a>

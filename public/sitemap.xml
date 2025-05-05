@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>https://adlagencedigitale.fr/</loc>
-  <lastmod>2024-05-14</lastmod>
-  <loc>https://adlagencedigitale.fr/Prestations</loc>
-  <lastmod>2024-05-14</lastmod>
-  <loc>https://adlagencedigitale.fr/Processus</loc>
-  <lastmod>2024-05-14</lastmod>
-  <loc>https://adlagencedigitale.fr/Realisations</loc>
-  <lastmod>2024-05-14</lastmod>
-  <loc>https://adlagencedigitale.fr/Contact</loc>
-  <lastmod>2024-05-14</lastmod>
-
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aureliedemetrio.fr/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/prestations</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/processus</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/realisations</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/blog</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/contact</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/Kiffetonsite</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aureliedemetrio.fr/Pimpetonsite</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
 </urlset>

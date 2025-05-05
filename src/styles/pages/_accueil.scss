@@ -114,7 +114,8 @@
 
         h2{
             margin: 0 0 30px 0;
-            color: $green;
+            color: $white;
+            opacity: 0.9;
 
             @include mobile{
                 margin: 0;
@@ -128,8 +129,8 @@
         p{
             margin: 10px 50px 10px 50px;
             width: 80%;
-            color: $green;
-            opacity: 1;
+            color: $white;
+            opacity: 0.9;
 
             @include tablet {
                 font-size: 16px;
@@ -174,6 +175,10 @@
     padding: 60px 0;
     background-color: $green;
     text-align: center;
+
+    h2{
+        color: $white;
+    }
 
     &__cards {
       display: flex;
@@ -248,13 +253,20 @@
 .home__cible {
     background: $green;
     -ms-scroll-limit-x-min: 80%;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
     margin-top: 200px;
+    color: $white;
+
+    h2{
+        color: $white;
+    }
 }
 
 .home__cta-final{
     width: 100%;
     background: $green;
+    color: $white;
     margin: 0;
     padding: 50px;
     @include mobile{
@@ -263,5 +275,15 @@
 
     p{
         margin: 0 0 50px 0;
+    }
+
+    h2{
+        color: $white;
+    }
+}
+
+.offre{
+    &__artisan{
+        display: flex;
     }
 }

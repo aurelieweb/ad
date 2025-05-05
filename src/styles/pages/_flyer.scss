@@ -1,0 +1,10 @@
+.flyer__intro{
+
+    @include mobile{
+    margin-top: 250px;
+    }
+
+    li{
+        list-style-type: none;
+    }
+}

@@ -10,7 +10,7 @@ $breakpoints: (
 $black: /*#120114;*/ #11040C;
 //$black: #26081C;
 $darkgreen: #2c423f;
-$green: #c1eeff;
+$green: #1963f3;
 $white: white;
 $darkviolet: #ff3cc7; 
 $violet: #1963f3;
@@ -36,7 +36,7 @@ $linearGradient4: linear-gradient(to bottom right, lighten($darkgreen, 5), darke
 $linearGradient5: linear-gradient(
   to bottom right,
   darken($green, 5) 0%,
-  $darkviolet 20%,
+  $green 20%,
   $black 60%,
   darken($black, 5) 100%
 );
