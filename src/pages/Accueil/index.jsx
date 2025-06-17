@@ -12,7 +12,7 @@ import Toolbox from '../../components/ToolBox';
 import IconCard from '../../components/IconCard'
 import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-solid-svg-icons";
 import imgBenefit from "../../assets/imgArchitecte.jpg";
-import imgPortrait from '../../assets/imgPortrait.jpg';
+import imgPortrait from '../../assets/imgPortrait.png';
 import ServiceDetail from "../../components/ServiceDetail";
 
 
@@ -113,7 +113,6 @@ function Accueil() {
 
   return (
     <div className='main'>
-      <Maintenance />
       <FreebiePopup />
       <Banner
         pageTitle={pageTitle}
@@ -126,8 +125,10 @@ function Accueil() {
 
       <section className='home__cible'>
         <h2>Vous êtes artisan, entrepreneur ou dirigeant de PME ?</h2>
+        <div className='home__cible-text'>
         <p>Vous gérez un quotidien chargé, souvent dans l’urgence. Et votre site web ne vous aide pas autant qu’il le pourrait.</p>
         <p>Je conçois des sites web et des outils digitaux qui s’adaptent à votre façon de travailler pour vous faire <strong>gagner du temps</strong>, <strong>automatiser les tâches répétitives</strong> et <strong>valoriser votre savoir-faire</strong>.</p>
+        </div>
         <div className="icon-card__container">
           {cards.map((card, idx) => (
             <IconCard
@@ -161,16 +162,17 @@ function Accueil() {
       <ServiceDetail sections={benefitsSection} />
 
       <section className='home'>
-        <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale" />
-        <div className='home__apropos'>
-          <h2>A propos</h2>
-          <p>Je suis développeuse web spécialisée dans le secteur du bâtiment et de l’immobilier, avec 20 ans d'expérience sur le terrain.</p>
-          <p>Mon objectif : créer des sites sur mesure qui <span className='text-color'><strong>mettent en valeur votre expertise, simplifient vos processus, et boostent votre activité.</strong></span></p>
-          <p>Chaque projet est unique, tout comme votre entreprise. J’écoute vos besoins pour concevoir des formulaires, pages de vente, et portfolios personnalisés, qui vous aideront à <span className='text-color'><strong>attirer vos clients idéaux</strong></span> et à faire évoluer votre business.</p>
-          <p>Offrez à votre savoir faire la visibilité qu'il mérite !</p>
-          <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus" /></Link>
-        </div>
-      </section>
+  <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale" />
+  <div className='home__apropos'>
+    <h2>À propos</h2>
+    <p>Avant de devenir développeuse web, j’ai passé 20 ans à gérer des entreprises du bâtiment : gestion RH, suivi de chantiers, plannings, matériel, appels d’offres… Je connais vos contraintes et vos priorités de l’intérieur.</p>
+    <p>Aujourd’hui, j’allie cette expérience terrain à mon expertise digitale pour vous accompagner dans votre transformation numérique.</p>
+    <p>Je crée ou transforme votre site en un outil utile qui <span className='text-color'><strong>travaille pour vous</strong></span> : formulaires intelligents, demandes d’intervention, synchronisation avec Google Calendar, pages de vente, automatisation des tâches répétitives…</p>
+    <p>Mon objectif : <span className='text-color'><strong>vous faire gagner du temps, fluidifier votre organisation, et valoriser votre savoir-faire en ligne</strong></span>.</p>
+    <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus" /></Link>
+  </div>
+</section>
+
 
       <Gallery projects={projetData} />
 

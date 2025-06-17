@@ -6,7 +6,7 @@
   flex-direction: column;
   h3{
     margin: 0 0 20px 0;
-    color: $black;
+    color: $pink;
     font-size: 18px;
   }
   p{
@@ -32,6 +32,12 @@
 .wp-block-heading{
   color: $black;
   justify-content: flex-start;
+    font-size: 1.8rem;
+  margin: 20px 0 50px 50px;
+
+  @include mobile{
+    font-size: 1.5rem;
+  }
 }
 
 .wp-block-list{
@@ -75,15 +81,7 @@
     opacity: 0.8;
   }
 }
-.wp-block-heading {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: $darkgreen;
 
-  @include mobile{
-    font-size: 1.5rem;
-  }
-}
 .wp-block-video {
   video {
     //width: 100%;
@@ -153,6 +151,9 @@
   border-radius: 8px;
   margin: 2rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &-title{
     color: $darkviolet;
@@ -173,7 +174,7 @@
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    width: 80%;
+    width: 200px;
   display: flex;
   }
 

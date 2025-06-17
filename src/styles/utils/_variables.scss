@@ -35,9 +35,9 @@ $linearGradient3: linear-gradient(to bottom right, darken($pink, 5), lighten($da
 $linearGradient4: linear-gradient(to bottom right, lighten($darkgreen, 5), darken($black, 5));
 $linearGradient5: linear-gradient(
   to bottom right,
-  darken($green, 5) 0%,
-  $green 20%,
-  $black 60%,
+  darken($black, 5) 0%,
+  $black 20%,
+  $green 60%,
   darken($black, 5) 100%
 );
 $linearGradient6: linear-gradient(

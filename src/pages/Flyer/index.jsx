@@ -6,14 +6,18 @@ import ServiceDetail from "../../components/ServiceDetail";
 import Testimonies from "../../components/Testimonies";
 import Faq from "../../components/Faq";
 import { faPlay, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
-import imgBenefit from "../../assets/imgArchitecte.jpg";
+import imgArchitect from "../../assets/imgArchitecte.jpg";
+import imgBatiment from "../../assets/imgBatiment.jpg";
+import imgAutomatisation from "../../assets/imgBanner.jpg";
+import imgBenefit2 from "../../assets/img_automatisation_pme.jpg";
+import imgBenefit1 from "../../assets/imgBannerResource.jpeg";
 
 const sectionsFlyer = [
   {
     title: "Pourquoi automatiser votre activité et transformer votre site peut changer votre quotidien",
     subtitle: null,
     icon: faPlay,
-    image: imgBenefit,
+    image: imgBenefit1,
     items: [
       "Gagner du temps",
       "Réduire les tâches répétitives",
@@ -24,7 +28,7 @@ const sectionsFlyer = [
     title: "Solutions concrètes pour optimiser votre activité",
     subtitle: null,
     icon: faPlay,
-    image: imgBenefit,
+    image: imgBenefit2,
     items: [
       "Automatisation – Je relie vos outils métier (agenda, mails, formulaires, CRM…) pour centraliser les demandes, automatiser les tâches répétitives, et gagner un temps précieux.",
       "Connexion de vos outils",
@@ -39,7 +43,7 @@ const casConcretsFlyer = [
     title: "Un formulaire connecté pour les demandes d’intervention",
     subtitle: null,
     icon: faPlay,
-    image: imgBenefit,
+    image: imgBatiment,
     items: [
       "Un artisan gagne plusieurs heures par semaine grâce à un formulaire intégré à son site.",
       "Les demandes arrivent classées et complètes, même quand il est sur chantier ou en dehors des horaires.",
@@ -50,7 +54,7 @@ const casConcretsFlyer = [
     title: "Prise de rendez-vous automatisée pour une architecte",
     subtitle: null,
     icon: faPlay,
-    image: imgBenefit,
+    image: imgArchitect,
     items: [
       "Une architecte propose directement ses créneaux disponibles via son site, connectés à son agenda Google.",
       "Fini les échanges de mails interminables.",
@@ -61,7 +65,7 @@ const casConcretsFlyer = [
     title: "Génération automatique de devis et de dossiers de primes",
     subtitle: null,
     icon: faPlay,
-    image: imgBenefit,
+    image: imgAutomatisation,
     items: [
       "Un installateur de PAC remplit un formulaire simplifié avec son client.",
       "Le devis et le dossier de demande de prime sont générés automatiquement.",
@@ -179,7 +183,7 @@ function Flyer() {
   const pageTitle = "Un site web utile, qui travaille pour vous.";
   const bannerText =
     "Sites web connectés & automatisations pour vous faire gagner du temps, simplifier votre gestion et réduire les tâches répétitives.";
-  const bannerImg = require("../../assets/img_coaching_creation_site_web.jpg");
+  const bannerImg = require("../../assets/imgBanner_blog_aurelie_demetrio_developpeuse_automatisation.jpg");
 
   return (
     <div className="main">
@@ -197,7 +201,7 @@ function Flyer() {
           },
         ]}
       />
-        <div className="pagevente__container">
+        <div className="pagevente__container flyer__intro">
   <h2>Un site web utile, qui travaille pour vous ?</h2>
   <p className="section-text">
     Vous avez découvert mon flyer ? Merci pour votre intérêt !

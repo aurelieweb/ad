@@ -14,10 +14,12 @@
     @include tablet {
         width: 300px;
         height: 350px;
+        
     }
 
     @include mobile{
         width: 90%;
+        margin-top: 50px
     }
 
     span{
@@ -30,7 +32,7 @@
         width: 80px;
         height: 80px;
         background: $green;
-        color: $darkviolet;
+        color: $white;
         font-size: 36px;
     }
 
