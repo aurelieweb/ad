@@ -170,6 +170,28 @@
         }
     }
 }
+.home__services-meta{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home__badge{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+  p{
+    width: 80%;
+  }
+}
+
+.badge-make{
+    width: 100px;
+}
+
 
 //Style section Blog
 .home-blog {
@@ -179,6 +201,11 @@
 
     h2{
         color: $white;
+    }
+
+    p{
+        color: white;
+        margin: 10px 50px;
     }
 
     &__cards {
@@ -254,13 +281,14 @@
 .home__cible {
     background: $green;
     -ms-scroll-limit-x-min: 80%;
-    width: 100%;
+    width: 90%;
     padding: 20px 0;
-    margin-top: 200px;
+    margin-top: 100px;
     color: $white;
 
     @include mobile{
         margin-top: 250px;
+        width: 100%;
     }
 
     h2{

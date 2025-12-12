@@ -10,8 +10,8 @@ const buttons = [
 
 function Prestations() {
 
-    const pageTitle = "Création de site internet et automatisations pour artisans, entrepreneurs et PME";
-    const bannerText = "Un site web vraiment utile, des outils connectés à votre quotidien, et plus de temps pour votre métier.";
+    const pageTitle = "Création de sites, intégrations Make & optimisation digitale";
+    const bannerText = "CRM, workflows automatisés, formulaires intelligents, API et IA pour connecter votre site à vos outils métiers et réduire les tâches manuelles.";
     const bannerClass = "banner banner-presentation"
     const bannerImg = require('../../assets/ImgBanner2.jpg');
     const bannerImgClass = "banner__img-presentation";

@@ -12,7 +12,8 @@ $black: /*#120114;*/ #11040C;
 $darkgreen: #2c423f;
 $green: #1963f3;
 $white: white;
-$darkviolet: #ff3cc7; 
+/*$darkviolet: #ff3cc7; */
+$darkviolet: #e11ef6;
 $violet: #1963f3;
 $pink: #ffff82;
 // $pink: F7C1BB;
@@ -22,8 +23,9 @@ $darkgreen-opacity: rgba(30, 43, 59, 0.3);
 
 
 $box-shadows: 3px 3px 5px rgb(226, 221, 221);
-$box-shadows-btn: 0px 0px 5px $pink;
-$box-shadows: 0px 0px 5px $darkgreen;
+$box-shadows-btn: 0px 0px 5px $black;
+$box-shadows-btn-dark-background: 0px 0px 5px $white;
+$box-shadows: 0px 0px 5px $black;
 $box-shadows-hover: 0px 0px 5px $pink;
 //$box-shadow-card: 0px 1px 2px $darkgreen;
 $box-shadow-card: 0 8px 30px rgba(0, 0, 0, 0.25);

@@ -45,7 +45,7 @@
         &__content{
             padding: 0;
             color: white;
-            height: 100px; //ajout apres resize img verifier pas de bug de mise en page
+            //height: 100px; //ajout apres resize img verifier pas de bug de mise en page
 
             &-icon{
                 display: flex;
@@ -66,7 +66,7 @@
             }
 
             &-text{
-                display: none;
+                display: flex;
                 margin-bottom: 10px;
                 width: 100%;
 
@@ -87,7 +87,7 @@
                 }
             }
             h3{
-                height: 50px;
+                //height: 50px;
                 color:$white;
             }
         }
@@ -113,7 +113,7 @@
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        //justify-content: space-between;
         align-items: center;
         height: 100%;
         text-align: center;

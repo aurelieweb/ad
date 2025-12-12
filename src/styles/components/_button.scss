@@ -1,6 +1,7 @@
 .button {
-    width: 180px;
+    min-width: 180px;
     height: 50px;
+    padding: 0 20px;
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 18px;
@@ -15,6 +16,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: $box-shadows-btn;
   
     // Hover par défaut
     &:hover {
@@ -22,7 +24,7 @@
       transform: scale(1.1);
   
       &::after {
-        background-color: $green;
+        background-color: $black;
       }
     }
   
@@ -33,6 +35,7 @@
       z-index: -1;
       border-radius: 10px;
       transition: opacity 250ms;
+
     }
   
     // ✅ Variante secondaire
@@ -42,7 +45,7 @@
       text-decoration: none;
   
       &:hover {
-        background-color: $darkgreen;
+        background-color: $black;
         color: $white;
   
         &::after {
@@ -50,5 +53,19 @@
         }
       }
     }
+  }
+
+  .button-dark-background{
+    box-shadow: $box-shadows-btn-dark-background;
+        // Hover par défaut
+    &:hover {
+      color: $white;
+      transform: scale(1.1);
+  
+      &::after {
+        background-color: $green;
+      }
+    }
+
   }
   

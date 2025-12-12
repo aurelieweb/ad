@@ -3,7 +3,7 @@ import axios from "axios";
 import Button from '../../components/Button'; 
 import Banner from '../../components/Banner';
 import FreebiePopup from '../../components/FreebiePopup';
-import Maintenance from '../../components/MaintenancePage'
+//import Maintenance from '../../components/MaintenancePage'
 
 const buttons = [
   { text: 'En savoir plus', link: '/Calendly' },
@@ -52,7 +52,6 @@ function Blog() {
 
   return (
     <div className='main'>
-      <Maintenance />
       <FreebiePopup />
       <Banner
         pageTitle={pageTitle}

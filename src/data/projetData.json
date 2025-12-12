@@ -1,4 +1,5 @@
 [
+    
     {
       "title": "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
       "description": "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
@@ -16,7 +17,7 @@
     {
       "title": "Création d'un site de promotion immobilière",
       "description": "Création d'un site pour la mise en avant d'un programme neuf",
-      "coverImage": "./img/imgProjet/immo/immo_img1.png",
+      "coverImage": "./img/imgProjet/immo/immo_img1.jpg",
       "images": [
         "./img/imgProjet/immo/immo_img2.png",
         "./img/imgProjet/immo/immo_img3.webp",
@@ -26,6 +27,46 @@
       ],
       "url": "https://web-immobilier.aureliedemetrio.fr/",
       "featured": true
+    },
+    {
+      "title": "Création d'un CRM",
+      "description": "Création d'un CRM pour le pilotage de l'activité avec dashboard dirigeant Make / Airtable / Google Drive : Google Calendar / Formulaire sur mesure / Trello",
+      "coverImage": "./img/imgProjet/make3/make_img1.png",
+      "images": [
+        "./img/imgProjet/make3/make_img1.png"
+      ],
+
+      "featured": false
+    },
+                {
+      "title": "Création d'un générateur de contenu Social Media",
+      "description": "Génaration de contenu comprenant : Hook, légende, instructions visuels ou script video pour différent format. Newsletters, Article de blog, Posts, Reels. Make / IA / Notion",
+      "coverImage": "./img/imgProjet/make4/make_img1.png",
+      "images": [
+        "./img/imgProjet/make4/make_img1.png"
+      ],
+
+      "featured": false
+    },
+        {
+      "title": "Optimisation site web",
+      "description": "Intégration de formulaire sur mesure sur site web avec automatisation des demandes d'interventions et création de dashboard. JS / React / EmailJS / Airtable / Make",
+      "coverImage": "./img/imgProjet/make1/make_img1.png",
+      "images": [
+        "./img/imgProjet/make1/make_img1.png"
+      ],
+
+      "featured": false
+    },
+        {
+      "title": "Création d'un CRM",
+      "description": "Création d'un CRM pour la génération des dossiers d'installation de Pompe à chaleur et demande de primes d'aide à la rénovation énergétique. Tally / Airtable / Make / Google Drive / Google Docs",
+      "coverImage": "./img/imgProjet/make2/make_img1.png",
+      "images": [
+        "./img/imgProjet/make2/make_img1.png"
+      ],
+
+      "featured": false
     },
     {
       "title": "Création d'une maquette de site pour un Architecte",

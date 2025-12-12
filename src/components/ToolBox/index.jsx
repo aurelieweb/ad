@@ -19,7 +19,7 @@ const ToolBox = () => {
       </div>
 
       <Link to="/ressources">
-        <Button text="Accéder aux ressources" />
+        <Button text="Accéder aux ressources" className='button-dark-background' />
       </Link>
     </div>
   );

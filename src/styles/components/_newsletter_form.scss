@@ -1,85 +1,68 @@
 .newsletter-form {
-    background: $green;
-    text-align: center;
-    width: 100%;
-  
-    h2 {
-      margin: 2rem;
+  background: $green;
+  text-align: center;
+  width: 100%;
 
-      @include mobile{
-        margin: 0;
-      }
-    }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 50px;
-
-      @include mobile{
-        margin: 0;
-      }
-  
-      .form-group {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        width: 100%;
-        justify-content: space-between;
-
-        @include mobile{
-          flex-direction: column;
-        }
-  
-        /*@media(min-width: 600px) {
-          flex-direction: row;
-          justify-content: space-between;
-        }*/
-      }
-  
-      input {
-        //padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        height: 40px;
-
-        @include mobile{
-          width: 90%;
-
-        }
-      }
-  
-      .button {
-        margin-top: 1rem;
-        padding: 0.75rem 1.5rem;
-        font-weight: bold;
-        border: none;
-        border-radius: 10px;
-        background: #222;
-        color: white;
-        cursor: pointer;
-  
-        &:hover {
-          background: #444;
-        }
-      }
-  
-      .success-message {
-        color:$green;
-        font-weight: bold;
-      }
-    }
+  h2 {
+    margin: 2rem;
   }
 
-.form-group-name{
-  width: 47%;
-  height: 40px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 50px;
 
-  @include mobile{
-    width: 100%;
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    input {
+      // padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      height: 40px;
+    }
+
+    .success-message {
+      color: $green;
+      font-weight: bold;
+    }
+
+    .form-group-name {
+      width: 47%;
+      height: 40px;
+    }
   }
 }
-  
+
+// 🟢 Version mobile
+@include mobile {
+  .newsletter-form {
+    h2 {
+      margin: 0;
+    }
+
+    form {
+      margin: 0;
+
+      .form-group {
+        flex-direction: column;
+      }
+
+      input {
+        width: 90%;
+      }
+
+      .form-group-name {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@ import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-
 import imgBenefit from "../../assets/imgArchitecte.jpg";
 import imgPortrait from '../../assets/imgPortrait.png';
 import ServiceDetail from "../../components/ServiceDetail";
+import badgeMake from "../../assets/make-advanced.png"
 
 
 const projetData = require('../../data/projetData.json');
@@ -23,28 +24,28 @@ const servicesType = [
   {
     name: "Création de site",
     content: [
-      "Création de portfolio",
-      "Création de site One page ou Vitrine",
-      "Mise en place de page de vente",
-      "Mise en valeur de vos projets et savoir-faire",
+      "Site vitrine ou one-page",
+      "Portfolio valorisant vos projets",
+      "Pages de vente & tunnels personnalisés",
+      "Intégration de vos outils métiers",
     ],
     img: require('../../assets/img_creation_site_web.jpg'),
   },
   {
-    name: "Automatisation",
+    name: "Automatisation / Make / IA",
     content: [
-      "Connexion outils métier",
-      "Automatisations Make / Tally / Airtable",
-      "Centralisation des demandes",
+      "Connexion de vos outils métier (CRM, agenda, base de données…)",
+      "Automatisations Make, Tally, Airtable",
+      "Centralisation et synchronisation des données",
     ],
     img: require('../../assets/img_automatisation_pme.jpg'),
   },
   {
-    name: "Accompagnement & Coaching",
+    name: "Optimisation / évolution de site",
     content: [
-      "Audit de site",
-      "Guide de création de site",
-      "Accompagnement dans la création ou l'optimisation de ton site",
+      "Amélioration technique & performances",
+      "Optimisation UX et conversion",
+      "Connexion aux outils & automatisations",
     ],
     img: require('../../assets/img_coaching_creation_site_web.jpg'),
   },
@@ -53,36 +54,37 @@ const servicesType = [
 //Détails bénéfices
 const benefitsSection = [
   {
-    title: "Des bénéfices concrets pour votre quotidien",
+    title: "Des bénéfices concrets pour votre activité",
     icon: faPlay,
     image: imgBenefit,
     items: [
-      "Moins de saisie manuelle, moins d’allers-retours",
-      "Des outils simples et pensés pour votre métier",
-      "Des demandes centralisées automatiquement",
-      "Un site pro qui met en valeur votre métier",
-      "Plus de temps pour vos chantiers, vos clients, votre vie",
+      "Données synchronisées automatiquement entre vos outils (site, CRM, base de données…)",
+      "Formulaires intelligents reliés à vos process métier (demandes, devis, rendez-vous…)",
+      "Automatisations Make pour réduire les tâches répétitives et limiter les erreurs humaines",
+      "Un site web opérationnel qui soutient votre organisation, pas une simple vitrine",
+      "Plus de temps pour vos clients, vos projets et les tâches à forte valeur ajoutée",
     ],
   },
 ];
+
 
 //Détails Icone Cards 
 // En haut du fichier Accueil.jsx (sous les imports par exemple)
 const cards = [
   {
     icon: faBuilding,
-    title: "Entreprise du bâtiment",
+    title: "Formulaire connecté & CRM intégré",
     text: "Une PME qui économise 10h par semaine grâce à un formulaire de demande d’intervention accessible même quand le standard est indisponible.",
   },  
   {
     icon: faPenRuler,
-    title: "Architecte indépendant",
+    title: "Prise rendez-vous en ligne",
     text: "Un architecte qui valorise ses projets dans un portfolio en ligne, et propose des rendez-vous directement dans son agenda, selon ses disponibilités.",
   },
   {
     icon: faBriefcase,
-    title: "Consultante ou prestataire",
-    text: "Une indépendante qui envoie ses devis automatiquement après un formulaire client, sans copier-coller ni allers-retours inutiles.",
+    title: "Génération de contenu",
+    text: "Une indépendante qui génére automatiquement sa stratégie de contenu grâce à l'automatisation et l'Intelligence Artificielle",
   }
   
 ];
@@ -93,8 +95,8 @@ const buttons = [
 ];
 
 function Accueil() {
-  const pageTitle = "Création de sites web et outils connectés pour entrepreneurs et PME";
-  const bannerText = "Un site web utile et connecté à vos outils, qui valorise votre savoir-faire et vous fait gagner un temps précieux.";
+  const pageTitle = "Création de sites web et transformation digitale";
+  const bannerText = "Création de sites web connectés et mise en place d’outils et d’automatisations pour fluidifier votre activité, centraliser vos données et gagner du temps au quotidien.";
   const bannerImg = require('../../assets/img_coaching_creation_site_web.jpg');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
@@ -124,10 +126,11 @@ function Accueil() {
       />
 
       <section className='home__cible'>
-        <h2>Vous êtes artisan, entrepreneur ou dirigeant de PME ?</h2>
+        <h2>Votre activité a besoin d’un site web connecté et d’outils digitaux adaptés, pas d’un simple site vitrine.</h2>
         <div className='home__cible-text'>
         <p>Vous gérez un quotidien chargé, souvent dans l’urgence. Et votre site web ne vous aide pas autant qu’il le pourrait.</p>
-        <p>Je conçois des sites web et des outils digitaux qui s’adaptent à votre façon de travailler pour vous faire <strong>gagner du temps</strong>, <strong>automatiser les tâches répétitives</strong> et <strong>valoriser votre savoir-faire</strong>.</p>
+        <p>Création de <strong>sites web connectés</strong> et mise en place d’<strong>outils digitaux</strong> adaptés à votre façon de travailler <strong>pour gagner du temps</strong>, <strong>automatiser les tâches répétitives</strong> et <strong>valoriser votre savoir-faire.</strong>.</p>
+        <p>Automatisations, CRM sur mesure, formulaires intelligents, data centralisée, Intelligence Artificielle et intégrations Make pour fluidifier votre activité.</p>
         </div>
         <div className="icon-card__container">
           {cards.map((card, idx) => (
@@ -144,7 +147,11 @@ function Accueil() {
       </section>
 
       <section className='home__services'>
-        <h2>Mes solutions sur mesure</h2>
+        <h2>Mes prestations : sites web, automatisations & intégrations métiers</h2>
+          <p className="home__services-intro">
+            Création de sites web connectés, automatisations Make / IA et optimisation de sites existants pour 
+            connecter vos outils métier, centraliser vos données et gagner du temps au quotidien.
+          </p>
         <div className='container__card'>
           {servicesType.map((service, index) => (
             <Link className='card-link' key={index} to="/prestations">
@@ -157,6 +164,23 @@ function Accueil() {
             </Link>
           ))}
         </div>
+        <div className="home__services-meta">
+          <div className="home__badge">
+            <img 
+              src={badgeMake} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+            />
+            <p>
+              <strong>Certifiée Make Advanced</strong> et forte de 20 ans d’expérience opérationnelle, 
+              je conçois des systèmes digitaux qui relient votre site web, vos outils métiers et vos processus internes.
+            </p>
+          </div>
+          {/* CTA optionnel si tu veux renforcer la navigation */}
+          <Link to="/Prestations" className="button btn-secondary">
+            Découvrir toutes mes prestations
+          </Link>
+          </div>
       </section>
 
       <ServiceDetail sections={benefitsSection} />
@@ -165,10 +189,25 @@ function Accueil() {
   <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale" />
   <div className='home__apropos'>
     <h2>À propos</h2>
-    <p>Avant de devenir développeuse web, j’ai passé 20 ans à gérer des entreprises du bâtiment : gestion RH, suivi de chantiers, plannings, matériel, appels d’offres… Je connais vos contraintes et vos priorités de l’intérieur.</p>
-    <p>Aujourd’hui, j’allie cette expérience terrain à mon expertise digitale pour vous accompagner dans votre transformation numérique.</p>
-    <p>Je crée ou transforme votre site en un outil utile qui <span className='text-color'><strong>travaille pour vous</strong></span> : formulaires intelligents, demandes d’intervention, synchronisation avec Google Calendar, pages de vente, automatisation des tâches répétitives…</p>
-    <p>Mon objectif : <span className='text-color'><strong>vous faire gagner du temps, fluidifier votre organisation, et valoriser votre savoir-faire en ligne</strong></span>.</p>
+      <p>
+        Avant de devenir développeuse web, j’ai passé 20 ans à gérer des opérations en entreprise : RH, administratif, gestion commerciale, coordination, suivi terrain, planning, matériel, appels d’offres… 
+        J’ai une solide expérience du fonctionnement interne des structures et de leurs contraintes au quotidien.
+      </p>
+
+      <p>
+        Aujourd’hui, je combine cette expertise opérationnelle avec le développement web et les intégrations techniques 
+        (Make, IA, APIs, CRM, bases de données) pour créer des outils digitaux connectés et adaptés à votre manière de travailler.
+      </p>
+
+      <p>
+        Je transforme votre site et vos outils numériques en un <span className='text-color'><strong>système utile et automatisé</strong></span> :
+        formulaires intelligents, synchronisation des données, workflows Make, CRM, pages de vente, génération de contenu, automatisation des tâches récurrentes…
+      </p>
+
+      <p>
+        Mon objectif : <span className='text-color'><strong>fluidifier vos processus, réduire la charge manuelle et faire du digital un levier de croissance durable pour votre activité</strong></span>.
+      </p>
+
     <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus" /></Link>
   </div>
 </section>
@@ -178,8 +217,12 @@ function Accueil() {
 
       <section className='home-blog'>
         <h2 className="home-blog__title">
-          Stratégie web, outils connectés et création de site :<br /> les essentiels pour entrepreneurs et PME
+          Optimisation de l’activité, sites web et outils métiers connectés :<br /> les essentiels pour entrepreneurs et PME
         </h2>
+        <p>
+          Découvrez des ressources pour optimiser vos processus métier et connecter vos outils digitaux : intégrations Make, CRM sur mesure, synchronisation des données, automatisation des tâches récurrentes, formulaires intelligents, génération de contenu assistée par IA, gestion centralisée de l’information et stratégie digitale orientée productivité. </p>
+          <p> <strong>L’objectif</strong> : transformer votre site et vos outils numériques en un véritable collaborateur, réduire les tâches manuelles, fluidifier votre organisation et améliorer la performance de votre activité au quotidien.
+        </p>
         <div className="home-blog__cards">
           {posts.map(post => {
             const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
@@ -199,13 +242,17 @@ function Accueil() {
 
       <section className='offre'>
         <h2>Boîte à outils digitale pour entrepreneurs et PME</h2>
-        <div className='offre__artisan'>
-          <div className='offre__artisan-text'>
-            <p>Votre site web peut devenir un <strong>véritable outil de productivité</strong>.</p>
-            <p>J’ai conçu une <strong>boîte à outils digitale</strong> regroupant <strong>guides, prompts IA, tutos et ressources concrètes</strong> pour vous aider à optimiser votre présence en ligne sans perdre de temps.</p>
-            <p>Idéale pour <strong>améliorer votre référencement</strong>, <strong>rédiger plus efficacement</strong>, ou encore <strong>mettre en place des automatisations simples</strong> dans votre quotidien d’entrepreneur.</p>
-            <p>Accédez gratuitement à la boîte à outils et commencez dès aujourd’hui à faire de votre site un véritable levier de croissance.</p>
-          </div>
+          <div className='offre__artisan'>
+            <div className='offre__artisan-text'>
+              <p>Votre site web et vos outils digitaux peuvent devenir de <strong>véritables leviers de productivité</strong>.</p>
+
+              <p>J’ai conçu une <strong>boîte à outils digitale</strong> regroupant <strong>guides, prompts IA, tutos Make, modèles de workflows et ressources concrètes</strong> pour vous aider à automatiser vos processus et optimiser votre organisation sans complexité technique.</p>
+
+              <p>Idéale pour <strong>connecter votre site à vos outils métier</strong>, <strong>centraliser vos données</strong>, <strong>améliorer votre efficacité</strong>, et <strong>mettre en place des automatisations utiles</strong> dans votre quotidien professionnel.</p>
+
+              <p>Accédez gratuitement à la boîte à outils et commencez dès aujourd’hui à faire de votre digital <strong>un système qui travaille pour vous</strong>.</p>
+            </div>
+
           <Toolbox />
         </div>
       </section>

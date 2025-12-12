@@ -32,14 +32,14 @@ function Services() {
         "Centraliser les demandes clients dans vos outils métier"
       ]
     },
-    {
-      name: "Nos accompagnements pour la création de site internet",
-      detail: [
-        "Audit express de votre site",
-        "Coaching en one to one pour optimiser ton site",
-        "Un avis professionnel sur ton site"
-      ]
-    }
+  {
+    name: "Optimisation & évolution de site web",
+    detail: [
+      "Audit technique et structurel de votre site",
+      "Améliorations pour fluidifier le parcours et la conversion",
+      "Ajout d’intégrations et d’outils connectés (CRM, formulaires, automatisations)"
+    ]
+  }
   ];
 
   const groupServicesByCustomerType = (services) => {
@@ -189,30 +189,30 @@ function Services() {
       </div>
 
       <div className="container__services">
-        <h2>Optimise ton site web : Audit & Accompagnement</h2>
+        <h2>Optimisation & évolution de site web</h2>
         <p className='section-text'>
-          Tu as déjà un site web mais tu sens qu’il pourrait être plus efficace ? Tu veux <strong>le rendre plus pro, plus clair, plus performant</strong> ?  
-          Ces prestations sont pensées pour t’aider à prendre du recul, identifier ce qui bloque, et surtout <strong>mettre en place des améliorations concrètes</strong>, rapidement.
+           Votre <strong>site web</strong> existe déjà, mais vous sentez qu’il pourrait être <strong>plus efficace</strong> ? Vous souhaitez le rendre plus clair, plus performant et mieux <strong>connecté à vos outils métiers</strong> ?
+           Cette prestation est pensée pour faire évoluer votre site existant vers un outil digital plus utile, connecté et aligné avec votre organisation.
         </p>
         <div className="container__section">
           
           <div className="container__services-div">
           <img src={imgNosServices3} alt="Audit et coaching par Aurélie DEMETRIO" />
             <div>
-              <h3>Pourquoi te faire accompagner ?</h3>
+              <h3>Pourquoi faire évoluer votre site ?</h3>
               <ul>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Avoir un regard pro sur ton site existant</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Identifier les points faibles (design, structure, SEO…)</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Trouver des solutions concrètes, applicables tout de suite</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Réduire le temps passé sur des tâches répétitives.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Améliorer la conversion et le parcours utilisateur.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Synchroniser le site avec vos outils métiers pour un flux de données cohérent.</li>
               </ul>
             </div>
             <div>
               <h3>Avantages :</h3>
               <ul>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Coaching personnalisé : tu poses tes questions, je t’accompagne avec des réponses concrètes.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Vision claire : un plan d’action priorisé pour ne pas t’éparpiller.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Gain de temps : tu sais quoi faire, dans quel ordre et avec quels outils.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Ressources prêtes à l’emploi : guides, prompts et outils pour avancer même après l'accompagnement.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Processus simplifiés : moins de tâches manuelles et de ressaisies.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Activité plus fluide : données centralisées et mieux exploitées.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Meilleure performance : un site plus rapide, plus lisible et plus efficace pour vos visiteurs.</li>
+                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Base solide pour déployer des automatisations (Make, intégrations, workflows).</li>
               </ul>
             </div>
           </div>

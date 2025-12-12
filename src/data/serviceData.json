@@ -2,7 +2,7 @@
   {
     "name": "Audit Flash – Boost ton site & ton business",
     "type": "Autres prestations",
-    "customerType": "Nos accompagnements pour la création de site internet",
+    "customerType": "Optimisation & connexion de votre site web",
     "description": "Tu veux savoir si ton site ou ton organisation digitale est efficace ? Je t’aide à faire le point avec un audit clair, utile et 100% orienté action.",
     "prestation": [
       { "nom": "Analyse technique & ergonomique de ton site", "inclus": true },
@@ -14,6 +14,22 @@
     "buttonText": "Je booste mon site & mon business",
     "link": "/Calendly",
     "price": "149,00 €"
+  },
+  {
+  "name": "Connexion de votre site à vos outils métiers",
+  "type": "Autres prestations",
+  "customerType": "Optimisation & connexion de votre site web",
+  "description": "Connexion de votre site à vos outils existants pour fluidifier vos process, centraliser vos données et automatiser vos tâches récurrentes.",
+  "prestation": [
+    { "nom": "Intégration avec CRM, agenda, base de données, formulaires", "inclus": true },
+    { "nom": "Automatisations via Make ou API", "inclus": true },
+    { "nom": "Synchronisation des données entre vos outils", "inclus": true },
+    { "nom": "Optimisation du site pour améliorer l’efficacité et les performances", "inclus": true }
+  ],
+  "imageUrl": "./img/service8.png",
+  "buttonText": "Connecter mon site",
+  "link": "/Calendly",
+  "price": "Sur devis"
   },
   {
     "name": "Pack Automatisation Express",
@@ -65,35 +81,5 @@
     "buttonText": "Créer un site qui fait le boulot",
     "link": "/Calendly",
     "price": "À partir de 1500 €"
-  },
-  {
-    "name": "Kiffe ton site",
-    "type": "Autres prestations",
-    "customerType": "Nos accompagnements pour la création de site internet",
-    "description": "Tu apprends à construire ou à améliorer ton site toi-même, avec méthode et accompagnement.",
-    "prestation": [
-      { "nom": "Ebook + workbook", "inclus": true },
-      { "nom": "Vidéos (à venir)", "inclus": true },
-      { "nom": "Coaching collectif", "inclus": true }
-    ],
-    "imageUrl": "./img/service7.png",
-    "buttonText": "Je veux apprendre à kiffer mon site",
-    "link": "/Kiffetonsite",
-    "price": "79,00 €"
-  },
-  {
-    "name": "Pimpe ton site",
-    "type": "Autres prestations",
-    "customerType": "Nos accompagnements pour la création de site internet",
-    "description": "Ton site devient plus pro, plus clair, plus utile (et surtout, plus performant).",
-    "prestation": [
-      { "nom": "Session de coaching 1:1", "inclus": true },
-      { "nom": "Analyse personnalisée", "inclus": true },
-      { "nom": "Plan d'action concret", "inclus": true }
-    ],
-    "imageUrl": "./img/service7.png",
-    "buttonText": "Je pimpe mon site maintenant",
-    "link": "/Pimpetonsite",
-    "price": "199,00 €"
   }
 ]

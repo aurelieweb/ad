@@ -10,6 +10,7 @@ import logoHTML from '../../assets/logoHTML.jpeg';
 import logoCSS from '../../assets/logoCSS.jpeg';
 import logoNode from '../../assets/logoNodeJS.jpeg';
 import logoOxygen from '../../assets/logoOxygen.png';
+import logoMake from '../../assets/make-advanced.png';
 
 const buttons = [
     { text: 'Consultation gratuite', link: '/Calendly' }
@@ -75,6 +76,7 @@ function Apropos() {
                     <img src={logoNode}  alt="logo NodeJS - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
                     <img src={logoWP}  alt="logo Wordpress - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
                     <img src={logoOxygen}  alt="logo Oxygen builder - Aurélie DEMETRIO, Création de site web pour artisans et PME dans le secteur du bâtiment et de l'immobilier"/>
+                    <img src={logoMake}  alt="logo Oxygen builder - Aurélie DEMETRIO, Experte Make Certifiée"/>
                 </div>
         </section>
 
