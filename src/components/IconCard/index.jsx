@@ -9,8 +9,10 @@ function IconCard({ icon, title, text }) {
       <span className="icon-card__icon">
         <FontAwesomeIcon icon={icon} />
       </span>
-      <h3 className="icon-card__title">{title}</h3>
-      <p className="icon-card__text">{text}</p>
+      <div>
+        <h3 className="icon-card__title">{title}</h3>
+        <p className="icon-card__text">{text}</p>
+      </div>
     </div>
   );
 }

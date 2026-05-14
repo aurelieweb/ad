@@ -5,13 +5,16 @@ import '../../styles/styles.scss';
 
 function Button({ text, className = '', onClick, type = 'button' }) {
   return (
-    <button
-      className={`button ${className}`}
-      type={type}
-      onClick={onClick}
-    >
-      {text}
-    </button>
+    <span className="button-wrapper">
+      <button
+        className={`button ${className}`}
+        type={type}
+        onClick={onClick}
+      >
+        {text}
+      </button>
+
+    </span>
   );
 }
 

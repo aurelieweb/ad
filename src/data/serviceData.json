@@ -78,7 +78,7 @@
       { "nom": "Suivi + mise en ligne + accompagnement technique", "inclus": true }
     ],
     "imageUrl": "./img/service11.png",
-    "buttonText": "Créer un site qui fait le boulot",
+    "buttonText": "Créer mon site",
     "link": "/Calendly",
     "price": "À partir de 1500 €"
   }

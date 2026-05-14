@@ -11,6 +11,7 @@ import logoCSS from '../../assets/logoCSS.jpeg';
 import logoNode from '../../assets/logoNodeJS.jpeg';
 import logoOxygen from '../../assets/logoOxygen.png';
 import logoMake from '../../assets/make-advanced.png';
+import badgeMake from "../../assets/make-advanced.png"
 
 const buttons = [
     { text: 'Consultation gratuite', link: '/Calendly' }
@@ -55,7 +56,17 @@ function Apropos() {
                 <h2>Quelles sont mes valeurs?</h2>
                     <Valeur/>
                 </section>*/}
-
+          <div className="home__badge">
+            <img 
+              src={badgeMake} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+            />
+            <p>
+              <strong>Certifiée Make Advanced</strong> et forte de 20 ans d’expérience opérationnelle, 
+              je conçois des systèmes digitaux qui relient votre site web, vos outils métiers et vos processus internes.
+            </p>
+          </div>
                 <section className='processus'>
           <h2>Comment se déroule un projet de site web avec l'Agence Digitale?</h2>
           <div className='container__processus'>

@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    width: 80%;
     margin: 30px 0 50px 0;
   
     @include tablet {
@@ -21,19 +20,18 @@
   
   .icon-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: $white;
+    background: $darkmarine;
     color: $darkviolet;
     width: 30%;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     min-width: 180px;
-    font-size: 30px;
+    font-size: 60px;
     box-shadow: $box-shadow-card;
     transition: transform 0.3s;
-    position: relative;
   
     &:hover {
       transform: scale(1.05);
@@ -44,18 +42,17 @@
     }
   
     &__title {
-      color: $darkviolet;
+      color: $white;
       font-size: 24px;
-      margin:
-0;
-  text-align: center;
+      margin: 0 0 20px 0;
+      text-align: left;
     }
   
     &__text {
-      text-align: center;
-      color: $black;
+      text-align: left;
+      color: $white;
       font-size: 18px;
-      margin: 20px 0;
+      margin: 0;
   
       @include tablet {
         font-weight: normal;
@@ -73,12 +70,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 80px;
-      height: 80px;
-      background: $black;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      position: relative;
-      top: -50px;
+      margin: 0 20px 0 0; 
   
       @include mobile {
         font-size: 20px;

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../styles/styles.scss';
 import Menu from '../../components/Menu';
 import logo from '../../assets/AurelieDemetrio_creationsiteweb3.png';
+import Button from '../../components/Button';
 
 
 //import Fontawesome 
@@ -39,6 +40,7 @@ function Header() {
             <p>L'agence Digitale</p>
   </div>*/}
           <Menu/>
+          <Link to="/Calendly"><Button text="Prendre rendez-vous" className='btn-secondary ' /></Link>
         </div>
         
     </header>

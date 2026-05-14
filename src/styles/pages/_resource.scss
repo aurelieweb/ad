@@ -40,11 +40,15 @@
 
     p{
         margin: 0;
+        color: $white;
+        height: 120px;
     }
 
     h3{
-        text-align: center;
-        margin: 10px;
+        text-align: left;
+        margin: 0px;
+        color: $white;
+        width: 100%;
     }
 
 }

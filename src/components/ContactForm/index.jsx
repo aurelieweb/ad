@@ -173,7 +173,7 @@ const emailTemplateContact = process.env.REACT_APP_EMAILJS_TEMPLATE_CONTACT;
                         required
                     ></textarea>
                     </div>
-                    <button className="form__button" type="submit">Envoyer</button>
+                    <button className="form__button button" type="submit">Envoyer</button>
                 </form>
             </div>
         )}

@@ -16,7 +16,8 @@ const Gallery = ({ projects }) => {
 
   return (
     <section className="gallery-section">
-      <h2>Ils m'ont fait confiance</h2>
+      <p className="section-tag">Ils m'ont fait confiance</p>
+      <h2>Quelques réalisations récentes</h2>
       <Swiper
         modules={[Navigation, Pagination, EffectCoverflow]}
         spaceBetween={30}

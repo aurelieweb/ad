@@ -1,5 +1,4 @@
 [
-    
     {
       "title": "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
       "description": "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
@@ -36,7 +35,7 @@
         "./img/imgProjet/make3/make_img1.png"
       ],
 
-      "featured": false
+      "featured": true
     },
                 {
       "title": "Création d'un générateur de contenu Social Media",
@@ -46,7 +45,7 @@
         "./img/imgProjet/make4/make_img1.png"
       ],
 
-      "featured": false
+      "featured": true
     },
         {
       "title": "Optimisation site web",
@@ -56,7 +55,7 @@
         "./img/imgProjet/make1/make_img1.png"
       ],
 
-      "featured": false
+      "featured": true
     },
         {
       "title": "Création d'un CRM",
@@ -66,7 +65,7 @@
         "./img/imgProjet/make2/make_img1.png"
       ],
 
-      "featured": false
+      "featured": true
     },
     {
       "title": "Création d'une maquette de site pour un Architecte",

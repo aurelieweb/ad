@@ -10,6 +10,9 @@
     text-align: left;
     font-size: 36px;
       margin: 50px 0;
+    &:first-of-type {
+        margin-top: 0;
+    }
   }
 
   h3{

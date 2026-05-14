@@ -41,7 +41,7 @@ const ResourceSection = ({ resources }) => {
                     <h3>{resource.title}</h3>
                     <p>{resource.description}</p>
                     {resource.isQuiz ? (
-                        <button onClick={() => handleQuizClick(resource.link)}>
+                        <button className="button"  onClick={() => handleQuizClick(resource.link)}>
                             {resource.ctaText}
                         </button>
                     ) : (

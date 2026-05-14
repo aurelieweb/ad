@@ -1,11 +1,13 @@
 /* Conteneur principal de la galerie */
 .gallery-section {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  background: $black;
 
   h2 {
     margin: 30px 0 50px 0;
+    color:$white;
   }
 }
 
@@ -86,6 +88,7 @@
 
 .swiper {
   height: auto; /* Ajuste la hauteur globale du swiper */
+  margin-bottom: 50px;
 }
 
 .swiper-button-next,

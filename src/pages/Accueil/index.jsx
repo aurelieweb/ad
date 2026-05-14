@@ -11,7 +11,7 @@ import Maintenance from '../../components/MaintenancePage';
 import Toolbox from '../../components/ToolBox';
 import IconCard from '../../components/IconCard'
 import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-solid-svg-icons";
-import imgBenefit from "../../assets/imgArchitecte.jpg";
+import imgBenefit from "../../assets/imgBenefice.jpg";
 import imgPortrait from '../../assets/imgPortrait.png';
 import ServiceDetail from "../../components/ServiceDetail";
 import badgeMake from "../../assets/make-advanced.png"
@@ -51,17 +51,43 @@ const servicesType = [
   },
 ];
 
+//Détails des applications
+const applicationType = [
+  {
+    name: "Gestion des demandes",
+    content: [
+      "Formulaire connecté, suivi centralisé et automatisation des échanges",
+    ],
+    img: require('../../assets/img_creation_site_web.jpg'),
+  },
+  {
+    name: "Oragnisation de rendez-vous",
+    content: [
+      "Agenda connecté, prise de rendez-vous simplifié et rappel automatiques",
+    ],
+    img: require('../../assets/img_automatisation_pme.jpg'),
+  },
+  {
+    name: "Automatisation de contenu",
+    content: [
+      "Création, planification et diffusion de contenus assistées par l'IA",
+    ],
+    img: require('../../assets/img_coaching_creation_site_web.jpg'),
+  },
+];
+
 //Détails bénéfices
 const benefitsSection = [
   {
-    title: "Des bénéfices concrets pour votre activité",
+    title: "Des système digitaux strucuturés et connectés pour une organisation fkuide",
+    text: "Nous structurons vos processus, connectons vos outils et automatisons  ce qui peut l'être pour créer un système cohérent qui soutient votre activité",
     icon: faPlay,
     image: imgBenefit,
     items: [
-      "Données synchronisées automatiquement entre vos outils (site, CRM, base de données…)",
-      "Formulaires intelligents reliés à vos process métier (demandes, devis, rendez-vous…)",
-      "Automatisations Make pour réduire les tâches répétitives et limiter les erreurs humaines",
-      "Un site web opérationnel qui soutient votre organisation, pas une simple vitrine",
+      "Structuration des processus métier",
+      "Connexion de vos outils (site web, CRM, agendas, etc)",
+      "Automatisations des tâches répétitives avec MAke & l'IA",
+      "Centralisation et fiabilisations des données",
       "Plus de temps pour vos clients, vos projets et les tâches à forte valeur ajoutée",
     ],
   },
@@ -73,31 +99,32 @@ const benefitsSection = [
 const cards = [
   {
     icon: faBuilding,
-    title: "Formulaire connecté & CRM intégré",
-    text: "Une PME qui économise 10h par semaine grâce à un formulaire de demande d’intervention accessible même quand le standard est indisponible.",
+    title: "Outils dispersés",
+    text: "Vos outils ne sont pas connectés et les données sont dispersées",
   },  
   {
     icon: faPenRuler,
-    title: "Prise rendez-vous en ligne",
-    text: "Un architecte qui valorise ses projets dans un portfolio en ligne, et propose des rendez-vous directement dans son agenda, selon ses disponibilités.",
+    title: "Tâches répétitives",
+    text: "Vous perdez du temps sur des actions manuelles à faible valeur ajoutée",
   },
   {
     icon: faBriefcase,
-    title: "Génération de contenu",
-    text: "Une indépendante qui génére automatiquement sa stratégie de contenu grâce à l'automatisation et l'Intelligence Artificielle",
+    title: "Manque de fluidité",
+    text: "Votre organisation manque de visibilité et de cohérence au quotidien",
   }
   
 ];
 
 
 const buttons = [
-  { text: 'Prendre rendez-vous', link: '/Calendly', className: 'button' },
+   {text: 'Optimiser mon organisation', link: '/prestations' },
+  { text: 'Voir comment ça fonctionne', link: '/prestations' },
 ];
 
 function Accueil() {
-  const pageTitle = "Création de sites web et transformation digitale";
-  const bannerText = "Création de sites web connectés et mise en place d’outils et d’automatisations pour fluidifier votre activité, centraliser vos données et gagner du temps au quotidien.";
-  const bannerImg = require('../../assets/img_coaching_creation_site_web.jpg');
+  const pageTitle = "Structuration & automatisation";
+  const bannerText = "Structuration des process, connexion des outils et automatisation pour fluidifier l’activité, centraliser les données et gagner en efficacité. Je conçois des systèmes digitaux sur mesure : site web connecté, CRM, automatisations Make, intégrations IA et centralisation des données.";
+  const bannerImg = require('../../assets/imgPortrait2.png');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 
@@ -125,12 +152,13 @@ function Accueil() {
         buttons={buttons}
       />
 
+{/*UN DEFI QUOTIDIEN*/}
       <section className='home__cible'>
-        <h2>Votre activité a besoin d’un site web connecté et d’outils digitaux adaptés, pas d’un simple site vitrine.</h2>
+        <p className='section-tag'>UN DEFI QUOTIDIEN</p>
+        <h2>Votre activité avance,<br/>mais votre organisation vous ralentit</h2>
         <div className='home__cible-text'>
-        <p>Vous gérez un quotidien chargé, souvent dans l’urgence. Et votre site web ne vous aide pas autant qu’il le pourrait.</p>
-        <p>Création de <strong>sites web connectés</strong> et mise en place d’<strong>outils digitaux</strong> adaptés à votre façon de travailler <strong>pour gagner du temps</strong>, <strong>automatiser les tâches répétitives</strong> et <strong>valoriser votre savoir-faire.</strong>.</p>
-        <p>Automatisations, CRM sur mesure, formulaires intelligents, data centralisée, Intelligence Artificielle et intégrations Make pour fluidifier votre activité.</p>
+        <p>Des outils dispersés, des tâches répétitives, des informations qui circulent mal...</p>
+        <p>Résultat : des pertes de temps, des erreurs et une charge mentale inutile.</p>
         </div>
         <div className="icon-card__container">
           {cards.map((card, idx) => (
@@ -146,7 +174,104 @@ function Accueil() {
         <Link to="/prestations"><Button text="Voir les solutions disponibles" className='btn-secondary ' /></Link>
       </section>
 
+{/*NOTRE APPROCHE*/}
+      <section>
+        <p className='section-tag'>NOTRE APPROCHE</p>
+      <ServiceDetail sections={benefitsSection} />
+      <Link to="/Prestations" className="button btn-secondary">
+            En savoir plus sur notre approche
+          </Link>
+      </section>
+
+{/*DES SOLUTIONS CONCRETES*/}
       <section className='home__services'>
+        <p className='section-tag'>DES SOLUTIONS CONCRETES</p>
+        <h2>Mes prestations : sites web, automatisations & intégrations métiers</h2>
+          <p className="home__services-intro">
+            Création de sites web connectés, automatisations Make / IA et optimisation de sites existants pour 
+            connecter vos outils métier, centraliser vos données et gagner du temps au quotidien.
+          </p>
+        <div className='container__card'>
+          {applicationType.map((service, index) => (
+            <Link className='card-link' key={index} to="/prestations">
+              <CardService
+              serviceName={service.name}
+              imageUrl={service.img}
+              alt={service.name}
+              description={<ul>{service.content.map((item, idx) => <li key={idx}>{item}</li>)}</ul>}
+            />
+            </Link>
+          ))}
+        </div>
+        <div className="home__services-meta">
+          
+          {/* CTA optionnel si tu veux renforcer la navigation */}
+          <Link to="/Prestations" className="button btn-secondary">
+            Découvrir toutes mes prestations
+          </Link>
+
+          </div>
+      </section>
+
+{/*UNE DOUBLE EXPERTISE*/}
+      <section className='home'>
+        <p className='section-tag'>UNE DOUBLE EXPERTISE</p>
+        <div className='home__apropos'>
+            <img
+            src={imgPortrait} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+          />
+  <div className='home__apropos-div'>
+    <h2>L'expérience terrain,<br/>la maitrise du digital</h2>
+      <p>
+        Avec plus de 20 ans d'expérience dans la gestion d'entreprise, je comprends vos réalités opérationnelles.
+      </p>
+      <p>
+        Je combine cette vision métier avec une expertise technique en automations, outils digitaux et stratégie
+      </p>
+      <div className='home__expertise'>
+        <div className='home__expertise-container'>
+          <img
+            src={badgeMake} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+          />
+          <div>
+            <h4>20 - ans</h4>
+            <p>d'expérience opérationnelle</p>
+          </div>
+        </div>
+        <div className='home__expertise-container'>
+          <img
+            src={badgeMake} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+          />
+          <div>
+            <h4>Certifiée</h4>
+            <p>Make Advanced</p>
+          </div>
+        </div>
+        <div className='home__expertise-container'>
+          <img
+            src={badgeMake} 
+              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
+              className="badge-make"
+          />
+          <div>
+            <h4>Développeuse Web</h4>
+            <p>& Intégration d'outils</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+{/*DES SERVICES*/}
+      <section className='home__services'>
+        <p className='section-tag'>DES SERVICES</p>
         <h2>Mes prestations : sites web, automatisations & intégrations métiers</h2>
           <p className="home__services-intro">
             Création de sites web connectés, automatisations Make / IA et optimisation de sites existants pour 
@@ -165,17 +290,7 @@ function Accueil() {
           ))}
         </div>
         <div className="home__services-meta">
-          <div className="home__badge">
-            <img 
-              src={badgeMake} 
-              alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
-              className="badge-make"
-            />
-            <p>
-              <strong>Certifiée Make Advanced</strong> et forte de 20 ans d’expérience opérationnelle, 
-              je conçois des systèmes digitaux qui relient votre site web, vos outils métiers et vos processus internes.
-            </p>
-          </div>
+          
           {/* CTA optionnel si tu veux renforcer la navigation */}
           <Link to="/Prestations" className="button btn-secondary">
             Découvrir toutes mes prestations
@@ -183,42 +298,14 @@ function Accueil() {
           </div>
       </section>
 
-      <ServiceDetail sections={benefitsSection} />
-
-      <section className='home'>
-  <img src={imgPortrait} alt="Aurélie DEMETRIO - L'Agence Digitale" />
-  <div className='home__apropos'>
-    <h2>À propos</h2>
-      <p>
-        Avant de devenir développeuse web, j’ai passé 20 ans à gérer des opérations en entreprise : RH, administratif, gestion commerciale, coordination, suivi terrain, planning, matériel, appels d’offres… 
-        J’ai une solide expérience du fonctionnement interne des structures et de leurs contraintes au quotidien.
-      </p>
-
-      <p>
-        Aujourd’hui, je combine cette expertise opérationnelle avec le développement web et les intégrations techniques 
-        (Make, IA, APIs, CRM, bases de données) pour créer des outils digitaux connectés et adaptés à votre manière de travailler.
-      </p>
-
-      <p>
-        Je transforme votre site et vos outils numériques en un <span className='text-color'><strong>système utile et automatisé</strong></span> :
-        formulaires intelligents, synchronisation des données, workflows Make, CRM, pages de vente, génération de contenu, automatisation des tâches récurrentes…
-      </p>
-
-      <p>
-        Mon objectif : <span className='text-color'><strong>fluidifier vos processus, réduire la charge manuelle et faire du digital un levier de croissance durable pour votre activité</strong></span>.
-      </p>
-
-    <Link to="/A-propos/#apropos__anchor"><Button className="button" text="En savoir plus" /></Link>
-  </div>
-</section>
-
-
+{/*ILS NOUS ONT FAIT CONFIANCE*/}
       <Gallery projects={projetData} />
 
+{/*URESSOURCES-BLOG*/}
       <section className='home-blog'>
+        <p className='section-tag'>RESSOURCES</p>
         <h2 className="home-blog__title">
-          Optimisation de l’activité, sites web et outils métiers connectés :<br /> les essentiels pour entrepreneurs et PME
-        </h2>
+          Conseils, outils et retours d'expérience</h2>
         <p>
           Découvrez des ressources pour optimiser vos processus métier et connecter vos outils digitaux : intégrations Make, CRM sur mesure, synchronisation des données, automatisation des tâches récurrentes, formulaires intelligents, génération de contenu assistée par IA, gestion centralisée de l’information et stratégie digitale orientée productivité. </p>
           <p> <strong>L’objectif</strong> : transformer votre site et vos outils numériques en un véritable collaborateur, réduire les tâches manuelles, fluidifier votre organisation et améliorer la performance de votre activité au quotidien.
@@ -232,7 +319,7 @@ function Accueil() {
                 {featuredImage && <a href={postLink}><img src={featuredImage} alt={post.title.rendered} loading="lazy"nonce='' /></a>}
                 <h3><a href={postLink} dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
                 <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <a href={postLink} className="button btn-secondary">Lire l’article</a>
+                <a href={postLink} className="btn-arrow">Lire l’article</a>
               </article>
             );
           })}
@@ -240,6 +327,7 @@ function Accueil() {
         <a href="/blog" className="button btn-secondary">Voir tous les articles</a>
       </section>
 
+{/*
       <section className='offre'>
         <h2>Boîte à outils digitale pour entrepreneurs et PME</h2>
           <div className='offre__artisan'>
@@ -256,7 +344,9 @@ function Accueil() {
           <Toolbox />
         </div>
       </section>
+*/}
 
+{/*CTA*/}
       <section className="home__cta-final">
   <div className="cta-final__wrapper">
     <h2>Prêt(e) à simplifier votre quotidien et gagner du temps ?</h2>

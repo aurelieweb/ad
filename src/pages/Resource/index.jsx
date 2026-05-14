@@ -4,6 +4,15 @@ import ResourceSection from '../../components/ResourceSection';
 import '../../styles/styles.scss';
 
 const resources = [
+        {
+        title: "Ton site est-il un outil business en 2026 ?",
+        description: "Ton site te fait-il gagner du temps… ou t’en fait-il perdre ? En 2 minutes, découvre le niveau de maturité digitale de ton site et de tes outils.",
+        link: '3xelMy', // Utilisez seulement l'ID du formulaire ici
+        ctaText: "Répondre au Quiz",
+        resourceImg:"./img/imgResource/AurelieDemetrio_Strategie_Digitale.jpg",
+        resourceImgClass:"test",
+        isQuiz: true
+    },
     {
         title: "Votre Stratégie de Référencement Local est-elle Optimale ?",
         description: "Participez à notre quiz gratuit pour évaluer votre stratégie de référencement local. Recevez un guide personnalisé avec des conseils sur les bonnes pratiques pour améliorer vos résultats dans les moteurs de recherche.",

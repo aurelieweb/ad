@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 
-    color: black;
+    color: $black;
 }
 
 section {
@@ -11,8 +11,9 @@ section {
     flex-direction: column;
     align-items: center;
     //padding-bottom: 50px;
-    margin: 50px 30px;
-    width: 90%;
+    /*margin: 50px 30px;*/
+    margin: 50px 0;
+    //width: 90%;
 
     @include tablet{
         margin: 0 10px 30px 10px;;
@@ -65,11 +66,16 @@ h3 {
     }
 }
 
+h4{
+    color: $darkviolet;
+    margin: 0 0 10px 0;
+}
+
 .section-text {
     margin: 30px 10px;
     text-align: left;
     font-size: 21px;
-    color: black;
+    color: $black;
 
     @include tablet {
         font-size: 16px;
@@ -128,4 +134,11 @@ p {
       } 
 }   
   
+.section-tag{
+    color: $green;
+    //background: $black;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 10px;
+}
 

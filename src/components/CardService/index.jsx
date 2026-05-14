@@ -3,7 +3,7 @@ import '../../styles/styles.scss';
 
 function CardService({ serviceName, imageUrl, alt, description }) {
   return (
-    <div className="card">
+    <div className="cardservice">
       <img
         src={imageUrl}
         alt={alt || serviceName}
