@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button'; // Assure-toi que Button est bien importé
 import '../../styles/styles.scss';
 
@@ -23,7 +23,7 @@ function Card({ serviceName, servicePrice, prestation, buttonText, link, isPromo
                 <li key={index}>
                   <div>
                     {item.inclus ? (
-                      <FontAwesomeIcon icon={faCheck} className="icon-check" />
+                      <FontAwesomeIcon icon={faCircleCheck} className="icon-check" />
                     ) : (
                       <FontAwesomeIcon icon={faTimes} className="icon-times" />
                     )}

@@ -9,37 +9,21 @@ import imgNosServices3 from '../../assets/img_coaching_creation_site_web.jpg';
 const servicesData = require('../../data/serviceData.json');
 
 function Services() {
-  const webServices = servicesData.filter(service => service.type === "Site web");
-  const automationServices = servicesData.filter(service => service.type === "Automatisation");
-  const otherServices = servicesData.filter(service => service.type === "Autres prestations");
+  const webServices = servicesData.filter(service => service.type === "Prestation");
 
   const customerTypeDetail = [
     {
-      name: "Création de site internet artisans, entrepreneurs, PME",
+      name: "Fluidifier & automatiser votre activité",
       detail: [
-        "Deux options version: one-page ou site vitrine",
-        "Design esthétique et professionnel",
-        "Mise en valeur de votre univers",
-        "Gallerie (portfolio) pour présenter vos projets",
-        "Offre spéciale Artisan: Rédaction de contenu inclus dans l'offre",
+        "J'analyse vos processus et mets en place des automatisations sur mesure pour éliminer les tâches répétitives et reduire la charge mentale"
       ]
     },
     {
-      name: "Automatiser son business",
+      name: "Site web connectés & outils métier",
       detail: [
-        "Automatiser les tâches chronophages",
-        "Connecter vos outils (site, CRM, agenda...)",
-        "Centraliser les demandes clients dans vos outils métier"
+        "Je conçois des sites web modernes et connectés à vos outils pour centraliser les informations, automatiser et offrir une meilleure expérience à vos clients"
       ]
     },
-  {
-    name: "Optimisation & évolution de site web",
-    detail: [
-      "Audit technique et structurel de votre site",
-      "Améliorations pour fluidifier le parcours et la conversion",
-      "Ajout d’intégrations et d’outils connectés (CRM, formulaires, automatisations)"
-    ]
-  }
   ];
 
   const groupServicesByCustomerType = (services) => {
@@ -53,15 +37,13 @@ function Services() {
   };
 
   const webServicesByCustomerType = groupServicesByCustomerType(webServices);
-  const automationServicesByCustomerType = groupServicesByCustomerType(automationServices);
-  const otherServicesByCustomerType = groupServicesByCustomerType(otherServices);
 
   return (
     <section id='service'>
       <div className="container__services">
-        <h2>Nos services web sur mesure</h2>
+        <h2>2 expertises complémentaires pour transformer votre organisation digitale</h2>
         <p className='section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services</strong> de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
-        <div className="container__section">
+        {/*<div className="container__section">
           <div className="container__services-div">
           <img src={imgNosServices1} alt="Aurélie DEMETRIO - L'Agence Digitale" />
             <div>
@@ -82,8 +64,9 @@ function Services() {
               </ul>
             </div>
           </div>
-        </div>
+        </div>*/}
 
+        <div className="container__prestation">
         {Object.keys(webServicesByCustomerType).map((customerType, index) => (
           <div key={index} className="container__card">
             <div className="service-div">
@@ -93,7 +76,6 @@ function Services() {
                   {customerTypeDetail.map((detail, detailIndex) => (
                     detail.name === customerType && detail.detail.map((item, itemIndex) => (
                       <li key={itemIndex}>
-                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
                         <div className="icon-div">{item}</div>
                       </li>
                     ))
@@ -104,7 +86,6 @@ function Services() {
                 {webServicesByCustomerType[customerType].map((service, serviceIndex) => (
                   <Card
                     key={serviceIndex}
-                    serviceName={service.name}
                     imageUrl={service.imageUrl}
                     servicePrice={service.price}
                     description={service.description}
@@ -119,140 +100,7 @@ function Services() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="container__services">
-      <h2>Automatisation</h2>
-    <p className='section-text'>
-      Automatiser ton business, c’est arrêter de perdre du temps sur des tâches répétitives. C’est aussi <strong>fluidifier ton organisation</strong>, éviter les oublis, et te concentrer sur ce que tu fais de mieux : ton métier.
-      Ensemble, on connecte tes outils pour que ton site, ton agenda, tes demandes clients et ton suivi soient synchronisés.
-    </p>
-    <div className="container__section">
-      <div className="container__services-div">
-      <img src={imgNosServices2} alt="Automatisations pros par Aurélie DEMETRIO" />
-        <div>
-          <h3>Pourquoi automatiser ?</h3>
-          <ul>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Gagner du temps au quotidien</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Limiter les erreurs humaines</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Améliorer ton suivi client</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Recevoir les infos là où tu travailles déjà (Notion, Airtable, CRM...)</li>
-          </ul>
         </div>
-        <div>
-          <h3>Avantages :</h3>
-          <ul>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Process simplifiés : Plus de copier-coller ou d’oublis, tout est relié.</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Connexions intelligentes : Tes outils parlent entre eux grâce aux automatisations personnalisées.</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Autonomie : Une fois configuré, ton système tourne tout seul.</li>
-            <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Flexibilité : Ajout ou évolution des automatisations selon tes besoins.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-        
-        {Object.keys(automationServicesByCustomerType).map((customerType, index) => (
-          <div key={index} className='container__card'>
-            <div className="service-div">
-              <div className="service-detail">
-                <h3 className="customer-type">{customerType}</h3>
-                <ul>
-                  {customerTypeDetail.map((detail, detailIndex) => (
-                    detail.name === customerType && detail.detail.map((item, itemIndex) => (
-                      <li key={itemIndex}>
-                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
-                        <div className="icon-div">{item}</div>
-                      </li>
-                    ))
-                  ))}
-                </ul>
-              </div>
-              <div className="container__card-div">
-                {automationServicesByCustomerType[customerType].map((service, serviceIndex) => (
-                  <Card
-                    key={serviceIndex}
-                    serviceName={service.name}
-                    imageUrl={service.imageUrl}
-                    servicePrice={service.price}
-                    description={service.description}
-                    buttonText={service.buttonText}
-                    prestation={service.prestation}
-                    link={service.link}
-                    isPromotion={service.isPromotion}
-                    promotionMessage={service.promotionMessage}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="container__services">
-        <h2>Optimisation & évolution de site web</h2>
-        <p className='section-text'>
-           Votre <strong>site web</strong> existe déjà, mais vous sentez qu’il pourrait être <strong>plus efficace</strong> ? Vous souhaitez le rendre plus clair, plus performant et mieux <strong>connecté à vos outils métiers</strong> ?
-           Cette prestation est pensée pour faire évoluer votre site existant vers un outil digital plus utile, connecté et aligné avec votre organisation.
-        </p>
-        <div className="container__section">
-          
-          <div className="container__services-div">
-          <img src={imgNosServices3} alt="Audit et coaching par Aurélie DEMETRIO" />
-            <div>
-              <h3>Pourquoi faire évoluer votre site ?</h3>
-              <ul>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Réduire le temps passé sur des tâches répétitives.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Améliorer la conversion et le parcours utilisateur.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlay} />Synchroniser le site avec vos outils métiers pour un flux de données cohérent.</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Avantages :</h3>
-              <ul>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Processus simplifiés : moins de tâches manuelles et de ressaisies.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Activité plus fluide : données centralisées et mieux exploitées.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Meilleure performance : un site plus rapide, plus lisible et plus efficace pour vos visiteurs.</li>
-                <li><FontAwesomeIcon className='container__section-icon' icon={faPlus} /> Base solide pour déployer des automatisations (Make, intégrations, workflows).</li>
-              </ul>
-            </div>
-          </div>
-      </div>
-
-        {Object.keys(otherServicesByCustomerType).map((customerType, index) => (
-          <div key={index} className='container__card'>
-            <div className="service-div">
-              <div className="service-detail">
-                <h3 className="customer-type">{customerType}</h3>
-                <ul>
-                  {customerTypeDetail.map((detail, detailIndex) => (
-                    detail.name === customerType && detail.detail.map((item, itemIndex) => (
-                      <li key={itemIndex}>
-                        <span className="icon-circle"><FontAwesomeIcon icon={faPlay} /></span>
-                        <div className="icon-div">{item}</div>
-                      </li>
-                    ))
-                  ))}
-                </ul>
-              </div>
-              <div className="container__card-div">
-                {otherServicesByCustomerType[customerType].map((service, serviceIndex) => (
-                  <Card
-                    key={serviceIndex}
-                    serviceName={service.name}
-                    imageUrl={service.imageUrl}
-                    servicePrice={service.price}
-                    description={service.description}
-                    buttonText={service.buttonText}
-                    prestation={service.prestation}
-                    link={service.link}
-                    isPromotion={service.isPromotion}
-                    promotionMessage={service.promotionMessage}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   );

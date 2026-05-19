@@ -39,12 +39,13 @@
         }
 
         .service-div{
-            background-color: black;
+            background-color: $darkmarine;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: calc(100% - 100px);
             padding: 50px;
+            height: 100%;
             //background: $darkgreen;
             //padding: 20px;
 
@@ -60,14 +61,15 @@
             .service-detail{
 
                 h3{
-                    color: white
+                    color: $darkviolet;
+                    margin: 0;
                 };
                 
                 flex-direction: column;
                 align-items: left;
                 ul{
                     margin-top: 50px;
-                    padding: 20px;
+                    padding: 0px;
 
                     @include mobile{
                         padding: 0 0 10px 10px;
@@ -80,7 +82,8 @@
                     align-items: center;
                     margin-bottom: 20px;
                     //background: $violet;
-                    color: white;
+                    color: $white;
+                    opacity: 0.7;
                     border-radius: 20px;
                     padding-right: 10px;
 
@@ -97,6 +100,7 @@
                 align-items: flex-start;
                 gap: 20px;
                 width: 100%;
+                margin-bottom: 40px;
 
                 @include tablet {
                     justify-content: center;
@@ -113,7 +117,7 @@
         .card{
             background: $white;
             //color: $darkgreen;
-            width: 45%;
+            width: 100%;
             height: 100%;
             border-radius: 10px;
 
@@ -126,7 +130,7 @@
             }
 
             &__content{
-                width: auto;
+                width: 100%;
                 color: $black;
                 h3{
                     color: black;
@@ -226,7 +230,7 @@
     align-items: center;
     margin-right: 20px;
     border-radius: 50%;
-    background-color: $black;
+    background: $darkmarine;
     width: 40px;
     height: 40px;
     font-size: 18px;
@@ -274,3 +278,81 @@
     display: flex;
     gap: 20px;
 }*/
+
+.container__prestation{
+    display: flex;
+}
+
+.prestations__stats {
+  max-width: 1180px;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: linear-gradient(135deg, #f6f1ff, #fbf9ff);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(108, 60, 255, 0.08);
+}
+
+.prestations__stat-item {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid rgba(108, 60, 255, 0.12);
+}
+
+.prestations__stat-item:last-child {
+  border-right: none;
+}
+
+.prestations__stat-item i {
+  font-size: 1.5rem;
+  color: $darkviolet;
+  margin-bottom: 0.8rem;
+}
+
+.prestations__stat-icon {
+  font-size: 2rem;
+  color: $darkviolet;
+  margin-bottom: 1rem;
+}
+
+.prestations__stat-item h3 {
+  font-size: 2rem;
+  color: $darkviolet;
+  margin: 0 0 0.5rem;
+  font-weight: 800;
+}
+
+.prestations__stat-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $black;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 900px) {
+  .prestations__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prestations__stat-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .prestations__stats {
+    grid-template-columns: 1fr;
+    margin: 3rem 1rem;
+  }
+
+  .prestations__stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(108, 60, 255, 0.12);
+  }
+
+  .prestations__stat-item:last-child {
+    border-bottom: none;
+  }
+}

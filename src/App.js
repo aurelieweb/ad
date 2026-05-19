@@ -15,6 +15,8 @@ import KiffeTonSite from './pages/Kiffetonsite';
 import Resource from './pages/Resource';
 import Flyer from './pages/Flyer';
 import RGPD from './pages/rgpd';
+import Automatisation from './pages/Automatisation';
+import Website from './pages/Website';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/ressources" element={<Resource />} />
           <Route path="/flyer" element={<Flyer />} />
           <Route path="/rgpd" element={<RGPD />} />
+          <Route path="/automatisation" element={<Automatisation />} />
+          <Route path="/website" element={<Website />} />
 
         </Routes>
       </Layout>

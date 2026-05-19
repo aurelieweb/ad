@@ -17,6 +17,7 @@
     align-items: center;
     text-align: center;
     box-shadow: $box-shadows-btn;
+    text-decoration: none;
   
     // Hover par défaut
     &:hover {
@@ -36,22 +37,6 @@
       border-radius: 10px;
       transition: opacity 250ms;
 
-    }
-  
-    // ✅ Variante secondaire
-    &.btn-secondary {
-      background-color: $darkviolet;
-      color: $white;
-      text-decoration: none;
-  
-      &:hover {
-        background-color: $black;
-        color: $white;
-  
-        &::after {
-          background-color: transparent;
-        }
-      }
     }
 }
 
@@ -80,4 +65,23 @@
   min-width: 20px;
 }
 
+      // ✅ Variante secondaire
+.btn-secondary {
+  background: $darkmarine;
+  color: $white;
+  text-decoration: none;
+  border: 2px solid $violet;
+  font-weight: 100;
+  border-radius: 50px;
+  padding: 0;
+  margin: 20px;
   
+  &:hover {
+    background-color: $black;
+    color: $white;
+  
+    &::after {
+      background-color: transparent;
+    }
+  }
+}

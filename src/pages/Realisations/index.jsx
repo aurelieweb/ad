@@ -2,14 +2,16 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Portfolio from '../../sections/Portfolio';
+import { Link } from 'react-router-dom';
+import Button from '../../components/Button';
 
 const buttons = [
   { text: 'Prendre rendez-vous', link: '/Calendly' }
 ];
 
 function Realisations() {
-  const pageTitle = "Découvrez nos réalisations";
-  const bannerText = "Explorez notre portfolio pour trouver l'inspiration dont vous avez besoin pour votre projet. Chaque réalisation est le fruit d'un travail passionné et créatif, conçu pour mettre en valeur le potentiel unique de chaque client";
+  const pageTitle = "Des projets concrets, des impacts réels.";
+  const bannerText = "Découvrez commetn j'ai aidé des entreprises à structurer, automatiser et connecter leurs outils pour gagner en efficacité.";
 
 
   const bannerImg = require('../../assets/imgBanner_realisation_site_internet.jpg');
@@ -26,6 +28,16 @@ function Realisations() {
             bannerImgClass={bannerImgClass} 
             buttons={buttons}/>
             <Portfolio />
+            {/*CTA*/}
+                  <section className="home__cta-final">
+              <div className="cta-final__wrapper">
+                <h2>Votre projet mérite une solution sur mesure.</h2>
+                <p>Parlons de vos besoins et voyons comment je peux vous aider à atteindre vos objectifs</p>
+                <Link to="/Calendly">
+                  <Button className="btn-secondary" text="Planifier un appel gratuit" />
+                </Link>
+              </div>
+            </section>
     </div>
   );
 }

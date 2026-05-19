@@ -14,9 +14,60 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        &-div{
+            display: flex;
+
+            @include mobile{
+                flex-direction: column;
+            }
+            img{
+                width: 30%;
+
+                @include mobile{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
+.quisuisje__container-text{
+    width: 60%;
+
+    @include mobile{
+        width: 100%;
+    }
+}
 .timeline-cycle{
     width: 80%;
+}
+.expertise__container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @include mobile{
+        flex-direction: column;
+    }
+    
+}
+.expertise__item{
+    display: flex;
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile{
+    width: 100%;
+  }
+}
+
+.expertise__img{
+    margin: 20px 0;
+    width: 100px;
+}
+
+.container__processus{
+    margin: 20px;
 }

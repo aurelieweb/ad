@@ -184,6 +184,35 @@
   }
 }
 
+.portfolio__filters {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0 3rem;
+}
 
+.portfolio__filter-btn {
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 8px;
+  background: $white;
+  color: $darkgreen;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.portfolio__filter-btn:hover {
+  transform: translateY(-2px);
+  background: $white;
+}
+
+.portfolio__filter-btn.active {
+  background: $darkviolet;
+  color: $white;
+  box-shadow: 0 10px 25px rgba(108, 60, 255, 0.3);
+}
 
 

@@ -3,7 +3,9 @@ import axios from "axios";
 import Button from '../../components/Button'; 
 import Banner from '../../components/Banner';
 import FreebiePopup from '../../components/FreebiePopup';
+import { Link } from 'react-router-dom';
 //import Maintenance from '../../components/MaintenancePage'
+import NewsletterForm from '../../components/NewsletterForm';
 
 const buttons = [
   { text: 'En savoir plus', link: '/Calendly' },
@@ -133,6 +135,9 @@ function Blog() {
           </button>
         </div>
       </div>
+      {/*CTA*/}
+
+    <NewsletterForm/>
     </div>
   );
 }

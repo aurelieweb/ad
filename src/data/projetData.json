@@ -1,6 +1,7 @@
 [
     {
       "title": "Refonte totale du site web d'une entreprise de Plomberie Chauffagiste",
+      "category": "Sites web connectés",
       "description": "Mise en place d'un module personnalisé qui permet à l'utilisateur d'effectuer des demandes d'intervention ou de devis en ligne. Notre artisan reçoit une fiche d'intervention ou de demande de devis personnalisée par mail. Ce process simplifie la gestion commerciale de notre client, grâce au formatage des demandes clients",
       "coverImage": "./img/imgProjet/demetrio/demetrio_img1.jpg",
       "images": [
@@ -15,6 +16,7 @@
     },
     {
       "title": "Création d'un site de promotion immobilière",
+       "category": "Sites web connectés",
       "description": "Création d'un site pour la mise en avant d'un programme neuf",
       "coverImage": "./img/imgProjet/immo/immo_img1.jpg",
       "images": [
@@ -29,6 +31,7 @@
     },
     {
       "title": "Création d'un CRM",
+       "category": "Structuration & automatisation",
       "description": "Création d'un CRM pour le pilotage de l'activité avec dashboard dirigeant Make / Airtable / Google Drive : Google Calendar / Formulaire sur mesure / Trello",
       "coverImage": "./img/imgProjet/make3/make_img1.png",
       "images": [
@@ -39,6 +42,7 @@
     },
                 {
       "title": "Création d'un générateur de contenu Social Media",
+       "category": "Structuration & automatisation",
       "description": "Génaration de contenu comprenant : Hook, légende, instructions visuels ou script video pour différent format. Newsletters, Article de blog, Posts, Reels. Make / IA / Notion",
       "coverImage": "./img/imgProjet/make4/make_img1.png",
       "images": [
@@ -49,6 +53,7 @@
     },
         {
       "title": "Optimisation site web",
+       "category": "Structuration & automatisation",
       "description": "Intégration de formulaire sur mesure sur site web avec automatisation des demandes d'interventions et création de dashboard. JS / React / EmailJS / Airtable / Make",
       "coverImage": "./img/imgProjet/make1/make_img1.png",
       "images": [
@@ -59,6 +64,7 @@
     },
         {
       "title": "Création d'un CRM",
+       "category": "Structuration & automatisation",
       "description": "Création d'un CRM pour la génération des dossiers d'installation de Pompe à chaleur et demande de primes d'aide à la rénovation énergétique. Tally / Airtable / Make / Google Drive / Google Docs",
       "coverImage": "./img/imgProjet/make2/make_img1.png",
       "images": [
@@ -69,6 +75,7 @@
     },
     {
       "title": "Création d'une maquette de site pour un Architecte",
+       "category": "Sites web connectés",
       "description": "Création d'une galerie de projet sur mesure pour un Architecte",
       "coverImage": "./img/imgProjet/archi1/archi1_img2.jpg",
       "images": [
@@ -81,6 +88,7 @@
     },
     {
       "title": "Création d'une maquette de site pour un Architecte d'intérieur",
+       "category": "Sites web connectés",
       "description": "Création d'une galerie de projet sur mesure pour un Architecte d'Intérieur",
       "coverImage": "./img/imgProjet/archi2/archi2_img1.jpg",
       "images": [
@@ -91,6 +99,7 @@
     },
     {
       "title": "Création d'une boutique en ligne",
+       "category": "Sites web connectés",
       "description": "Conception et création d'une boutique en ligne pour une entreprise spécialisée dans la vente de canapés. Mise en place d'un panier et d'un système de commande",
       "coverImage": "./img/imgProjet/kanap/kanap_img1.jpg",
       "images": [
@@ -104,6 +113,7 @@
     },
     {
       "title": "Création d'une plateforme de location de vacances",
+       "category": "Sites web connectés",
       "description": "Développement d'une plateforme de location de vacances offrant une expérience conviviale et intuitive.",
       "coverImage": "./img/imgProjet/kasa/kaza_img1.jpg",
       "images": [
@@ -116,6 +126,7 @@
     },
     {
       "title": "Création d'un site de réservation de menu en ligne",
+       "category": "Sites web connectés",
       "description": "Conception d'un site de réservation de menus en ligne, offrant aux utilisateurs la possibilité de prévoir et réserver leurs repas avec facilité.",
       "coverImage": "./img/imgProjet/ohmyfood/ohmyfood_img1.jpg",
       "images": [
@@ -129,6 +140,7 @@
     },
     {
       "title": "Création d'un site de réservation de location de vacances et d'activités",
+       "category": "Sites web connectés",
       "description": "Création d'un site de réservation complet permettant aux utilisateurs de réserver des locations de vacances et des activités en toute simplicité.",
       "coverImage": "./img/imgProjet/reservia/reservia_img2.jpg",
       "images": [

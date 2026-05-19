@@ -6,15 +6,17 @@ import Gallery from '../../components/Gallery';
 import Banner from '../../components/Banner';
 import CardService from '../../components/CardService';
 import Button from '../../components/Button';
-import FreebiePopup from '../../components/FreebiePopup';
+//import FreebiePopup from '../../components/FreebiePopup';
 import Maintenance from '../../components/MaintenancePage';
 import Toolbox from '../../components/ToolBox';
 import IconCard from '../../components/IconCard'
 import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-solid-svg-icons";
-import imgBenefit from "../../assets/imgBenefice.jpg";
+import imgBenefit from "../../assets/imgHome.jpeg";
 import imgPortrait from '../../assets/imgPortrait.png';
 import ServiceDetail from "../../components/ServiceDetail";
-import badgeMake from "../../assets/make-advanced.png"
+import badgeMake from "../../assets/make-advanced.png";
+import iconDev from "../../assets/icon_dev.png";
+import iconExp from "../../assets/icon_experience.png";
 
 
 const projetData = require('../../data/projetData.json');
@@ -61,7 +63,7 @@ const applicationType = [
     img: require('../../assets/img_creation_site_web.jpg'),
   },
   {
-    name: "Oragnisation de rendez-vous",
+    name: "Organisation de rendez-vous",
     content: [
       "Agenda connecté, prise de rendez-vous simplifié et rappel automatiques",
     ],
@@ -79,7 +81,7 @@ const applicationType = [
 //Détails bénéfices
 const benefitsSection = [
   {
-    title: "Des système digitaux strucuturés et connectés pour une organisation fkuide",
+    title: "Des système digitaux strucuturés et connectés pour une organisation fluide",
     text: "Nous structurons vos processus, connectons vos outils et automatisons  ce qui peut l'être pour créer un système cohérent qui soutient votre activité",
     icon: faPlay,
     image: imgBenefit,
@@ -122,7 +124,7 @@ const buttons = [
 ];
 
 function Accueil() {
-  const pageTitle = "Structuration & automatisation";
+  const pageTitle = "STRUCTURATION & AUTOMATISATION";
   const bannerText = "Structuration des process, connexion des outils et automatisation pour fluidifier l’activité, centraliser les données et gagner en efficacité. Je conçois des systèmes digitaux sur mesure : site web connecté, CRM, automatisations Make, intégrations IA et centralisation des données.";
   const bannerImg = require('../../assets/imgPortrait2.png');
   const bannerClass = "banner banner-presentation";
@@ -142,7 +144,7 @@ function Accueil() {
 
   return (
     <div className='main'>
-      <FreebiePopup />
+      {/*<FreebiePopup />*/}
       <Banner
         pageTitle={pageTitle}
         bannerClass={bannerClass}
@@ -171,14 +173,14 @@ function Accueil() {
           ))}
 </div>
 
-        <Link to="/prestations"><Button text="Voir les solutions disponibles" className='btn-secondary ' /></Link>
+        <Link to="/prestations"><Button text="Voir les solutions disponibles" className='button ' /></Link>
       </section>
 
 {/*NOTRE APPROCHE*/}
       <section>
         <p className='section-tag'>NOTRE APPROCHE</p>
       <ServiceDetail sections={benefitsSection} />
-      <Link to="/Prestations" className="button btn-secondary">
+      <Link to="/Prestations" className="button">
             En savoir plus sur notre approche
           </Link>
       </section>
@@ -206,7 +208,7 @@ function Accueil() {
         <div className="home__services-meta">
           
           {/* CTA optionnel si tu veux renforcer la navigation */}
-          <Link to="/Prestations" className="button btn-secondary">
+          <Link to="/Prestations" className="button">
             Découvrir toutes mes prestations
           </Link>
 
@@ -233,7 +235,7 @@ function Accueil() {
       <div className='home__expertise'>
         <div className='home__expertise-container'>
           <img
-            src={badgeMake} 
+            src={iconExp} 
               alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
               className="badge-make"
           />
@@ -255,7 +257,7 @@ function Accueil() {
         </div>
         <div className='home__expertise-container'>
           <img
-            src={badgeMake} 
+            src={iconDev} 
               alt="Certification Make - Aurélie DEMETRIO | Developpeuse et consultante en transformation digiale, | Experte en automatisation Make" 
               className="badge-make"
           />
@@ -292,7 +294,7 @@ function Accueil() {
         <div className="home__services-meta">
           
           {/* CTA optionnel si tu veux renforcer la navigation */}
-          <Link to="/Prestations" className="button btn-secondary">
+          <Link to="/Prestations" className="button">
             Découvrir toutes mes prestations
           </Link>
           </div>
@@ -324,7 +326,7 @@ function Accueil() {
             );
           })}
         </div>
-        <a href="/blog" className="button btn-secondary">Voir tous les articles</a>
+        <a href="/blog" className="button">Voir tous les articles</a>
       </section>
 
 {/*
@@ -353,7 +355,7 @@ function Accueil() {
     <p>Je vous aide à mettre en place des solutions simples, utiles et connectées à vos outils métier.<br />
     Parlons de votre activité et trouvons ensemble la meilleure solution pour vous.</p>
     <Link to="/Calendly">
-      <Button className="btn-secondary" text="Planifier un appel gratuit" />
+      <Button className="button" text="Planifier un appel gratuit" />
     </Link>
   </div>
 </section>

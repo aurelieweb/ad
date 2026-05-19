@@ -1,85 +1,34 @@
 [
   {
-    "name": "Audit Flash – Boost ton site & ton business",
-    "type": "Autres prestations",
-    "customerType": "Optimisation & connexion de votre site web",
-    "description": "Tu veux savoir si ton site ou ton organisation digitale est efficace ? Je t’aide à faire le point avec un audit clair, utile et 100% orienté action.",
+    "name": "Fluidifier & automatiser votre activité",
+    "type": "Prestation",
+    "customerType": "Fluidifier & automatiser votre activité",
+    "description": "J'analyse vos processus et mets en place des automatisations sur mesure pour éliminer les tâches répétitives et reduire la charge mentale'",
     "prestation": [
-      { "nom": "Analyse technique & ergonomique de ton site", "inclus": true },
-      { "nom": "Vérification des performances SEO de base", "inclus": true },
-      { "nom": "Identification des tâches répétitives à automatiser", "inclus": true },
-      { "nom": "Rapport clair + plan d’action priorisé", "inclus": true }
-    ],
-    "imageUrl": "./img/service8.png",
-    "buttonText": "Je booste mon site & mon business",
-    "link": "/Calendly",
-    "price": "149,00 €"
-  },
-  {
-  "name": "Connexion de votre site à vos outils métiers",
-  "type": "Autres prestations",
-  "customerType": "Optimisation & connexion de votre site web",
-  "description": "Connexion de votre site à vos outils existants pour fluidifier vos process, centraliser vos données et automatiser vos tâches récurrentes.",
-  "prestation": [
-    { "nom": "Intégration avec CRM, agenda, base de données, formulaires", "inclus": true },
-    { "nom": "Automatisations via Make ou API", "inclus": true },
-    { "nom": "Synchronisation des données entre vos outils", "inclus": true },
-    { "nom": "Optimisation du site pour améliorer l’efficacité et les performances", "inclus": true }
-  ],
-  "imageUrl": "./img/service8.png",
-  "buttonText": "Connecter mon site",
-  "link": "/Calendly",
-  "price": "Sur devis"
-  },
-  {
-    "name": "Pack Automatisation Express",
-    "type": "Automatisation",
-    "customerType": "Automatiser son business",
-    "description": "Je mets en place une automatisation simple mais puissante, connectée à ton activité (formulaire, RDV, fiche client, devis…).",
-    "prestation": [
-      { "nom": "RDV stratégique + définition de ton besoin", "inclus": true },
-      { "nom": "Création d’un 1er workflow (Make, Airtable, Tally…)", "inclus": true },
-      { "nom": "Connexion aux outils que tu utilises déjà", "inclus": true },
-      { "nom": "Tests + document de suivi", "inclus": true }
+      { "nom": "Automatisarion des tâches", "inclus": true },
+      { "nom": "Crentralisation des données", "inclus": true },
+      { "nom": "CRM & suivi client", "inclus": true },
+      { "nom": "Tableau de bord et reporting", "inclus": true }
     ],
     "imageUrl": "./img/service9.png",
-    "buttonText": "Automatiser une tâche maintenant",
-    "link": "/Calendly",
+    "buttonText": "Découvrir",
+    "link": "/Automatisation",
     "price": "Sur devis"
   },
   {
-    "name": "Connect ton Business",
-    "type": "Automatisation",
-    "customerType": "Automatiser son business",
-    "description": "J’automatise ton back-office et je connecte tes outils (site web, CRM, facturation, suivi client, prises de RDV…).",
+    "name": "Site web connectés & outils métier",
+    "type": "Prestation",
+    "customerType": "Site web connectés & outils métier",
+    "description": "Je conçois des site web modernes et connectés à vos outils pour centraliser les informations, automatiser et offrir une meilleure expérience à vos clients",
     "prestation": [
-      { "nom": "Audit + plan d’automatisation personnalisé", "inclus": true },
-      { "nom": "Développement de workflows avancés", "inclus": true },
-      { "nom": "Intégration d’API (Google, Notion, CRM…)", "inclus": true },
-      { "nom": "Tableaux de suivi (Airtable / Notion)", "inclus": true },
-      { "nom": "Documentation claire + accompagnement", "inclus": true }
+      { "nom": "Site WordPress sur mesure", "inclus": true },
+      { "nom": "Formulaires & espace client", "inclus": true },
+      { "nom": "Prise de rendez-vous en ligne", "inclus": true },
+      { "nom": "Intégrations & connexions", "inclus": true }
     ],
     "imageUrl": "./img/service10.png",
-    "buttonText": "Je connecte mes outils",
-    "link": "/Calendly",
+    "buttonText": "découvrir",
+    "link": "/Website",
     "price": "Sur devis"
-  },
-  {
-    "name": "Ta vitrine utile",
-    "type": "Site web",
-    "customerType": "Création de site internet artisans, entrepreneurs, PME",
-    "description": "Un site structuré, connecté, qui automatise les demandes, envoie les infos au bon endroit et te fait gagner du temps dès le jour 1.",
-    "prestation": [
-      { "nom": "Site web complet (jusqu’à 5 pages)", "inclus": true },
-      { "nom": "Design sobre et professionnel", "inclus": true },
-      { "nom": "Intégration de tes outils métier", "inclus": true },
-      { "nom": "Site responsive + SEO technique", "inclus": true },
-      { "nom": "Espace client avec prompts ChatGPT", "inclus": true },
-      { "nom": "Suivi + mise en ligne + accompagnement technique", "inclus": true }
-    ],
-    "imageUrl": "./img/service11.png",
-    "buttonText": "Créer mon site",
-    "link": "/Calendly",
-    "price": "À partir de 1500 €"
   }
 ]

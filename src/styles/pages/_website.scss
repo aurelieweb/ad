@@ -1,0 +1,47 @@
+.automation-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.site-project-card {
+  border: 1px solid rgba(124, 60, 255, 0.12);
+  border-radius: 16px;
+  padding: 1rem;
+  background: $white;
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: $darkmarine;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $darkmarine;
+    line-height: 1.6;
+  }
+}
+
+.method-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: $violet;
+  color: $white;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+  .automation-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
