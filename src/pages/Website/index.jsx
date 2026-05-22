@@ -120,7 +120,7 @@ function Website() {
   const pageTitle = "SITES WEB CONNECTÉS À VOS OUTILS MÉTIER";
   const bannerText =
     "Je conçois des sites WordPress sur mesure, connectés à vos outils et pensés pour automatiser, centraliser et offrir une expérience fluide à vos clients.";
-  const bannerImg = require("../../assets/ImgBanner2.jpg");
+  const bannerImg = require("../../assets/imgBanner3.png");
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

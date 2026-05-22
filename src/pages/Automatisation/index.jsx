@@ -103,7 +103,7 @@ const solutions = [
 function Automatisation() {
 const pageTitle = "STRUCTURATION & AUTOMATISATION";
   const bannerText = "Structuration des process, connexion des outils et automatisation pour fluidifier l’activité, centraliser les données et gagner en efficacité. Je conçois des systèmes digitaux sur mesure : site web connecté, CRM, automatisations Make, intégrations IA et centralisation des données.";
-  const bannerImg = require('../../assets/imgPortrait.png');
+  const bannerImg = require('../../assets/imgBanner3.png');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

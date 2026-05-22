@@ -14,7 +14,7 @@ function Realisations() {
   const bannerText = "Découvrez commetn j'ai aidé des entreprises à structurer, automatiser et connecter leurs outils pour gagner en efficacité.";
 
 
-  const bannerImg = require('../../assets/imgBanner_realisation_site_internet.jpg');
+  const bannerImg = require('../../assets/imgBanner3.png');
   const bannerClass = "banner banner-presentation"
   const bannerImgClass = "banner__img-presentation";
 

@@ -15,12 +15,20 @@
     gap: 1rem;
     margin: 50px;
 
+    @include mobile{
+      align-items: center;
+    }
+
     .form-group {
       display: flex;
       flex-direction: row;
       gap: 1rem;
       width: 100%;
       justify-content: space-between;
+
+      @include mobile{
+        align-items: center;
+      }
     }
 
     input {
@@ -47,23 +55,23 @@
 // 🟢 Version mobile
 @include mobile {
   .newsletter-form {
-    h2 {
-      margin: 0;
-    }
 
     form {
-      margin: 0;
 
       .form-group {
         flex-direction: column;
       }
 
       input {
-        width: 90%;
+        width: 100%;
       }
 
       .form-group-name {
         width: 100%;
+
+        @include mobile{
+          width: 100%;
+        }
       }
     }
   }

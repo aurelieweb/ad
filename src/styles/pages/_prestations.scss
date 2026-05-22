@@ -1,7 +1,7 @@
 #service{
 
     @include mobile{
-        margin-top: 80px;
+        margin-top: 500px;
     }
 }
 
@@ -35,7 +35,7 @@
 
         @include mobile{
             flex-wrap: wrap;
-            margin: 10px;
+            margin: 0;
         }
 
         .service-div{
@@ -72,7 +72,7 @@
                     padding: 0px;
 
                     @include mobile{
-                        padding: 0 0 10px 10px;
+                        padding: 0 0 10px 0;
                     }
                 }
 
@@ -132,9 +132,17 @@
             &__content{
                 width: 100%;
                 color: $black;
+
+                @include mobile{
+                    margin-bottom: 30px;
+                }
                 h3{
                     color: black;
                     margin: 30px;
+                }
+
+                a{
+                    margin: 50px;
                 }
 
                 &-text{
@@ -234,7 +242,7 @@
     width: 40px;
     height: 40px;
     font-size: 18px;
-    color: $darkviolet;
+    color: $violet;
 
     @include mobile{
         width: 30px;
@@ -247,22 +255,10 @@
 .icon-div{
     width: 80%;
     font-size: 18px;
+    color: $white;
 
     @include tablet {
         font-size: 16px;
-    }
-}
-
-.customer-type{
-    font-size: 36px;
-    color: $darkviolet;
-
-    @include tablet{
-        font-size: 24px;
-    }
-
-    @include mobile{
-        font-size: 20px;
     }
 }
 
@@ -281,15 +277,21 @@
 
 .container__prestation{
     display: flex;
-}
 
-.prestations__stats {
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.stats{
+    display: flex;
+}
+.prestation__stats {
   max-width: 1180px;
   margin: 4rem auto;
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: linear-gradient(135deg, #f6f1ff, #fbf9ff);
+  background: $linearGradient5;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(108, 60, 255, 0.08);
 }
@@ -327,13 +329,16 @@
   margin: 0;
   font-size: 0.9rem;
   font-weight: 600;
-  color: $black;
+  color: $white;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 900px) {
   .prestations__stats {
     grid-template-columns: repeat(2, 1fr);
+    display: flex;
+  flex-direction: column;
+
   }
 
   .prestations__stat-item:nth-child(2) {

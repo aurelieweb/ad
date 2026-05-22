@@ -30,9 +30,9 @@ function Apropos() {
 
     const pageTitle = "Entrepreneur, consultante et passionnée par l'oganisation et la tech.";
     const bannerText = "J'accompagne les entreprises dans leur transformation digitale avec une approche humaine, stratégique et pragmatique";
-    const bannerImg = require('../../assets/imgPortrait2.png');
+    const bannerImg = require('../../assets/imgBanner4.png');
     const bannerClass = "banner banner-presentation"
-    const bannerImgClass = "banner__img-presentation";
+    const bannerImgClass = "banner__img-apropos banner__img-presentation";
 
     return (
       <div className='main'>

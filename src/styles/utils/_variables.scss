@@ -10,6 +10,7 @@ $black: #111827;
 $darkmarine:#0b1f4d;
 $darkgreen: #132d6b;
 $green: #1e3a8a;
+$lightgreen: #074cb3;
 $darkviolet: #c93bff;
 $violet: #ff4fc3;
 $pink: #e1582a; 
@@ -52,4 +53,11 @@ $linearGradient6: linear-gradient(
   darken($darkviolet, 5) 0%,
   $black 70%,
   darken($black, 5) 100%
+);
+$linearGradient7: linear-gradient(
+  to bottom left,
+  darken($black, 5) 0%,
+  $black 30%,
+  
+  darken($green, 5) 100%
 );

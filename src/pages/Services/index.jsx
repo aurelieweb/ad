@@ -37,7 +37,7 @@ function Prestations() {
   const pageTitle = "Des solutions digitales pour des entreprises plus fluides et efficaces";
   const bannerText = "J'aide les indépendants, entreprises et équipes à structurer leurs processus, automatiser les tâches répétitives et connecter leurs outils pour gagner du temps et mieux piloter leur activité";
   const bannerClass = "banner banner-presentation";
-  const bannerImg = require('../../assets/ImgBanner2.jpg');
+  const bannerImg = require('../../assets/imgBanner2.png');
   const bannerImgClass = "banner__img-presentation";
 
   return (
@@ -53,14 +53,18 @@ function Prestations() {
 
       <Services/>
 
-      <section className="prestations__stats">
-        {stats.map((stat, index) => (
-          <div className="prestations__stat-item" key={index}>
-            <FontAwesomeIcon icon={stat.icon} className="prestations__stat-icon" />
-            <h3>{stat.value}</h3>
-            <p>{stat.text}</p>
-          </div>
-        ))}
+      <section className="stats">
+        <p className="section-tag">IMPACT CONCRET</p>
+        <h2>Des solutions pensées pour gagner en efficacité</h2>
+        <div className='prestation__stats'>
+          {stats.map((stat, index) => (
+            <div className="prestations__stat-item" key={index}>
+              <FontAwesomeIcon icon={stat.icon} className="prestations__stat-icon" />
+              <h3>{stat.value}</h3>
+              <p>{stat.text}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="home__cta-final">

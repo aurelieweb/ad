@@ -15,9 +15,12 @@ const Gallery = ({ projects }) => {
   const featuredProjects = projects.filter(project => project.featured);
 
   return (
-    <section className="gallery-section">
-      <p className="section-tag">Ils m'ont fait confiance</p>
-      <h2>Quelques réalisations récentes</h2>
+<section className="gallery-section">
+  <p className="section-tag">RÉALISATIONS</p>
+  <h2>Des projets digitaux conçus pour répondre à des besoins concrets</h2>
+  <p className="gallery-section__intro">
+    Sites web, refontes, outils connectés et projets sur mesure : quelques exemples de réalisations pensées pour valoriser une activité, structurer les informations et améliorer l’expérience utilisateur.
+  </p>
       <Swiper
         modules={[Navigation, Pagination, EffectCoverflow]}
         spaceBetween={30}

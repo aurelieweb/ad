@@ -14,7 +14,7 @@ const buttons = [
 function Blog() {
   const pageTitle = "Optimiser son site et automatiser son business - Le blog";
   const bannerText = "Stratégie digitale, automatisation, visibilité, IA : transformez votre site web et vos outils en leviers puissants pour booster votre activité.np";
-  const bannerImg = require('../../assets/imgBanner_blog_aurelie_demetrio_developpeuse_automatisation.jpg');
+  const bannerImg = require('../../assets/imgBanner6.png');
   const bannerClass = "banner banner-presentation";
   const bannerImgClass = "banner__img-presentation";
 

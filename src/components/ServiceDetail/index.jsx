@@ -23,7 +23,7 @@ function ServiceDetail({ sections }) {
 
             {/* Contenu textuel */}
             <div className="service-detail__content">
-              <h3 className="customer-type">{section.title}</h3>
+              <h2 className="customer-type">{section.title}</h2>
               <p>{section.text}</p>
               {section.subtitle && (
                 <h4 className="section-subtitle">{section.subtitle}</h4>

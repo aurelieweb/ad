@@ -29,8 +29,8 @@ function Menu() {
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/Prestations" className="menu__item-link" onClick={closeMenu}>
-            Prestations
+          <Link to="/Services" className="menu__item-link" onClick={closeMenu}>
+            Services
           </Link>
         </li>
         <li className="menu__item">
@@ -44,8 +44,8 @@ function Menu() {
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/Blog" className="menu__item-link" onClick={closeMenu}>
-            Blog
+          <Link to="/Articles" className="menu__item-link" onClick={closeMenu}>
+            Articles
           </Link>
         </li>
         <li className="menu__item">

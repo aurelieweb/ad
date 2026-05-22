@@ -84,6 +84,7 @@ function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass,
             })}
           </div>
           <div className="banner__benefits">
+            <div className="banner__separator-benefits" />
             {bannerBenefits.map((benefit, index) => (
               <React.Fragment key={index}>
                 <div className="banner__benefit">

@@ -115,16 +115,18 @@
         height: 100%;
         text-align: center;
         color: $white;
-        width: 100%;
+        //width: 100%;
+        padding: 50px 50px 0 50px;
 
         @include mobile {
-            width: 100%;
+            width: calc(100% - 40px);
+            padding: 20px;
         }
 
         &-text {
             width: 100%;
             opacity: 0.65;
-            margin-bottom: 20px;
+            //margin-bottom: 20px;
             text-align: left;
             //height: 200px;
             ul{
@@ -132,6 +134,7 @@
             }
             li{
                 list-style: none;
+                margin-bottom: 10px;
             }
         }
 
@@ -169,6 +172,9 @@
                     opacity: 0.9;
                     margin: 0;
                     text-align: left;
+                }
+                button{
+                        margin-bottom: 20px;
                 }
             }
         }

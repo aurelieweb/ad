@@ -23,9 +23,11 @@
   .image-left {
 
     flex-direction: row;
+        //margin-left: 50px;
 
       @include mobile{
         flex-direction: column-reverse; /* Image à gauche */
+        margin-left: 0;
       }
     }
 

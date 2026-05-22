@@ -2,9 +2,9 @@ import React from "react";
 import Card from "../../components/Card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons';
-import imgNosServices1 from '../../assets/img_coaching.jpg';
-import imgNosServices2 from '../../assets/img_automatisation_pme.jpg';
-import imgNosServices3 from '../../assets/img_coaching_creation_site_web.jpg';
+//import imgNosServices1 from '../../assets/img_coaching.jpg';
+//import imgNosServices2 from '../../assets/img_automatisation_pme.jpg';
+//import imgNosServices3 from '../../assets/img_coaching_creation_site_web.jpg';
 
 const servicesData = require('../../data/serviceData.json');
 
@@ -15,13 +15,13 @@ function Services() {
     {
       name: "Fluidifier & automatiser votre activité",
       detail: [
-        "J'analyse vos processus et mets en place des automatisations sur mesure pour éliminer les tâches répétitives et reduire la charge mentale"
+        "J’analyse vos processus et mets en place des automatisations sur mesure pour réduire les tâches répétitives, fiabiliser vos données et améliorer votre efficacité opérationnelle."
       ]
     },
     {
       name: "Site web connectés & outils métier",
       detail: [
-        "Je conçois des sites web modernes et connectés à vos outils pour centraliser les informations, automatiser et offrir une meilleure expérience à vos clients"
+        "Je conçois des sites web modernes et connectés à vos outils métiers, pour centraliser les informations, automatiser certains échanges et offrir une expérience plus fluide à vos clients."
       ]
     },
   ];
@@ -42,8 +42,16 @@ function Services() {
     <section id='service'>
       <div className="container__services">
         <h2>2 expertises complémentaires pour transformer votre organisation digitale</h2>
-        <p className='section-text'>Un site web professionnel est un <strong>atout</strong> précieux pour votre entreprise. Il vous permet de <strong>présenter vos produits et services</strong> de manière claire et attrayante, d'atteindre de <strong>clients qualifiés</strong>, et de <strong>mettre en avant votre savoir-faire unique</strong> dans un monde de plus en plus numérique.</p>
-        {/*<div className="container__section">
+        <p className="section-text">
+          J’accompagne les entreprises dans la mise en place de
+          <strong> solutions digitales connectées</strong>, pensées pour structurer les processus,
+          centraliser les informations et automatiser les tâches répétitives.
+          <br /><br />
+          L’objectif : créer un environnement digital plus fluide, plus fiable et mieux adapté
+          à vos méthodes de travail, que ce soit à travers un
+          <strong> site web connecté</strong>, des <strong>automatisations métier </strong>
+          ou l’intégration de vos outils existants.
+        </p>{/*<div className="container__section">
           <div className="container__services-div">
           <img src={imgNosServices1} alt="Aurélie DEMETRIO - L'Agence Digitale" />
             <div>

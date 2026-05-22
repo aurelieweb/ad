@@ -61,16 +61,13 @@
             @include mobile{
                 font-size: 16px;
                 width: 100%;
+                margin: 20px;
             }
 
             p{
                 opacity: 0.8;
                 margin: 5px 20px 0 0;
                 text-align: left;
-
-                @include mobile {
-                    margin: 0;
-                }
             }
         }
 
@@ -185,6 +182,15 @@
   gap: 18px;
   margin-top: 50px;
   flex-wrap: wrap;
+
+  @include mobile{
+    margin-top: 0;
+    padding: 20px;
+    background: $darkmarine;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .banner__benefit {
@@ -208,7 +214,23 @@
 .banner__separator {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(215, 51, 51, 0.3);
+
+  @include mobile{
+    width: 100%;
+    height: 1px;
+  }
+}
+
+.banner__separator-benefits{
+    display: none;
+
+    @include mobile{
+        display: flex;
+        width: 100%;
+        height: 1px;
+          background: rgba(215, 51, 51, 0.3);
+    }
 }
 
 .banner-presentation{
@@ -223,17 +245,16 @@
 
     @include tablet{
         //padding: 30px 0 30px 0;
+        width: 100%;
 
     }
 
     @include mobile{
         flex-direction: column;
         align-items: center;
-        height: 350px;
-        margin-bottom: 50px;
+        //height: 350px;
+        //wmargin-bottom: 50px;
     }
-
-
 
     .banner__div{
         display: flex;
@@ -250,8 +271,10 @@
         @include mobile{
             padding: 0;
             margin-left: 0;
-            max-height: 400px;
+            //max-height: 400px;
             width: 100%;
+            top: 250px;
+            padding: 0;
         }
         
     }
@@ -259,14 +282,14 @@
     .banner__content{
 
         z-index: 0;
-        height: 350px;
+        //height: 350px;
 
         @include tablet {
             padding: 30px;
         }
 
         @include mobile{
-            padding: 20px;
+            padding: 0;
 
         }
 
@@ -275,6 +298,8 @@
             
             @include mobile {
                 width: 100%;
+                margin: 30px 0 0 0;
+                background: $linearGradient7;
             }
 
             p{
@@ -282,6 +307,7 @@
 
                 @include tablet {
                     font-size: 16px;
+                    padding: 20px;
                 }
             }
         }
@@ -289,7 +315,7 @@
         h1{
             //width: 80%;
             margin-top: 0;
-            font-size: 18px;
+            font-size: 24px;
             font-weight: 100;
 
             @include tablet{
@@ -297,7 +323,8 @@
             }
 
             @include mobile{
-                width: 100%;
+                width: 50%;
+                font-size: 16px;
             }
         }
     }
@@ -309,22 +336,24 @@
     //margin: 100px;
 
     @include mobile{
-        //height: 350px;
-        margin-top: 80px;
+        height: 420px;
+        object-fit: cover;
+        object-position: 78% center;
+        margin-top: 100px;
     }
-
-
-
 }
-
 
 //A corriger
 .banner__buttons {
     display: flex;
     gap: 20px;
-    button{
-        //background-color:$green;
-        //color: $black;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background: $darkmarine;
+        border-top: 1px solid $grey;
     }
 }
 
@@ -357,6 +386,13 @@
     font-size: 18px;
     font-weight: 800;
     color: $white;
+
+    .button-wrapper{
+    width: 100%;
+    button{
+        width: 100%;
+    }
+    }
 }
 
 .banner__button-arrow{
@@ -372,6 +408,11 @@
     &:nth-child(2){
         color: $violet;
     }
+
+    @include mobile {
+        font-size: 32px;
+    }
+
 }
 
 .banner__trait{

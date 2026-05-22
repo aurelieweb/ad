@@ -5,10 +5,11 @@
     "customerType": "Fluidifier & automatiser votre activité",
     "description": "J'analyse vos processus et mets en place des automatisations sur mesure pour éliminer les tâches répétitives et reduire la charge mentale'",
     "prestation": [
-      { "nom": "Automatisarion des tâches", "inclus": true },
-      { "nom": "Crentralisation des données", "inclus": true },
-      { "nom": "CRM & suivi client", "inclus": true },
-      { "nom": "Tableau de bord et reporting", "inclus": true }
+      { "nom": "Scénarios Make & automatisations simples", "inclus": true },
+      { "nom": "Automatisation des tâches répétitives", "inclus": true },
+      { "nom": "Centralisation des données", "inclus": true },
+      { "nom": "Structuration des flux d’informations", "inclus": true },
+      { "nom": "Optimisation de workflows existants", "inclus": true }
     ],
     "imageUrl": "./img/service9.png",
     "buttonText": "Découvrir",
@@ -22,9 +23,10 @@
     "description": "Je conçois des site web modernes et connectés à vos outils pour centraliser les informations, automatiser et offrir une meilleure expérience à vos clients",
     "prestation": [
       { "nom": "Site WordPress sur mesure", "inclus": true },
-      { "nom": "Formulaires & espace client", "inclus": true },
+      { "nom": "Formulaires connectés & espace client", "inclus": true },
       { "nom": "Prise de rendez-vous en ligne", "inclus": true },
-      { "nom": "Intégrations & connexions", "inclus": true }
+      { "nom": "Intégrations avec vos outils métier", "inclus": true },
+      { "nom": "Sites connectés & centralisation des données", "inclus": true }
     ],
     "imageUrl": "./img/service10.png",
     "buttonText": "découvrir",

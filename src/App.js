@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos'; 
-import Prestations from './pages/Prestations'; 
+import Services from './pages/Services'; 
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
-import Blog from './pages/Blog';
+import Articles from './pages/Blog';
 import Article from "./pages/Article";
 import Calendly from './pages/CalendlyPage';
 import Coaching from './pages/CoachingPage';
@@ -25,10 +25,10 @@ function App() {
         <Routes>
           {/* Route de la page d'accueil */}
           <Route path="/" element={<Accueil />} />
-          <Route path="/prestations" element={<Prestations />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/a-propos" element={<Apropos />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/article/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/calendly" element={<Calendly />} />

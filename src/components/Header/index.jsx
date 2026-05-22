@@ -32,15 +32,18 @@ function Header() {
           
         </div>
         <div className='header__logo'>
-          <Link to="/">
+          <Link to="/" className='menu__logo'>
             <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
-          </Link>
-          {/*<div className='header__logo-text'> 
-            <p>Aurélie Demetrio</p>
-            <p>L'agence Digitale</p>
-  </div>*/}
+          </Link>menu__logo
           <Menu/>
-          <Link to="/Calendly"><Button text="Prendre rendez-vous" className='btn-secondary ' /></Link>
+          <Link to="/Calendly" className='menu__link-btn'>
+            <Button text="Prendre rendez-vous" className='header__cta btn-secondary ' />
+          </Link>
+          <Link to="/Calendly" className='menu__link-icon'>
+            <span className="header__cta-icon">
+              <FontAwesomeIcon icon={faPhone} />
+            </span>
+          </Link>
         </div>
         
     </header>

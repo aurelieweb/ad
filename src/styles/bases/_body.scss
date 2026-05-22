@@ -12,7 +12,7 @@ section {
     align-items: center;
     //padding-bottom: 50px;
     /*margin: 50px 30px;*/
-    margin: 50px 0;
+    margin: 25px 50px;
     //width: 90%;
 
     @include tablet{
@@ -30,7 +30,8 @@ h1 {
     margin: 20px 0;
     //font-family: 'Oleo Script';
     @include mobile {
-        font-size: 24px;
+        font-size: 18px;
+        margin: 20px;
     }
 }
 
@@ -44,11 +45,14 @@ h2 {
 
     @include tablet {
         font-size: 24px;
-        margin: 30px 0 0 0;
+        //margin: 30px 0 0 0;
+        margin: 0 0 0 30px;
     }
 
     @include mobile {
         font-size: 21px;
+        margin: 0 20px;
+        text-align: left;
         //margin: 30px 20px 0 20px;supprimer pour la mise en page des artciles - voir si bug
     }
 }  
@@ -62,7 +66,8 @@ h3 {
     }
 
     @include mobile{
-        margin: 10px 10px 0 20px;
+        //margin: 10px 10px 0 20px;
+        margin: 0;
     }
 }
 
@@ -90,7 +95,7 @@ h4{
 p {
     text-align: left;
     font-size: 18px;
-    margin: 30px 50px;
+    margin: 30px 0;
 
     @include tablet{
         font-size: 16px;
@@ -98,7 +103,7 @@ p {
     }
 
     @include mobile{
-        margin: 20px 10px;
+        margin: 20px 20px;
     }
 }
 
@@ -136,9 +141,14 @@ p {
   
 .section-tag{
     color: $green;
-    //background: $black;
-    font-size: 18px;
+    //background: rgba(19, 45, 107, 0.1);
+    font-size: 48px;
     font-weight: 800;
     padding: 10px;
+    text-align: center;
+
+    @include mobile{
+        font-size: 24px;
+    }
 }
 
