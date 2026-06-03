@@ -262,19 +262,6 @@
     }
 }
 
-/*.services-autre{
-    .container__card{
-        h3{
-            display: none;
-        }
-    }
-}*/
-
-/*.service-btn{
-    display: flex;
-    gap: 20px;
-}*/
-
 .container__prestation{
     display: flex;
 
@@ -294,6 +281,11 @@
   background: $linearGradient5;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(108, 60, 255, 0.08);
+
+@include mobile {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 }
 
 .prestations__stat-item {

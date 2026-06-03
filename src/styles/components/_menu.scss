@@ -38,7 +38,7 @@
         padding: 0 8px;
         align-items: center;
         justify-content: center;
-        width: 100px;
+        width: auto;
         height: 100px;
 
         @include mobile {
@@ -162,7 +162,8 @@
         }
 
         &__item{
-            //width: 100%;
+            width: auto;
+            white-space: nowrap;
 
             @include tablet {
                 height: 35px;

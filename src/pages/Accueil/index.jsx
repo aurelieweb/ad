@@ -8,7 +8,7 @@ import Banner from '../../components/Banner';
 import CardService from '../../components/CardService';
 import Button from '../../components/Button';
 //import FreebiePopup from '../../components/FreebiePopup';
-//import Maintenance from '../../components/MaintenancePage';
+import Maintenance from '../../components/MaintenancePage';
 //import Toolbox from '../../components/ToolBox';
 import IconCard from '../../components/IconCard'
 import { faPlay, faBriefcase, faPenRuler, faBuilding  } from "@fortawesome/free-solid-svg-icons";
@@ -127,6 +127,8 @@ const buttons = [
 
 
 function Accueil() {
+
+  //Banner
   const pageTitle = "STRUCTURATION & AUTOMATISATION";
   const bannerText = "Structuration des process, connexion des outils et automatisation pour fluidifier l’activité, centraliser les données et gagner en efficacité.";
   const bannerImg = require('../../assets/imgPortrait2.png');
@@ -157,10 +159,14 @@ function Accueil() {
         console.error("Erreur lors de la récupération des articles :", error);
       });
   }, []);
+//Maintenance
+
+const [showMaintenance, setShowMaintenance] = useState(true);
 
   return (
     <div className='main'>
-      {/*<FreebiePopup />*/}
+      {showMaintenance && (<Maintenance onClose={() => setShowMaintenance(false)} />
+)}
       <Banner
         pageTitle={pageTitle}
         bannerClass={bannerClass}

@@ -44,7 +44,7 @@ function Menu() {
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/Articles" className="menu__item-link" onClick={closeMenu}>
+          <Link to="/Blog" className="menu__item-link" onClick={closeMenu}>
             Articles
           </Link>
         </li>

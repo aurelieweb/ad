@@ -68,7 +68,7 @@
 
       // ✅ Variante secondaire
 .btn-secondary {
-  background: $darkmarine;
+  background: $darkmarine !important;
   color: $white;
   text-decoration: none;
   border: 2px solid $violet;
@@ -79,8 +79,8 @@
   //width: 200px;
   
   &:hover {
-    background-color: $black;
-    color: $white;
+    background-color: $violet !important;
+    color: $white !important;
   
     &::after {
       background-color: transparent;

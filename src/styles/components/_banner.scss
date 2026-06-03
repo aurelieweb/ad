@@ -1,196 +1,133 @@
+/* ===============================
+   BANNER — VERSION REMASTERISÉE
+================================ */
+
 .banner {
-    //margin-top: 100px;
-
-    @include mobile {
-        height: auto;
-        //margin-top: 0;
-    }
-
-    @include tablet {
-        //margin-top: 50px;
-    }
-
-    &__image{
-        width: 100%;
-        height: 100%;
-    }
-
-    &__content{
-        padding: 50px;
-        //background: rgba(44, 66, 63, 0.7);
-
-
-        @include tablet{
-            padding: 30px;
-        }
-
-        @include mobile{
-            padding: 20px;
-        }
-
-
-        &-title{
-           
-            font-family: 'Roboto';
-            text-align: left;
-            font-size: 64px;
-            color: $green;
-            opacity: 1;
-            font-weight: bold;
-            margin: 0;
-            
-            @include mobile{
-                font-size: 36px;
-            }
-            animation: fadeIn 1.5s ease-in-out forwards;
-    
-        }
-
-        &-text{
-            color: $white;
-            font-size: 21px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 50px;
-
-            @include tablet{
-                margin-bottom: 30px;
-            }
-
-            @include mobile{
-                font-size: 16px;
-                width: 100%;
-                margin: 20px;
-            }
-
-            p{
-                opacity: 0.8;
-                margin: 5px 20px 0 0;
-                text-align: left;
-            }
-        }
-
-        h1 {
-            font-family: 'Roboto';
-            text-align: left;
-            font-size: 36px;
-            color:$darkviolet;
-            width: auto;
-
-            @include tablet{
-                font-size: 24px;
-            }
-
-            @include mobile {
-                font-size: 20px;
-            }
-
-            /* Animation CSS pour le fondu */
-            animation: fadeIn 1.5s ease-in-out forwards;
-            animation-delay: 0.5s; /* 1.5s est la durée de l'animation, ajustez selon vos besoins */
-        }
-
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-    }
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
+/* HERO PRINCIPAL */
+.banner-presentation {
+  position: relative;
+  width: 100%;
+  display: block;
 
-
-.banner-prestation{
-
-    display: flex;
+  .banner__img-presentation {
     width: 100%;
-    margin-top: 100px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    height: 100vh;
+  }
 
-    @include tablet{
-        /*height: 400px;*/
-        margin-top: 80px;
-    }
-    
-    @include mobile{
-        margin-top: 60px;
-        height: auto;
-    }
+  .banner__div {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    transform: translateY(-50%);
+    width: min(560px, 48%);
+    z-index: 2;
+  }
 
-    .background{
-        flex-direction: row;
-        //height: 90vh;
+  .banner__content {
+    padding: 48px;
+    background: rgba($darkmarine, 0.3);
+    border-radius: 0 28px 28px 0;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    height: 100%;
+  }
 
-        @include tablet{
-            height: 400px;
-        }
-        @include mobile{
-            margin-top: 120px;
-            flex-direction: column;
-        }
-    }
-
-    .banner__content{
-        //background: rgba(44, 66, 63, 0.7);
-        background: $darkgreen;
-        //opacity: 0.2;
-    }
-
-    .banner__div{
-        display: flex;
-        width: 40%;
-        height: 100%;
-        //position: absolute;
-        z-index: 0;
-
-        @include mobile{
-            width: 100%;
-        }
-    }
-
-    .banner__image{
-        width: 60%;
-        height: 100%;
-        object-fit: cover;
-
-
-        @include mobile{
-            width: 100%;
-            height: 400px;
-        }
-
-    }
-    
-    .banner__content-prestation{
-        h1{
-            width: 90%;
-        }
-        .banner__content-text{
-            width: 90%;
-        }
-    }
-
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: $darkviolet;
+  }
 }
+
+/* TITRES */
+.banner__subtitle {
+  display: block;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.05;
+  font-weight: 800;
+  margin: 0;
+  color: $white;
+
+  &:nth-child(2) {
+    color: $violet;
+  }
+}
+
+.banner__trait {
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: $violet;
+  margin-top: 22px;
+}
+
+/* TEXTE */
+.banner__content-text {
+  margin: 32px 0 36px;
+  color: rgba($white, 0.86);
+  font-size: 19px;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+/* BOUTONS */
+.banner__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.banner__button-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  color: $white;
+
+  .button-wrapper {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.banner__button-secondary {
+  color: $white;
+}
+
+.banner__button-arrow {
+  color: $violet;
+  font-weight: 800;
+}
+
+.button-wrapper {
+  margin-left: 20px;
+}
+
+/* BÉNÉFICES */
 .banner__benefits {
   display: flex;
   align-items: center;
   gap: 18px;
-  margin-top: 50px;
-  flex-wrap: wrap;
-
-  @include mobile{
-    margin-top: 0;
-    padding: 20px;
-    background: $darkmarine;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  margin-top: 44px;
+  width: 25%;
+  //flex-wrap: wrap;
 }
 
 .banner__benefit {
@@ -202,223 +139,147 @@
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.3;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba($white, 0.9);
   }
 }
 
 .banner__benefit-icon {
-  font-size: 1.8rem;
-  color: #ff3ecb;
+  font-size: 1.7rem;
+  color: $violet;
 }
 
 .banner__separator {
   width: 1px;
   height: 40px;
-  background: rgba(215, 51, 51, 0.3);
-
-  @include mobile{
-    width: 100%;
-    height: 1px;
-  }
+  background: rgba($white, 0.25);
 }
 
-.banner__separator-benefits{
-    display: none;
-
-    @include mobile{
-        display: flex;
-        width: 100%;
-        height: 1px;
-          background: rgba(215, 51, 51, 0.3);
-    }
-}
-
-.banner-presentation{
-
-    //flex-direction: column;
-    //align-items: center;
-    display: flex;
-    flex-direction: column;
-    //width: 100%;
-    //background: $linearGradient5;
-    //justify-content: center;
-
-    @include tablet{
-        //padding: 30px 0 30px 0;
-        width: 100%;
-
-    }
-
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
-        //height: 350px;
-        //wmargin-bottom: 50px;
-    }
-
-    .banner__div{
-        display: flex;
-        //background-color: $linearGradient5;
-        width: 50%;
-        //max-height: 300px;
-        //position: relative;
-        //bottom: 100px;
-        //max-height: 370px;
-        //margin-left: 50px;
-        position: absolute;
-        top: 200px;
-
-        @include mobile{
-            padding: 0;
-            margin-left: 0;
-            //max-height: 400px;
-            width: 100%;
-            top: 250px;
-            padding: 0;
-        }
-        
-    }
-
-    .banner__content{
-
-        z-index: 0;
-        //height: 350px;
-
-        @include tablet {
-            padding: 30px;
-        }
-
-        @include mobile{
-            padding: 0;
-
-        }
-
-        &-text{
-            //width: 60%;
-            
-            @include mobile {
-                width: 100%;
-                margin: 30px 0 0 0;
-                background: $linearGradient7;
-            }
-
-            p{
-                
-
-                @include tablet {
-                    font-size: 16px;
-                    padding: 20px;
-                }
-            }
-        }
-
-        h1{
-            //width: 80%;
-            margin-top: 0;
-            font-size: 24px;
-            font-weight: 100;
-
-            @include tablet{
-                font-size: 24px;
-            }
-
-            @include mobile{
-                width: 50%;
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-.banner__img-presentation {
-    width: 100%;
-    //height: 60vh;
-    //margin: 100px;
-
-    @include mobile{
-        height: 420px;
-        object-fit: cover;
-        object-position: 78% center;
-        margin-top: 100px;
-    }
-}
-
-//A corriger
-.banner__buttons {
-    display: flex;
-    gap: 20px;
-
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        background: $darkmarine;
-        border-top: 1px solid $grey;
-    }
-}
-
-.background{
-    display: flex;
-    flex-direction: row-reverse;
-    //background: rgba(44, 66, 63, 0.7);
-    width: 100%;
-    position: relative;
-
-    @include mobile {
-        flex-direction: column;
-        bottom: 100px;
-
-    }
-
-}
-
-//style dynamic rotating word
+/* MOT DYNAMIQUE */
 .banner__dynamic-word {
   display: inline-block;
-  color: $green; // à adapter à ta couleur
+  color: $green;
   transition: opacity 0.3s ease;
 }
 
-.banner__button-link{
-    text-decoration: none;
-    align-items: center;
+/* ===============================
+   TABLETTE
+================================ */
+
+@include tablet {
+
+
+    .banner__div {
+      left: 4%;
+      width: 58%;
+    }
+
+    .banner__content {
+      padding: 36px;
+    }
+
+  .banner__content-text {
+    font-size: 17px;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@include mobile {
+  .banner-presentation {
+    min-height: auto;
     display: flex;
-    font-size: 18px;
-    font-weight: 800;
-    color: $white;
+    flex-direction: column;
+    //background: $darkmarine;
 
-    .button-wrapper{
-    width: 100%;
-    button{
-        width: 100%;
+    .banner__img-presentation {
+      order: 1;
+      height: 420px;
+      margin-top: 90px;
+      object-fit: cover;
+      object-position: 78% center;
     }
+
+    .banner__div {
+      order: 2;
+      position: static;
+      transform: none;
+      width: 100%;
     }
-}
 
-.banner__button-arrow{
-        color: $violet;
-        font-weight: 800;
-}
+    .banner__content {
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
 
-.banner__subtitle{
-    font-size: 48px;
-    font-weight: 800;
+    h1 {
+      position: absolute;
+      top: 145px;
+      left: 20px;
+      width: calc(100% - 40px);
+      z-index: 3;
+    }
+  }
+
+  .banner__subtitle {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  .banner__trait {
+    margin-top: 16px;
+  }
+
+  .banner__content-text {
     margin: 0;
+    padding: 24px 20px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .banner__buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 22px 20px;
+    //background: $darkmarine;
+    border-top: 1px solid rgba($white, 0.12);
+  }
+
+  .banner__button-link {
+    width: 100%;
+  }
+
+  .banner__button-secondary {
+    display: inline-flex;
+    justify-content: center;
     color: $white;
-    &:nth-child(2){
-        color: $violet;
-    }
+  }
 
-    @include mobile {
-        font-size: 32px;
-    }
+  .banner__benefits {
+    margin-top: 0;
+    padding: 22px 20px 28px;
+    //background: $darkmarine;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
 
+  .banner__benefit {
+    width: 100%;
+  }
+
+  .banner__separator {
+    width: 100%;
+    height: 1px;
+    background: rgba($white, 0.16);
+  }
 }
 
-.banner__trait{
-    display: flex;
-    border-bottom: 3px solid $violet;
-    width: 50px;
-    font-size: 48px;
-    margin-top: 20px;
+.banner-presentation, .banner-presentation .banner__div,
+.banner-presentation .banner__content {
+  background: transparent !important;
 }

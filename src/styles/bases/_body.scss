@@ -145,7 +145,7 @@ p {
     font-size: 48px;
     font-weight: 800;
     padding: 10px;
-    text-align: center;
+    text-align: center !important;
 
     @include mobile{
         font-size: 24px;

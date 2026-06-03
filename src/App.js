@@ -6,7 +6,7 @@ import Apropos from './pages/Apropos';
 import Services from './pages/Services'; 
 import Realisations from './pages/Realisations'; 
 import Contact from './pages/Contact';
-import Articles from './pages/Blog';
+import Blog from './pages/Blog';
 import Article from "./pages/Article";
 import Calendly from './pages/CalendlyPage';
 import Coaching from './pages/CoachingPage';
@@ -28,7 +28,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/a-propos" element={<Apropos />} />
-          <Route path="/articles" element={<Articles />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/article/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/calendly" element={<Calendly />} />

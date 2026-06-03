@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/styles.scss';
 import Button from '../../components/Button';
@@ -7,8 +7,6 @@ import { faClock, faChartLine, faGear } from '@fortawesome/free-solid-svg-icons'
 
 /* Fonction Banner */
 function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass, buttons }) {
-  const words = ['des entreprises', 'des organisations','des équipes', 'des process' ];
-  const [currentWord, setCurrentWord] = useState(words[0]);
   const bannerBenefits = [
   {
     icon: faClock,
@@ -24,31 +22,21 @@ function Banner({ pageTitle, bannerClass, bannerText, bannerImg, bannerImgClass,
   },
 ];
 
-  useEffect(() => {
-    let index = 0;
-
-    const interval = setInterval(() => {
-      index = (index + 1) % words.length;
-      setCurrentWord(words[index]);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className={bannerClass}>
       <img className={bannerImgClass} src={bannerImg} alt="Banner" />
 
       <div className="banner__div">
-        <div className="banner__content banner__content-prestation">
+        <div className="banner__content">
           <h1>
-            {pageTitle}{/* <span className="banner__dynamic-word">{currentWord}</span>*/}
+            {pageTitle}
+          </h1>
             <div>
               <p className='banner__subtitle'>Moins de tâches.</p>
               <p className='banner__subtitle'>Plus d'efficacité.</p>
               <span className='banner__trait'></span>
             </div>
-          </h1>
+
 
           <div className="banner__content-text">
             <p>{bannerText}</p>

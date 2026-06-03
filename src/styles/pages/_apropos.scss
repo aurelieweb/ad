@@ -5,10 +5,6 @@
     align-items: center;
     margin-top: 100px;
 
-    @include mobile{
-        margin-top: 250px;
-    }
-
     &__container{
         display: flex;
         flex-direction: column;
@@ -33,6 +29,7 @@
 
 .quisuisje__container-text{
     width: 60%;
+    padding: 0 0 0 20px;
 
     @include mobile{
         width: 100%;
